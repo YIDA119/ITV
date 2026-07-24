@@ -41,21 +41,41 @@ class StableManager:
             logger.error(f"保存稳定源失败: {e}")
     
     async def get_source(self, channel_name: str) -> Optional[Dict]:
+        """获取单个稳定源"""
         return self._stable_sources.get(channel_name)
     
     async def get_active_sources(self) -> Dict[str, Dict]:
+        """获取所有活跃的稳定源"""
         return {
             name: src for name, src in self._stable_sources.items()
             if src.get("status") == "active" and src.get("url")
         }
     
     async def promote(self, channel_name: str, url: str, latency: int, video_codec: str) -> bool:
-        """提升为稳定源"""
+        """
+        提升为稳定源（允许覆盖已有源）
+        如果是固定源则不允许覆盖
+        """
+        # 如果是固定源，不允许覆盖
         existing = self._stable_sources.get(channel_name)
         if existing and existing.get("is_fixed"):
-            logger.warning(f"⚠️ {channel_name} 是固定源，不允许自动替换")
+            logger.debug(f"⚠️ {channel_name} 是固定源，不允许自动替换")
             return False
         
+        # 检查是否已有相同URL
+        if existing and existing.get("url") == url:
+            # URL相同，更新延迟信息
+            existing["latency"] = latency
+            existing["video_codec"] = video_codec
+            existing["updated_at"] = datetime.now().isoformat()
+            existing["fail_count"] = 0
+            if existing.get("status") == "degraded":
+                existing["status"] = "active"
+            self._save()
+            logger.debug(f"🔄 {channel_name} 延迟更新: {latency}ms")
+            return True
+        
+        # 允许覆盖已有源（更新URL）
         self._stable_sources[channel_name] = {
             "channel_name": channel_name,
             "url": url,
@@ -69,7 +89,7 @@ class StableManager:
             "updated_at": datetime.now().isoformat(),
         }
         self._save()
-        logger.info(f"✅ {channel_name} 已提升为稳定源")
+        logger.info(f"✅ {channel_name} 已提升为稳定源 (延迟: {latency}ms)")
         return True
     
     async def set_fixed(self, channel_name: str, url: str, latency: int = FIXED_SOURCE_LATENCY) -> bool:
@@ -117,20 +137,38 @@ class StableManager:
         return True
     
     async def record_failure(self, channel_name: str):
+        """记录失败"""
         if channel_name in self._stable_sources:
             src = self._stable_sources[channel_name]
             src["fail_count"] = src.get("fail_count", 0) + 1
             src["updated_at"] = datetime.now().isoformat()
             if src["fail_count"] >= 3 and not src.get("is_fixed"):
                 src["status"] = "degraded"
-                logger.warning(f"⚠️ {channel_name} 质量下降")
+                logger.warning(f"⚠️ {channel_name} 质量下降 (失败{src['fail_count']}次)")
             self._save()
     
     async def record_success(self, channel_name: str):
+        """记录成功"""
         if channel_name in self._stable_sources:
             src = self._stable_sources[channel_name]
             src["fail_count"] = 0
             src["updated_at"] = datetime.now().isoformat()
             if src.get("status") == "degraded":
                 src["status"] = "active"
+                logger.info(f"✅ {channel_name} 已恢复")
             self._save()
+    
+    def get_all_sources(self) -> Dict[str, Dict]:
+        """获取所有稳定源"""
+        return self._stable_sources.copy()
+    
+    async def sync_fixed_sources(self, fixed_sources: Dict[str, List[str]]):
+        """从配置同步固定源"""
+        for name, urls in fixed_sources.items():
+            if isinstance(urls, list):
+                url = urls[0] if urls else None
+            else:
+                url = urls
+            if url:
+                await self.set_fixed(name, url)
+        logger.info(f"📌 同步固定源: {len(fixed_sources)} 个")

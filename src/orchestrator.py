@@ -20,6 +20,9 @@ from src.services.merger import Merger
 from src.services.generator import Generator
 from src.services.subscribe_manager import get_subscribe_urls
 from src.services.demo_service import load_demo_order
+from src.services.fetcher import fetch_all_sources
+from src.services.parser import parse_content, apply_alias_to_channels
+from src.filters.alias import AliasMatcher
 
 # 初始化日志
 init_logger()
@@ -55,43 +58,35 @@ class IPTVOrchestrator:
             "promoted": 0,
             "replaced": 0,
             "total_channels": 0,
+            "traditional_valid": 0,
         }
     
-    async def run(self, skip_discover: bool = False) -> Dict[str, Any]:
-        """运行完整流程"""
+    async def run(self, skip_discover: bool = False, mode: str = "auto") -> Dict[str, Any]:
+        """
+        运行流程
+        
+        Args:
+            skip_discover: 是否跳过发现
+            mode: "traditional" - 传统模式（全量采集+测速）
+                  "auto" - 自治模式（候选池观察+提升）
+                  "full" - 完整模式（传统模式 + 自治模式）
+        """
         self.stats["started_at"] = datetime.now()
         
         try:
-            logger.info("🚀 IPTV 自治系统启动")
+            logger.info("🚀 IPTV 智能整理平台启动")
             logger.info(f"📊 配置: 并发={self.config.max_workers}, 超时={self.config.timeout}s")
+            logger.info(f"📋 模式: {mode}")
             
-            # 0. 检查是否有候选源需要测速
-            await self._check_and_speed_test()
+            if mode == "traditional" or mode == "full":
+                # 传统模式：全量采集 + 测速
+                await self._traditional_mode()
             
-            # 1. 发现新源
-            if not skip_discover:
-                new_sources = await self._discover_phase()
-                self.stats["discovered"] = sum(len(v) for v in new_sources.values())
-            else:
-                logger.info("⏭️ 跳过发现阶段")
+            if mode == "auto" or mode == "full":
+                # 自治模式：候选池观察 + 提升
+                await self._autonomous_mode(skip_discover)
             
-            # 1.5 对新发现的源进行测速
-            if self.stats["discovered"] > 0:
-                await self._speed_test_phase()
-            
-            # 2. 观察候选源
-            stable_candidates = await self._observe_phase()
-            self.stats["observed"] = len(stable_candidates)
-            
-            # 3. 提升稳定源
-            promoted = await self._promote_phase(stable_candidates)
-            self.stats["promoted"] = promoted
-            
-            # 4. 质量检查
-            replaced = await self._quality_phase()
-            self.stats["replaced"] = replaced
-            
-            # 5. 生成输出
+            # 生成输出
             await self._generate_phase()
             
         except Exception as e:
@@ -105,14 +100,130 @@ class IPTVOrchestrator:
         self._print_stats()
         return self.stats
     
+    async def _traditional_mode(self):
+        """传统模式：全量采集 + 测速"""
+        logger.info("=" * 50)
+        logger.info("传统模式: 全量采集 + 测速")
+        logger.info("=" * 50)
+        
+        # 1. 获取订阅源
+        sources = get_subscribe_urls()
+        if not sources:
+            sources = self.config.iptv_sources
+            logger.info(f"📋 使用默认源: {len(sources)} 个")
+        else:
+            logger.info(f"📋 使用订阅源: {len(sources)} 个")
+        
+        # 2. 拉取所有源
+        logger.info("🔄 拉取所有源...")
+        raw_contents = await fetch_all_sources(sources, force_refresh=True)
+        
+        # 3. 解析所有频道
+        all_channels = []
+        for url, content in raw_contents.items():
+            if content:
+                channels = parse_content(content, url)
+                all_channels.extend(channels)
+        
+        logger.info(f"📊 解析到 {len(all_channels)} 个频道")
+        
+        # 4. 应用别名
+        alias_matcher = AliasMatcher()
+        all_channels = apply_alias_to_channels(all_channels, alias_matcher)
+        
+        # 5. 过滤国内频道
+        domestic_channels = []
+        for ch in all_channels:
+            if self.source_manager.is_domestic(ch["name"]):
+                domestic_channels.append(ch)
+        
+        logger.info(f"📊 过滤后国内频道: {len(domestic_channels)} 个 (过滤掉 {len(all_channels) - len(domestic_channels)} 个)")
+        
+        # 6. 去重
+        unique_channels = {}
+        for ch in domestic_channels:
+            key = channel_key(ch["name"], ch["url"])
+            if key not in unique_channels:
+                unique_channels[key] = ch
+        
+        channels_list = list(unique_channels.values())
+        logger.info(f"📊 去重后频道: {len(channels_list)} 个")
+        
+        # 7. 测速
+        if channels_list:
+            logger.info(f"🔍 开始测速 {len(channels_list)} 个频道...")
+            valid_channels = await self.speed_tester.test_all(channels_list)
+            self.stats["traditional_valid"] = len(valid_channels)
+            logger.info(f"✅ 测速完成: {len(valid_channels)} 个有效频道")
+            
+            # 8. 将有效频道添加到候选池
+            for ch in valid_channels:
+                key = channel_key(ch["name"], ch["url"])
+                self.candidate_manager.add_candidate(key, ch["name"], ch["url"])
+                latency = ch.get("latency", 0)
+                if latency > 0:
+                    self.candidate_manager.update_candidate_latency(key, latency)
+            
+            # 9. 直接提升低延迟源
+            if valid_channels:
+                valid_channels.sort(key=lambda x: x.get("latency", 9999))
+                # 每个频道只保留最好的一个
+                best_by_channel = {}
+                for ch in valid_channels:
+                    name = ch["name"]
+                    if name not in best_by_channel or ch.get("latency", 9999) < best_by_channel[name].get("latency", 9999):
+                        best_by_channel[name] = ch
+                
+                top_channels = list(best_by_channel.values())
+                logger.info(f"📌 提升 {len(top_channels)} 个频道的稳定源...")
+                for ch in top_channels[:500]:  # 最多提升500个
+                    await self.stable_manager.promote(
+                        ch["name"],
+                        ch["url"],
+                        ch.get("latency", 0),
+                        ch.get("video_codec", "")
+                    )
+        
+        logger.info("✅ 传统模式完成")
+    
+    async def _autonomous_mode(self, skip_discover: bool = False):
+        """自治模式"""
+        logger.info("=" * 50)
+        logger.info("自治模式: 候选池观察 + 提升")
+        logger.info("=" * 50)
+        
+        # 1. 检查候选池，如果有候选源但数量少，先发现
+        observing_count = self.candidate_manager.get_observing_count()
+        if observing_count < 100 and not skip_discover:
+            logger.info(f"📊 候选池只有 {observing_count} 个源，执行发现...")
+            await self._discover_phase()
+        
+        # 2. 检查并测速
+        await self._check_and_speed_test()
+        
+        # 3. 观察候选源
+        stable_candidates = await self._observe_phase()
+        self.stats["observed"] = len(stable_candidates)
+        
+        # 4. 提升稳定源
+        promoted = await self._promote_phase(stable_candidates)
+        self.stats["promoted"] = promoted
+        
+        # 5. 质量检查
+        replaced = await self._quality_phase()
+        self.stats["replaced"] = replaced
+        
+        logger.info("✅ 自治模式完成")
+    
     async def _check_and_speed_test(self):
-        """检查候选池并测速 - 提升所有有效源"""
+        """检查候选池并测速"""
         observing_count = self.candidate_manager.get_observing_count()
         if observing_count == 0:
+            logger.info("📭 候选池为空，跳过测速")
             return
         
         logger.info("=" * 50)
-        logger.info("阶段0: 检查候选池")
+        logger.info("候选池测速")
         logger.info("=" * 50)
         logger.info(f"📊 候选池中有 {observing_count} 个源需要测速")
         
@@ -120,7 +231,6 @@ class IPTVOrchestrator:
         if not candidates:
             return
         
-        # 转换为测速器需要的格式
         channels = []
         for c in candidates:
             channels.append({
@@ -130,8 +240,6 @@ class IPTVOrchestrator:
             })
         
         logger.info(f"🔍 开始测速 {len(channels)} 个候选源...")
-        
-        # 执行测速
         valid_channels = await self.speed_tester.test_all(channels)
         
         logger.info(f"✅ 测速完成: {len(valid_channels)}/{len(channels)} 个有效")
@@ -142,12 +250,10 @@ class IPTVOrchestrator:
             latency = ch.get("latency", 0)
             self.candidate_manager.update_candidate_latency(key, latency)
         
-        # 提升所有有效源 - 每个频道只保留最好的一个
+        # 提升有效源 - 每个频道只保留最好的一个
         if valid_channels:
-            # 按延迟排序
             valid_channels.sort(key=lambda x: x.get("latency", 9999))
             
-            # 每个频道只保留最好的一个
             best_by_channel = {}
             for ch in valid_channels:
                 name = ch["name"]
@@ -168,10 +274,9 @@ class IPTVOrchestrator:
     async def _discover_phase(self) -> Dict[str, List[Dict]]:
         """发现阶段"""
         logger.info("=" * 50)
-        logger.info("阶段1: 发现新源")
+        logger.info("发现新源")
         logger.info("=" * 50)
         
-        # 获取订阅源
         sources = get_subscribe_urls()
         if not sources:
             sources = self.config.iptv_sources
@@ -179,7 +284,6 @@ class IPTVOrchestrator:
         else:
             logger.info(f"📋 使用订阅源: {len(sources)} 个")
         
-        # 分批处理
         batch_size = 5
         all_new = {}
         
@@ -197,7 +301,6 @@ class IPTVOrchestrator:
             
             logger.info(f"📊 进度: {min(i+batch_size, len(sources))}/{len(sources)}")
         
-        # 添加到候选池
         for name, channels in all_new.items():
             for ch in channels[:100]:
                 self.candidate_manager.add_candidate(
@@ -206,69 +309,14 @@ class IPTVOrchestrator:
                     ch["url"]
                 )
         
+        self.stats["discovered"] = sum(len(v) for v in all_new.values())
+        logger.info(f"✅ 发现 {self.stats['discovered']} 个新源")
         return all_new
-    
-    async def _speed_test_phase(self):
-        """测速阶段 - 对新发现的候选源进行测速"""
-        logger.info("=" * 50)
-        logger.info("阶段1.5: 测速验证")
-        logger.info("=" * 50)
-        
-        # 获取所有候选源
-        candidates = self.candidate_manager.get_observing_sources(limit=5000)
-        if not candidates:
-            logger.info("📭 没有候选源需要测速")
-            return
-        
-        logger.info(f"🔍 开始测速 {len(candidates)} 个候选源...")
-        
-        # 转换为测速器需要的格式
-        channels = []
-        for c in candidates:
-            channels.append({
-                "name": c["name"],
-                "url": c["url"],
-                "source_key": c["key"],
-            })
-        
-        # 执行测速
-        valid_channels = await self.speed_tester.test_all(channels)
-        
-        logger.info(f"✅ 测速完成: {len(valid_channels)}/{len(channels)} 个有效")
-        
-        # 更新候选池状态
-        for ch in valid_channels:
-            key = ch.get("source_key") or channel_key(ch["name"], ch["url"])
-            latency = ch.get("latency", 0)
-            self.candidate_manager.update_candidate_latency(key, latency)
-        
-        # 提升所有有效源 - 每个频道只保留最好的一个
-        if valid_channels:
-            # 按延迟排序
-            valid_channels.sort(key=lambda x: x.get("latency", 9999))
-            
-            # 每个频道只保留最好的一个
-            best_by_channel = {}
-            for ch in valid_channels:
-                name = ch["name"]
-                if name not in best_by_channel or ch.get("latency", 9999) < best_by_channel[name].get("latency", 9999):
-                    best_by_channel[name] = ch
-            
-            top_channels = list(best_by_channel.values())
-            
-            logger.info(f"📌 提升 {len(top_channels)} 个频道的稳定源...")
-            for ch in top_channels:
-                await self.stable_manager.promote(
-                    ch["name"],
-                    ch["url"],
-                    ch.get("latency", 0),
-                    ch.get("video_codec", "")
-                )
     
     async def _observe_phase(self) -> List[Dict]:
         """观察阶段"""
         logger.info("=" * 50)
-        logger.info("阶段2: 观察候选源")
+        logger.info("观察候选源")
         logger.info("=" * 50)
         
         observing_count = self.candidate_manager.get_observing_count()
@@ -278,12 +326,10 @@ class IPTVOrchestrator:
         
         logger.info(f"📊 候选池状态: {observing_count} 个正在观察")
         
-        # 从数据库获取测速结果
         db = await get_db()
         stable = []
         
         for obs in self.candidate_manager.get_observing_sources(limit=5000):
-            # 查询测速历史
             rows = await db.fetch_all(
                 """SELECT latency, success FROM speed_history 
                    WHERE channel_key = ? ORDER BY timestamp DESC LIMIT 10""",
@@ -318,7 +364,7 @@ class IPTVOrchestrator:
     async def _promote_phase(self, stable_candidates: List[Dict]) -> int:
         """提升阶段"""
         logger.info("=" * 50)
-        logger.info("阶段3: 提升稳定源")
+        logger.info("提升稳定源")
         logger.info("=" * 50)
         
         if not stable_candidates:
@@ -327,7 +373,6 @@ class IPTVOrchestrator:
         
         promoted = 0
         for obs in stable_candidates[:200]:
-            # 检查是否已存在
             existing = await self.stable_manager.get_source(obs["name"])
             if existing and existing.get("is_fixed"):
                 continue
@@ -350,21 +395,18 @@ class IPTVOrchestrator:
     async def _quality_phase(self) -> int:
         """质量检查阶段"""
         logger.info("=" * 50)
-        logger.info("阶段4: 质量检查")
+        logger.info("质量检查")
         logger.info("=" * 50)
         
         if not self.config.autonomous_mode:
             logger.info("⏭️ 自治模式已禁用，跳过质量检查")
             return 0
         
-        # 检查所有稳定源
         reports = await self.quality_manager.check_all()
         
-        # 处理需要替换的源
         replaced = 0
         for report in reports:
             if report.get("status") == "critical":
-                # 寻找候选替代
                 candidates = self.candidate_manager.get_stable_sources()
                 for cand in candidates:
                     if cand["name"] == report["channel_name"]:
@@ -385,10 +427,9 @@ class IPTVOrchestrator:
     async def _generate_phase(self):
         """生成输出"""
         logger.info("=" * 50)
-        logger.info("阶段5: 生成输出")
+        logger.info("生成输出")
         logger.info("=" * 50)
         
-        # 获取稳定源
         sources = await self.stable_manager.get_active_sources()
         channels = []
         
@@ -440,6 +481,7 @@ class IPTVOrchestrator:
         logger.info("📊 运行统计")
         logger.info("=" * 50)
         logger.info(f"  耗时: {duration:.2f}s")
+        logger.info(f"  传统模式有效频道: {self.stats.get('traditional_valid', 0)}")
         logger.info(f"  发现新源: {self.stats['discovered']}")
         logger.info(f"  观察候选: {self.stats['observed']}")
         logger.info(f"  提升稳定: {self.stats['promoted']}")
@@ -461,6 +503,6 @@ def get_orchestrator() -> IPTVOrchestrator:
 
 
 async def run_autonomous_mode(skip_discover: bool = False) -> Dict[str, Any]:
-    """运行自治模式"""
+    """运行完整模式（传统 + 自治）"""
     orchestrator = get_orchestrator()
-    return await orchestrator.run(skip_discover=skip_discover)
+    return await orchestrator.run(skip_discover=skip_discover, mode="full")

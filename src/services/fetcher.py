@@ -2,6 +2,7 @@
 """源获取服务"""
 
 import asyncio
+from datetime import datetime, timedelta
 import aiohttp
 from typing import Optional, Dict, List
 
@@ -19,6 +20,8 @@ async def fetch_source(url: str, db=None, force_refresh: bool = False, http_clie
     """
     获取单个源内容
     """
+    config = get_config()
+    
     # 检查缓存
     if not force_refresh and db:
         cached = await db.fetch_one(
@@ -26,8 +29,6 @@ async def fetch_source(url: str, db=None, force_refresh: bool = False, http_clie
             (url,)
         )
         if cached:
-            config = get_config()
-            from datetime import datetime, timedelta
             if datetime.now() - datetime.fromisoformat(cached["updated_at"]) < timedelta(hours=config.cache_raw_hours):
                 logger.debug(f"✅ 使用缓存: {url}")
                 return cached["content"]

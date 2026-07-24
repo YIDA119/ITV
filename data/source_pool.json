@@ -7621,5 +7621,95 @@
     "status": "pending",
     "fail_count": 0,
     "success_count": 0
+  },
+  "3972197a91b0fd63737e0094fb349d30": {
+    "url": "http://112.27.235.94:8000/hls/5/index.m3u8",
+    "channel_name": "CCTV-5",
+    "source_url": "https://raw.githubusercontent.com/zzgpy1/ITV/main/output/tv.m3u",
+    "discovered_at": "2026-07-24T12:29:25.460648",
+    "status": "pending",
+    "fail_count": 0,
+    "success_count": 0
+  },
+  "69ca66d8508f82adbcdaff3567899516": {
+    "url": "http://112.27.235.94:8000/hls/6/index.m3u8",
+    "channel_name": "CCTV-5+",
+    "source_url": "https://raw.githubusercontent.com/zzgpy1/ITV/main/output/tv.m3u",
+    "discovered_at": "2026-07-24T12:29:25.460660",
+    "status": "pending",
+    "fail_count": 0,
+    "success_count": 0
+  },
+  "f6e3c7ed6d95e6ef7087855999574fec": {
+    "url": "http://74.91.26.218:82/live/cctv7hd.m3u8",
+    "channel_name": "CCTV-7",
+    "source_url": "https://raw.githubusercontent.com/zzgpy1/ITV/main/output/tv.m3u",
+    "discovered_at": "2026-07-24T12:29:25.460672",
+    "status": "pending",
+    "fail_count": 0,
+    "success_count": 0
+  },
+  "6ffc50f37fbbc982d0f0b31d20b02900": {
+    "url": "http://74.91.26.218:82/live/cctv8hd.m3u8",
+    "channel_name": "CCTV-8",
+    "source_url": "https://raw.githubusercontent.com/zzgpy1/ITV/main/output/tv.m3u",
+    "discovered_at": "2026-07-24T12:29:25.460679",
+    "status": "pending",
+    "fail_count": 0,
+    "success_count": 0
+  },
+  "f6e7fd19fa358624be9b48b77f728569": {
+    "url": "https://amg00405-rakutentv-cgtndocumentary-rakuten-0ql8j.amagi.tv/master.m3u8",
+    "channel_name": "CGTN-Documentary",
+    "source_url": "https://raw.githubusercontent.com/zzgpy1/ITV/main/output/tv.m3u",
+    "discovered_at": "2026-07-24T12:29:25.460730",
+    "status": "pending",
+    "fail_count": 0,
+    "success_count": 0
+  },
+  "6ded19a2c7addc33710ca6ebadadab05": {
+    "url": "https://event.pull.hebtv.com:443/live/live101.m3u8",
+    "channel_name": "河北",
+    "source_url": "https://raw.githubusercontent.com/zzgpy1/ITV/main/output/tv.m3u",
+    "discovered_at": "2026-07-24T12:29:25.461054",
+    "status": "pending",
+    "fail_count": 0,
+    "success_count": 0
+  },
+  "ed74a30ca5ce89643af3a05b5fd8f4d3": {
+    "url": "https://cd-live-stream.news.cctvplus.com/live/smil:CHANNEL2.smil/playlist.m3u8",
+    "channel_name": "CCTV+ 2 [Not 24/7]",
+    "source_url": "https://raw.githubusercontent.com/zzgpy1/ITV/main/output/tv.m3u",
+    "discovered_at": "2026-07-24T12:29:25.461240",
+    "status": "pending",
+    "fail_count": 0,
+    "success_count": 0
+  },
+  "b985bc4b480f3d5960ec882e709334fc": {
+    "url": "https://cd-live-stream.news.cctvplus.com/live/smil:CHANNEL1.smil/playlist.m3u8",
+    "channel_name": "CCTV+ 1 [Not 24/7]",
+    "source_url": "https://raw.githubusercontent.com/zzgpy1/ITV/main/output/tv.m3u",
+    "discovered_at": "2026-07-24T12:29:25.461247",
+    "status": "pending",
+    "fail_count": 0,
+    "success_count": 0
+  },
+  "85e2077a35866722d9d0997faec2a7b1": {
+    "url": "http://live.zohi.tv/video/s10001-fztv-3/index.m3u8",
+    "channel_name": "福州广播电视台都市生活频道",
+    "source_url": "https://raw.githubusercontent.com/zzgpy1/ITV/main/output/tv.m3u",
+    "discovered_at": "2026-07-24T12:29:25.461275",
+    "status": "pending",
+    "fail_count": 0,
+    "success_count": 0
+  },
+  "204b84b7698c1daa18efbaae08905c4f": {
+    "url": "http://live.zohi.tv/video/s10001-fztv-1/index.m3u8",
+    "channel_name": "福州广播电视台新闻综合频道",
+    "source_url": "https://raw.githubusercontent.com/zzgpy1/ITV/main/output/tv.m3u",
+    "discovered_at": "2026-07-24T12:29:25.461281",
+    "status": "pending",
+    "fail_count": 0,
+    "success_count": 0
   }
 }

@@ -3753,10 +3753,10 @@
     "url": "http://218.13.170.98:9901/tsfile/live/0115_1.m3u8",
     "status": "observing",
     "discovered_at": "2026-07-24T10:47:10.589522",
-    "last_check": "2026-07-24T10:47:10.589525",
-    "success_count": 0,
+    "last_check": "2026-07-24T12:31:03.809112",
+    "success_count": 1,
     "fail_count": 0,
-    "avg_latency": 0
+    "avg_latency": 6314
   },
   "16bfecf48fceaf577be43b55bfe5ecec": {
     "key": "16bfecf48fceaf577be43b55bfe5ecec",
@@ -5723,12 +5723,12 @@
     "key": "d108c328ab1a02a7232103aa9babefe9",
     "name": "陕西秦腔",
     "url": "http://112.46.105.20:8009/hls/22/index.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T10:47:11.412418",
-    "last_check": "2026-07-24T11:42:40.948110",
-    "success_count": 1,
-    "fail_count": 0,
-    "avg_latency": 478
+    "last_check": "2026-07-24T12:31:02.739203",
+    "success_count": 3,
+    "fail_count": 2,
+    "avg_latency": 515
   },
   "35705ec2400bdc5dd3f8897ca1efa4bf": {
     "key": "35705ec2400bdc5dd3f8897ca1efa4bf",
@@ -5802,10 +5802,10 @@
     "url": "http://cdn9.163189.xyz/smt1.1.php?id=inews_twn",
     "status": "observing",
     "discovered_at": "2026-07-24T10:47:11.452032",
-    "last_check": "2026-07-24T11:42:40.509206",
-    "success_count": 3,
+    "last_check": "2026-07-24T12:31:03.893518",
+    "success_count": 5,
     "fail_count": 0,
-    "avg_latency": 5110
+    "avg_latency": 5306
   },
   "842cfd3f88c727a5270620e634500f6e": {
     "key": "842cfd3f88c727a5270620e634500f6e",
@@ -5824,10 +5824,10 @@
     "url": "http://cdn9.163189.xyz/smt1.1.php?id=jade_twn",
     "status": "observing",
     "discovered_at": "2026-07-24T10:47:11.463509",
-    "last_check": "2026-07-24T11:42:41.921739",
-    "success_count": 3,
+    "last_check": "2026-07-24T12:31:03.020042",
+    "success_count": 5,
     "fail_count": 0,
-    "avg_latency": 7600
+    "avg_latency": 6761
   },
   "b4f84852b99ae362c6a80eb6b3b53fe6": {
     "key": "b4f84852b99ae362c6a80eb6b3b53fe6",
@@ -6691,265 +6691,270 @@
     "key": "8acd5a466c7b3fc41f54ee952d8ed603",
     "name": "CCTV-2",
     "url": "http://74.91.26.218:82/live/cctv2hd.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:57.422212",
-    "last_check": "2026-07-24T11:42:43.146628",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.206794",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 301
+    "avg_latency": 565
   },
   "3d6a9bb23bec4c9a23d2017fb2701d9a": {
     "key": "3d6a9bb23bec4c9a23d2017fb2701d9a",
     "name": "CCTV-3",
     "url": "http://74.91.26.218:82/live/cctv3hd.m3u8",
-    "status": "observing",
+    "status": "promoted",
     "discovered_at": "2026-07-24T11:40:57.428914",
-    "last_check": "2026-07-24T11:42:43.726974",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.188005",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 918
+    "avg_latency": 1083,
+    "promoted_at": "2026-07-24T12:31:04.950397"
   },
   "dcbf7019bcc074acb148d54f69e5bfc7": {
     "key": "dcbf7019bcc074acb148d54f69e5bfc7",
     "name": "CCTV-9",
     "url": "https://xykt-fix.github.io/Y77.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:57.435886",
-    "last_check": "2026-07-24T11:42:43.444530",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.169490",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 11
+    "avg_latency": 44
   },
   "38bdf6405491a74b2fc7724a3cda4f41": {
     "key": "38bdf6405491a74b2fc7724a3cda4f41",
     "name": "CCTV-11",
     "url": "http://74.91.26.218:82/live/cctv11hd.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:57.442588",
-    "last_check": "2026-07-24T11:42:43.848798",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:02.878321",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 350
+    "avg_latency": 377
   },
   "74c7cf298ca3cd99c2137f7ea475b08a": {
     "key": "74c7cf298ca3cd99c2137f7ea475b08a",
     "name": "CCTV-12",
     "url": "http://74.91.26.218:82/live/cctv12hd.m3u8",
-    "status": "observing",
+    "status": "promoted",
     "discovered_at": "2026-07-24T11:40:57.449454",
-    "last_check": "2026-07-24T11:42:43.640640",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.575239",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 360
+    "avg_latency": 327,
+    "promoted_at": "2026-07-24T12:31:04.964117"
   },
   "c9d15534f254af5d93ff08600461b455": {
     "key": "c9d15534f254af5d93ff08600461b455",
     "name": "CCTV-13",
     "url": "http://74.91.26.218:82/live/cctv13hd.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:57.456439",
-    "last_check": "2026-07-24T11:42:43.024783",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.594321",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 422
+    "avg_latency": 359
   },
   "e1ff4247ad15c9e26a33b8a25e032b70": {
     "key": "e1ff4247ad15c9e26a33b8a25e032b70",
     "name": "CCTV-14",
     "url": "http://74.91.26.218:82/live/cctv14hd.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:57.463112",
-    "last_check": "2026-07-24T11:42:43.773606",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.243783",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 361
+    "avg_latency": 328
   },
   "ad7252f54b8859818a118ddf4b4ac4c7": {
     "key": "ad7252f54b8859818a118ddf4b4ac4c7",
     "name": "CCTV-15",
     "url": "https://xykt-fix.github.io/play/a02e/index.m3u8",
-    "status": "observing",
+    "status": "promoted",
     "discovered_at": "2026-07-24T11:40:57.469807",
-    "last_check": "2026-07-24T11:42:42.965857",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:02.840720",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 120
+    "avg_latency": 126,
+    "promoted_at": "2026-07-24T12:31:04.977911"
   },
   "3922edc37a6923bc323fad7b50c4900b": {
     "key": "3922edc37a6923bc323fad7b50c4900b",
     "name": "CCTV-17",
     "url": "http://74.91.26.218:82/live/cctv17hd.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:57.476429",
-    "last_check": "2026-07-24T11:42:39.699562",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:02.849991",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 420
+    "avg_latency": 367
   },
   "78ce6e4a09a5039ae4d1232e272caf2f": {
     "key": "78ce6e4a09a5039ae4d1232e272caf2f",
     "name": "CCTV-Golf & Tennis",
     "url": "http://38.75.136.137:98/gslb/dsdqpub/gefwq.m3u8?auth=testpub",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:57.483206",
-    "last_check": "2026-07-24T11:42:39.831761",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.612993",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 353
+    "avg_latency": 340
   },
   "4a8469f7edbedfc698a09f72449e54f4": {
     "key": "4a8469f7edbedfc698a09f72449e54f4",
     "name": "CCTV-Storm Theater",
     "url": "http://38.75.136.137:98/gslb/dsdqpub/fyjc.m3u8?auth=testpub",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:57.489870",
-    "last_check": "2026-07-24T11:42:41.589622",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.622353",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 269
+    "avg_latency": 209
   },
   "b1f21c3e241ccd9ca7f38d12147a1b75": {
     "key": "b1f21c3e241ccd9ca7f38d12147a1b75",
     "name": "CCTV-Health",
     "url": "http://38.75.136.137:98/gslb/dsdqpub/wsjk.m3u8?auth=testpub",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:57.496564",
-    "last_check": "2026-07-24T11:42:39.945196",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:02.757709",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 277
+    "avg_latency": 195
   },
   "5f343cac4d92bd26fdb531ae2565d36a": {
     "key": "5f343cac4d92bd26fdb531ae2565d36a",
     "name": "CCTV-The First Theater",
     "url": "http://38.75.136.137:98/gslb/dsdqpub/dyjc.m3u8?auth=testpub",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:57.503281",
-    "last_check": "2026-07-24T11:42:40.228491",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:02.803598",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 244
+    "avg_latency": 184
   },
   "338e62696045df0cbe1b22e1cacab7a8": {
     "key": "338e62696045df0cbe1b22e1cacab7a8",
     "name": "CCTV-Storm Football",
     "url": "http://38.75.136.137:98/gslb/dsdqpub/fyzq.m3u8?auth=testpub",
-    "status": "observing",
+    "status": "promoted",
     "discovered_at": "2026-07-24T11:40:57.510021",
-    "last_check": "2026-07-24T11:40:57.510024",
-    "success_count": 0,
-    "fail_count": 0,
-    "avg_latency": 0
+    "last_check": "2026-07-24T12:31:02.983047",
+    "success_count": 2,
+    "fail_count": 1,
+    "avg_latency": 608,
+    "promoted_at": "2026-07-24T12:31:04.991591"
   },
   "f365b4fbbad0284189d4b95d22a40ac6": {
     "key": "f365b4fbbad0284189d4b95d22a40ac6",
     "name": "CCTV-Weapon & Technology",
     "url": "http://38.75.136.137:98/gslb/dsdqpub/gfjs.m3u8?auth=testpub",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:57.516834",
-    "last_check": "2026-07-24T11:42:40.238150",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:02.674683",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 270
+    "avg_latency": 217
   },
   "bb4be01a6861701b6a8ea07357561659": {
     "key": "bb4be01a6861701b6a8ea07357561659",
     "name": "CCTV-Nostalgia Theater",
     "url": "http://38.75.136.137:98/gslb/dsdqpub/hjjc.m3u8?auth=testpub",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:57.523583",
-    "last_check": "2026-07-24T11:42:40.340274",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.451352",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 867
+    "avg_latency": 598
   },
   "a03bb307f9da4c8ef7f85a907deed872": {
     "key": "a03bb307f9da4c8ef7f85a907deed872",
     "name": "CCTV-World Geography",
     "url": "http://38.75.136.137:98/gslb/dsdqpub/sjdl.m3u8?auth=testpub",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:57.530472",
-    "last_check": "2026-07-24T11:42:41.654262",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.753138",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 212
+    "avg_latency": 191
   },
   "07716794f76f0ec3a7c20eaad6017ac4": {
     "key": "07716794f76f0ec3a7c20eaad6017ac4",
     "name": "CCTV-Storm Music",
     "url": "http://38.75.136.137:98/gslb/dsdqpub/fyyy.m3u8?auth=testpub",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:57.537244",
-    "last_check": "2026-07-24T11:42:39.926199",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.472814",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 275
+    "avg_latency": 201
   },
   "82d7fadd58969604367901cce725e2b8": {
     "key": "82d7fadd58969604367901cce725e2b8",
     "name": "CCTV-Billiards",
     "url": "http://38.75.136.137:98/gslb/dsdqpub/ystq.m3u8?auth=testpub",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:57.544058",
-    "last_check": "2026-07-24T11:42:40.032639",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.066525",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 269
+    "avg_latency": 213
   },
   "7c776975d2af21b65ed08719b5150933": {
     "key": "7c776975d2af21b65ed08719b5150933",
     "name": "CCTV-Culture of Quality",
     "url": "http://38.75.136.137:98/gslb/dsdqpub/ysjp.m3u8?auth=testpub",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:57.551046",
-    "last_check": "2026-07-24T11:42:41.143109",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:02.665248",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 271
+    "avg_latency": 196
   },
   "6cec23ecd7c4316fef6c441b08e019bf": {
     "key": "6cec23ecd7c4316fef6c441b08e019bf",
     "name": "CCTV-Women's Fashion",
     "url": "http://38.75.136.137:98/gslb/dsdqpub/nxss.m3u8?auth=testpub",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:57.557915",
-    "last_check": "2026-07-24T11:42:40.358949",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.132121",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 211
+    "avg_latency": 160
   },
   "09056b899b17b8836a97d598275fd929": {
     "key": "09056b899b17b8836a97d598275fd929",
     "name": "CGTN French",
     "url": "http://145.239.5.177/214/index.m3u8",
-    "status": "observing",
+    "status": "promoted",
     "discovered_at": "2026-07-24T11:40:57.565893",
-    "last_check": "2026-07-24T11:42:41.263155",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.150922",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 419
+    "avg_latency": 425,
+    "promoted_at": "2026-07-24T12:31:05.005260"
   },
   "76065bebff47b05434168a67c87b2684": {
     "key": "76065bebff47b05434168a67c87b2684",
     "name": "CGTN Documentary",
     "url": "https://amg00405-rakutentv-cgtndocumentary-rakuten-0ql8j.amagi.tv/master.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:57.572818",
-    "last_check": "2026-07-24T11:42:41.300288",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:02.888924",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 426
+    "avg_latency": 429
   },
   "2b1d8f13530f1fcd2d297f44b48976b6": {
     "key": "2b1d8f13530f1fcd2d297f44b48976b6",
     "name": "CGTN",
     "url": "https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:57.579905",
-    "last_check": "2026-07-24T11:42:40.499948",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.122726",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 415
+    "avg_latency": 426
   },
   "482db36bf9eb9f9fdc019a7a19770125": {
     "key": "482db36bf9eb9f9fdc019a7a19770125",
@@ -7032,12 +7037,13 @@
     "key": "68833def9e42ab894a22676154e0ad71",
     "name": "江苏新闻综合广播",
     "url": "http://45.192.97.170:8880/play/6350.m3u8",
-    "status": "observing",
+    "status": "promoted",
     "discovered_at": "2026-07-24T11:40:57.635560",
-    "last_check": "2026-07-24T11:42:41.857684",
-    "success_count": 1,
-    "fail_count": 0,
-    "avg_latency": 847
+    "last_check": "2026-07-24T12:31:03.799802",
+    "success_count": 2,
+    "fail_count": 1,
+    "avg_latency": 1232,
+    "promoted_at": "2026-07-24T12:31:05.018951"
   },
   "30842d71909f23d2f1269141ca54f635": {
     "key": "30842d71909f23d2f1269141ca54f635",
@@ -7056,10 +7062,10 @@
     "url": "http://45.192.97.170:8880/play/6352.m3u8",
     "status": "observing",
     "discovered_at": "2026-07-24T11:40:57.649432",
-    "last_check": "2026-07-24T11:40:57.649436",
-    "success_count": 0,
+    "last_check": "2026-07-24T12:31:03.659614",
+    "success_count": 2,
     "fail_count": 0,
-    "avg_latency": 0
+    "avg_latency": 3219
   },
   "2cf2ee651078f7dad958084a74867f55": {
     "key": "2cf2ee651078f7dad958084a74867f55",
@@ -7087,12 +7093,12 @@
     "key": "bb60bbc59eaac64c3984e3c83e739f4d",
     "name": "安徽之声",
     "url": "http://45.192.97.170:8880/play/6356.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:57.670322",
-    "last_check": "2026-07-24T11:42:40.724624",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.556485",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1006
+    "avg_latency": 1435
   },
   "1960c769b9a07cf49ffac09f2df63847": {
     "key": "1960c769b9a07cf49ffac09f2df63847",
@@ -7109,12 +7115,12 @@
     "key": "6fc0311c11b42fe31ac3c13c68a91cda",
     "name": "安徽生活广播·城市之声",
     "url": "http://45.192.97.170:8880/play/6357.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:57.684361",
-    "last_check": "2026-07-24T11:42:40.368292",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.865336",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1482
+    "avg_latency": 1537
   },
   "be2ee185b5182ad70d1daea51e826e38": {
     "key": "be2ee185b5182ad70d1daea51e826e38",
@@ -7175,12 +7181,13 @@
     "key": "63531616a126bed5c9b15f75f8194334",
     "name": "安徽旅游广播·高速之声",
     "url": "http://45.192.97.170:8880/play/6360.m3u8",
-    "status": "observing",
+    "status": "promoted",
     "discovered_at": "2026-07-24T11:40:57.726636",
-    "last_check": "2026-07-24T11:42:41.429981",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.687545",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 492
+    "avg_latency": 1305,
+    "promoted_at": "2026-07-24T12:31:05.032699"
   },
   "f4405e1365f36d2c7c33c5b52160fb40": {
     "key": "f4405e1365f36d2c7c33c5b52160fb40",
@@ -7197,12 +7204,13 @@
     "key": "eff7ceb839fd7818a22f7caba8eed339",
     "name": "安徽戏曲广播·动听995",
     "url": "http://45.192.97.170:8880/play/6361.m3u8",
-    "status": "observing",
+    "status": "promoted",
     "discovered_at": "2026-07-24T11:40:57.740701",
-    "last_check": "2026-07-24T11:42:42.105805",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.432907",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 357
+    "avg_latency": 1000,
+    "promoted_at": "2026-07-24T12:31:05.047245"
   },
   "dbe43582b9f8c3808217174b1973c37e": {
     "key": "dbe43582b9f8c3808217174b1973c37e",
@@ -7219,12 +7227,12 @@
     "key": "14541f7ab25041bd8100168acbb2a926",
     "name": "安徽故事广播",
     "url": "http://45.192.97.170:8880/play/6362.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:57.754881",
-    "last_check": "2026-07-24T11:42:40.546223",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.271926",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 980
+    "avg_latency": 1187
   },
   "190142b17446c4e37420c17516f71342": {
     "key": "190142b17446c4e37420c17516f71342",
@@ -7241,12 +7249,13 @@
     "key": "fe31ab614ff1101d0506b7f3c9f1628b",
     "name": "湖北之声",
     "url": "http://45.192.97.170:8880/play/6363.m3u8",
-    "status": "observing",
+    "status": "promoted",
     "discovered_at": "2026-07-24T11:40:57.769048",
-    "last_check": "2026-07-24T11:42:39.887305",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.010814",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 988
+    "avg_latency": 1143,
+    "promoted_at": "2026-07-24T12:31:05.061116"
   },
   "74edfbb8c4b37fddf15dbb52eeea2a70": {
     "key": "74edfbb8c4b37fddf15dbb52eeea2a70",
@@ -7263,12 +7272,12 @@
     "key": "9dc53d7dd483911f23f182a61de70167",
     "name": "福建都市广播·私家车987",
     "url": "http://45.192.97.170:8880/play/6375.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:57.786091",
-    "last_check": "2026-07-24T11:42:41.967572",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.697314",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 988
+    "avg_latency": 1524
   },
   "979daf9b23a1ed70696976eef6e12cc2": {
     "key": "979daf9b23a1ed70696976eef6e12cc2",
@@ -7285,12 +7294,13 @@
     "key": "f0764ee6b2d471c40145cba79c602205",
     "name": "福建东南广播",
     "url": "http://45.192.97.170:8880/play/6378.m3u8",
-    "status": "observing",
+    "status": "promoted",
     "discovered_at": "2026-07-24T11:40:57.800494",
-    "last_check": "2026-07-24T11:42:41.756043",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.348221",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 987
+    "avg_latency": 1475,
+    "promoted_at": "2026-07-24T12:31:05.075187"
   },
   "da42d2f61298fdc85c5604b7a9b756d8": {
     "key": "da42d2f61298fdc85c5604b7a9b756d8",
@@ -7307,12 +7317,13 @@
     "key": "76b5b52a809f3227921dc3efd7d27777",
     "name": "山东交通广播",
     "url": "http://45.192.97.170:8880/play/6384.m3u8",
-    "status": "observing",
+    "status": "promoted",
     "discovered_at": "2026-07-24T11:40:57.814897",
-    "last_check": "2026-07-24T11:42:41.337155",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.386637",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 486
+    "avg_latency": 974,
+    "promoted_at": "2026-07-24T12:31:05.088914"
   },
   "42f8bdef672caeaaf3e79f32da8ff3ca": {
     "key": "42f8bdef672caeaaf3e79f32da8ff3ca",
@@ -7329,12 +7340,13 @@
     "key": "8e0c7405a8a03fe9540a44fab8449626",
     "name": "山东体育休闲广播",
     "url": "http://45.192.97.170:8880/play/6385.m3u8",
-    "status": "observing",
+    "status": "promoted",
     "discovered_at": "2026-07-24T11:40:57.829435",
-    "last_check": "2026-07-24T11:42:40.293951",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.414335",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1482
+    "avg_latency": 1637,
+    "promoted_at": "2026-07-24T12:31:05.102291"
   },
   "89138a588604d0170da3ba726a21dd5c": {
     "key": "89138a588604d0170da3ba726a21dd5c",
@@ -7351,12 +7363,13 @@
     "key": "b5ea023284a2c0cf679c58acf5619b8a",
     "name": "山东经济广播",
     "url": "http://45.192.97.170:8880/play/6386.m3u8",
-    "status": "observing",
+    "status": "promoted",
     "discovered_at": "2026-07-24T11:40:57.843874",
-    "last_check": "2026-07-24T11:42:40.854838",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.442104",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 497
+    "avg_latency": 1674,
+    "promoted_at": "2026-07-24T12:31:05.115828"
   },
   "dc31d31e831a0574e162273a7ba961fa": {
     "key": "dc31d31e831a0574e162273a7ba961fa",
@@ -7439,12 +7452,12 @@
     "key": "439916dc94b50ec78fdbee754479fb5e",
     "name": "陕西农村广播",
     "url": "http://45.192.97.170:8880/play/6391.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:57.904463",
-    "last_check": "2026-07-24T11:42:40.144454",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.113164",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1352
+    "avg_latency": 1142
   },
   "a1a2e3f39a349dd03508ff57737ce462": {
     "key": "a1a2e3f39a349dd03508ff57737ce462",
@@ -7461,12 +7474,12 @@
     "key": "f0a4c2690b575cbc493b9d7e3965ec11",
     "name": "陕西新闻广播",
     "url": "http://45.192.97.170:8880/play/6393.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:57.919221",
-    "last_check": "2026-07-24T11:42:41.709725",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.001596",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 354
+    "avg_latency": 977
   },
   "dba1ae13b193a1ffaa7853254253171f": {
     "key": "dba1ae13b193a1ffaa7853254253171f",
@@ -7483,12 +7496,13 @@
     "key": "d2bbafcdca074868aab74b8146200a46",
     "name": "浙江之声",
     "url": "http://45.192.97.170:8880/play/6394.m3u8",
-    "status": "observing",
+    "status": "promoted",
     "discovered_at": "2026-07-24T11:40:57.933913",
-    "last_check": "2026-07-24T11:42:40.471741",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.319264",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 845
+    "avg_latency": 1259,
+    "promoted_at": "2026-07-24T12:31:05.129514"
   },
   "39a93524f9bdde4b9bef9386de4712e0": {
     "key": "39a93524f9bdde4b9bef9386de4712e0",
@@ -7505,12 +7519,13 @@
     "key": "bf3eac26dd70ec0da441b7fe617616f9",
     "name": "浙江经济广播",
     "url": "http://45.192.97.170:8880/play/6395.m3u8",
-    "status": "observing",
+    "status": "promoted",
     "discovered_at": "2026-07-24T11:40:57.948738",
-    "last_check": "2026-07-24T11:42:40.602104",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.500509",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 985
+    "avg_latency": 1319,
+    "promoted_at": "2026-07-24T12:31:05.143155"
   },
   "0469a38fa018eba301981abf3be03fdd": {
     "key": "0469a38fa018eba301981abf3be03fdd",
@@ -7527,12 +7542,12 @@
     "key": "42e4b96fbd411acfbacbbf7c9e7f11b6",
     "name": "浙江交通之声",
     "url": "http://45.192.97.170:8880/play/6396.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:57.963533",
-    "last_check": "2026-07-24T11:42:41.235338",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.855631",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 994
+    "avg_latency": 1749
   },
   "dad16aabf2c017d6b6f05550887f2ad3": {
     "key": "dad16aabf2c017d6b6f05550887f2ad3",
@@ -7549,12 +7564,12 @@
     "key": "9b69218d09d8afdd74784645230c36e0",
     "name": "浙江民生资讯广播",
     "url": "http://45.192.97.170:8880/play/6397.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:57.978440",
-    "last_check": "2026-07-24T11:40:57.978443",
-    "success_count": 0,
-    "fail_count": 0,
-    "avg_latency": 0
+    "last_check": "2026-07-24T12:31:02.684065",
+    "success_count": 2,
+    "fail_count": 1,
+    "avg_latency": 977
   },
   "a86c3f530ed4ed8cb164c95d43999290": {
     "key": "a86c3f530ed4ed8cb164c95d43999290",
@@ -7571,12 +7586,12 @@
     "key": "da254bbca879dd76ac9e7f08f1be9540",
     "name": "浙江城市之声",
     "url": "http://45.192.97.170:8880/play/6398.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:57.993260",
-    "last_check": "2026-07-24T11:42:40.424997",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:02.859461",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 485
+    "avg_latency": 635
   },
   "48452c3b8e196e2d5c88c04a1640b9ba": {
     "key": "48452c3b8e196e2d5c88c04a1640b9ba",
@@ -7615,12 +7630,12 @@
     "key": "85e34c6161a834c3b17e0634385e9eb7",
     "name": "四川交通广播",
     "url": "http://45.192.97.170:8880/play/6414.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.023567",
-    "last_check": "2026-07-24T11:42:41.792867",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:02.963790",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 2343
+    "avg_latency": 1709
   },
   "6be83f6b162b88e0d803a5a3d6362368": {
     "key": "6be83f6b162b88e0d803a5a3d6362368",
@@ -7637,12 +7652,12 @@
     "key": "fe71e4ab406a84765b4346ba733fb646",
     "name": "四川综合广播四川之声",
     "url": "http://45.192.97.170:8880/play/6415.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.038764",
-    "last_check": "2026-07-24T11:42:39.954901",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:02.720838",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1488
+    "avg_latency": 1137
   },
   "fda8e6d6718c423eace4c58408325d8e": {
     "key": "fda8e6d6718c423eace4c58408325d8e",
@@ -7659,12 +7674,12 @@
     "key": "ee8451f07cb675b7357ddd021cd367b2",
     "name": "四川私家车广播",
     "url": "http://45.192.97.170:8880/play/6416.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.054022",
-    "last_check": "2026-07-24T11:42:40.817669",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:02.898419",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 625
+    "avg_latency": 908
   },
   "299c9e7c5ca68ce28e3b295816365960": {
     "key": "299c9e7c5ca68ce28e3b295816365960",
@@ -7681,12 +7696,13 @@
     "key": "7d53f018b89a6bac18a323b2fce3a808",
     "name": "贵州经济广播",
     "url": "http://45.192.97.170:8880/play/6417.m3u8",
-    "status": "observing",
+    "status": "promoted",
     "discovered_at": "2026-07-24T11:40:58.069497",
-    "last_check": "2026-07-24T11:42:41.765218",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.818520",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 497
+    "avg_latency": 1530,
+    "promoted_at": "2026-07-24T12:31:05.156963"
   },
   "65a56d131ef39a3d00bd10b300d1a12f": {
     "key": "65a56d131ef39a3d00bd10b300d1a12f",
@@ -7703,12 +7719,12 @@
     "key": "52b3b2ca59f0cedef4bbd6d41ef671b1",
     "name": "贵州旅游广播",
     "url": "http://45.192.97.170:8880/play/6418.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.084864",
-    "last_check": "2026-07-24T11:42:40.209988",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:02.702490",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 992
+    "avg_latency": 1029
   },
   "e33aa1e61124b69fb36b2fc4a402a1f9": {
     "key": "e33aa1e61124b69fb36b2fc4a402a1f9",
@@ -7725,12 +7741,12 @@
     "key": "df83b5a3f27c1174f3aa1e57811dad65",
     "name": "贵州故事广播",
     "url": "http://45.192.97.170:8880/play/6419.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.100593",
-    "last_check": "2026-07-24T11:42:39.868731",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.141451",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1479
+    "avg_latency": 1520
   },
   "5a0f5890f391d23dadc1c83a4b6ff792": {
     "key": "5a0f5890f391d23dadc1c83a4b6ff792",
@@ -7747,12 +7763,13 @@
     "key": "8ccbddd404d4b1a7822cfc208e0da01d",
     "name": "贵州综合广播",
     "url": "http://45.192.97.170:8880/play/6420.m3u8",
-    "status": "observing",
+    "status": "promoted",
     "discovered_at": "2026-07-24T11:40:58.119578",
-    "last_check": "2026-07-24T11:40:58.119582",
-    "success_count": 0,
-    "fail_count": 0,
-    "avg_latency": 0
+    "last_check": "2026-07-24T12:31:03.216087",
+    "success_count": 2,
+    "fail_count": 1,
+    "avg_latency": 1476,
+    "promoted_at": "2026-07-24T12:31:05.170840"
   },
   "c46c80906fb2672a3254050630eed9b6": {
     "key": "c46c80906fb2672a3254050630eed9b6",
@@ -7769,12 +7786,13 @@
     "key": "81965d5be9ab3c15a5745459847bfbfc",
     "name": "辽宁之声",
     "url": "http://45.192.97.170:8880/play/6430.m3u8",
-    "status": "observing",
+    "status": "promoted",
     "discovered_at": "2026-07-24T11:40:58.135255",
-    "last_check": "2026-07-24T11:42:40.733880",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.029434",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 626
+    "avg_latency": 977,
+    "promoted_at": "2026-07-24T12:31:05.184673"
   },
   "3c431b6603440de626c5458fed027733": {
     "key": "3c431b6603440de626c5458fed027733",
@@ -7791,12 +7809,12 @@
     "key": "295c6d7878347db3922985e4a94154bf",
     "name": "辽宁乡村广播",
     "url": "http://45.192.97.170:8880/play/6431.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.150790",
-    "last_check": "2026-07-24T11:42:40.284669",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.197433",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 634
+    "avg_latency": 1476
   },
   "935b9f883d0aee7ee84b706e0e8e6ae1": {
     "key": "935b9f883d0aee7ee84b706e0e8e6ae1",
@@ -7923,12 +7941,12 @@
     "key": "9b1066671f25551d304c8aad7a50bf5d",
     "name": "黑龙江朝鲜语广播",
     "url": "http://45.192.97.170:8880/play/6440.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.245594",
-    "last_check": "2026-07-24T11:42:39.755892",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:02.822138",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1160
+    "avg_latency": 702
   },
   "8891b2ee113a988f727d3c1f900ee996": {
     "key": "8891b2ee113a988f727d3c1f900ee996",
@@ -7945,12 +7963,12 @@
     "key": "c930c50eda0253c288c2f3ecf95b1699",
     "name": "内蒙古农村牧区广播绿野之声",
     "url": "http://45.192.97.170:8880/play/6441.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.261309",
-    "last_check": "2026-07-24T11:42:42.078280",
-    "success_count": 1,
-    "fail_count": 0,
-    "avg_latency": 998
+    "last_check": "2026-07-24T12:29:23.349027",
+    "success_count": 2,
+    "fail_count": 1,
+    "avg_latency": 731
   },
   "2383b9fe3bfae92ea8f917cba414bfb1": {
     "key": "2383b9fe3bfae92ea8f917cba414bfb1",
@@ -7967,12 +7985,12 @@
     "key": "ff501f349ebf21905b81f53c079e418a",
     "name": "内蒙古新闻广播",
     "url": "http://45.192.97.170:8880/play/6442.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.277151",
-    "last_check": "2026-07-24T11:42:41.411649",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:02.935899",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 625
+    "avg_latency": 573
   },
   "76ff74861c6ec989c14417729aba2409": {
     "key": "76ff74861c6ec989c14417729aba2409",
@@ -7989,12 +8007,12 @@
     "key": "2f1cd3a2f7a8813402898ea5079b7d5c",
     "name": "内蒙古蒙语对外广播草原之声",
     "url": "http://45.192.97.170:8880/play/6445.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.293014",
-    "last_check": "2026-07-24T11:42:40.985325",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.160199",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1351
+    "avg_latency": 1639
   },
   "db91311da94fe7d4154aa27ed76073b9": {
     "key": "db91311da94fe7d4154aa27ed76073b9",
@@ -8011,12 +8029,12 @@
     "key": "3509acfad5752c0206159e7df524874a",
     "name": "内蒙古蒙语新闻综合广播",
     "url": "http://45.192.97.170:8880/play/6446.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.309285",
-    "last_check": "2026-07-24T11:42:40.088138",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:02.869029",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 986
+    "avg_latency": 1383
   },
   "e4d2cc41ab3a151e6fec3f35b43c7009": {
     "key": "e4d2cc41ab3a151e6fec3f35b43c7009",
@@ -8033,12 +8051,12 @@
     "key": "8252af34b2385b7c23f1375257059972",
     "name": "新疆私家车广播",
     "url": "http://45.192.97.170:8880/play/6455.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.325362",
-    "last_check": "2026-07-24T11:42:41.783623",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.528415",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1485
+    "avg_latency": 1803
   },
   "5b739f6c2339a32e4973055d3a2d233b": {
     "key": "5b739f6c2339a32e4973055d3a2d233b",
@@ -8066,12 +8084,12 @@
     "key": "83b80eef917c21aa19b6d040557571ca",
     "name": "广西教育广播",
     "url": "http://45.192.97.170:8880/play/6461.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.349968",
-    "last_check": "2026-07-24T11:42:41.050606",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.057302",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 496
+    "avg_latency": 760
   },
   "b4fab413a346e4aff36f9c57a0e563ee": {
     "key": "b4fab413a346e4aff36f9c57a0e563ee",
@@ -8088,12 +8106,12 @@
     "key": "fbfbf7079a1641583956b1159cc99599",
     "name": "广西综合广播",
     "url": "http://45.192.97.170:8880/play/6462.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.366086",
-    "last_check": "2026-07-24T11:42:40.078872",
-    "success_count": 1,
-    "fail_count": 0,
-    "avg_latency": 1498
+    "last_check": "2026-07-24T12:29:23.376457",
+    "success_count": 2,
+    "fail_count": 1,
+    "avg_latency": 1239
   },
   "096071300d127a715a9a4456280312a1": {
     "key": "096071300d127a715a9a4456280312a1",
@@ -8110,12 +8128,13 @@
     "key": "6866aeda61e18299faf590347b627ef5",
     "name": "广西北部湾之声",
     "url": "http://45.192.97.170:8880/play/6463.m3u8",
-    "status": "observing",
+    "status": "promoted",
     "discovered_at": "2026-07-24T11:40:58.382201",
-    "last_check": "2026-07-24T11:40:58.382205",
-    "success_count": 0,
-    "fail_count": 0,
-    "avg_latency": 0
+    "last_check": "2026-07-24T12:31:03.094544",
+    "success_count": 2,
+    "fail_count": 1,
+    "avg_latency": 1218,
+    "promoted_at": "2026-07-24T12:31:05.198109"
   },
   "f4f629b69928226a88006ae209630504": {
     "key": "f4f629b69928226a88006ae209630504",
@@ -8132,12 +8151,12 @@
     "key": "002791bd14b597ac13ba837bb620bb00",
     "name": "广西交通广播",
     "url": "http://45.192.97.170:8880/play/6464.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.398377",
-    "last_check": "2026-07-24T11:42:40.462514",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:02.775941",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1337
+    "avg_latency": 926
   },
   "1403f7a67c6d3e04c9eb9f94dad7c5c5": {
     "key": "1403f7a67c6d3e04c9eb9f94dad7c5c5",
@@ -8154,12 +8173,12 @@
     "key": "5d3fe8288d2560d06302bbcc3e499b55",
     "name": "云南新闻广播",
     "url": "http://45.192.97.170:8880/play/6465.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.414809",
-    "last_check": "2026-07-24T11:42:40.892092",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:02.766813",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 991
+    "avg_latency": 972
   },
   "6a7fbdde93961786ce2a0226cf64659f": {
     "key": "6a7fbdde93961786ce2a0226cf64659f",
@@ -8176,12 +8195,13 @@
     "key": "8392bc36c92e7d9156625ba0302f5e7f",
     "name": "云南经济广播·私家车电台",
     "url": "http://45.192.97.170:8880/play/6466.m3u8",
-    "status": "observing",
+    "status": "promoted",
     "discovered_at": "2026-07-24T11:40:58.431127",
-    "last_check": "2026-07-24T11:42:41.152341",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.262495",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1345
+    "avg_latency": 1434,
+    "promoted_at": "2026-07-24T12:31:05.211936"
   },
   "bc680e8106459f7588c1a8396cbcfdcd": {
     "key": "bc680e8106459f7588c1a8396cbcfdcd",
@@ -8198,12 +8218,12 @@
     "key": "3d5998da6861eb3671f59e9311b74fd2",
     "name": "云南交通之声",
     "url": "http://45.192.97.170:8880/play/6467.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.449538",
-    "last_check": "2026-07-24T11:42:40.023300",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.537742",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1219
+    "avg_latency": 1263
   },
   "865975580a958c4fee7bdf952835a163": {
     "key": "865975580a958c4fee7bdf952835a163",
@@ -8220,12 +8240,12 @@
     "key": "35472b6258de55fa5988347af68e84f6",
     "name": "云南民族广播",
     "url": "http://45.192.97.170:8880/play/6469.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.465764",
-    "last_check": "2026-07-24T11:42:40.761704",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:02.917239",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 491
+    "avg_latency": 817
   },
   "30aae8d3d015bd278853db6084b0cc38": {
     "key": "30aae8d3d015bd278853db6084b0cc38",
@@ -8242,34 +8262,36 @@
     "key": "cadc5c8955b442d45c5a49ce6ad5826a",
     "name": "云南国际广播",
     "url": "http://45.192.97.170:8880/play/6470.m3u8",
-    "status": "observing",
+    "status": "promoted",
     "discovered_at": "2026-07-24T11:40:58.482179",
-    "last_check": "2026-07-24T11:40:58.482182",
-    "success_count": 0,
-    "fail_count": 0,
-    "avg_latency": 0
+    "last_check": "2026-07-24T12:31:03.038740",
+    "success_count": 2,
+    "fail_count": 1,
+    "avg_latency": 1051,
+    "promoted_at": "2026-07-24T12:31:05.225745"
   },
   "af1a18b445d1f3c5a1972069468da8df": {
     "key": "af1a18b445d1f3c5a1972069468da8df",
     "name": "宁夏新闻广播",
     "url": "http://45.192.97.170:8880/play/6273.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.490549",
-    "last_check": "2026-07-24T11:40:58.490552",
-    "success_count": 0,
-    "fail_count": 0,
-    "avg_latency": 0
+    "last_check": "2026-07-24T12:31:03.300280",
+    "success_count": 2,
+    "fail_count": 1,
+    "avg_latency": 820
   },
   "b04e9f9d98fdbc4084582e34067199ec": {
     "key": "b04e9f9d98fdbc4084582e34067199ec",
     "name": "青海新闻综合广播",
     "url": "http://45.192.97.170:8880/play/6275.m3u8",
-    "status": "observing",
+    "status": "promoted",
     "discovered_at": "2026-07-24T11:40:58.498904",
-    "last_check": "2026-07-24T11:42:39.794610",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.103826",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1661
+    "avg_latency": 1630,
+    "promoted_at": "2026-07-24T12:31:05.239934"
   },
   "53fafe0a14cf9930c4f4e8259107c2db": {
     "key": "53fafe0a14cf9930c4f4e8259107c2db",
@@ -8363,12 +8385,12 @@
     "key": "3942e3036b0160b1fa9e87844b9effcd",
     "name": "山东经典音乐广播",
     "url": "http://45.192.97.170:8880/play/6478.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.575654",
-    "last_check": "2026-07-24T11:42:43.661733",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:02.748487",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 487
+    "avg_latency": 810
   },
   "8c49a5725eea03e1c0e5d5ea0f49c615": {
     "key": "8c49a5725eea03e1c0e5d5ea0f49c615",
@@ -8407,12 +8429,13 @@
     "key": "c8994b9aadc47226728011463955c708",
     "name": "内蒙古音乐之声",
     "url": "http://45.192.97.170:8880/play/6483.m3u8",
-    "status": "observing",
+    "status": "promoted",
     "discovered_at": "2026-07-24T11:40:58.608796",
-    "last_check": "2026-07-24T11:42:42.497894",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.547100",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 498
+    "avg_latency": 1259,
+    "promoted_at": "2026-07-24T12:31:05.254570"
   },
   "fe70c6d5a004d045ba5799c4744d93c5": {
     "key": "fe70c6d5a004d045ba5799c4744d93c5",
@@ -8429,111 +8452,113 @@
     "key": "f534d62cae0a79bd5469863e60e9660b",
     "name": "湖北经典音乐广播",
     "url": "http://45.192.97.170:8880/play/6484.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.625410",
-    "last_check": "2026-07-24T11:40:58.625413",
-    "success_count": 0,
-    "fail_count": 0,
-    "avg_latency": 0
+    "last_check": "2026-07-24T12:31:03.328772",
+    "success_count": 2,
+    "fail_count": 1,
+    "avg_latency": 967
   },
   "bdf7d7092b686ef81b296b63dbf15e6e": {
     "key": "bdf7d7092b686ef81b296b63dbf15e6e",
     "name": "甘肃青春调频",
     "url": "http://45.192.97.170:8880/play/6294.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.633703",
-    "last_check": "2026-07-24T11:42:43.165415",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.377419",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1630
+    "avg_latency": 1452
   },
   "2e8bcc2c2d691b7e9d17b5d259255fef": {
     "key": "2e8bcc2c2d691b7e9d17b5d259255fef",
     "name": "甘肃都市调频",
     "url": "http://45.192.97.170:8880/play/6295.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.642075",
-    "last_check": "2026-07-24T11:42:42.594137",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.423549",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 983
+    "avg_latency": 1433
   },
   "156b692704dd6b4a08df16889c54dcde": {
     "key": "156b692704dd6b4a08df16889c54dcde",
     "name": "广西音乐广播",
     "url": "http://45.192.97.170:8880/play/6296.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.650425",
-    "last_check": "2026-07-24T11:42:43.379432",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:02.954463",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1002
+    "avg_latency": 950
   },
   "5b5d6c8732a2b3d8541fb9e5ca247464": {
     "key": "5b5d6c8732a2b3d8541fb9e5ca247464",
     "name": "广西音乐广播",
     "url": "http://45.192.97.170:8880/play/6485.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.658910",
-    "last_check": "2026-07-24T11:42:43.360819",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:02.992285",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 991
+    "avg_latency": 863
   },
   "1474922d69b670be4322cf37347fd384": {
     "key": "1474922d69b670be4322cf37347fd384",
     "name": "广西经济广播·女主播电台",
     "url": "http://45.192.97.170:8880/play/6297.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.668228",
-    "last_check": "2026-07-24T11:42:42.470060",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.253175",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 877
+    "avg_latency": 1109
   },
   "3c932afbc158181fe44698fabc3bc9dc": {
     "key": "3c932afbc158181fe44698fabc3bc9dc",
     "name": "广西经济广播·女主播电台",
     "url": "http://45.192.97.170:8880/play/6486.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.676636",
-    "last_check": "2026-07-24T11:42:42.460757",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.309803",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1630
+    "avg_latency": 1235
   },
   "8b75585730e92987d349c9343a88e567": {
     "key": "8b75585730e92987d349c9343a88e567",
     "name": "云南音乐广播",
     "url": "http://45.192.97.170:8880/play/6298.m3u8",
-    "status": "observing",
+    "status": "promoted",
     "discovered_at": "2026-07-24T11:40:58.685015",
-    "last_check": "2026-07-24T11:42:42.919525",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.631729",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 485
+    "avg_latency": 981,
+    "promoted_at": "2026-07-24T12:31:05.268171"
   },
   "13749dd0f057df036f3415c2c054986f": {
     "key": "13749dd0f057df036f3415c2c054986f",
     "name": "云南音乐广播",
     "url": "http://45.192.97.170:8880/play/6487.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.693365",
-    "last_check": "2026-07-24T11:42:42.678051",
-    "success_count": 1,
-    "fail_count": 0,
-    "avg_latency": 1497
+    "last_check": "2026-07-24T12:29:23.632994",
+    "success_count": 2,
+    "fail_count": 1,
+    "avg_latency": 1566
   },
   "da785603bb05897ad8b7c728e9d5ca83": {
     "key": "da785603bb05897ad8b7c728e9d5ca83",
     "name": "江苏音乐广播",
     "url": "http://45.192.97.170:8880/play/6302.m3u8",
-    "status": "observing",
+    "status": "promoted",
     "discovered_at": "2026-07-24T11:40:58.701757",
-    "last_check": "2026-07-24T11:42:42.640903",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.075840",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1493
+    "avg_latency": 1075,
+    "promoted_at": "2026-07-24T12:31:05.281956"
   },
   "7400a4ff581f128e00981968e7ffd6a4": {
     "key": "7400a4ff581f128e00981968e7ffd6a4",
@@ -8550,12 +8575,13 @@
     "key": "6f3744a4eb097b1508d524b903044805",
     "name": "江苏经典流行音乐广播",
     "url": "http://45.192.97.170:8880/play/6303.m3u8",
-    "status": "observing",
+    "status": "promoted",
     "discovered_at": "2026-07-24T11:40:58.718686",
-    "last_check": "2026-07-24T11:42:43.220846",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.846320",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1494
+    "avg_latency": 1082,
+    "promoted_at": "2026-07-24T12:31:05.295793"
   },
   "68ec294fd3c51a79a98f607f88176c44": {
     "key": "68ec294fd3c51a79a98f607f88176c44",
@@ -8572,133 +8598,134 @@
     "key": "18ddebb96d8cf86b7816155b59ffdb41",
     "name": "浙江音乐调频·动听968",
     "url": "http://45.192.97.170:8880/play/6304.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.735580",
-    "last_check": "2026-07-24T11:42:42.329742",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:02.812947",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 846
+    "avg_latency": 599
   },
   "961716b856ff315011f66c49d8afaa11": {
     "key": "961716b856ff315011f66c49d8afaa11",
     "name": "浙江音乐调频·动听968",
     "url": "http://45.192.97.170:8880/play/6493.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.744009",
-    "last_check": "2026-07-24T11:42:43.193068",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:02.973750",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 634
+    "avg_latency": 1122
   },
   "460c9278ad6b3a4fbce872359cbf7a26": {
     "key": "460c9278ad6b3a4fbce872359cbf7a26",
     "name": "河北音乐广播",
     "url": "http://45.192.97.170:8880/play/6305.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.752475",
-    "last_check": "2026-07-24T11:42:42.696706",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:02.693232",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1488
+    "avg_latency": 1355
   },
   "76476b5b7b5a04cf1bdad9eafa1c4b64": {
     "key": "76476b5b7b5a04cf1bdad9eafa1c4b64",
     "name": "河北音乐广播",
     "url": "http://45.192.97.170:8880/play/6494.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.760977",
-    "last_check": "2026-07-24T11:42:43.034079",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.405058",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 490
+    "avg_latency": 709
   },
   "545d1545ccd0a39387e9b7fee4689299": {
     "key": "545d1545ccd0a39387e9b7fee4689299",
     "name": "广东音乐之声",
     "url": "http://45.192.97.170:8880/play/6306.m3u8",
-    "status": "observing",
+    "status": "promoted",
     "discovered_at": "2026-07-24T11:40:58.769496",
-    "last_check": "2026-07-24T11:42:43.108946",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.678251",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1001
+    "avg_latency": 819,
+    "promoted_at": "2026-07-24T12:31:05.309665"
   },
   "9b7d56a3d84a6c10b2edd4f543796386": {
     "key": "9b7d56a3d84a6c10b2edd4f543796386",
     "name": "海南音乐广播",
     "url": "http://45.192.97.170:8880/play/6309.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.779460",
-    "last_check": "2026-07-24T11:42:42.584875",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.491250",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 487
+    "avg_latency": 1021
   },
   "3734565881d594dd88b3832a71e76b41": {
     "key": "3734565881d594dd88b3832a71e76b41",
     "name": "海南音乐广播",
     "url": "http://45.192.97.170:8880/play/6495.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.788082",
-    "last_check": "2026-07-24T11:42:42.488679",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.603661",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1489
+    "avg_latency": 1363
   },
   "1835621748e48ff4a96631c090266599": {
     "key": "1835621748e48ff4a96631c090266599",
     "name": "贵州音乐广播",
     "url": "http://45.192.97.170:8880/play/6310.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.796603",
-    "last_check": "2026-07-24T11:42:43.080706",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.827770",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1344
+    "avg_latency": 1090
   },
   "1dcbe6dd14508b76ed39528e91c18f44": {
     "key": "1dcbe6dd14508b76ed39528e91c18f44",
     "name": "贵州音乐广播",
     "url": "http://45.192.97.170:8880/play/6496.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.805084",
-    "last_check": "2026-07-24T11:42:43.099295",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.338460",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 488
+    "avg_latency": 1021
   },
   "fb1e6d1f80ca4feead9fb5e3ee907b93": {
     "key": "fb1e6d1f80ca4feead9fb5e3ee907b93",
     "name": "贵州都市广播",
     "url": "http://45.192.97.170:8880/play/6311.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.813647",
-    "last_check": "2026-07-24T11:42:42.479246",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.048024",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1350
+    "avg_latency": 715
   },
   "c46b9fa74a433f5d8e1e65c656d5e78e": {
     "key": "c46b9fa74a433f5d8e1e65c656d5e78e",
     "name": "宁夏音乐广播",
     "url": "http://45.192.97.170:8880/play/6312.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.822340",
-    "last_check": "2026-07-24T11:42:42.650161",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:02.926543",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 849
+    "avg_latency": 1095
   },
   "7ccca3bd9051cd4aea164b9a1eb9da79": {
     "key": "7ccca3bd9051cd4aea164b9a1eb9da79",
     "name": "宁夏音乐广播",
     "url": "http://45.192.97.170:8880/play/6497.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.830987",
-    "last_check": "2026-07-24T11:42:43.472687",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.178768",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 634
+    "avg_latency": 903
   },
   "7829e51b0b7b5b5763d726639903fd4b": {
     "key": "7829e51b0b7b5b5763d726639903fd4b",
@@ -8715,111 +8742,113 @@
     "key": "3c811d3f2786837fe2453349a09a350f",
     "name": "江西音乐广播",
     "url": "http://45.192.97.170:8880/play/6482.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.848372",
-    "last_check": "2026-07-24T11:42:43.295946",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:02.785197",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 490
+    "avg_latency": 978
   },
   "4ec872a7efc182302ab76492fb1b80cc": {
     "key": "4ec872a7efc182302ab76492fb1b80cc",
     "name": "黑龙江音乐广播",
     "url": "http://45.192.97.170:8880/play/6315.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.857161",
-    "last_check": "2026-07-24T11:42:43.043366",
-    "success_count": 1,
-    "fail_count": 0,
-    "avg_latency": 1496
+    "last_check": "2026-07-24T12:31:03.234574",
+    "success_count": 2,
+    "fail_count": 1,
+    "avg_latency": 1305
   },
   "40640a2f94736d62b4a553cc52852df7": {
     "key": "40640a2f94736d62b4a553cc52852df7",
     "name": "黑龙江音乐广播",
     "url": "http://45.192.97.170:8880/play/6498.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.865886",
-    "last_check": "2026-07-24T11:42:43.425915",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.358840",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 480
+    "avg_latency": 1310
   },
   "710e52ea6743fc50d86ccabfff669754": {
     "key": "710e52ea6743fc50d86ccabfff669754",
     "name": "辽宁经典音乐广播",
     "url": "http://45.192.97.170:8880/play/6318.m3u8",
-    "status": "observing",
+    "status": "promoted",
     "discovered_at": "2026-07-24T11:40:58.874516",
-    "last_check": "2026-07-24T11:42:42.863757",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.884106",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1125
+    "avg_latency": 2694,
+    "promoted_at": "2026-07-24T12:31:05.323518"
   },
   "6f507b660e2246823b67c2fd847ac276": {
     "key": "6f507b660e2246823b67c2fd847ac276",
     "name": "青海交通音乐广播",
     "url": "http://45.192.97.170:8880/play/6319.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.883276",
-    "last_check": "2026-07-24T11:42:42.544498",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.734598",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 498
+    "avg_latency": 777
   },
   "ad557c484a426a0fc6570375f07d0917": {
     "key": "ad557c484a426a0fc6570375f07d0917",
     "name": "青海交通音乐广播",
     "url": "http://45.192.97.170:8880/play/6500.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.892076",
-    "last_check": "2026-07-24T11:42:42.311060",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:02.711685",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1489
+    "avg_latency": 1198
   },
   "06225701ca93854abd16ff405d2b1e01": {
     "key": "06225701ca93854abd16ff405d2b1e01",
     "name": "CGTN Radio",
     "url": "http://45.192.97.170:8880/play/6320.m3u8",
-    "status": "observing",
+    "status": "promoted",
     "discovered_at": "2026-07-24T11:40:58.900751",
-    "last_check": "2026-07-24T11:42:42.826530",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.395855",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1498
+    "avg_latency": 1319,
+    "promoted_at": "2026-07-24T12:31:05.337343"
   },
   "4919f976a1fa14f486bd58d425b13f2e": {
     "key": "4919f976a1fa14f486bd58d425b13f2e",
     "name": "北京新闻广播",
     "url": "http://45.192.97.170:8880/play/6325.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.909810",
-    "last_check": "2026-07-24T11:42:42.367194",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:02.794302",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 625
+    "avg_latency": 738
   },
   "a9f7d41530692419c43b76f884c5c321": {
     "key": "a9f7d41530692419c43b76f884c5c321",
     "name": "河南农村广播大象资讯台",
     "url": "http://45.192.97.170:8880/play/6330.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.918532",
-    "last_check": "2026-07-24T11:42:42.789559",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:02.831424",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1134
+    "avg_latency": 975
   },
   "cdeae605a3dfd5874315fbc981453c06": {
     "key": "cdeae605a3dfd5874315fbc981453c06",
     "name": "北京经典969",
     "url": "http://45.192.97.170:8880/play/6331.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.927252",
-    "last_check": "2026-07-24T11:42:42.873026",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.368176",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1623
+    "avg_latency": 1476
   },
   "eaeb0e5b695e9f601e8b7da1d2850111": {
     "key": "eaeb0e5b695e9f601e8b7da1d2850111",
@@ -8869,45 +8898,47 @@
     "key": "b19897e14adf0bdf293d30027f18996f",
     "name": "北京财经",
     "url": "http://45.192.97.170:8880/play/6340.m3u8",
-    "status": "observing",
+    "status": "promoted",
     "discovered_at": "2026-07-24T11:40:58.970433",
-    "last_check": "2026-07-24T11:42:42.798744",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.725308",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 880
+    "avg_latency": 1223,
+    "promoted_at": "2026-07-24T12:31:05.351417"
   },
   "78365dcae9df55f7c585ab18d54f2d99": {
     "key": "78365dcae9df55f7c585ab18d54f2d99",
     "name": "北京生活",
     "url": "http://45.192.97.170:8880/play/6341.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.979053",
-    "last_check": "2026-07-24T11:42:43.612715",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.874708",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 795
+    "avg_latency": 1527
   },
   "b811f0a98019dec36c072e12e6dc0377": {
     "key": "b811f0a98019dec36c072e12e6dc0377",
     "name": "湖南潇湘之声",
     "url": "http://45.192.97.170:8880/play/6343.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:58.987827",
-    "last_check": "2026-07-24T11:42:42.882385",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.281258",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1489
+    "avg_latency": 1923
   },
   "51c7193371040e06d60e55cfd050986e": {
     "key": "51c7193371040e06d60e55cfd050986e",
     "name": "湖南经济广播",
     "url": "http://45.192.97.170:8880/play/6344.m3u8",
-    "status": "observing",
+    "status": "promoted",
     "discovered_at": "2026-07-24T11:40:58.999041",
-    "last_check": "2026-07-24T11:42:43.454013",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.519041",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1640
+    "avg_latency": 1360,
+    "promoted_at": "2026-07-24T12:31:05.365401"
   },
   "d8068f2e62cbd8936bd505d3f25f154f": {
     "key": "d8068f2e62cbd8936bd505d3f25f154f",
@@ -8924,45 +8955,46 @@
     "key": "85a47969549d18d1d374a8155445956d",
     "name": "湖南金鹰之声",
     "url": "http://45.192.97.170:8880/play/6347.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:59.016468",
-    "last_check": "2026-07-24T11:42:42.938053",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.085230",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1631
+    "avg_latency": 1800
   },
   "8af0718dd2b95f938f9a391ff209aad3": {
     "key": "8af0718dd2b95f938f9a391ff209aad3",
     "name": "湖南综合广播",
     "url": "http://45.192.97.170:8880/play/6348.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:59.025253",
-    "last_check": "2026-07-24T11:42:42.357884",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:02.907789",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1487
+    "avg_latency": 1141
   },
   "08a8669ebc25c4e4c7a1064e5f87eb7c": {
     "key": "08a8669ebc25c4e4c7a1064e5f87eb7c",
     "name": "江苏故事广播",
     "url": "http://45.192.97.170:8880/play/6349.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:59.033937",
-    "last_check": "2026-07-24T11:42:42.996578",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:02.730027",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1352
+    "avg_latency": 1475
   },
   "f7a99b3fb3c102ba2beb283d541123f7": {
     "key": "f7a99b3fb3c102ba2beb283d541123f7",
     "name": "江苏新闻广播",
     "url": "http://45.192.97.170:8880/play/6351.m3u8",
-    "status": "observing",
+    "status": "promoted",
     "discovered_at": "2026-07-24T11:40:59.042670",
-    "last_check": "2026-07-24T11:42:43.416597",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.290544",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 981
+    "avg_latency": 1092,
+    "promoted_at": "2026-07-24T12:31:05.379441"
   },
   "efbcb4029ae866974035968d3d781aa3": {
     "key": "efbcb4029ae866974035968d3d781aa3",
@@ -8979,56 +9011,57 @@
     "key": "b8bf647e44371051b778801505241ba8",
     "name": "江苏交通广播",
     "url": "http://45.192.97.170:8880/play/6354.m3u8",
-    "status": "observing",
+    "status": "promoted",
     "discovered_at": "2026-07-24T11:40:59.060126",
-    "last_check": "2026-07-24T11:42:42.687372",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.790485",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1037
+    "avg_latency": 1434,
+    "promoted_at": "2026-07-24T12:31:05.393365"
   },
   "a60eda3b93c2b4a26404673ed37df3cc": {
     "key": "a60eda3b93c2b4a26404673ed37df3cc",
     "name": "江苏健康广播",
     "url": "http://45.192.97.170:8880/play/6355.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:59.068803",
-    "last_check": "2026-07-24T11:42:43.118198",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.460572",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1342
+    "avg_latency": 1540
   },
   "17709107fb61a910e33bdd111608bd3a": {
     "key": "17709107fb61a910e33bdd111608bd3a",
     "name": "河北文艺广播",
     "url": "http://45.192.97.170:8880/play/6369.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:59.077917",
-    "last_check": "2026-07-24T11:42:42.565998",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.225337",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1135
+    "avg_latency": 1241
   },
   "9ae81064e5cda119aa66dca0d1efbb5d": {
     "key": "9ae81064e5cda119aa66dca0d1efbb5d",
     "name": "河北综合广播",
     "url": "http://45.192.97.170:8880/play/6370.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:59.086790",
-    "last_check": "2026-07-24T11:42:43.276784",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:02.945237",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 990
+    "avg_latency": 985
   },
   "39d774de591329a30037fdcd8c302e2a": {
     "key": "39d774de591329a30037fdcd8c302e2a",
     "name": "河北交通广播",
     "url": "http://45.192.97.170:8880/play/6371.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:59.095952",
-    "last_check": "2026-07-24T11:42:43.230116",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.743860",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 849
+    "avg_latency": 1092
   },
   "0b4a0cc50b69c32df9fa1bfc96c6344e": {
     "key": "0b4a0cc50b69c32df9fa1bfc96c6344e",
@@ -9045,34 +9078,36 @@
     "key": "3892a4b1bea8ab348d12dd2d501dd939",
     "name": "河北生活广播",
     "url": "http://45.192.97.170:8880/play/6373.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:59.113989",
-    "last_check": "2026-07-24T11:42:42.516536",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.482100",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1127
+    "avg_latency": 1028
   },
   "607eefb4ebd079d6afd86f870f521ed6": {
     "key": "607eefb4ebd079d6afd86f870f521ed6",
     "name": "福建新闻广播",
     "url": "http://45.192.97.170:8880/play/6374.m3u8",
-    "status": "observing",
+    "status": "promoted",
     "discovered_at": "2026-07-24T11:40:59.123057",
-    "last_check": "2026-07-24T11:42:42.984395",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.668940",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 992
+    "avg_latency": 1358,
+    "promoted_at": "2026-07-24T12:31:05.407057"
   },
   "616f8cc2ddd3cdf6845c9c910edfbe36": {
     "key": "616f8cc2ddd3cdf6845c9c910edfbe36",
     "name": "福建交通广播",
     "url": "http://45.192.97.170:8880/play/6376.m3u8",
-    "status": "observing",
+    "status": "promoted",
     "discovered_at": "2026-07-24T11:40:59.131976",
-    "last_check": "2026-07-24T11:42:43.052752",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.716036",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1123
+    "avg_latency": 1366,
+    "promoted_at": "2026-07-24T12:31:05.420540"
   },
   "171e5a62ded4599c17e4cd18c66e70e7": {
     "key": "171e5a62ded4599c17e4cd18c66e70e7",
@@ -9111,12 +9146,12 @@
     "key": "9ea36b58572a25b688cd2b1b885d680a",
     "name": "广东新闻广播",
     "url": "http://45.192.97.170:8880/play/6401.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:59.168025",
-    "last_check": "2026-07-24T11:42:43.305167",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.836998",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 981
+    "avg_latency": 1247
   },
   "655302261c8a5acd1e5c33fb00b41810": {
     "key": "655302261c8a5acd1e5c33fb00b41810",
@@ -9133,34 +9168,35 @@
     "key": "13803955f03cee3770a35fdebe0fc667",
     "name": "广东文体广播",
     "url": "http://45.192.97.170:8880/play/6403.m3u8",
-    "status": "observing",
+    "status": "promoted",
     "discovered_at": "2026-07-24T11:40:59.186120",
-    "last_check": "2026-07-24T11:42:43.547244",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.706758",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1481
+    "avg_latency": 1851,
+    "promoted_at": "2026-07-24T12:31:05.434204"
   },
   "9edff9394f1eed636e904e5e39bfa415": {
     "key": "9edff9394f1eed636e904e5e39bfa415",
     "name": "广东城市之声",
     "url": "http://45.192.97.170:8880/play/6404.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:59.195144",
-    "last_check": "2026-07-24T11:42:43.435147",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.650268",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1485
+    "avg_latency": 1201
   },
   "f53621f4749bcae01994deecd2956ebd": {
     "key": "f53621f4749bcae01994deecd2956ebd",
     "name": "广东南粤之声",
     "url": "http://45.192.97.170:8880/play/6405.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:59.204285",
-    "last_check": "2026-07-24T11:42:42.817248",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.565913",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 862
+    "avg_latency": 1203
   },
   "56af7ab641aba161b6d72dc98c33f47a": {
     "key": "56af7ab641aba161b6d72dc98c33f47a",
@@ -9177,56 +9213,58 @@
     "key": "adb822785669c5cc19c4b92c5e2bde6a",
     "name": "海南交通广播",
     "url": "http://45.192.97.170:8880/play/6411.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:59.222544",
-    "last_check": "2026-07-24T11:42:43.556658",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.771746",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1493
+    "avg_latency": 1245
   },
   "67953ad88bae9ef9bdb3f646c1272d0a": {
     "key": "67953ad88bae9ef9bdb3f646c1272d0a",
     "name": "河南新闻广播",
     "url": "http://45.192.97.170:8880/play/6421.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:59.231657",
-    "last_check": "2026-07-24T11:42:42.413834",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.781030",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 988
+    "avg_latency": 1150
   },
   "823cc98c1e51e53bd18033d77e52d446": {
     "key": "823cc98c1e51e53bd18033d77e52d446",
     "name": "河南经济广播",
     "url": "http://45.192.97.170:8880/play/6422.m3u8",
-    "status": "observing",
+    "status": "promoted",
     "discovered_at": "2026-07-24T11:40:59.240725",
-    "last_check": "2026-07-24T11:42:42.891661",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.509728",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 843
+    "avg_latency": 1261,
+    "promoted_at": "2026-07-24T12:31:05.447792"
   },
   "43e2185d29b5123b594556250a6c44eb": {
     "key": "43e2185d29b5123b594556250a6c44eb",
     "name": "河南戏曲广播",
     "url": "http://45.192.97.170:8880/play/6423.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:59.250003",
-    "last_check": "2026-07-24T11:42:42.423073",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.762410",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1490
+    "avg_latency": 1696
   },
   "c6e4ec4edf80335fb6e14995565e6cc7": {
     "key": "c6e4ec4edf80335fb6e14995565e6cc7",
     "name": "河南教育广播",
     "url": "http://45.192.97.170:8880/play/6424.m3u8",
-    "status": "observing",
+    "status": "promoted",
     "discovered_at": "2026-07-24T11:40:59.259069",
-    "last_check": "2026-07-24T11:42:43.575318",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.641008",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1495
+    "avg_latency": 2037,
+    "promoted_at": "2026-07-24T12:31:05.461221"
   },
   "c0ca216c3516c2a42843f1a9358bf5f1": {
     "key": "c0ca216c3516c2a42843f1a9358bf5f1",
@@ -9243,45 +9281,46 @@
     "key": "28b97929d5a0a8f6fbc2364f2c84dc9f",
     "name": "吉林新闻综合广播",
     "url": "http://45.192.97.170:8880/play/6426.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:59.277422",
-    "last_check": "2026-07-24T11:42:43.183840",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.584777",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1495
+    "avg_latency": 1927
   },
   "7199590e11844d810ac3ee06f670aaa9": {
     "key": "7199590e11844d810ac3ee06f670aaa9",
     "name": "吉林交通广播",
     "url": "http://45.192.97.170:8880/play/6427.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:59.286515",
-    "last_check": "2026-07-24T11:42:42.525853",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.925479",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1635
+    "avg_latency": 1574
   },
   "f540d2907f5315b9092302d14e62ff6e": {
     "key": "f540d2907f5315b9092302d14e62ff6e",
     "name": "吉林乡村广播",
     "url": "http://45.192.97.170:8880/play/6428.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:59.295756",
-    "last_check": "2026-07-24T11:42:43.137387",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:04.065812",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 978
+    "avg_latency": 1142
   },
   "60ec9d7e69ae1d9a316892a8a6686642": {
     "key": "60ec9d7e69ae1d9a316892a8a6686642",
     "name": "黑龙江新闻广播",
     "url": "http://45.192.97.170:8880/play/6434.m3u8",
-    "status": "observing",
+    "status": "promoted",
     "discovered_at": "2026-07-24T11:40:59.304884",
-    "last_check": "2026-07-24T11:42:43.323712",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.972265",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 850
+    "avg_latency": 986,
+    "promoted_at": "2026-07-24T12:31:05.474956"
   },
   "a8a7aa7d3127cb5e7dad0f2ee235afd2": {
     "key": "a8a7aa7d3127cb5e7dad0f2ee235afd2",
@@ -9298,23 +9337,25 @@
     "key": "07ec063eae2189d45c84921c992aa492",
     "name": "黑龙江乡村广播",
     "url": "http://45.192.97.170:8880/play/6439.m3u8",
-    "status": "observing",
+    "status": "promoted",
     "discovered_at": "2026-07-24T11:40:59.323410",
-    "last_check": "2026-07-24T11:42:42.575480",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.953585",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 890
+    "avg_latency": 1228,
+    "promoted_at": "2026-07-24T12:31:05.488539"
   },
   "08157396d0c99866dd70348c3c22d871": {
     "key": "08157396d0c99866dd70348c3c22d871",
     "name": "新疆新闻广播",
     "url": "http://45.192.97.170:8880/play/6453.m3u8",
-    "status": "observing",
+    "status": "promoted",
     "discovered_at": "2026-07-24T11:40:59.332660",
-    "last_check": "2026-07-24T11:42:42.404526",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:04.047085",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 992
+    "avg_latency": 1369,
+    "promoted_at": "2026-07-24T12:31:05.502403"
   },
   "dd1c2f6c7c40cf51feb5593b72cd833e": {
     "key": "dd1c2f6c7c40cf51feb5593b72cd833e",
@@ -9331,55 +9372,167 @@
     "key": "601c0020840855d48911346ce147df1b",
     "name": "新疆绿色广播",
     "url": "http://45.192.97.170:8880/play/6456.m3u8",
-    "status": "observing",
+    "status": "promoted",
     "discovered_at": "2026-07-24T11:40:59.351105",
-    "last_check": "2026-07-24T11:42:42.956515",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:04.056350",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1352
+    "avg_latency": 1470,
+    "promoted_at": "2026-07-24T12:31:05.516140"
   },
   "b5e3195aa584ad5cd0aff7ab00f41089": {
     "key": "b5e3195aa584ad5cd0aff7ab00f41089",
     "name": "西藏都市生活广播",
     "url": "http://45.192.97.170:8880/play/6457.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:59.360318",
-    "last_check": "2026-07-24T11:42:43.005812",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.981661",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1984
+    "avg_latency": 1596
   },
   "51aa4b51e1d1b195846db164a38e6b07": {
     "key": "51aa4b51e1d1b195846db164a38e6b07",
     "name": "西藏对外交通广播",
     "url": "http://45.192.97.170:8880/play/6458.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:59.369442",
-    "last_check": "2026-07-24T11:42:43.528555",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.962862",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1486
+    "avg_latency": 1144
   },
   "a30065eb541811c694599f4bc26cee67": {
     "key": "a30065eb541811c694599f4bc26cee67",
     "name": "西藏汉语广播",
     "url": "http://45.192.97.170:8880/play/6459.m3u8",
-    "status": "observing",
+    "status": "stable",
     "discovered_at": "2026-07-24T11:40:59.378635",
-    "last_check": "2026-07-24T11:42:42.603516",
-    "success_count": 1,
+    "last_check": "2026-07-24T12:31:03.934902",
+    "success_count": 3,
     "fail_count": 0,
-    "avg_latency": 1484
+    "avg_latency": 1138
   },
   "139e20c10ad25e0ea3031b074bd8521b": {
     "key": "139e20c10ad25e0ea3031b074bd8521b",
     "name": "西藏藏语广播",
     "url": "http://45.192.97.170:8880/play/6460.m3u8",
-    "status": "observing",
+    "status": "promoted",
     "discovered_at": "2026-07-24T11:40:59.388029",
-    "last_check": "2026-07-24T11:42:43.333057",
+    "last_check": "2026-07-24T12:31:03.916113",
+    "success_count": 3,
+    "fail_count": 0,
+    "avg_latency": 1807,
+    "promoted_at": "2026-07-24T12:31:05.529962"
+  },
+  "3972197a91b0fd63737e0094fb349d30": {
+    "key": "3972197a91b0fd63737e0094fb349d30",
+    "name": "CCTV-5",
+    "url": "http://112.27.235.94:8000/hls/5/index.m3u8",
+    "status": "observing",
+    "discovered_at": "2026-07-24T12:29:27.516746",
+    "last_check": "2026-07-24T12:31:03.944237",
     "success_count": 1,
     "fail_count": 0,
-    "avg_latency": 984
+    "avg_latency": 594
+  },
+  "69ca66d8508f82adbcdaff3567899516": {
+    "key": "69ca66d8508f82adbcdaff3567899516",
+    "name": "CCTV-5+",
+    "url": "http://112.27.235.94:8000/hls/6/index.m3u8",
+    "status": "observing",
+    "discovered_at": "2026-07-24T12:29:27.525872",
+    "last_check": "2026-07-24T12:31:04.009477",
+    "success_count": 1,
+    "fail_count": 0,
+    "avg_latency": 397
+  },
+  "f6e3c7ed6d95e6ef7087855999574fec": {
+    "key": "f6e3c7ed6d95e6ef7087855999574fec",
+    "name": "CCTV-7",
+    "url": "http://74.91.26.218:82/live/cctv7hd.m3u8",
+    "status": "observing",
+    "discovered_at": "2026-07-24T12:29:27.535030",
+    "last_check": "2026-07-24T12:31:04.037846",
+    "success_count": 1,
+    "fail_count": 0,
+    "avg_latency": 380
+  },
+  "6ffc50f37fbbc982d0f0b31d20b02900": {
+    "key": "6ffc50f37fbbc982d0f0b31d20b02900",
+    "name": "CCTV-8",
+    "url": "http://74.91.26.218:82/live/cctv8hd.m3u8",
+    "status": "observing",
+    "discovered_at": "2026-07-24T12:29:27.544182",
+    "last_check": "2026-07-24T12:31:04.028452",
+    "success_count": 1,
+    "fail_count": 0,
+    "avg_latency": 379
+  },
+  "f6e7fd19fa358624be9b48b77f728569": {
+    "key": "f6e7fd19fa358624be9b48b77f728569",
+    "name": "CGTN-Documentary",
+    "url": "https://amg00405-rakutentv-cgtndocumentary-rakuten-0ql8j.amagi.tv/master.m3u8",
+    "status": "observing",
+    "discovered_at": "2026-07-24T12:29:27.553510",
+    "last_check": "2026-07-24T12:31:03.902795",
+    "success_count": 1,
+    "fail_count": 0,
+    "avg_latency": 428
+  },
+  "6ded19a2c7addc33710ca6ebadadab05": {
+    "key": "6ded19a2c7addc33710ca6ebadadab05",
+    "name": "河北",
+    "url": "https://event.pull.hebtv.com:443/live/live101.m3u8",
+    "status": "observing",
+    "discovered_at": "2026-07-24T12:29:27.562777",
+    "last_check": "2026-07-24T12:31:04.084615",
+    "success_count": 1,
+    "fail_count": 0,
+    "avg_latency": 1152
+  },
+  "ed74a30ca5ce89643af3a05b5fd8f4d3": {
+    "key": "ed74a30ca5ce89643af3a05b5fd8f4d3",
+    "name": "CCTV+ 2 [Not 24/7]",
+    "url": "https://cd-live-stream.news.cctvplus.com/live/smil:CHANNEL2.smil/playlist.m3u8",
+    "status": "observing",
+    "discovered_at": "2026-07-24T12:29:27.572057",
+    "last_check": "2026-07-24T12:31:04.075265",
+    "success_count": 1,
+    "fail_count": 0,
+    "avg_latency": 868
+  },
+  "b985bc4b480f3d5960ec882e709334fc": {
+    "key": "b985bc4b480f3d5960ec882e709334fc",
+    "name": "CCTV+ 1 [Not 24/7]",
+    "url": "https://cd-live-stream.news.cctvplus.com/live/smil:CHANNEL1.smil/playlist.m3u8",
+    "status": "observing",
+    "discovered_at": "2026-07-24T12:29:27.581545",
+    "last_check": "2026-07-24T12:31:03.990908",
+    "success_count": 1,
+    "fail_count": 0,
+    "avg_latency": 1477
+  },
+  "85e2077a35866722d9d0997faec2a7b1": {
+    "key": "85e2077a35866722d9d0997faec2a7b1",
+    "name": "福州广播电视台都市生活频道",
+    "url": "http://live.zohi.tv/video/s10001-fztv-3/index.m3u8",
+    "status": "observing",
+    "discovered_at": "2026-07-24T12:29:27.590965",
+    "last_check": "2026-07-24T12:31:04.018988",
+    "success_count": 1,
+    "fail_count": 0,
+    "avg_latency": 1619
+  },
+  "204b84b7698c1daa18efbaae08905c4f": {
+    "key": "204b84b7698c1daa18efbaae08905c4f",
+    "name": "福州广播电视台新闻综合频道",
+    "url": "http://live.zohi.tv/video/s10001-fztv-1/index.m3u8",
+    "status": "observing",
+    "discovered_at": "2026-07-24T12:29:27.600342",
+    "last_check": "2026-07-24T12:31:04.000207",
+    "success_count": 1,
+    "fail_count": 0,
+    "avg_latency": 2144
   }
 }

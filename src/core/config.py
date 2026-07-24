@@ -2,18 +2,16 @@
 """统一配置管理"""
 
 import os
-import json
 from pathlib import Path
 from dataclasses import dataclass, field
 from typing import List, Optional, Dict, Any
 
-# 尝试导入 yaml，如果失败则使用 json 后备
+# 尝试导入 yaml
 try:
     import yaml
     HAS_YAML = True
 except ImportError:
     HAS_YAML = False
-    import json
 
 
 @dataclass
@@ -107,6 +105,8 @@ class AppConfig:
                     with open(config_path, 'r', encoding='utf-8') as f:
                         data = yaml.safe_load(f) or {}
                 else:
+                    # 尝试 JSON 格式
+                    import json
                     with open(config_path, 'r', encoding='utf-8') as f:
                         data = json.load(f)
             except Exception as e:
@@ -131,6 +131,7 @@ class AppConfig:
             "CANDIDATE_MIN_SUCCESS_RATE": "candidate_min_success_rate",
             "CANDIDATE_MAX_LATENCY": "candidate_max_latency",
             "ENABLE_FIXED_OPTIMIZATION": "enable_fixed_optimization",
+            "ENABLE_GITHUB_PROXY": "enable_github_proxy",
         }
         for env_key, config_key in env_mapping.items():
             if env_key in os.environ:
@@ -149,49 +150,4 @@ class AppConfig:
         config = cls(**data)
         
         # 4. 处理路径
-        for key in ['root_dir', 'data_dir', 'output_dir', 'subscribe_file', 
-                    'alias_file', 'blacklist_file', 'demo_file']:
-            if hasattr(config, key):
-                setattr(config, key, Path(getattr(config, key)))
-        
-        # 5. 确保目录存在
-        config.data_dir.mkdir(parents=True, exist_ok=True)
-        config.output_dir.mkdir(parents=True, exist_ok=True)
-        
-        return config
-    
-    @property
-    def iptv_sources(self) -> List[str]:
-        """获取所有 IPTV 源"""
-        return list(self.raw_sources) + list(self.direct_sources)
-    
-    def to_dict(self) -> Dict[str, Any]:
-        """转换为字典"""
-        result = {}
-        for key, value in self.__dict__.items():
-            if isinstance(value, Path):
-                result[key] = str(value)
-            elif isinstance(value, list):
-                result[key] = value.copy()
-            else:
-                result[key] = value
-        return result
-
-
-# 全局配置实例
-_config: Optional[AppConfig] = None
-
-
-def get_config() -> AppConfig:
-    """获取全局配置实例"""
-    global _config
-    if _config is None:
-        _config = AppConfig.load()
-    return _config
-
-
-def reload_config() -> AppConfig:
-    """重新加载配置"""
-    global _config
-    _config = AppConfig.load()
-    return _config
+        for key in ['

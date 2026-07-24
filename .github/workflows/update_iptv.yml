@@ -1,28 +1,19 @@
+# .github/workflows/update_iptv.yml
 name: IPTV 源智能更新与整理
 
 on:
   schedule:
     - cron: '0 */6 * * *'
   workflow_dispatch:
-    inputs:
-      skip_discover:
-        description: '跳过发现阶段（使用已有源池）'
-        type: boolean
-        default: false
-        required: false
 
 permissions:
   contents: write
-  actions: read
 
 jobs:
   update-iptv:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -30,159 +21,43 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
-          cache: 'pip'
+          python-version: '3.10'
 
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
+          pip install --upgrade pip
           pip install -r requirements.txt
           sudo apt-get update && sudo apt-get install -y ffmpeg
 
-      - name: Verify installation
-        run: |
-          python -c "import aiohttp, aiosqlite, tqdm, pypinyin, pydantic; print('✅ 所有依赖已安装')"
-          ffmpeg -version | head -1
+      - name: Create config directory
+        run: mkdir -p config data output
 
-      - name: Run IPTV update
+      - name: Copy config files if needed
         run: |
-          python -m src.run
+          if [ ! -f config/config.yaml ]; then
+            cp config/config.yaml.example config/config.yaml 2>/dev/null || echo "No example config"
+          fi
+
+      - name: Run update
+        run: python -m src.run
         env:
-          IPTV_MAX_WORKERS: 20
-          IPTV_TIMEOUT: 8
-          IPTV_HTTP_TIMEOUT: 8
-          IPTV_FFMPEG_ENABLE: true
-          IPTV_FFMPEG_MODE: deep
-          IPTV_FFPROBE_CACHE_HOURS: 168
-          IPTV_CACHE_HOURS: 24
-          IPTV_CACHE_RAW_HOURS: 48
-          IPTV_CACHE_SPEED_HOURS: 24
-          IPTV_ENABLE_DEMO_FILTER: true
-          IPTV_ENABLE_ALIAS: true
-          IPTV_ENABLE_BLACKLIST: true
-          IPTV_ENABLE_JSON_OUTPUT: true
-          IPTV_ENABLE_LITE_VERSION: true
-          IPTV_DEMO_MATCH_MODE: contains
-          IPTV_MAX_SOURCES_PER_CHANNEL: 3
-          IPTV_MAX_RETRY_BEFORE_BLACKLIST: 2
-          IPTV_SLOW_SPEED_THRESHOLD: 3000
-          IPTV_DOWNLOAD_CHUNK_SIZE: 262144
-          IPTV_AUTONOMOUS_MODE: true
-          IPTV_AUTO_UPDATE_STABLE: true
-          IPTV_AUTO_REPLACE_FAILED: true
-          IPTV_QUALITY_CHECK_INTERVAL: 24
-          IPTV_CANDIDATE_OBSERVATION_HOURS: 24
-          IPTV_CANDIDATE_MIN_SUCCESS: 3
-          IPTV_CANDIDATE_MIN_SUCCESS_RATE: 0.5
-          IPTV_CANDIDATE_MAX_LATENCY: 3000
-          IPTV_AUTO_PROMOTE_THRESHOLD: 3
-          IPTV_ENABLE_FIXED_OPTIMIZATION: true
-          IPTV_FIXED_OPTIMIZATION_THRESHOLD: 200
-          IPTV_ENABLE_GITHUB_PROXY: false
-          IPTV_GITHUB_PROXY_TIMEOUT: 15
+          AUTONOMOUS_MODE: true
+          ENABLE_DEMO_FILTER: true
+          ENABLE_ALIAS: true
+          ENABLE_BLACKLIST: true
+          DATABASE_ENABLE: true
+          FFMPEG_ENABLE: true
+          MAX_WORKERS: 20
+          TIMEOUT: 8
 
-      - name: Show output files
-        run: |
-          echo "📁 输出文件列表:"
-          ls -la output/ 2>/dev/null || echo "output/ 目录不存在"
-          echo ""
-          echo "📊 文件大小:"
-          du -sh output/* 2>/dev/null || echo "无输出文件"
-          echo ""
-          echo "📄 查看 tv.txt 前 20 行:"
-          head -20 output/tv.txt 2>/dev/null || echo "tv.txt 不存在"
-
-      - name: Commit and push to main
+      - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-
-          # 确保在 main 分支
-          git checkout main || git checkout -b main
-
-          # 强制添加 output 目录（即使被 .gitignore 忽略）
-          git add -f output/ || true
-          git add data/ || true
-          git add -A
-
-          if [[ -n $(git status --porcelain) ]]; then
-            echo "📝 提交变更到 main..."
-            git commit -m "🤖 自动更新 IPTV 列表 - $(date '+%Y-%m-%d %H:%M:%S')"
-            git pull origin main --rebase || true
+          git add .
+          if ! git diff --staged --quiet; then
+            git commit -m "Auto update IPTV list $(date '+%Y-%m-%d %H:%M:%S')"
             git push origin main
-            echo "✅ 推送成功到 main 分支"
           else
-            echo "✅ 无变更需要提交"
+            echo "No changes"
           fi
-
-      - name: Sync output to gh-pages
-        if: always()
-        run: |
-          echo "📤 同步 output/ 到 gh-pages 分支..."
-          
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          
-          # 确保 main 分支最新
-          git fetch origin main
-          
-          # 切换到 gh-pages 分支
-          if git ls-remote --heads origin gh-pages | grep -q gh-pages; then
-            git checkout gh-pages
-            git pull origin gh-pages --rebase || true
-          else
-            git checkout --orphan gh-pages
-            git rm -rf . 2>/dev/null || true
-            echo "# IPTV Output" > README.md
-            git add README.md
-            git commit -m "初始化 gh-pages 分支"
-            git push origin gh-pages
-          fi
-          
-          # 从 main 分支检出 output 目录
-          echo "📂 从 main 分支复制 output 目录..."
-          git checkout main -- output/ 2>/dev/null || echo "⚠️ 无法从 main 检出 output"
-          
-          # 如果 output 目录存在，提交到 gh-pages
-          if [[ -d "output" ]] && [[ -n "$(ls -A output 2>/dev/null)" ]]; then
-            echo "📝 提交 output 到 gh-pages..."
-            git add output/
-            if [[ -n $(git status --porcelain) ]]; then
-              git commit -m "🔄 同步 output 到 gh-pages - $(date '+%Y-%m-%d %H:%M:%S')"
-              git push origin gh-pages
-              echo "✅ 同步成功到 gh-pages 分支"
-            else
-              echo "✅ gh-pages 已是最新，无需提交"
-            fi
-          else
-            echo "⚠️ output 目录不存在或为空，创建占位文件"
-            mkdir -p output
-            echo "# 暂无输出，请等待采集完成" > output/placeholder.txt
-            git add output/
-            git commit -m "创建 output 占位目录" || true
-            git push origin gh-pages || true
-          fi
-          
-          # 切回 main 分支
-          git checkout main
-
-      - name: Upload output artifacts
-        uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: iptv-output
-          path: |
-            output/*.m3u
-            output/*.txt
-            output/*.json
-          retention-days: 7
-          if-no-files-found: warn
-
-      - name: Upload logs
-        uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: iptv-logs
-          path: output/run.log
-          retention-days: 3
-          if-no-files-found: ignore

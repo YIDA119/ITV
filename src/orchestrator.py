@@ -65,6 +65,9 @@ class IPTVOrchestrator:
             logger.info("🚀 IPTV 自治系统启动")
             logger.info(f"📊 配置: 并发={self.config.max_workers}, 超时={self.config.timeout}s")
             
+            # 0. 检查是否有候选源需要测速
+            await self._check_and_speed_test()
+            
             # 1. 发现新源
             if not skip_discover:
                 new_sources = await self._discover_phase()
@@ -72,7 +75,7 @@ class IPTVOrchestrator:
             else:
                 logger.info("⏭️ 跳过发现阶段")
             
-            # 1.5 测速验证 - 对发现的新源进行测速
+            # 1.5 对新发现的源进行测速
             if self.stats["discovered"] > 0:
                 await self._speed_test_phase()
             
@@ -101,6 +104,58 @@ class IPTVOrchestrator:
         
         self._print_stats()
         return self.stats
+    
+    async def _check_and_speed_test(self):
+        """检查候选池并测速"""
+        observing_count = self.candidate_manager.get_observing_count()
+        if observing_count == 0:
+            return
+        
+        logger.info("=" * 50)
+        logger.info("阶段0: 检查候选池")
+        logger.info("=" * 50)
+        logger.info(f"📊 候选池中有 {observing_count} 个源需要测速")
+        
+        # 获取候选源
+        candidates = self.candidate_manager.get_observing_sources(limit=3000)
+        if not candidates:
+            return
+        
+        # 转换为测速器需要的格式
+        channels = []
+        for c in candidates:
+            channels.append({
+                "name": c["name"],
+                "url": c["url"],
+                "source_key": c["key"],
+            })
+        
+        logger.info(f"🔍 开始测速 {len(channels)} 个候选源...")
+        
+        # 执行测速
+        valid_channels = await self.speed_tester.test_all(channels)
+        
+        logger.info(f"✅ 测速完成: {len(valid_channels)}/{len(channels)} 个有效")
+        
+        # 更新候选池状态
+        for ch in valid_channels:
+            key = ch.get("source_key") or channel_key(ch["name"], ch["url"])
+            latency = ch.get("latency", 0)
+            self.candidate_manager.update_candidate_latency(key, latency)
+        
+        # 如果有有效频道，提升低延迟的
+        if valid_channels:
+            valid_channels.sort(key=lambda x: x.get("latency", 9999))
+            top_channels = valid_channels[:50]
+            
+            logger.info(f"📌 直接提升 {len(top_channels)} 个低延迟源...")
+            for ch in top_channels:
+                await self.stable_manager.promote(
+                    ch["name"],
+                    ch["url"],
+                    ch.get("latency", 0),
+                    ch.get("video_codec", "")
+                )
     
     async def _discover_phase(self) -> Dict[str, List[Dict]]:
         """发现阶段"""
@@ -146,7 +201,7 @@ class IPTVOrchestrator:
         return all_new
     
     async def _speed_test_phase(self):
-        """测速阶段 - 对候选源进行测速"""
+        """测速阶段 - 对新发现的候选源进行测速"""
         logger.info("=" * 50)
         logger.info("阶段1.5: 测速验证")
         logger.info("=" * 50)
@@ -177,12 +232,10 @@ class IPTVOrchestrator:
         for ch in valid_channels:
             key = ch.get("source_key") or channel_key(ch["name"], ch["url"])
             latency = ch.get("latency", 0)
-            # 更新候选池延迟信息
             self.candidate_manager.update_candidate_latency(key, latency)
         
-        # 如果有有效频道，尝试直接提升一些
+        # 如果有有效频道，提升低延迟的
         if valid_channels:
-            # 按延迟排序，取前50个
             valid_channels.sort(key=lambda x: x.get("latency", 9999))
             top_channels = valid_channels[:50]
             

@@ -3,7 +3,7 @@
 
 import re
 from pathlib import Path
-from typing import List, Union, Optional
+from typing import List, Union, Optional, Dict
 
 from src.core.config import get_config
 from src.infrastructure.logger import get_logger
@@ -56,10 +56,13 @@ class BlacklistFilter:
         return False
     
     def filter_channels(self, channels: List[Dict]) -> List[Dict]:
+        """过滤频道列表"""
         original = len(channels)
         filtered = []
         
         for ch in channels:
+            if not isinstance(ch, dict):
+                continue
             url = ch.get("url")
             if isinstance(url, list):
                 url = url[0] if url else None

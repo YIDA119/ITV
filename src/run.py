@@ -13,15 +13,17 @@ sys.path.insert(0, str(project_root))
 
 from src.core.config import get_config
 from src.core.exceptions import IPTVError
-from src.infrastructure.logger import get_logger, set_log_level
+from src.infrastructure.logger import get_logger, set_log_level, init_logger
 from src.orchestrator import run_autonomous_mode
 
-logger = get_logger(__name__)
+# 提前初始化日志（在导入其他模块之前）
+init_logger()
 
 
 def setup_signal_handlers():
     """设置信号处理器"""
     def signal_handler(sig, frame):
+        logger = get_logger(__name__)
         logger.warning(f"⚠️ 收到信号 {sig}，正在退出...")
         sys.exit(0)
     
@@ -31,6 +33,8 @@ def setup_signal_handlers():
 
 async def main():
     """主函数"""
+    logger = get_logger(__name__)
+    
     # 加载配置
     config = get_config()
     

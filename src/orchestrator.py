@@ -9,7 +9,7 @@ from typing import Dict, List, Optional, Any
 from src.core.config import get_config
 from src.core.exceptions import IPTVError
 from src.infrastructure.database import get_db, channel_key
-from src.infrastructure.logger import get_logger
+from src.infrastructure.logger import get_logger, init_logger
 from src.managers.source_manager import SourceManager
 from src.managers.candidate_manager import CandidateManager
 from src.managers.stable_manager import StableManager
@@ -21,6 +21,8 @@ from src.services.generator import Generator
 from src.services.subscribe_manager import get_subscribe_urls
 from src.services.demo_service import load_demo_order
 
+# 初始化日志
+init_logger()
 logger = get_logger(__name__)
 
 

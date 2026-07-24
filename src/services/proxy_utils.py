@@ -60,4 +60,12 @@ async def fetch_with_proxy_fallback(session: aiohttp.ClientSession, url: str) ->
             logger.debug(f"代理 {proxy_prefix} 失败: {e}")
         await asyncio.sleep(0.2)
     
+    # 最后尝试直连
+    try:
+        async with session.get(url, timeout=config.timeout) as resp:
+            if resp.status == 200:
+                return await resp.text(), None
+    except Exception:
+        pass
+    
     return None, None

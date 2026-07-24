@@ -1,5 +1,5 @@
 # src/services/generator.py
-"""生成服务 - 支持分类匹配"""
+"""生成服务 - 支持别名匹配"""
 
 import json
 from pathlib import Path
@@ -9,7 +9,14 @@ from datetime import datetime
 from src.core.config import get_config
 from src.core.constants import PROVINCES
 from src.infrastructure.logger import get_logger
-from src.services.demo_service import load_demo_order, match_channel_name, is_category_match, extract_province_from_name
+from src.services.demo_service import (
+    load_demo_order, 
+    match_channel_name, 
+    is_category_match, 
+    extract_province_from_name,
+    get_channel_aliases,
+    get_alias_matcher
+)
 
 logger = get_logger(__name__)
 
@@ -19,6 +26,7 @@ class Generator:
     
     def __init__(self):
         self.config = get_config()
+        self.alias_matcher = get_alias_matcher()
     
     def generate_all(self, channels: List[Dict], demo_order: List[Tuple[str, str]] = None) -> None:
         """生成所有输出"""
@@ -27,6 +35,9 @@ class Generator:
         
         if demo_order is None:
             demo_order = load_demo_order()
+        
+        # 先应用别名标准化频道名
+        channels = self._normalize_channels_with_alias(channels)
         
         categorized = self._categorize_by_demo(channels, demo_order)
         
@@ -37,19 +48,45 @@ class Generator:
         
         logger.info("✅ 所有输出文件已生成")
     
+    def _normalize_channels_with_alias(self, channels: List[Dict]) -> List[Dict]:
+        """使用别名标准化频道名"""
+        if not self.alias_matcher:
+            return channels
+        
+        normalized = []
+        for ch in channels:
+            ch_copy = ch.copy()
+            original_name = ch.get("name", "")
+            std_name = self.alias_matcher.normalize(original_name)
+            if std_name != original_name:
+                ch_copy["name"] = std_name
+                ch_copy["_original_name"] = original_name  # 保留原始名
+                logger.debug(f"🔄 别名标准化: {original_name} -> {std_name}")
+            normalized.append(ch_copy)
+        
+        return normalized
+    
     def _categorize_by_demo(self, channels: List[Dict], demo_order: List[Tuple[str, str]]) -> Dict[str, List[Dict]]:
-        """
-        按 demo 顺序分类
-        支持分类匹配：☘️上海频道 匹配所有上海频道
-        """
+        """按 demo 顺序分类 - 支持别名匹配"""
         result = {}
         
         if not demo_order:
             logger.warning("⚠️ demo_order 为空")
             return result
         
-        # 构建频道名到频道的映射
-        channel_map = {ch["name"]: ch for ch in channels}
+        # 构建频道名到频道的映射（包含别名映射）
+        channel_map = {}
+        alias_map = {}  # 别名 -> 频道名
+        
+        for ch in channels:
+            name = ch.get("name", "")
+            channel_map[name] = ch
+            
+            # 获取频道的所有别名
+            aliases = get_channel_aliases(name)
+            for alias in aliases:
+                if alias != name and alias not in channel_map:
+                    alias_map[alias] = name
         
         # 按省份分组频道
         province_channels = {}
@@ -70,13 +107,11 @@ class Generator:
             
             matched_ch = None
             
-            # 1. 检查是否是分类匹配（☘️上海频道）
+            # 1. 分类匹配（☘️上海频道）
             if is_category_match(demo_name, ""):
-                # 提取省份
                 for prefix in ["☘️", "📺", "📡", "🌊"]:
                     if demo_name.startswith(prefix):
                         cat_part = demo_name[len(prefix):].replace("频道", "").strip()
-                        # 匹配该省份的所有频道
                         if cat_part in province_channels:
                             prov = cat_part
                             for ch in province_channels.get(prov, []):
@@ -90,14 +125,25 @@ class Generator:
             
             # 2. 精确匹配
             if demo_name in channel_map:
-                matched_ch = channel_map[demo_name]
-                if matched_ch["name"] not in matched_names:
-                    matched_names.add(matched_ch["name"])
+                ch = channel_map[demo_name]
+                if ch["name"] not in matched_names:
+                    matched_names.add(ch["name"])
                     total_matched += 1
-                    result[cat].append(matched_ch)
+                    result[cat].append(ch)
                 continue
             
-            # 3. 模糊匹配
+            # 3. 别名匹配
+            if demo_name in alias_map:
+                real_name = alias_map[demo_name]
+                if real_name in channel_map and real_name not in matched_names:
+                    ch = channel_map[real_name]
+                    matched_names.add(real_name)
+                    total_matched += 1
+                    result[cat].append(ch)
+                    logger.debug(f"📌 别名匹配: {demo_name} -> {real_name}")
+                continue
+            
+            # 4. 模糊匹配（包含、拼音等）
             for name, ch in channel_map.items():
                 if name in matched_names:
                     continue
@@ -109,7 +155,6 @@ class Generator:
         
         logger.info(f"📊 Demo 匹配结果: {total_matched} 个频道")
         
-        # 统计各分类数量
         for cat, ch_list in result.items():
             if ch_list:
                 logger.info(f"   {cat}: {len(ch_list)} 个频道")

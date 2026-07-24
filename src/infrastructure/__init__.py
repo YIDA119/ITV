@@ -3,7 +3,7 @@
 
 from src.infrastructure.database import get_db, DatabasePool, channel_key
 from src.infrastructure.http_client import get_http_client, HttpClientPool, close_http_client
-from src.infrastructure.logger import get_logger, set_log_level, LoggerManager
+from src.infrastructure.logger import get_logger, set_log_level, init_logger, LoggerManager
 
 __all__ = [
     "get_db",
@@ -14,5 +14,6 @@ __all__ = [
     "close_http_client",
     "get_logger",
     "set_log_level",
+    "init_logger",
     "LoggerManager",
 ]

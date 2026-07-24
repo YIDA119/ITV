@@ -31,6 +31,8 @@ class SpeedTester:
     async def probe_channel(self, channel: Dict, session: aiohttp.ClientSession) -> Tuple[Dict, int, bool, float]:
         """探测单个频道"""
         url = channel["url"]
+        name = channel.get("name", "未知")
+        key = channel.get("source_key") or channel_key(name, url)
         
         await self._ensure_db()
         
@@ -49,12 +51,12 @@ class SpeedTester:
             # HEAD 请求快速判断
             async with session.head(url, timeout=5, allow_redirects=True) as resp:
                 if resp.status != 200:
-                    await self._record_failure(url)
+                    await self._record_failure(key, url)
                     return channel, 0, False, 0
                 
                 content_type = resp.headers.get("content-type", "").lower()
-                if "video" not in content_type and "mpegurl" not in content_type:
-                    await self._record_failure(url)
+                if "video" not in content_type and "mpegurl" not in content_type and "x-mpegurl" not in content_type:
+                    await self._record_failure(key, url)
                     return channel, 0, False, 0
             
             head_latency = int((time.time() - start) * 1000)
@@ -64,12 +66,12 @@ class SpeedTester:
             range_header = {"Range": f"bytes=0-{self.config.download_chunk_size-1}"}
             async with session.get(url, timeout=self.config.http_timeout, headers=range_header) as resp:
                 if resp.status not in [200, 206]:
-                    await self._record_failure(url)
+                    await self._record_failure(key, url)
                     return channel, head_latency, False, 0
                 
                 data = await resp.content.read(self.config.download_chunk_size)
                 
-                # 检测无效内容 - 使用字符串而非 bytes
+                # 检测无效内容
                 try:
                     data_str = data.decode('utf-8', errors='ignore').lower()
                     invalid_patterns = [
@@ -78,7 +80,7 @@ class SpeedTester:
                     ]
                     for pattern in invalid_patterns:
                         if pattern in data_str:
-                            await self._record_failure(url)
+                            await self._record_failure(key, url)
                             return channel, head_latency, False, 0
                 except Exception:
                     pass
@@ -98,7 +100,7 @@ class SpeedTester:
                             break
                 
                 if not is_valid:
-                    await self._record_failure(url)
+                    await self._record_failure(key, url)
                     return channel, head_latency, False, 0
                 
                 download_time = time.time() - start_download
@@ -106,31 +108,38 @@ class SpeedTester:
                 final_latency = head_latency + int(download_time * 1000)
                 
                 # 记录成功
-                await self._record_success(url, final_latency)
+                await self._record_success(key, url, final_latency)
                 channel["latency"] = final_latency
                 channel["speed"] = speed
+                channel["source_key"] = key
                 
                 return channel, final_latency, True, speed
                 
+        except asyncio.TimeoutError:
+            logger.debug(f"⏱️ 超时: {url[:80]}")
+            await self._record_failure(key, url)
+            return channel, 0, False, 0
         except Exception as e:
-            logger.debug(f"测速失败 {url}: {e}")
-            await self._record_failure(url)
+            logger.debug(f"测速失败 {url[:80]}: {e}")
+            await self._record_failure(key, url)
             return channel, 0, False, 0
     
-    async def _record_success(self, url: str, latency: int):
+    async def _record_success(self, key: str, url: str, latency: int):
         """记录成功"""
         if self.db:
             await self.db.execute(
-                "INSERT INTO speed_history (channel_key, url, timestamp, latency, success) VALUES (?, ?, ?, ?, ?)",
-                (channel_key("", url), url, datetime.now().isoformat(), latency, 1)
+                """INSERT INTO speed_history (channel_key, url, timestamp, latency, success) 
+                   VALUES (?, ?, ?, ?, ?)""",
+                (key, url, datetime.now().isoformat(), latency, 1)
             )
     
-    async def _record_failure(self, url: str):
+    async def _record_failure(self, key: str, url: str):
         """记录失败"""
         if self.db:
             await self.db.execute(
-                "INSERT INTO speed_history (channel_key, url, timestamp, latency, success) VALUES (?, ?, ?, ?, ?)",
-                (channel_key("", url), url, datetime.now().isoformat(), 0, 0)
+                """INSERT INTO speed_history (channel_key, url, timestamp, latency, success) 
+                   VALUES (?, ?, ?, ?, ?)""",
+                (key, url, datetime.now().isoformat(), 0, 0)
             )
     
     async def test_all(self, channels: List[Dict]) -> List[Dict]:

@@ -150,4 +150,49 @@ class AppConfig:
         config = cls(**data)
         
         # 4. 处理路径
-        for key in ['
+        for key in ['root_dir', 'data_dir', 'output_dir', 'subscribe_file', 
+                    'alias_file', 'blacklist_file', 'demo_file']:
+            if hasattr(config, key):
+                setattr(config, key, Path(getattr(config, key)))
+        
+        # 5. 确保目录存在
+        config.data_dir.mkdir(parents=True, exist_ok=True)
+        config.output_dir.mkdir(parents=True, exist_ok=True)
+        
+        return config
+    
+    @property
+    def iptv_sources(self) -> List[str]:
+        """获取所有 IPTV 源"""
+        return list(self.raw_sources) + list(self.direct_sources)
+    
+    def to_dict(self) -> Dict[str, Any]:
+        """转换为字典"""
+        result = {}
+        for key, value in self.__dict__.items():
+            if isinstance(value, Path):
+                result[key] = str(value)
+            elif isinstance(value, list):
+                result[key] = value.copy()
+            else:
+                result[key] = value
+        return result
+
+
+# 全局配置实例
+_config: Optional[AppConfig] = None
+
+
+def get_config() -> AppConfig:
+    """获取全局配置实例"""
+    global _config
+    if _config is None:
+        _config = AppConfig.load()
+    return _config
+
+
+def reload_config() -> AppConfig:
+    """重新加载配置"""
+    global _config
+    _config = AppConfig.load()
+    return _config

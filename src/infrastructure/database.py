@@ -2,7 +2,6 @@
 """数据库连接池"""
 
 import asyncio
-import json
 import hashlib
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -11,7 +10,7 @@ from contextlib import asynccontextmanager
 
 import aiosqlite
 
-from src.core.config import get_config
+# 先导入 exceptions，再导入 logger（避免循环）
 from src.core.exceptions import DatabaseError
 from src.infrastructure.logger import get_logger
 
@@ -23,24 +22,20 @@ class DatabasePool:
     
     _instance: Optional["DatabasePool"] = None
     _pool: Optional[aiosqlite.Connection] = None
-    _lock = asyncio.Lock()
     
     def __new__(cls):
         if cls._instance is None:
             cls._instance = super().__new__(cls)
         return cls._instance
     
-    async def initialize(self) -> None:
+    async def initialize(self, db_path: Optional[Path] = None) -> None:
         """初始化数据库连接"""
         if self._pool is not None:
             return
         
-        config = get_config()
-        if not config.database_enable:
-            logger.info("📦 数据库已禁用")
-            return
+        if db_path is None:
+            db_path = Path("data") / "iptv_cache.db"
         
-        db_path = config.data_dir / "iptv_cache.db"
         db_path.parent.mkdir(parents=True, exist_ok=True)
         
         try:
@@ -216,14 +211,16 @@ class DatabasePool:
 
 # 全局数据库实例
 _db_pool: Optional[DatabasePool] = None
+_db_path: Optional[Path] = None
 
 
-async def get_db() -> DatabasePool:
+async def get_db(db_path: Optional[Path] = None) -> DatabasePool:
     """获取数据库连接池实例"""
-    global _db_pool
-    if _db_pool is None:
+    global _db_pool, _db_path
+    if _db_pool is None or _db_path != db_path:
         _db_pool = DatabasePool()
-        await _db_pool.initialize()
+        _db_path = db_path or Path("data") / "iptv_cache.db"
+        await _db_pool.initialize(_db_path)
     return _db_pool
 
 

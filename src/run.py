@@ -16,14 +16,14 @@ from src.core.exceptions import IPTVError
 from src.infrastructure.logger import get_logger, set_log_level, init_logger
 from src.orchestrator import run_autonomous_mode
 
-# 提前初始化日志（在导入其他模块之前）
+# 提前初始化日志
 init_logger()
+logger = get_logger(__name__)
 
 
 def setup_signal_handlers():
     """设置信号处理器"""
     def signal_handler(sig, frame):
-        logger = get_logger(__name__)
         logger.warning(f"⚠️ 收到信号 {sig}，正在退出...")
         sys.exit(0)
     
@@ -33,8 +33,6 @@ def setup_signal_handlers():
 
 async def main():
     """主函数"""
-    logger = get_logger(__name__)
-    
     # 加载配置
     config = get_config()
     
@@ -44,13 +42,13 @@ async def main():
     
     logger.info("🚀 IPTV 智能整理平台启动")
     logger.info(f"📡 配置: 超时={config.timeout}s, 并发={config.max_workers}")
-    logger.info(f"📋 模式: {'自治' if config.autonomous_mode else '传统'}")
+    logger.info(f"📋 模式: 完整模式 (传统采集 + 自治增强)")
     
     # 设置信号处理器
     setup_signal_handlers()
     
     try:
-        # 运行自治模式
+        # 运行完整模式（传统 + 自治）
         stats = await run_autonomous_mode(
             skip_discover="--skip-discover" in sys.argv
         )

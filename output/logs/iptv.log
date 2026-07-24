@@ -211,3 +211,141 @@
 2026-07-24 10:56:24,922 - src.orchestrator - INFO - orchestrator.py:377 -   输出频道: 0
 2026-07-24 10:56:24,923 - src.orchestrator - INFO - orchestrator.py:378 - ==================================================
 2026-07-24 10:56:24,923 - __main__ - INFO - run.py:58 - 🎉 运行完成!
+2026-07-24 11:07:15,720 - __main__ - INFO - run.py:45 - 🚀 IPTV 智能整理平台启动
+2026-07-24 11:07:15,720 - __main__ - INFO - run.py:46 - 📡 配置: 超时=8s, 并发=20
+2026-07-24 11:07:15,720 - __main__ - INFO - run.py:47 - 📋 模式: 自治
+2026-07-24 11:07:15,722 - src.managers.source_manager - INFO - source_manager.py:47 - 📦 加载源池: 602 个源
+2026-07-24 11:07:15,724 - src.managers.candidate_manager - INFO - candidate_manager.py:30 - 📦 加载候选池: 602 个候选源
+2026-07-24 11:07:15,724 - src.orchestrator - INFO - orchestrator.py:65 - 🚀 IPTV 自治系统启动
+2026-07-24 11:07:15,724 - src.orchestrator - INFO - orchestrator.py:66 - 📊 配置: 并发=20, 超时=8s
+2026-07-24 11:07:15,724 - src.orchestrator - INFO - orchestrator.py:114 - ==================================================
+2026-07-24 11:07:15,724 - src.orchestrator - INFO - orchestrator.py:115 - 阶段0: 检查候选池
+2026-07-24 11:07:15,724 - src.orchestrator - INFO - orchestrator.py:116 - ==================================================
+2026-07-24 11:07:15,724 - src.orchestrator - INFO - orchestrator.py:117 - 📊 候选池中有 602 个源需要测速
+2026-07-24 11:07:15,725 - src.orchestrator - INFO - orchestrator.py:133 - 🔍 开始测速 602 个候选源...
+2026-07-24 11:07:15,727 - src.infrastructure.database - INFO - database.py:48 - ✅ 数据库连接池已初始化: data/iptv_cache.db
+2026-07-24 11:08:46,975 - src.services.speed_tester - INFO - speed_tester.py:175 - 📊 测速完成，有效频道: 223/602
+2026-07-24 11:08:46,975 - src.orchestrator - INFO - orchestrator.py:138 - ✅ 测速完成: 223/602 个有效
+2026-07-24 11:08:48,518 - src.orchestrator - INFO - orchestrator.py:151 - 📌 直接提升 50 个低延迟源...
+2026-07-24 11:08:48,519 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ CCTV-9 (576i) 已提升为稳定源
+2026-07-24 11:08:48,519 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ CCTV-15 (1080p) 已提升为稳定源
+2026-07-24 11:08:48,519 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ 海峡卫视 已提升为稳定源
+2026-07-24 11:08:48,519 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ CCTV-10 已提升为稳定源
+2026-07-24 11:08:48,520 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ CCTV-10 (720p) 已提升为稳定源
+2026-07-24 11:08:48,520 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ CCTV-4 已提升为稳定源
+2026-07-24 11:08:48,520 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ CCTV-8 已提升为稳定源
+2026-07-24 11:08:48,521 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ CCTV-7 已提升为稳定源
+2026-07-24 11:08:48,521 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ CCTV-3 (720p) 已提升为稳定源
+2026-07-24 11:08:48,521 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ CCTV-8 (720p) 已提升为稳定源
+2026-07-24 11:08:48,522 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ CCTV9 已提升为稳定源
+2026-07-24 11:08:48,522 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ CCTV-11 (720p) 已提升为稳定源
+2026-07-24 11:08:48,522 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ CCTV-2 (720p) 已提升为稳定源
+2026-07-24 11:08:48,523 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ CCTV-12 (720p) 已提升为稳定源
+2026-07-24 11:08:48,523 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ CCTV12 已提升为稳定源
+2026-07-24 11:08:48,524 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ CCTV-6 已提升为稳定源
+2026-07-24 11:08:48,524 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ CCTV-13 (720p) 已提升为稳定源
+2026-07-24 11:08:48,524 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ CCTV-17 (1080p) 已提升为稳定源
+2026-07-24 11:08:48,525 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ CCTV-7 (720p) 已提升为稳定源
+2026-07-24 11:08:48,525 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ CCTV-14 (1080p) 已提升为稳定源
+2026-07-24 11:08:48,526 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ TVBS-Asia 已提升为稳定源
+2026-07-24 11:08:48,526 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ CCTV-3 已提升为稳定源
+2026-07-24 11:08:48,527 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ CCTV-4 Asia (720p) 已提升为稳定源
+2026-07-24 11:08:48,527 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ CCTV-Golf & Tennis (1080p) 已提升为稳定源
+2026-07-24 11:08:48,528 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ CCTV-8K 已提升为稳定源
+2026-07-24 11:08:48,528 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ CCTV-6 (1080p) 已提升为稳定源
+2026-07-24 11:08:48,529 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ CCTV-9 已提升为稳定源
+2026-07-24 11:08:48,529 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ CCTV-Storm Theater (1080p) 已提升为稳定源
+2026-07-24 11:08:48,530 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ CCTV-8K (1080p) 已提升为稳定源
+2026-07-24 11:08:48,531 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ CCTV-6 (1080p) 已提升为稳定源
+2026-07-24 11:08:48,531 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ CCTV-Health (1080p) 已提升为稳定源
+2026-07-24 11:08:48,532 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ CCTV-The First Theater (1080p) 已提升为稳定源
+2026-07-24 11:08:48,532 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ CCTV-15 (720p) 已提升为稳定源
+2026-07-24 11:08:48,533 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ CCTV-Storm Football (1080p) 已提升为稳定源
+2026-07-24 11:08:48,534 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ CCTV6 已提升为稳定源
+2026-07-24 11:08:48,534 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ CCTV-Weapon & Technology (1080p) 已提升为稳定源
+2026-07-24 11:08:48,535 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ CCTV-Nostalgia Theater (1080p) 已提升为稳定源
+2026-07-24 11:08:48,535 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ CCTV-World Geography (1080p) 已提升为稳定源
+2026-07-24 11:08:48,536 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ CCTV-11 已提升为稳定源
+2026-07-24 11:08:48,537 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ CCTV-Storm Music (1080p) 已提升为稳定源
+2026-07-24 11:08:48,538 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ CCTV-4 中文国际 已提升为稳定源
+2026-07-24 11:08:48,538 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ CCTV-Billiards (1080p) 已提升为稳定源
+2026-07-24 11:08:48,539 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ CCTV-Culture of Quality (1080p) 已提升为稳定源
+2026-07-24 11:08:48,540 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ CCTV-Women's Fashion (1080p) 已提升为稳定源
+2026-07-24 11:08:48,540 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ 翡翠台 已提升为稳定源
+2026-07-24 11:08:48,541 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ CGTN French (1080p) 已提升为稳定源
+2026-07-24 11:08:48,542 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ CGTN Documentary (1080p) 已提升为稳定源
+2026-07-24 11:08:48,543 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ CGTN (1080p) 已提升为稳定源
+2026-07-24 11:08:48,544 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ 浙江钱江都市 已提升为稳定源
+2026-07-24 11:08:48,544 - src.managers.stable_manager - INFO - stable_manager.py:72 - ✅ 浙江教科影视 已提升为稳定源
+2026-07-24 11:08:48,545 - src.orchestrator - INFO - orchestrator.py:162 - ==================================================
+2026-07-24 11:08:48,545 - src.orchestrator - INFO - orchestrator.py:163 - 阶段1: 发现新源
+2026-07-24 11:08:48,545 - src.orchestrator - INFO - orchestrator.py:164 - ==================================================
+2026-07-24 11:08:48,545 - src.orchestrator - INFO - orchestrator.py:172 - 📋 使用订阅源: 11 个
+2026-07-24 11:08:48,545 - src.managers.source_manager - INFO - source_manager.py:71 - 🔍 发现新源: 5 个源
+2026-07-24 11:08:48,545 - src.services.fetcher - INFO - fetcher.py:36 - 🔄 拉取: https://raw.githubusercontent.com/iptv-org/iptv/gh-pages/countries/cn.m3u
+2026-07-24 11:08:48,652 - src.services.fetcher - INFO - fetcher.py:36 - 🔄 拉取: https://raw.githubusercontent.com/iptv-org/iptv/master/streams/cn.m3u
+2026-07-24 11:08:48,733 - src.services.fetcher - INFO - fetcher.py:36 - 🔄 拉取: https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.txt
+2026-07-24 11:08:48,752 - src.services.fetcher - INFO - fetcher.py:36 - 🔄 拉取: https://raw.githubusercontent.com/zzgpy1/Collect-IPTV/main/best_sorted.m3u
+2026-07-24 11:08:48,836 - src.services.fetcher - INFO - fetcher.py:36 - 🔄 拉取: https://raw.githubusercontent.com/zzgpy1/ITV/main/output/tv.m3u
+2026-07-24 11:08:49,317 - src.managers.source_manager - INFO - source_manager.py:115 - ✅ 发现新源: 0 个，涉及 0 个频道
+2026-07-24 11:08:49,317 - src.managers.source_manager - INFO - source_manager.py:117 - 📊 过滤掉 16695 个国外频道
+2026-07-24 11:08:49,323 - src.orchestrator - INFO - orchestrator.py:190 - 📊 进度: 5/11
+2026-07-24 11:08:49,323 - src.managers.source_manager - INFO - source_manager.py:71 - 🔍 发现新源: 5 个源
+2026-07-24 11:08:49,323 - src.services.fetcher - INFO - fetcher.py:36 - 🔄 拉取: https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/cn.m3u
+2026-07-24 11:08:49,406 - src.services.fetcher - INFO - fetcher.py:36 - 🔄 拉取: https://raw.githubusercontent.com/zzgpy1/ipv6-iptv/master/tv/iptv4.txt
+2026-07-24 11:08:49,477 - src.services.fetcher - INFO - fetcher.py:36 - 🔄 拉取: https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/live.txt
+2026-07-24 11:08:49,575 - src.services.fetcher - INFO - fetcher.py:36 - 🔄 拉取: https://raw.githubusercontent.com/kakaxi-1/IPTV/main/iptv.txt
+2026-07-24 11:08:49,646 - src.services.fetcher - INFO - fetcher.py:36 - 🔄 拉取: https://raw.githubusercontent.com/zzgpy1/iptv-api/master/output/result.txt
+2026-07-24 11:08:49,724 - src.managers.source_manager - INFO - source_manager.py:115 - ✅ 发现新源: 0 个，涉及 0 个频道
+2026-07-24 11:08:49,724 - src.managers.source_manager - INFO - source_manager.py:117 - 📊 过滤掉 268 个国外频道
+2026-07-24 11:08:49,725 - src.orchestrator - INFO - orchestrator.py:190 - 📊 进度: 10/11
+2026-07-24 11:08:49,725 - src.managers.source_manager - INFO - source_manager.py:71 - 🔍 发现新源: 1 个源
+2026-07-24 11:08:49,725 - src.services.fetcher - INFO - fetcher.py:36 - 🔄 拉取: https://tv.19860519.xyz/abc123
+2026-07-24 11:08:50,386 - src.managers.source_manager - INFO - source_manager.py:115 - ✅ 发现新源: 0 个，涉及 0 个频道
+2026-07-24 11:08:50,387 - src.managers.source_manager - INFO - source_manager.py:117 - 📊 过滤掉 0 个国外频道
+2026-07-24 11:08:50,387 - src.orchestrator - INFO - orchestrator.py:190 - 📊 进度: 11/11
+2026-07-24 11:08:50,387 - src.orchestrator - INFO - orchestrator.py:253 - ==================================================
+2026-07-24 11:08:50,387 - src.orchestrator - INFO - orchestrator.py:254 - 阶段2: 观察候选源
+2026-07-24 11:08:50,387 - src.orchestrator - INFO - orchestrator.py:255 - ==================================================
+2026-07-24 11:08:50,387 - src.orchestrator - INFO - orchestrator.py:262 - 📊 候选池状态: 602 个正在观察
+2026-07-24 11:08:50,490 - src.orchestrator - INFO - orchestrator.py:298 - ✅ 观察完成: 0 个源达到稳定标准
+2026-07-24 11:08:50,490 - src.orchestrator - INFO - orchestrator.py:303 - ==================================================
+2026-07-24 11:08:50,491 - src.orchestrator - INFO - orchestrator.py:304 - 阶段3: 提升稳定源
+2026-07-24 11:08:50,491 - src.orchestrator - INFO - orchestrator.py:305 - ==================================================
+2026-07-24 11:08:50,491 - src.orchestrator - INFO - orchestrator.py:308 - 📭 没有稳定的候选源需要提升
+2026-07-24 11:08:50,491 - src.orchestrator - INFO - orchestrator.py:335 - ==================================================
+2026-07-24 11:08:50,491 - src.orchestrator - INFO - orchestrator.py:336 - 阶段4: 质量检查
+2026-07-24 11:08:50,491 - src.orchestrator - INFO - orchestrator.py:337 - ==================================================
+2026-07-24 11:08:50,491 - src.managers.quality_manager - INFO - quality_manager.py:28 - 🔍 检查 49 个稳定源质量...
+2026-07-24 11:08:50,502 - src.orchestrator - INFO - orchestrator.py:365 - ✅ 质量检查完成: 替换了 0 个失效源
+2026-07-24 11:08:50,502 - src.orchestrator - INFO - orchestrator.py:370 - ==================================================
+2026-07-24 11:08:50,503 - src.orchestrator - INFO - orchestrator.py:371 - 阶段5: 生成输出
+2026-07-24 11:08:50,503 - src.orchestrator - INFO - orchestrator.py:372 - ==================================================
+2026-07-24 11:08:50,504 - src.services.merger - INFO - merger.py:104 - 📊 合并完成: 34 个频道
+2026-07-24 11:08:50,506 - src.services.demo_service - INFO - demo_service.py:46 - 📋 加载 demo 顺序: 3541 个频道
+2026-07-24 11:08:50,507 - src.services.generator - INFO - generator.py:101 - ✅ M3U 文件已生成: output/tv.m3u
+2026-07-24 11:08:50,508 - src.services.generator - INFO - generator.py:118 - ✅ TXT 文件已生成: output/tv.txt
+2026-07-24 11:08:50,508 - src.services.generator - INFO - generator.py:136 - ✅ 多源 M3U 文件已生成: output/tv_multi.m3u
+2026-07-24 11:08:50,509 - src.services.generator - INFO - generator.py:163 - ✅ JSON 文件已生成: output/channels.json
+2026-07-24 11:08:50,509 - src.services.generator - INFO - generator.py:45 - ✅ 所有输出文件已生成
+2026-07-24 11:08:50,509 - src.services.special_categories - INFO - special_categories.py:173 - 🧠 开始智能补充采集...
+2026-07-24 11:08:50,750 - src.services.special_categories - INFO - special_categories.py:154 - 🔍 验证特殊分类频道...
+2026-07-24 11:08:55,788 - src.services.special_categories - INFO - special_categories.py:162 -    💃 广场舞: 201/201 可用
+2026-07-24 11:09:00,415 - src.services.special_categories - INFO - special_categories.py:162 -    🔥 热门歌曲: 107/119 可用
+2026-07-24 11:09:08,544 - src.services.special_categories - INFO - special_categories.py:162 -    🎧 动感舞曲: 41/41 可用
+2026-07-24 11:09:40,974 - src.services.special_categories - INFO - special_categories.py:162 -    📻 网络电台: 262/340 可用
+2026-07-24 11:09:40,975 - src.services.special_categories - INFO - special_categories.py:212 - ✅ 已追加 611 个智能补充频道
+2026-07-24 11:09:40,975 - src.orchestrator - INFO - orchestrator.py:406 - ✅ 输出生成完成: 34 个频道
+2026-07-24 11:09:40,976 - src.infrastructure.database - INFO - database.py:206 - 📦 数据库连接已关闭
+2026-07-24 11:09:40,976 - src.orchestrator - INFO - orchestrator.py:416 - 🧹 资源已清理
+2026-07-24 11:09:40,976 - src.orchestrator - INFO - orchestrator.py:422 - ==================================================
+2026-07-24 11:09:40,976 - src.orchestrator - INFO - orchestrator.py:423 - 📊 运行统计
+2026-07-24 11:09:40,976 - src.orchestrator - INFO - orchestrator.py:424 - ==================================================
+2026-07-24 11:09:40,976 - src.orchestrator - INFO - orchestrator.py:425 -   耗时: 145.25s
+2026-07-24 11:09:40,976 - src.orchestrator - INFO - orchestrator.py:426 -   发现新源: 0
+2026-07-24 11:09:40,976 - src.orchestrator - INFO - orchestrator.py:427 -   观察候选: 0
+2026-07-24 11:09:40,977 - src.orchestrator - INFO - orchestrator.py:428 -   提升稳定: 0
+2026-07-24 11:09:40,977 - src.orchestrator - INFO - orchestrator.py:429 -   替换失效: 0
+2026-07-24 11:09:40,977 - src.orchestrator - INFO - orchestrator.py:430 -   输出频道: 34
+2026-07-24 11:09:40,977 - src.orchestrator - INFO - orchestrator.py:431 - ==================================================
+2026-07-24 11:09:40,977 - __main__ - INFO - run.py:58 - 🎉 运行完成!

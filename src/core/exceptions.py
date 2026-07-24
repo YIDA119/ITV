@@ -1,7 +1,5 @@
 # src/core/exceptions.py
-"""自定义异常"""
-
-from src.infrastructure.logger import get_logger
+"""自定义异常 - 无外部依赖"""
 
 
 class IPTVError(Exception):
@@ -50,10 +48,15 @@ class FixedSourceError(IPTVError):
 
 
 def handle_exception(exc: Exception, context: str = "") -> None:
-    """统一异常处理"""
-    logger = get_logger(__name__)
-    
-    if isinstance(exc, IPTVError):
-        logger.error(f"{context}: {exc}")
-    else:
-        logger.exception(f"{context}: {exc}")
+    """统一异常处理 - 延迟导入 logger 避免循环依赖"""
+    try:
+        from src.infrastructure.logger import get_logger
+        logger = get_logger(__name__)
+        
+        if isinstance(exc, IPTVError):
+            logger.error(f"{context}: {exc}")
+        else:
+            logger.exception(f"{context}: {exc}")
+    except Exception:
+        # 如果 logger 不可用，使用 print
+        print(f"ERROR: {context}: {exc}")

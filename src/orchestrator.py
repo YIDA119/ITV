@@ -72,6 +72,10 @@ class IPTVOrchestrator:
             else:
                 logger.info("⏭️ 跳过发现阶段")
             
+            # 1.5 测速验证 - 对发现的新源进行测速
+            if self.stats["discovered"] > 0:
+                await self._speed_test_phase()
+            
             # 2. 观察候选源
             stable_candidates = await self._observe_phase()
             self.stats["observed"] = len(stable_candidates)
@@ -140,6 +144,56 @@ class IPTVOrchestrator:
                 )
         
         return all_new
+    
+    async def _speed_test_phase(self):
+        """测速阶段 - 对候选源进行测速"""
+        logger.info("=" * 50)
+        logger.info("阶段1.5: 测速验证")
+        logger.info("=" * 50)
+        
+        # 获取所有候选源
+        candidates = self.candidate_manager.get_observing_sources(limit=3000)
+        if not candidates:
+            logger.info("📭 没有候选源需要测速")
+            return
+        
+        logger.info(f"🔍 开始测速 {len(candidates)} 个候选源...")
+        
+        # 转换为测速器需要的格式
+        channels = []
+        for c in candidates:
+            channels.append({
+                "name": c["name"],
+                "url": c["url"],
+                "source_key": c["key"],
+            })
+        
+        # 执行测速
+        valid_channels = await self.speed_tester.test_all(channels)
+        
+        logger.info(f"✅ 测速完成: {len(valid_channels)}/{len(channels)} 个有效")
+        
+        # 更新候选池状态
+        for ch in valid_channels:
+            key = ch.get("source_key") or channel_key(ch["name"], ch["url"])
+            latency = ch.get("latency", 0)
+            # 更新候选池延迟信息
+            self.candidate_manager.update_candidate_latency(key, latency)
+        
+        # 如果有有效频道，尝试直接提升一些
+        if valid_channels:
+            # 按延迟排序，取前50个
+            valid_channels.sort(key=lambda x: x.get("latency", 9999))
+            top_channels = valid_channels[:50]
+            
+            logger.info(f"📌 直接提升 {len(top_channels)} 个低延迟源...")
+            for ch in top_channels:
+                await self.stable_manager.promote(
+                    ch["name"],
+                    ch["url"],
+                    ch.get("latency", 0),
+                    ch.get("video_codec", "")
+                )
     
     async def _observe_phase(self) -> List[Dict]:
         """观察阶段"""

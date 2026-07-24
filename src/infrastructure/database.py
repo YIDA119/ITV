@@ -10,7 +10,6 @@ from contextlib import asynccontextmanager
 
 import aiosqlite
 
-# 先导入 exceptions，再导入 logger（避免循环）
 from src.core.exceptions import DatabaseError
 from src.infrastructure.logger import get_logger
 
@@ -186,7 +185,9 @@ class DatabasePool:
         cursor = await self._pool.execute(sql, params)
         row = await cursor.fetchone()
         await cursor.close()
-        return dict(row) if row else None
+        if row is None:
+            return None
+        return dict(row)
     
     async def fetch_all(self, sql: str, params: tuple = ()) -> List[Dict]:
         """查询多条"""

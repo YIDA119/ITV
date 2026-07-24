@@ -25,7 +25,11 @@ class Generator:
         output_dir = self.config.output_dir
         output_dir.mkdir(parents=True, exist_ok=True)
         
-        # 按 demo 分类
+        # 如果没有 demo_order，加载默认
+        if demo_order is None:
+            demo_order = load_demo_order()
+        
+        # 按 demo 顺序分类 - 只匹配 demo 中存在的频道
         categorized = self._categorize_by_demo(channels, demo_order)
         
         # 生成 M3U
@@ -43,95 +47,79 @@ class Generator:
         logger.info("✅ 所有输出文件已生成")
     
     def _categorize_by_demo(self, channels: List[Dict], demo_order: List[Tuple[str, str]]) -> Dict[str, List[Dict]]:
-        """按 demo 分类并保持顺序"""
+        """
+        按 demo 顺序分类
+        只输出 demo.txt 中列出的频道，按 demo 顺序排列
+        """
         result = {}
         
-        # 如果 demo_order 为空，使用默认分类
         if not demo_order:
-            demo_order = load_demo_order()
+            logger.warning("⚠️ demo_order 为空，无法按顺序输出")
+            return result
         
-        # 构建频道名到频道的映射（支持模糊匹配）
+        # 构建频道名到频道的映射（精确匹配）
         channel_map = {}
         for ch in channels:
             channel_map[ch["name"]] = ch
         
-        # 先按 demo 顺序匹配
+        # 记录已匹配的频道名
         matched_names = set()
+        total_matched = 0
         
+        # 按 demo 顺序遍历
         for cat, demo_name in demo_order:
             if cat not in result:
                 result[cat] = []
             
-            # 精确匹配
-            if demo_name in channel_map:
-                ch = channel_map[demo_name]
-                result[cat].append(ch)
-                matched_names.add(demo_name)
-                continue
+            matched_ch = None
             
-            # 模糊匹配
-            for name, ch in channel_map.items():
-                if name in matched_names:
-                    continue
-                if match_channel_name(name, demo_name):
-                    result[cat].append(ch)
-                    matched_names.add(name)
-                    break
+            # 1. 精确匹配
+            if demo_name in channel_map:
+                matched_ch = channel_map[demo_name]
+                matched_names.add(demo_name)
+            else:
+                # 2. 模糊匹配
+                for name, ch in channel_map.items():
+                    if name in matched_names:
+                        continue
+                    if match_channel_name(name, demo_name):
+                        matched_ch = ch
+                        matched_names.add(name)
+                        break
+            
+            if matched_ch:
+                result[cat].append(matched_ch)
+                total_matched += 1
         
-        # 处理未匹配的频道 - 按分类归类
-        remaining = [ch for ch in channels if ch["name"] not in matched_names]
+        # 统计匹配结果
+        logger.info(f"📊 Demo 匹配结果: {total_matched}/{len(demo_order)} 个频道匹配成功")
         
-        for ch in remaining:
-            # 根据频道名推断分类
-            cat = self._infer_category(ch["name"])
-            if cat not in result:
-                result[cat] = []
-            result[cat].append(ch)
+        # 如果有未匹配的频道，记录日志但不输出
+        unmatched = [ch for ch in channels if ch["name"] not in matched_names]
+        if unmatched:
+            logger.info(f"📊 未匹配频道: {len(unmatched)} 个（不输出）")
+            # 只显示前10个未匹配的频道名
+            if len(unmatched) <= 10:
+                for ch in unmatched:
+                    logger.debug(f"  未匹配: {ch['name']}")
+            else:
+                logger.debug(f"  未匹配示例: {', '.join([ch['name'] for ch in unmatched[:10]])} ...")
         
         return result
     
-    def _infer_category(self, name: str) -> str:
-        """推断频道分类"""
-        name_lower = name.lower()
-        
-        # 央视
-        if "cctv" in name_lower or "央视" in name or "中央电视" in name:
-            return CATEGORY_CCTV
-        
-        # 港澳台
-        hk_keywords = ["tvb", "翡翠", "明珠", "凤凰", "无线", "rthk", "hoy", "viu", 
-                       "东森", "民视", "台视", "华视", "中视", "三立", "纬来", "tvbs",
-                       "香港", "澳门", "台湾", "澳视"]
-        for kw in hk_keywords:
-            if kw in name_lower:
-                return CATEGORY_HKMT
-        
-        # 卫视
-        if "卫视" in name:
-            return CATEGORY_SATELLITE
-        
-        # 地方
-        provinces = ["北京", "上海", "广东", "浙江", "江苏", "湖南", "湖北", "山东", 
-                     "河南", "四川", "福建", "安徽", "辽宁", "陕西", "河北", "江西",
-                     "黑龙江", "吉林", "山西", "云南", "贵州", "甘肃", "海南", "青海",
-                     "宁夏", "新疆", "西藏", "广西", "内蒙古", "重庆", "天津"]
-        for prov in provinces:
-            if prov in name:
-                return CATEGORY_LOCAL
-        
-        # 智能补充分类（保留原分类）
-        return "其他"
-    
     def _generate_m3u(self, categorized: Dict[str, List[Dict]], path: Path) -> None:
-        """生成 M3U"""
+        """生成 M3U - 按 demo 顺序"""
+        total = sum(len(ch) for ch in categorized.values())
+        
         with open(path, 'w', encoding='utf-8') as f:
             f.write("#EXTM3U\n")
             f.write(f"# Generated: {datetime.now().isoformat()}\n")
+            f.write(f"# Total channels: {total}\n")
             
             for cat, channels in categorized.items():
                 if not channels:
                     continue
-                # 分类标题
+                # 分类标题注释
                 f.write(f"\n# ----- {cat} ({len(channels)}个频道) -----\n")
                 for ch in channels:
                     url = ch.get("url", "")
@@ -139,10 +127,10 @@ class Generator:
                         name = ch.get("name", "未知频道")
                         f.write(f'#EXTINF:-1 group-title="{cat}",{name}\n{url}\n')
         
-        logger.info(f"✅ M3U 文件已生成: {path}")
+        logger.info(f"✅ M3U 文件已生成: {path} ({total} 个频道)")
     
     def _generate_txt(self, categorized: Dict[str, List[Dict]], path: Path) -> None:
-        """生成 TXT"""
+        """生成 TXT - 按 demo 顺序"""
         with open(path, 'w', encoding='utf-8') as f:
             f.write(f"# Generated: {datetime.now().isoformat()}\n")
             

@@ -1,7 +1,6 @@
 # src/core/__init__.py
 """核心模块"""
 
-# 延迟导入避免循环依赖
 from src.core.config import get_config, AppConfig
 from src.core.constants import (
     CATEGORY_CCTV,

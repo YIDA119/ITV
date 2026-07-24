@@ -1,0 +1,84 @@
+2026-07-24 10:19:50,414 - __main__ - INFO - run.py:45 - 🚀 IPTV 智能整理平台启动
+2026-07-24 10:19:50,414 - __main__ - INFO - run.py:46 - 📡 配置: 超时=8s, 并发=20
+2026-07-24 10:19:50,414 - __main__ - INFO - run.py:47 - 📋 模式: 自治
+2026-07-24 10:19:50,414 - src.orchestrator - INFO - orchestrator.py:65 - 🚀 IPTV 自治系统启动
+2026-07-24 10:19:50,414 - src.orchestrator - INFO - orchestrator.py:66 - 📊 配置: 并发=20, 超时=8s
+2026-07-24 10:19:50,414 - src.orchestrator - INFO - orchestrator.py:103 - ==================================================
+2026-07-24 10:19:50,414 - src.orchestrator - INFO - orchestrator.py:104 - 阶段1: 发现新源
+2026-07-24 10:19:50,414 - src.orchestrator - INFO - orchestrator.py:105 - ==================================================
+2026-07-24 10:19:50,415 - src.orchestrator - INFO - orchestrator.py:113 - 📋 使用订阅源: 11 个
+2026-07-24 10:19:50,415 - src.managers.source_manager - INFO - source_manager.py:71 - 🔍 发现新源: 5 个源
+2026-07-24 10:19:50,435 - src.infrastructure.database - INFO - database.py:49 - ✅ 数据库连接池已初始化: data/iptv_cache.db
+2026-07-24 10:19:50,436 - src.services.fetcher - INFO - fetcher.py:35 - 🔄 拉取: https://raw.githubusercontent.com/iptv-org/iptv/gh-pages/countries/cn.m3u
+2026-07-24 10:19:50,516 - src.services.fetcher - WARNING - fetcher.py:63 - ⚠️ 拉取失败 https://raw.githubusercontent.com/iptv-org/iptv/gh-pages/countries/cn.m3u: local variable 'datetime' referenced before assignment
+2026-07-24 10:19:50,516 - src.managers.source_manager - WARNING - source_manager.py:108 - 拉取源失败 https://raw.githubusercontent.com/iptv-org/iptv/gh-pages/countries/cn.m3u: local variable 'datetime' referenced before assignment
+2026-07-24 10:19:50,516 - src.services.fetcher - INFO - fetcher.py:35 - 🔄 拉取: https://raw.githubusercontent.com/iptv-org/iptv/master/streams/cn.m3u
+2026-07-24 10:19:50,527 - src.services.fetcher - WARNING - fetcher.py:63 - ⚠️ 拉取失败 https://raw.githubusercontent.com/iptv-org/iptv/master/streams/cn.m3u: local variable 'datetime' referenced before assignment
+2026-07-24 10:19:50,527 - src.managers.source_manager - WARNING - source_manager.py:108 - 拉取源失败 https://raw.githubusercontent.com/iptv-org/iptv/master/streams/cn.m3u: local variable 'datetime' referenced before assignment
+2026-07-24 10:19:50,527 - src.services.fetcher - INFO - fetcher.py:35 - 🔄 拉取: https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.txt
+2026-07-24 10:19:50,803 - src.services.fetcher - WARNING - fetcher.py:63 - ⚠️ 拉取失败 https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.txt: local variable 'datetime' referenced before assignment
+2026-07-24 10:19:50,804 - src.managers.source_manager - WARNING - source_manager.py:108 - 拉取源失败 https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.txt: local variable 'datetime' referenced before assignment
+2026-07-24 10:19:50,804 - src.services.fetcher - INFO - fetcher.py:35 - 🔄 拉取: https://raw.githubusercontent.com/zzgpy1/Collect-IPTV/main/best_sorted.m3u
+2026-07-24 10:19:51,150 - src.services.fetcher - WARNING - fetcher.py:63 - ⚠️ 拉取失败 https://raw.githubusercontent.com/zzgpy1/Collect-IPTV/main/best_sorted.m3u: local variable 'datetime' referenced before assignment
+2026-07-24 10:19:51,150 - src.managers.source_manager - WARNING - source_manager.py:108 - 拉取源失败 https://raw.githubusercontent.com/zzgpy1/Collect-IPTV/main/best_sorted.m3u: local variable 'datetime' referenced before assignment
+2026-07-24 10:19:51,150 - src.services.fetcher - INFO - fetcher.py:35 - 🔄 拉取: https://raw.githubusercontent.com/zzgpy1/ITV/main/output/tv.m3u
+2026-07-24 10:19:52,295 - src.services.fetcher - WARNING - fetcher.py:63 - ⚠️ 拉取失败 https://raw.githubusercontent.com/zzgpy1/ITV/main/output/tv.m3u: local variable 'datetime' referenced before assignment
+2026-07-24 10:19:52,295 - src.managers.source_manager - WARNING - source_manager.py:108 - 拉取源失败 https://raw.githubusercontent.com/zzgpy1/ITV/main/output/tv.m3u: local variable 'datetime' referenced before assignment
+2026-07-24 10:19:52,295 - src.managers.source_manager - INFO - source_manager.py:115 - ✅ 发现新源: 0 个，涉及 0 个频道
+2026-07-24 10:19:52,295 - src.managers.source_manager - INFO - source_manager.py:117 - 📊 过滤掉 0 个国外频道
+2026-07-24 10:19:52,295 - src.orchestrator - INFO - orchestrator.py:131 - 📊 进度: 5/11
+2026-07-24 10:19:52,295 - src.managers.source_manager - INFO - source_manager.py:71 - 🔍 发现新源: 5 个源
+2026-07-24 10:19:52,296 - src.services.fetcher - INFO - fetcher.py:35 - 🔄 拉取: https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/cn.m3u
+2026-07-24 10:19:52,592 - src.services.fetcher - WARNING - fetcher.py:63 - ⚠️ 拉取失败 https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/cn.m3u: local variable 'datetime' referenced before assignment
+2026-07-24 10:19:52,592 - src.managers.source_manager - WARNING - source_manager.py:108 - 拉取源失败 https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/cn.m3u: local variable 'datetime' referenced before assignment
+2026-07-24 10:19:52,593 - src.services.fetcher - INFO - fetcher.py:35 - 🔄 拉取: https://raw.githubusercontent.com/zzgpy1/ipv6-iptv/master/tv/iptv4.txt
+2026-07-24 10:19:52,886 - src.services.fetcher - WARNING - fetcher.py:63 - ⚠️ 拉取失败 https://raw.githubusercontent.com/zzgpy1/ipv6-iptv/master/tv/iptv4.txt: local variable 'datetime' referenced before assignment
+2026-07-24 10:19:52,886 - src.managers.source_manager - WARNING - source_manager.py:108 - 拉取源失败 https://raw.githubusercontent.com/zzgpy1/ipv6-iptv/master/tv/iptv4.txt: local variable 'datetime' referenced before assignment
+2026-07-24 10:19:52,886 - src.services.fetcher - INFO - fetcher.py:35 - 🔄 拉取: https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/live.txt
+2026-07-24 10:19:53,163 - src.services.fetcher - WARNING - fetcher.py:63 - ⚠️ 拉取失败 https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/live.txt: local variable 'datetime' referenced before assignment
+2026-07-24 10:19:53,163 - src.managers.source_manager - WARNING - source_manager.py:108 - 拉取源失败 https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/live.txt: local variable 'datetime' referenced before assignment
+2026-07-24 10:19:53,163 - src.services.fetcher - INFO - fetcher.py:35 - 🔄 拉取: https://raw.githubusercontent.com/kakaxi-1/IPTV/main/iptv.txt
+2026-07-24 10:19:53,455 - src.services.fetcher - WARNING - fetcher.py:63 - ⚠️ 拉取失败 https://raw.githubusercontent.com/kakaxi-1/IPTV/main/iptv.txt: local variable 'datetime' referenced before assignment
+2026-07-24 10:19:53,455 - src.managers.source_manager - WARNING - source_manager.py:108 - 拉取源失败 https://raw.githubusercontent.com/kakaxi-1/IPTV/main/iptv.txt: local variable 'datetime' referenced before assignment
+2026-07-24 10:19:53,455 - src.services.fetcher - INFO - fetcher.py:35 - 🔄 拉取: https://raw.githubusercontent.com/zzgpy1/iptv-api/master/output/result.txt
+2026-07-24 10:19:54,981 - src.services.fetcher - WARNING - fetcher.py:63 - ⚠️ 拉取失败 https://raw.githubusercontent.com/zzgpy1/iptv-api/master/output/result.txt: local variable 'datetime' referenced before assignment
+2026-07-24 10:19:54,981 - src.managers.source_manager - WARNING - source_manager.py:108 - 拉取源失败 https://raw.githubusercontent.com/zzgpy1/iptv-api/master/output/result.txt: local variable 'datetime' referenced before assignment
+2026-07-24 10:19:54,981 - src.managers.source_manager - INFO - source_manager.py:115 - ✅ 发现新源: 0 个，涉及 0 个频道
+2026-07-24 10:19:54,982 - src.managers.source_manager - INFO - source_manager.py:117 - 📊 过滤掉 0 个国外频道
+2026-07-24 10:19:54,982 - src.orchestrator - INFO - orchestrator.py:131 - 📊 进度: 10/11
+2026-07-24 10:19:54,982 - src.managers.source_manager - INFO - source_manager.py:71 - 🔍 发现新源: 1 个源
+2026-07-24 10:19:54,982 - src.services.fetcher - INFO - fetcher.py:35 - 🔄 拉取: https://tv.19860519.xyz/abc123
+2026-07-24 10:19:55,279 - src.services.fetcher - WARNING - fetcher.py:63 - ⚠️ 拉取失败 https://tv.19860519.xyz/abc123: local variable 'datetime' referenced before assignment
+2026-07-24 10:19:55,279 - src.managers.source_manager - WARNING - source_manager.py:108 - 拉取源失败 https://tv.19860519.xyz/abc123: local variable 'datetime' referenced before assignment
+2026-07-24 10:19:55,279 - src.managers.source_manager - INFO - source_manager.py:115 - ✅ 发现新源: 0 个，涉及 0 个频道
+2026-07-24 10:19:55,279 - src.managers.source_manager - INFO - source_manager.py:117 - 📊 过滤掉 0 个国外频道
+2026-07-24 10:19:55,279 - src.orchestrator - INFO - orchestrator.py:131 - 📊 进度: 11/11
+2026-07-24 10:19:55,279 - src.orchestrator - INFO - orchestrator.py:146 - ==================================================
+2026-07-24 10:19:55,279 - src.orchestrator - INFO - orchestrator.py:147 - 阶段2: 观察候选源
+2026-07-24 10:19:55,279 - src.orchestrator - INFO - orchestrator.py:148 - ==================================================
+2026-07-24 10:19:55,280 - src.orchestrator - INFO - orchestrator.py:152 - 📭 没有候选源需要观察
+2026-07-24 10:19:55,280 - src.orchestrator - INFO - orchestrator.py:196 - ==================================================
+2026-07-24 10:19:55,280 - src.orchestrator - INFO - orchestrator.py:197 - 阶段3: 提升稳定源
+2026-07-24 10:19:55,280 - src.orchestrator - INFO - orchestrator.py:198 - ==================================================
+2026-07-24 10:19:55,280 - src.orchestrator - INFO - orchestrator.py:201 - 📭 没有稳定的候选源需要提升
+2026-07-24 10:19:55,280 - src.orchestrator - INFO - orchestrator.py:228 - ==================================================
+2026-07-24 10:19:55,280 - src.orchestrator - INFO - orchestrator.py:229 - 阶段4: 质量检查
+2026-07-24 10:19:55,280 - src.orchestrator - INFO - orchestrator.py:230 - ==================================================
+2026-07-24 10:19:55,280 - src.orchestrator - INFO - orchestrator.py:258 - ✅ 质量检查完成: 替换了 0 个失效源
+2026-07-24 10:19:55,280 - src.orchestrator - INFO - orchestrator.py:263 - ==================================================
+2026-07-24 10:19:55,280 - src.orchestrator - INFO - orchestrator.py:264 - 阶段5: 生成输出
+2026-07-24 10:19:55,280 - src.orchestrator - INFO - orchestrator.py:265 - ==================================================
+2026-07-24 10:19:55,280 - src.orchestrator - WARNING - orchestrator.py:282 - ⚠️ 没有可用的稳定源
+2026-07-24 10:19:55,280 - src.infrastructure.database - INFO - database.py:205 - 📦 数据库连接已关闭
+2026-07-24 10:19:55,281 - src.orchestrator - INFO - orchestrator.py:309 - 🧹 资源已清理
+2026-07-24 10:19:55,281 - src.orchestrator - INFO - orchestrator.py:315 - ==================================================
+2026-07-24 10:19:55,281 - src.orchestrator - INFO - orchestrator.py:316 - 📊 运行统计
+2026-07-24 10:19:55,281 - src.orchestrator - INFO - orchestrator.py:317 - ==================================================
+2026-07-24 10:19:55,281 - src.orchestrator - INFO - orchestrator.py:318 -   耗时: 4.87s
+2026-07-24 10:19:55,281 - src.orchestrator - INFO - orchestrator.py:319 -   发现新源: 0
+2026-07-24 10:19:55,281 - src.orchestrator - INFO - orchestrator.py:320 -   观察候选: 0
+2026-07-24 10:19:55,281 - src.orchestrator - INFO - orchestrator.py:321 -   提升稳定: 0
+2026-07-24 10:19:55,281 - src.orchestrator - INFO - orchestrator.py:322 -   替换失效: 0
+2026-07-24 10:19:55,282 - src.orchestrator - INFO - orchestrator.py:323 -   输出频道: 0
+2026-07-24 10:19:55,282 - src.orchestrator - INFO - orchestrator.py:324 - ==================================================
+2026-07-24 10:19:55,282 - __main__ - INFO - run.py:58 - 🎉 运行完成!

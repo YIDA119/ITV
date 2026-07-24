@@ -1,5 +1,5 @@
 #EXTM3U
-# Generated: 2026-07-24T13:22:50.733278
+# Generated: 2026-07-24T13:35:18.105813
 # Total channels: 149
 
 # ----- 📺央视频道 (20个频道) -----
@@ -12,7 +12,7 @@ http://74.91.26.218:82/live/cctv2hd.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-3
 http://74.91.26.218:82/live/cctv3hd.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-4
-https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1784937600-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-8a398826cc99b7041b3a7f3f687f4222&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c
+https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1784952000-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-f00e2cf47624abac9e58426b2d37c6b4&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c
 #EXTINF:-1 group-title="📺央视频道",CCTV-5
 http://112.27.235.94:8000/hls/6/index.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-6
@@ -20,13 +20,13 @@ http://69.30.245.50/live/cctv6.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-7
 http://74.91.26.218:82/live/cctv7hd.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-8
-http://192.151.150.154/live/cctv8k.m3u8
+http://74.91.26.218:82/live/cctv8hd.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-9
 https://xykt-fix.github.io/Y77.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-10
 http://74.91.26.218:82/live/cctv10hd.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-11
-http://74.91.26.218:82/live/cctv11hd.m3u8
+https://xykt-fix.github.io/play/a02b/index.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-12
 http://74.91.26.218:82/live/cctv12hd.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-13
@@ -40,7 +40,7 @@ http://183.11.239.36:808/hls/169/index.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-17
 http://74.91.26.218:82/live/cctv17hd.m3u8
 #EXTINF:-1 group-title="📺央视频道",CGTN
-https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8
+http://112.27.235.94:8000/hls/17/index.m3u8
 #EXTINF:-1 group-title="📺央视频道",CGTN Documentary
 https://amg00405-rakutentv-cgtndocumentary-rakuten-0ql8j.amagi.tv/master.m3u8
 
@@ -52,7 +52,7 @@ http://112.27.235.94:8000/hls/27/index.m3u8
 #EXTINF:-1 group-title="📡卫视频道",天津卫视
 http://112.27.235.94:8000/hls/42/index.m3u8
 #EXTINF:-1 group-title="📡卫视频道",河北卫视
-http://112.27.235.94:8000/hls/39/index.m3u8
+http://183.11.239.36:808/hls/54/index.m3u8
 #EXTINF:-1 group-title="📡卫视频道",山西卫视
 http://112.27.235.94:8000/hls/45/index.m3u8
 #EXTINF:-1 group-title="📡卫视频道",内蒙古卫视
@@ -142,7 +142,7 @@ http://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",浙江少儿
 https://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",浙江教科
-https://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8
+http://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",浙江经视
 https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",浙江国际
@@ -182,7 +182,7 @@ http://dassby.qqff.top:99/live/辽宁影视剧/index.m3u8
 #EXTINF:-1 group-title="☘️山东频道",山东生活
 http://ls.qingting.fm/live/60260.m3u8
 #EXTINF:-1 group-title="☘️山东频道",山东体育休闲广播
-http://45.192.97.170:8880/play/6319.m3u8
+http://45.192.97.170:8880/play/6494.m3u8
 
 # ----- ☘️重庆频道 (1个频道) -----
 #EXTINF:-1 group-title="☘️重庆频道",浙江教科影院
@@ -272,7 +272,7 @@ https://gcalic.v.myalicdn.com/gc/ylh04_1/index.m3u8
 #EXTINF:-1 group-title="☘️北京频道",辽宁体育
 http://dassby.qqff.top:99/live/辽宁体育/index.m3u8
 #EXTINF:-1 group-title="☘️北京频道",北京新闻
-http://45.192.97.170:8880/play/6445.m3u8
+https://satellitepull.cnr.cn/live/wxbjxwgb/playlist.m3u8
 #EXTINF:-1 group-title="☘️北京频道",北京生活
 http://45.192.97.170:8880/play/6450.m3u8
 #EXTINF:-1 group-title="☘️北京频道",北京科教
@@ -310,7 +310,7 @@ https://gcalic.v.myalicdn.com/gc/dlst01_1/index.m3u8
 #EXTINF:-1 group-title="☘️内蒙古频道",云南大理崇圣寺三塔中景
 https://gcalic.v.myalicdn.com/gc/dlst03_1/index.m3u8
 #EXTINF:-1 group-title="☘️内蒙古频道",内蒙古新闻广播
-http://45.192.97.170:8880/play/6551.m3u8
+http://45.192.97.170:8880/play/6357.m3u8
 
 # ----- ☘️辽宁频道 (2个频道) -----
 #EXTINF:-1 group-title="☘️辽宁频道",四川峨眉山普贤菩萨铜像
@@ -332,7 +332,7 @@ http://112.27.235.94:8000/hls/28/index.m3u8
 #EXTINF:-1 group-title="☘️黑龙江频道",黑龙江新闻
 https://ls.qingting.fm/live/4974/64k.m3u8
 #EXTINF:-1 group-title="☘️黑龙江频道",黑龙江都市女性广播
-http://45.192.97.170:8880/play/6545.m3u8
+http://45.192.97.170:8880/play/6352.m3u8
 #EXTINF:-1 group-title="☘️黑龙江频道",黑龙江少儿
 https://ls.qingting.fm/live/4972/64k.m3u8
 

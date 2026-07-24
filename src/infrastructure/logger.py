@@ -1,13 +1,11 @@
 # src/infrastructure/logger.py
-"""统一日志系统"""
+"""统一日志系统 - 无循环依赖"""
 
 import logging
 import sys
 from pathlib import Path
 from logging.handlers import RotatingFileHandler
-from typing import Optional
-
-from src.core.config import get_config
+from typing import Optional, Dict
 
 
 class LoggerManager:
@@ -15,17 +13,21 @@ class LoggerManager:
     
     _instance: Optional["LoggerManager"] = None
     _loggers: Dict[str, logging.Logger] = {}
+    _initialized: bool = False
     
     def __new__(cls):
         if cls._instance is None:
             cls._instance = super().__new__(cls)
-            cls._instance._initialize()
         return cls._instance
     
-    def _initialize(self):
+    def initialize(self, log_dir: Optional[Path] = None) -> None:
         """初始化日志系统"""
-        config = get_config()
-        log_dir = config.output_dir / "logs"
+        if self._initialized:
+            return
+        
+        if log_dir is None:
+            log_dir = Path("output") / "logs"
+        
         log_dir.mkdir(parents=True, exist_ok=True)
         
         # 根日志配置
@@ -62,9 +64,14 @@ class LoggerManager:
             self._root_logger.addHandler(file_handler)
         except Exception:
             pass
+        
+        self._initialized = True
     
     def get_logger(self, name: str = None) -> logging.Logger:
         """获取日志器"""
+        if not self._initialized:
+            self.initialize()
+        
         if name is None:
             return self._root_logger
         
@@ -74,6 +81,7 @@ class LoggerManager:
         return self._loggers[name]
 
 
+# 全局日志管理器
 _logger_manager: Optional[LoggerManager] = None
 
 
@@ -95,3 +103,11 @@ def set_log_level(level: str) -> None:
     }
     logger = get_logger()
     logger.setLevel(levels.get(level.upper(), logging.INFO))
+
+
+def init_logger(log_dir: Optional[Path] = None) -> None:
+    """初始化日志系统"""
+    global _logger_manager
+    if _logger_manager is None:
+        _logger_manager = LoggerManager()
+    _logger_manager.initialize(log_dir)

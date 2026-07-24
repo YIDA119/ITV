@@ -54,6 +54,22 @@ class CandidateManager:
             }
             self._save()
     
+    def update_candidate_latency(self, key: str, latency: int):
+        """更新候选源的延迟信息"""
+        if key in self._candidates:
+            candidate = self._candidates[key]
+            # 更新平均延迟
+            old_avg = candidate.get("avg_latency", 0)
+            old_count = candidate.get("success_count", 0)
+            if old_count > 0:
+                new_avg = (old_avg * old_count + latency) // (old_count + 1)
+            else:
+                new_avg = latency
+            candidate["avg_latency"] = new_avg
+            candidate["success_count"] = old_count + 1
+            candidate["last_check"] = datetime.now().isoformat()
+            self._save()
+    
     def get_observing_sources(self, limit: int = 100) -> List[Dict]:
         observing = [
             c for c in self._candidates.values() 

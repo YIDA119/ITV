@@ -106,7 +106,7 @@ class IPTVOrchestrator:
         return self.stats
     
     async def _check_and_speed_test(self):
-        """检查候选池并测速"""
+        """检查候选池并测速 - 提升所有有效源"""
         observing_count = self.candidate_manager.get_observing_count()
         if observing_count == 0:
             return
@@ -116,8 +116,7 @@ class IPTVOrchestrator:
         logger.info("=" * 50)
         logger.info(f"📊 候选池中有 {observing_count} 个源需要测速")
         
-        # 获取候选源
-        candidates = self.candidate_manager.get_observing_sources(limit=3000)
+        candidates = self.candidate_manager.get_observing_sources(limit=5000)
         if not candidates:
             return
         
@@ -143,12 +142,21 @@ class IPTVOrchestrator:
             latency = ch.get("latency", 0)
             self.candidate_manager.update_candidate_latency(key, latency)
         
-        # 如果有有效频道，提升低延迟的
+        # 提升所有有效源 - 每个频道只保留最好的一个
         if valid_channels:
+            # 按延迟排序
             valid_channels.sort(key=lambda x: x.get("latency", 9999))
-            top_channels = valid_channels[:50]
             
-            logger.info(f"📌 直接提升 {len(top_channels)} 个低延迟源...")
+            # 每个频道只保留最好的一个
+            best_by_channel = {}
+            for ch in valid_channels:
+                name = ch["name"]
+                if name not in best_by_channel or ch.get("latency", 9999) < best_by_channel[name].get("latency", 9999):
+                    best_by_channel[name] = ch
+            
+            top_channels = list(best_by_channel.values())
+            
+            logger.info(f"📌 提升 {len(top_channels)} 个频道的稳定源...")
             for ch in top_channels:
                 await self.stable_manager.promote(
                     ch["name"],
@@ -207,7 +215,7 @@ class IPTVOrchestrator:
         logger.info("=" * 50)
         
         # 获取所有候选源
-        candidates = self.candidate_manager.get_observing_sources(limit=3000)
+        candidates = self.candidate_manager.get_observing_sources(limit=5000)
         if not candidates:
             logger.info("📭 没有候选源需要测速")
             return
@@ -234,12 +242,21 @@ class IPTVOrchestrator:
             latency = ch.get("latency", 0)
             self.candidate_manager.update_candidate_latency(key, latency)
         
-        # 如果有有效频道，提升低延迟的
+        # 提升所有有效源 - 每个频道只保留最好的一个
         if valid_channels:
+            # 按延迟排序
             valid_channels.sort(key=lambda x: x.get("latency", 9999))
-            top_channels = valid_channels[:50]
             
-            logger.info(f"📌 直接提升 {len(top_channels)} 个低延迟源...")
+            # 每个频道只保留最好的一个
+            best_by_channel = {}
+            for ch in valid_channels:
+                name = ch["name"]
+                if name not in best_by_channel or ch.get("latency", 9999) < best_by_channel[name].get("latency", 9999):
+                    best_by_channel[name] = ch
+            
+            top_channels = list(best_by_channel.values())
+            
+            logger.info(f"📌 提升 {len(top_channels)} 个频道的稳定源...")
             for ch in top_channels:
                 await self.stable_manager.promote(
                     ch["name"],
@@ -265,7 +282,7 @@ class IPTVOrchestrator:
         db = await get_db()
         stable = []
         
-        for obs in self.candidate_manager.get_observing_sources(limit=3000):
+        for obs in self.candidate_manager.get_observing_sources(limit=5000):
             # 查询测速历史
             rows = await db.fetch_all(
                 """SELECT latency, success FROM speed_history 
@@ -309,7 +326,7 @@ class IPTVOrchestrator:
             return 0
         
         promoted = 0
-        for obs in stable_candidates[:50]:
+        for obs in stable_candidates[:200]:
             # 检查是否已存在
             existing = await self.stable_manager.get_source(obs["name"])
             if existing and existing.get("is_fixed"):

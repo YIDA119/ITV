@@ -69,16 +69,19 @@ class SpeedTester:
                 
                 data = await resp.content.read(self.config.download_chunk_size)
                 
-                # 检测无效内容
-                data_lower = data.lower()
-                invalid_patterns = [
-                    b"<html", b"<!doctype", b"403", b"forbidden",
-                    b"404", b"not found", b"请勿滥用", b"该资源暂不可用"
-                ]
-                for pattern in invalid_patterns:
-                    if pattern in data_lower:
-                        await self._record_failure(url)
-                        return channel, head_latency, False, 0
+                # 检测无效内容 - 使用字符串而非 bytes
+                try:
+                    data_str = data.decode('utf-8', errors='ignore').lower()
+                    invalid_patterns = [
+                        "<html", "<!doctype", "403", "forbidden",
+                        "404", "not found", "请勿滥用", "该资源暂不可用"
+                    ]
+                    for pattern in invalid_patterns:
+                        if pattern in data_str:
+                            await self._record_failure(url)
+                            return channel, head_latency, False, 0
+                except Exception:
+                    pass
                 
                 # 验证媒体格式
                 is_valid = False

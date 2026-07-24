@@ -2533,3 +2533,180 @@
 2026-07-24 13:36:01,647 - src.orchestrator - INFO - orchestrator.py:489 -   输出频道: 336
 2026-07-24 13:36:01,647 - src.orchestrator - INFO - orchestrator.py:490 - ==================================================
 2026-07-24 13:36:01,647 - __main__ - INFO - run.py:56 - 🎉 运行完成!
+2026-07-24 19:19:57,070 - __main__ - INFO - run.py:43 - 🚀 IPTV 智能整理平台启动
+2026-07-24 19:19:57,071 - __main__ - INFO - run.py:44 - 📡 配置: 超时=8s, 并发=20
+2026-07-24 19:19:57,071 - __main__ - INFO - run.py:45 - 📋 模式: 完整模式 (传统采集 + 自治增强)
+2026-07-24 19:19:57,073 - src.managers.source_manager - INFO - source_manager.py:47 - 📦 加载源池: 857 个源
+2026-07-24 19:19:57,077 - src.managers.candidate_manager - INFO - candidate_manager.py:30 - 📦 加载候选池: 1123 个候选源
+2026-07-24 19:19:57,078 - src.managers.stable_manager - INFO - stable_manager.py:31 - 📦 加载稳定源: 401 个
+2026-07-24 19:19:57,082 - src.filters.alias - INFO - alias.py:63 - ✅ 加载别名规则：精确 885，正则 22
+2026-07-24 19:19:57,082 - src.orchestrator - INFO - orchestrator.py:77 - 🚀 IPTV 智能整理平台启动
+2026-07-24 19:19:57,082 - src.orchestrator - INFO - orchestrator.py:78 - 📊 配置: 并发=20, 超时=8s
+2026-07-24 19:19:57,082 - src.orchestrator - INFO - orchestrator.py:79 - 📋 模式: full
+2026-07-24 19:19:57,082 - src.orchestrator - INFO - orchestrator.py:105 - ==================================================
+2026-07-24 19:19:57,082 - src.orchestrator - INFO - orchestrator.py:106 - 传统模式: 全量采集 + 测速
+2026-07-24 19:19:57,082 - src.orchestrator - INFO - orchestrator.py:107 - ==================================================
+2026-07-24 19:19:57,083 - src.orchestrator - INFO - orchestrator.py:115 - 📋 使用订阅源: 11 个
+2026-07-24 19:19:57,083 - src.orchestrator - INFO - orchestrator.py:118 - 🔄 拉取所有源...
+2026-07-24 19:19:57,085 - src.infrastructure.database - INFO - database.py:48 - ✅ 数据库连接池已初始化: data/iptv_cache.db
+2026-07-24 19:19:57,086 - src.services.fetcher - INFO - fetcher.py:36 - 🔄 拉取: https://raw.githubusercontent.com/iptv-org/iptv/gh-pages/countries/cn.m3u
+2026-07-24 19:19:57,086 - src.services.fetcher - INFO - fetcher.py:36 - 🔄 拉取: https://raw.githubusercontent.com/iptv-org/iptv/master/streams/cn.m3u
+2026-07-24 19:19:57,086 - src.services.fetcher - INFO - fetcher.py:36 - 🔄 拉取: https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.txt
+2026-07-24 19:19:57,086 - src.services.fetcher - INFO - fetcher.py:36 - 🔄 拉取: https://raw.githubusercontent.com/zzgpy1/Collect-IPTV/main/best_sorted.m3u
+2026-07-24 19:19:57,087 - src.services.fetcher - INFO - fetcher.py:36 - 🔄 拉取: https://raw.githubusercontent.com/zzgpy1/ITV/main/output/tv.m3u
+2026-07-24 19:19:57,087 - src.services.fetcher - INFO - fetcher.py:36 - 🔄 拉取: https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/cn.m3u
+2026-07-24 19:19:57,087 - src.services.fetcher - INFO - fetcher.py:36 - 🔄 拉取: https://raw.githubusercontent.com/zzgpy1/ipv6-iptv/master/tv/iptv4.txt
+2026-07-24 19:19:57,087 - src.services.fetcher - INFO - fetcher.py:36 - 🔄 拉取: https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/live.txt
+2026-07-24 19:19:57,088 - src.services.fetcher - INFO - fetcher.py:36 - 🔄 拉取: https://raw.githubusercontent.com/kakaxi-1/IPTV/main/iptv.txt
+2026-07-24 19:19:57,088 - src.services.fetcher - INFO - fetcher.py:36 - 🔄 拉取: https://raw.githubusercontent.com/zzgpy1/iptv-api/master/output/result.txt
+2026-07-24 19:19:57,088 - src.services.fetcher - INFO - fetcher.py:36 - 🔄 拉取: https://tv.19860519.xyz/abc123
+2026-07-24 19:19:57,450 - src.orchestrator - INFO - orchestrator.py:128 - 📊 解析到 2589 个频道
+2026-07-24 19:19:57,451 - src.filters.alias - INFO - alias.py:63 - ✅ 加载别名规则：精确 885，正则 22
+2026-07-24 19:19:57,474 - src.orchestrator - INFO - orchestrator.py:140 - 📊 过滤后国内频道: 1177 个 (过滤掉 1412 个)
+2026-07-24 19:19:57,475 - src.orchestrator - INFO - orchestrator.py:150 - 📊 去重后频道: 733 个
+2026-07-24 19:19:57,476 - src.orchestrator - INFO - orchestrator.py:154 - 🔍 开始测速 733 个频道...
+2026-07-24 19:21:19,768 - src.services.speed_tester - INFO - speed_tester.py:175 - 📊 测速完成，有效频道: 433/733
+2026-07-24 19:21:19,768 - src.orchestrator - INFO - orchestrator.py:157 - ✅ 测速完成: 433 个有效频道
+2026-07-24 19:21:25,552 - src.orchestrator - INFO - orchestrator.py:178 - 📌 提升 320 个频道的稳定源...
+2026-07-24 19:21:25,567 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ CCTV-9 已提升为稳定源 (延迟: 70ms)
+2026-07-24 19:21:25,572 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ CCTV-13 已提升为稳定源 (延迟: 186ms)
+2026-07-24 19:21:25,577 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ CCTV-8 已提升为稳定源 (延迟: 187ms)
+2026-07-24 19:21:25,596 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ CCTV-12 已提升为稳定源 (延迟: 217ms)
+2026-07-24 19:21:25,601 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ CCTV-10 已提升为稳定源 (延迟: 218ms)
+2026-07-24 19:21:25,606 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ CCTV-17 已提升为稳定源 (延迟: 221ms)
+2026-07-24 19:21:25,630 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ CCTV-6 已提升为稳定源 (延迟: 249ms)
+2026-07-24 19:21:25,666 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 翡翠台 已提升为稳定源 (延迟: 280ms)
+2026-07-24 19:21:25,676 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ CCTV-4 已提升为稳定源 (延迟: 292ms)
+2026-07-24 19:21:25,715 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 贵州经济广播 已提升为稳定源 (延迟: 427ms)
+2026-07-24 19:21:25,744 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 贵州故事广播 已提升为稳定源 (延迟: 434ms)
+2026-07-24 19:21:25,874 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ CCTV-4K 已提升为稳定源 (延迟: 490ms)
+2026-07-24 19:21:25,898 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 湖南卫视 已提升为稳定源 (延迟: 516ms)
+2026-07-24 19:21:25,979 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 浙江卫视 已提升为稳定源 (延迟: 523ms)
+2026-07-24 19:21:26,031 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 辽宁生活 已提升为稳定源 (延迟: 540ms)
+2026-07-24 19:21:26,118 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 山东体育休闲广播 已提升为稳定源 (延迟: 636ms)
+2026-07-24 19:21:26,123 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 浙江城市之声 已提升为稳定源 (延迟: 636ms)
+2026-07-24 19:21:26,151 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 浙江旅游之声 已提升为稳定源 (延迟: 638ms)
+2026-07-24 19:21:26,156 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 四川综合广播四川之声 已提升为稳定源 (延迟: 638ms)
+2026-07-24 19:21:26,181 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 内蒙古新闻广播 已提升为稳定源 (延迟: 640ms)
+2026-07-24 19:21:26,195 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 辽宁经济广播 已提升为稳定源 (延迟: 641ms)
+2026-07-24 19:21:26,248 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 贵州旅游广播 已提升为稳定源 (延迟: 644ms)
+2026-07-24 19:21:26,283 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 黑龙江都市女性广播 已提升为稳定源 (延迟: 647ms)
+2026-07-24 19:21:26,302 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 四川私家车广播 已提升为稳定源 (延迟: 648ms)
+2026-07-24 19:21:26,331 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 贵州综合广播 已提升为稳定源 (延迟: 650ms)
+2026-07-24 19:21:26,336 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 黑龙江高校广播 已提升为稳定源 (延迟: 651ms)
+2026-07-24 19:21:26,346 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 浙江少儿 已提升为稳定源 (延迟: 669ms)
+2026-07-24 19:21:26,434 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 四川交通广播 已提升为稳定源 (延迟: 844ms)
+2026-07-24 19:21:26,462 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 辽宁乡村广播 已提升为稳定源 (延迟: 853ms)
+2026-07-24 19:21:26,472 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 浙江民生资讯广播 已提升为稳定源 (延迟: 854ms)
+2026-07-24 19:21:26,519 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 东方卫视4K 已提升为稳定源 (延迟: 938ms)
+2026-07-24 19:21:26,661 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 广西北部湾之声 已提升为稳定源 (延迟: 1347ms)
+2026-07-24 19:21:27,109 - src.orchestrator - INFO - orchestrator.py:187 - ✅ 传统模式完成
+2026-07-24 19:21:27,110 - src.orchestrator - INFO - orchestrator.py:191 - ==================================================
+2026-07-24 19:21:27,110 - src.orchestrator - INFO - orchestrator.py:192 - 自治模式: 候选池观察 + 提升
+2026-07-24 19:21:27,110 - src.orchestrator - INFO - orchestrator.py:193 - ==================================================
+2026-07-24 19:21:27,111 - src.orchestrator - INFO - orchestrator.py:225 - ==================================================
+2026-07-24 19:21:27,111 - src.orchestrator - INFO - orchestrator.py:226 - 候选池测速
+2026-07-24 19:21:27,111 - src.orchestrator - INFO - orchestrator.py:227 - ==================================================
+2026-07-24 19:21:27,111 - src.orchestrator - INFO - orchestrator.py:228 - 📊 候选池中有 495 个源需要测速
+2026-07-24 19:21:27,112 - src.orchestrator - INFO - orchestrator.py:242 - 🔍 开始测速 495 个候选源...
+2026-07-24 19:22:56,980 - src.services.speed_tester - INFO - speed_tester.py:175 - 📊 测速完成，有效频道: 24/495
+2026-07-24 19:22:56,980 - src.orchestrator - INFO - orchestrator.py:245 - ✅ 测速完成: 24/495 个有效
+2026-07-24 19:22:57,276 - src.orchestrator - INFO - orchestrator.py:265 - 📌 提升 23 个频道的稳定源...
+2026-07-24 19:22:57,281 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ CCTV-4 已提升为稳定源 (延迟: 17ms)
+2026-07-24 19:22:57,286 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ CCTV-8 已提升为稳定源 (延迟: 253ms)
+2026-07-24 19:22:57,291 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 深圳卫视 已提升为稳定源 (延迟: 645ms)
+2026-07-24 19:22:57,296 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 浙江经济生活 已提升为稳定源 (延迟: 767ms)
+2026-07-24 19:22:57,310 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 浙江民生休闲 已提升为稳定源 (延迟: 899ms)
+2026-07-24 19:22:57,315 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 东方卫视 已提升为稳定源 (延迟: 917ms)
+2026-07-24 19:22:57,320 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 北京新闻 已提升为稳定源 (延迟: 951ms)
+2026-07-24 19:22:57,330 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 北京卫视 已提升为稳定源 (延迟: 962ms)
+2026-07-24 19:22:57,335 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 四川卫视 已提升为稳定源 (延迟: 964ms)
+2026-07-24 19:22:57,340 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ CCTV-6 已提升为稳定源 (延迟: 1114ms)
+2026-07-24 19:22:57,345 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ CCTV-16 已提升为稳定源 (延迟: 1214ms)
+2026-07-24 19:22:57,349 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 河北农民 已提升为稳定源 (延迟: 1298ms)
+2026-07-24 19:22:57,359 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ CCTV-17 已提升为稳定源 (延迟: 4439ms)
+2026-07-24 19:22:57,378 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 翡翠台 已提升为稳定源 (延迟: 5773ms)
+2026-07-24 19:22:57,388 - src.orchestrator - INFO - orchestrator.py:318 - ==================================================
+2026-07-24 19:22:57,389 - src.orchestrator - INFO - orchestrator.py:319 - 观察候选源
+2026-07-24 19:22:57,389 - src.orchestrator - INFO - orchestrator.py:320 - ==================================================
+2026-07-24 19:22:57,389 - src.orchestrator - INFO - orchestrator.py:327 - 📊 候选池状态: 495 个正在观察
+2026-07-24 19:22:57,486 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 贵州综合广播 (成功率 57.14%, 延迟 2069ms)
+2026-07-24 19:22:57,486 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: CCTV-4 (成功率 100.00%, 延迟 661ms)
+2026-07-24 19:22:57,487 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: CCTV-8 (成功率 100.00%, 延迟 325ms)
+2026-07-24 19:22:57,502 - src.orchestrator - INFO - orchestrator.py:361 - ✅ 观察完成: 3 个源达到稳定标准
+2026-07-24 19:22:57,502 - src.orchestrator - INFO - orchestrator.py:366 - ==================================================
+2026-07-24 19:22:57,503 - src.orchestrator - INFO - orchestrator.py:367 - 提升稳定源
+2026-07-24 19:22:57,503 - src.orchestrator - INFO - orchestrator.py:368 - ==================================================
+2026-07-24 19:22:57,503 - src.orchestrator - INFO - orchestrator.py:392 - ✅ 提升完成: 0 个源被提升
+2026-07-24 19:22:57,503 - src.orchestrator - INFO - orchestrator.py:397 - ==================================================
+2026-07-24 19:22:57,503 - src.orchestrator - INFO - orchestrator.py:398 - 质量检查
+2026-07-24 19:22:57,503 - src.orchestrator - INFO - orchestrator.py:399 - ==================================================
+2026-07-24 19:22:57,503 - src.managers.quality_manager - INFO - quality_manager.py:28 - 🔍 检查 402 个稳定源质量...
+2026-07-24 19:22:57,918 - src.orchestrator - INFO - orchestrator.py:424 - ✅ 质量检查完成: 替换了 0 个失效源
+2026-07-24 19:22:57,918 - src.orchestrator - INFO - orchestrator.py:216 - ✅ 自治模式完成
+2026-07-24 19:22:57,918 - src.orchestrator - INFO - orchestrator.py:429 - ==================================================
+2026-07-24 19:22:57,918 - src.orchestrator - INFO - orchestrator.py:430 - 生成输出
+2026-07-24 19:22:57,919 - src.orchestrator - INFO - orchestrator.py:431 - ==================================================
+2026-07-24 19:22:57,923 - src.services.merger - INFO - merger.py:104 - 📊 合并完成: 337 个频道
+2026-07-24 19:22:57,926 - src.services.demo_service - INFO - demo_service.py:72 - 📋 加载 demo 顺序: 3574 个条目
+2026-07-24 19:24:30,601 - src.services.generator - INFO - generator.py:156 - 📊 Demo 匹配结果: 150 个频道
+2026-07-24 19:24:30,601 - src.services.generator - INFO - generator.py:160 -    📺央视频道: 20 个频道
+2026-07-24 19:24:30,601 - src.services.generator - INFO - generator.py:160 -    📡卫视频道: 37 个频道
+2026-07-24 19:24:30,601 - src.services.generator - INFO - generator.py:160 -    ☘️上海频道: 2 个频道
+2026-07-24 19:24:30,601 - src.services.generator - INFO - generator.py:160 -    ☘️江苏频道: 1 个频道
+2026-07-24 19:24:30,601 - src.services.generator - INFO - generator.py:160 -    ☘️浙江频道: 12 个频道
+2026-07-24 19:24:30,601 - src.services.generator - INFO - generator.py:160 -    ☘️安徽频道: 3 个频道
+2026-07-24 19:24:30,602 - src.services.generator - INFO - generator.py:160 -    ☘️福建频道: 3 个频道
+2026-07-24 19:24:30,602 - src.services.generator - INFO - generator.py:160 -    ☘️江西频道: 1 个频道
+2026-07-24 19:24:30,602 - src.services.generator - INFO - generator.py:160 -    ☘️山东频道: 3 个频道
+2026-07-24 19:24:30,602 - src.services.generator - INFO - generator.py:160 -    ☘️重庆频道: 1 个频道
+2026-07-24 19:24:30,602 - src.services.generator - INFO - generator.py:160 -    ☘️四川频道: 1 个频道
+2026-07-24 19:24:30,602 - src.services.generator - INFO - generator.py:160 -    ☘️贵州频道: 1 个频道
+2026-07-24 19:24:30,602 - src.services.generator - INFO - generator.py:160 -    ☘️云南频道: 4 个频道
+2026-07-24 19:24:30,602 - src.services.generator - INFO - generator.py:160 -    ☘️陕西频道: 6 个频道
+2026-07-24 19:24:30,602 - src.services.generator - INFO - generator.py:160 -    ☘️甘肃频道: 3 个频道
+2026-07-24 19:24:30,602 - src.services.generator - INFO - generator.py:160 -    ☘️青海频道: 3 个频道
+2026-07-24 19:24:30,602 - src.services.generator - INFO - generator.py:160 -    ☘️宁夏频道: 1 个频道
+2026-07-24 19:24:30,602 - src.services.generator - INFO - generator.py:160 -    ☘️新疆频道: 2 个频道
+2026-07-24 19:24:30,602 - src.services.generator - INFO - generator.py:160 -    ☘️广东频道: 5 个频道
+2026-07-24 19:24:30,602 - src.services.generator - INFO - generator.py:160 -    ☘️广西频道: 2 个频道
+2026-07-24 19:24:30,603 - src.services.generator - INFO - generator.py:160 -    ☘️海南频道: 1 个频道
+2026-07-24 19:24:30,603 - src.services.generator - INFO - generator.py:160 -    ☘️北京频道: 5 个频道
+2026-07-24 19:24:30,603 - src.services.generator - INFO - generator.py:160 -    ☘️天津频道: 1 个频道
+2026-07-24 19:24:30,603 - src.services.generator - INFO - generator.py:160 -    ☘️河北频道: 8 个频道
+2026-07-24 19:24:30,603 - src.services.generator - INFO - generator.py:160 -    ☘️山西频道: 1 个频道
+2026-07-24 19:24:30,603 - src.services.generator - INFO - generator.py:160 -    ☘️内蒙古频道: 2 个频道
+2026-07-24 19:24:30,603 - src.services.generator - INFO - generator.py:160 -    ☘️辽宁频道: 3 个频道
+2026-07-24 19:24:30,603 - src.services.generator - INFO - generator.py:160 -    ☘️吉林频道: 3 个频道
+2026-07-24 19:24:30,603 - src.services.generator - INFO - generator.py:160 -    ☘️黑龙江频道: 4 个频道
+2026-07-24 19:24:30,603 - src.services.generator - INFO - generator.py:160 -    ☘️河南频道: 5 个频道
+2026-07-24 19:24:30,603 - src.services.generator - INFO - generator.py:160 -    ☘️湖北频道: 1 个频道
+2026-07-24 19:24:30,603 - src.services.generator - INFO - generator.py:160 -    ☘️湖南频道: 1 个频道
+2026-07-24 19:24:30,603 - src.services.generator - INFO - generator.py:160 -    🌊港·澳·台: 4 个频道
+2026-07-24 19:24:30,604 - src.services.generator - INFO - generator.py:183 - ✅ M3U 文件已生成: output/tv.m3u (150 个频道)
+2026-07-24 19:24:30,604 - src.services.generator - INFO - generator.py:200 - ✅ TXT 文件已生成: output/tv.txt
+2026-07-24 19:24:30,605 - src.services.generator - INFO - generator.py:219 - ✅ 多源 M3U 文件已生成: output/tv_multi.m3u
+2026-07-24 19:24:30,609 - src.services.generator - INFO - generator.py:246 - ✅ JSON 文件已生成: output/channels.json
+2026-07-24 19:24:30,609 - src.services.generator - INFO - generator.py:49 - ✅ 所有输出文件已生成
+2026-07-24 19:24:30,609 - src.services.special_categories - INFO - special_categories.py:173 - 🧠 开始智能补充采集...
+2026-07-24 19:24:30,883 - src.services.special_categories - INFO - special_categories.py:154 - 🔍 验证特殊分类频道...
+2026-07-24 19:24:37,051 - src.services.special_categories - INFO - special_categories.py:162 -    💃 广场舞: 201/201 可用
+2026-07-24 19:24:41,567 - src.services.special_categories - INFO - special_categories.py:162 -    🔥 热门歌曲: 107/119 可用
+2026-07-24 19:24:51,108 - src.services.special_categories - INFO - special_categories.py:162 -    🎧 动感舞曲: 41/41 可用
+2026-07-24 19:25:22,980 - src.services.special_categories - INFO - special_categories.py:162 -    📻 网络电台: 263/340 可用
+2026-07-24 19:25:22,981 - src.services.special_categories - INFO - special_categories.py:212 - ✅ 已追加 612 个智能补充频道
+2026-07-24 19:25:22,981 - src.orchestrator - INFO - orchestrator.py:464 - ✅ 输出生成完成: 337 个频道
+2026-07-24 19:25:22,983 - src.infrastructure.database - INFO - database.py:206 - 📦 数据库连接已关闭
+2026-07-24 19:25:22,983 - src.orchestrator - INFO - orchestrator.py:474 - 🧹 资源已清理
+2026-07-24 19:25:22,983 - src.orchestrator - INFO - orchestrator.py:480 - ==================================================
+2026-07-24 19:25:22,983 - src.orchestrator - INFO - orchestrator.py:481 - 📊 运行统计
+2026-07-24 19:25:22,983 - src.orchestrator - INFO - orchestrator.py:482 - ==================================================
+2026-07-24 19:25:22,983 - src.orchestrator - INFO - orchestrator.py:483 -   耗时: 325.90s
+2026-07-24 19:25:22,983 - src.orchestrator - INFO - orchestrator.py:484 -   传统模式有效频道: 433
+2026-07-24 19:25:22,984 - src.orchestrator - INFO - orchestrator.py:485 -   发现新源: 0
+2026-07-24 19:25:22,984 - src.orchestrator - INFO - orchestrator.py:486 -   观察候选: 3
+2026-07-24 19:25:22,984 - src.orchestrator - INFO - orchestrator.py:487 -   提升稳定: 0
+2026-07-24 19:25:22,984 - src.orchestrator - INFO - orchestrator.py:488 -   替换失效: 0
+2026-07-24 19:25:22,984 - src.orchestrator - INFO - orchestrator.py:489 -   输出频道: 337
+2026-07-24 19:25:22,984 - src.orchestrator - INFO - orchestrator.py:490 - ==================================================
+2026-07-24 19:25:22,984 - __main__ - INFO - run.py:56 - 🎉 运行完成!

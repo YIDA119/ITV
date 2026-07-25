@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 337,
-  "generated": "2026-07-24T19:24:30.605593",
+  "total": 339,
+  "generated": "2026-07-25T02:27:48.787175",
   "channels": [
     {
       "name": "CCTV-9",
@@ -11,7 +11,7 @@
         "https://xykt-fix.github.io/Y77.m3u8",
         "http://74.91.26.218:82/live/cctv9hd.m3u8"
       ],
-      "latency": 70
+      "latency": 79
     },
     {
       "name": "CCTV-15",
@@ -25,11 +25,11 @@
     },
     {
       "name": "海峡卫视",
-      "url": "http://38.64.72.148:80/hls/modn/list/4009/playlist.m3u8",
+      "url": "http://38.64.72.148:80/hls/modn/list/4009/chunklist0.m3u8",
       "urls": [
-        "http://38.64.72.148:80/hls/modn/list/4009/playlist.m3u8"
+        "http://38.64.72.148:80/hls/modn/list/4009/chunklist0.m3u8"
       ],
-      "latency": 210
+      "latency": 69
     },
     {
       "name": "CCTV-10",
@@ -39,57 +39,57 @@
         "http://74.91.26.218:82/live/cctv10hd.m3u8",
         "http://112.27.235.94:8000/hls/11/index.m3u8"
       ],
-      "latency": 218
+      "latency": 176
     },
     {
       "name": "CCTV-4",
-      "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1784963700-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-c15cdb824fc6ce30ba3c273b15f6c722&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+      "url": "http://74.91.26.218:82/live/cctv4hd.m3u8",
       "urls": [
-        "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1784963700-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-c15cdb824fc6ce30ba3c273b15f6c722&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
         "http://74.91.26.218:82/live/cctv4hd.m3u8",
+        "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1784963700-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-c15cdb824fc6ce30ba3c273b15f6c722&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
         "http://112.27.235.94:8000/hls/4/index.m3u8"
       ],
-      "latency": 17
+      "latency": 324
     },
     {
       "name": "CCTV-8",
       "url": "http://192.151.150.154/live/cctv8k.m3u8",
       "urls": [
         "http://192.151.150.154/live/cctv8k.m3u8",
-        "http://192.151.150.154/live/cctv8k.m3u8",
-        "http://74.91.26.218:82/live/cctv8hd.m3u8"
+        "http://74.91.26.218:82/live/cctv8hd.m3u8",
+        "http://192.151.150.154/live/cctv8k.m3u8"
       ],
-      "latency": 253
+      "latency": 244
     },
     {
       "name": "CCTV-7",
       "url": "http://74.91.26.218:82/live/cctv7hd.m3u8",
       "urls": [
         "http://74.91.26.218:82/live/cctv7hd.m3u8",
-        "http://74.91.26.218:82/live/cctv7hd.m3u8",
-        "http://112.27.235.94:8000/hls/8/index.m3u8"
+        "http://112.27.235.94:8000/hls/8/index.m3u8",
+        "http://112.46.85.60:8009/hls/504/index.m3u8"
       ],
-      "latency": 225
+      "latency": 257
     },
     {
       "name": "CCTV-3",
       "url": "http://74.91.26.218:82/live/cctv3hd.m3u8",
       "urls": [
         "http://74.91.26.218:82/live/cctv3hd.m3u8",
-        "http://74.91.26.218:82/live/cctv3hd.m3u8",
-        "http://112.27.235.94:8000/hls/3/index.m3u8"
+        "http://112.27.235.94:8000/hls/3/index.m3u8",
+        "http://112.46.85.60:8009/hls/3/index.m3u8"
       ],
-      "latency": 253
+      "latency": 315
     },
     {
       "name": "CCTV-11",
-      "url": "https://xykt-fix.github.io/play/a02b/index.m3u8",
+      "url": "http://74.91.26.218:82/live/cctv11hd.m3u8",
       "urls": [
-        "https://xykt-fix.github.io/play/a02b/index.m3u8",
         "http://74.91.26.218:82/live/cctv11hd.m3u8",
-        "http://112.27.235.94:8000/hls/12/index.m3u8"
+        "http://112.27.235.94:8000/hls/12/index.m3u8",
+        "http://183.11.239.36:808/hls/29/index.m3u8"
       ],
-      "latency": 48
+      "latency": 369
     },
     {
       "name": "CCTV-2",
@@ -99,7 +99,7 @@
         "http://74.91.26.218:82/live/cctv2hd.m3u8",
         "http://112.27.235.94:8000/hls/2/index.m3u8"
       ],
-      "latency": 257
+      "latency": 250
     },
     {
       "name": "CCTV-12",
@@ -109,7 +109,7 @@
         "http://74.91.26.218:82/live/cctv12hd.m3u8",
         "http://74.91.26.218:82/live/cctv12hd.m3u8"
       ],
-      "latency": 217
+      "latency": 175
     },
     {
       "name": "CCTV-6",
@@ -126,10 +126,10 @@
       "url": "http://74.91.26.218:82/live/cctv13hd.m3u8",
       "urls": [
         "http://74.91.26.218:82/live/cctv13hd.m3u8",
-        "http://74.91.26.218:82/live/cctv13hd.m3u8",
+        "http://112.27.235.94:8000/hls/14/index.m3u8",
         "http://112.27.235.94:8000/hls/14/index.m3u8"
       ],
-      "latency": 186
+      "latency": 290
     },
     {
       "name": "CCTV-17",
@@ -137,7 +137,7 @@
       "urls": [
         "http://74.91.26.218:82/live/cctv17hd.m3u8",
         "http://123.130.84.106:8154/tsfile/live/0019_1.m3u8",
-        "http://123.130.84.106:8154/tsfile/live/0019_1.m3u8"
+        "http://183.11.239.36:808/hls/35/index.m3u8"
       ],
       "latency": 290
     },
@@ -149,7 +149,7 @@
         "http://74.91.26.218:82/live/cctv14hd.m3u8",
         "http://112.27.235.94:8000/hls/15/index.m3u8"
       ],
-      "latency": 190
+      "latency": 142
     },
     {
       "name": "TVBS-Asia",
@@ -157,7 +157,7 @@
       "urls": [
         "http://38.64.72.148/hls/modn/list/4005/playlist.m3u8"
       ],
-      "latency": 493
+      "latency": 98
     },
     {
       "name": "CCTV-Golf & Tennis",
@@ -166,7 +166,7 @@
         "http://38.75.136.137:98/gslb/dsdqpub/gefwq.m3u8?auth=testpub",
         "http://38.75.136.137:98/gslb/dsdqpub/gefwq.m3u8?auth=testpub"
       ],
-      "latency": 243
+      "latency": 183
     },
     {
       "name": "CCTV-Storm Theater",
@@ -202,7 +202,7 @@
         "http://38.75.136.137:98/gslb/dsdqpub/fyzq.m3u8?auth=testpub",
         "http://38.75.136.137:98/gslb/dsdqpub/fyzq.m3u8?auth=testpub"
       ],
-      "latency": 278
+      "latency": 183
     },
     {
       "name": "CCTV-Weapon & Technology",
@@ -273,7 +273,7 @@
       "urls": [
         "http://cdn9.163189.xyz/smt1.1.php?id=jade_twn"
       ],
-      "latency": 5773
+      "latency": 6588
     },
     {
       "name": "CGTN French",
@@ -282,7 +282,7 @@
         "http://145.239.5.177/214/index.m3u8",
         "http://145.239.5.177/214/index.m3u8"
       ],
-      "latency": 238
+      "latency": 358
     },
     {
       "name": "CGTN Documentary",
@@ -291,7 +291,7 @@
         "https://amg00405-rakutentv-cgtndocumentary-rakuten-0ql8j.amagi.tv/master.m3u8",
         "https://amg00405-rakutentv-cgtndocumentary-rakuten-0ql8j.amagi.tv/master.m3u8"
       ],
-      "latency": 255
+      "latency": 156
     },
     {
       "name": "CGTN",
@@ -301,15 +301,15 @@
         "https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8",
         "http://112.27.235.94:8000/hls/17/index.m3u8"
       ],
-      "latency": 397
+      "latency": 202
     },
     {
       "name": "浙江钱江都市",
-      "url": "https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8",
+      "url": "http://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8",
       "urls": [
-        "https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8"
+        "http://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8"
       ],
-      "latency": 496
+      "latency": 355
     },
     {
       "name": "浙江教科影视",
@@ -317,7 +317,7 @@
       "urls": [
         "https://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8"
       ],
-      "latency": 448
+      "latency": 380
     },
     {
       "name": "浙江经济",
@@ -325,7 +325,7 @@
       "urls": [
         "http://ali-m-l.cztv.com/channels/lantian/channel03/720p.m3u8"
       ],
-      "latency": 579
+      "latency": 492
     },
     {
       "name": "浙江新闻",
@@ -333,7 +333,7 @@
       "urls": [
         "https://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8"
       ],
-      "latency": 1397
+      "latency": 809
     },
     {
       "name": "东方卫视",
@@ -342,15 +342,15 @@
         "http://bp-resource-dfl.bestv.cn/155/3/video.m3u8",
         "http://bp-resource-dfl.bestv.cn/148/3/video.m3u8"
       ],
-      "latency": 917
+      "latency": 734
     },
     {
       "name": "浙江民生",
-      "url": "http://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8",
+      "url": "http://ali-m-l.cztv.com/channels/lantian/channel06/1080p.m3u8",
       "urls": [
-        "http://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8"
+        "http://ali-m-l.cztv.com/channels/lantian/channel06/1080p.m3u8"
       ],
-      "latency": 445
+      "latency": 526
     },
     {
       "name": "陕西银龄",
@@ -358,7 +358,7 @@
       "urls": [
         "http://112.46.105.20:8009/hls/20/index.m3u8"
       ],
-      "latency": 674
+      "latency": 545
     },
     {
       "name": "浙江钱江",
@@ -366,7 +366,7 @@
       "urls": [
         "https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8"
       ],
-      "latency": 449
+      "latency": 1277
     },
     {
       "name": "辽宁经济",
@@ -374,7 +374,7 @@
       "urls": [
         "http://dassby.qqff.top:99/live/辽宁经济/index.m3u8"
       ],
-      "latency": 803
+      "latency": 450
     },
     {
       "name": "辽宁青少",
@@ -382,7 +382,7 @@
       "urls": [
         "http://dassby.qqff.top:99/live/辽宁教育青少/index.m3u8"
       ],
-      "latency": 810
+      "latency": 461
     },
     {
       "name": "辽宁影视",
@@ -390,7 +390,7 @@
       "urls": [
         "http://dassby.qqff.top:99/live/辽宁影视剧/index.m3u8"
       ],
-      "latency": 538
+      "latency": 675
     },
     {
       "name": "浙江教科影院",
@@ -398,15 +398,15 @@
       "urls": [
         "http://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8"
       ],
-      "latency": 445
+      "latency": 357
     },
     {
       "name": "江西卫视",
-      "url": "http://112.27.235.94:8000/hls/44/index.m3u8",
+      "url": "http://183.11.239.36:808/hls/44/index.m3u8",
       "urls": [
-        "http://112.27.235.94:8000/hls/44/index.m3u8"
+        "http://183.11.239.36:808/hls/44/index.m3u8"
       ],
-      "latency": 521
+      "latency": 405
     },
     {
       "name": "深圳卫视",
@@ -414,7 +414,7 @@
       "urls": [
         "http://182.150.23.74:808/hls/20/index.m3u8"
       ],
-      "latency": 645
+      "latency": 514
     },
     {
       "name": "河北卫视",
@@ -422,7 +422,7 @@
       "urls": [
         "http://183.11.239.36:808/hls/54/index.m3u8"
       ],
-      "latency": 488
+      "latency": 823
     },
     {
       "name": "安徽卫视",
@@ -430,7 +430,7 @@
       "urls": [
         "http://112.27.235.94:8000/hls/26/index.m3u8"
       ],
-      "latency": 520
+      "latency": 918
     },
     {
       "name": "重庆卫视",
@@ -438,7 +438,7 @@
       "urls": [
         "http://112.27.235.94:8000/hls/36/index.m3u8"
       ],
-      "latency": 521
+      "latency": 421
     },
     {
       "name": "天津卫视",
@@ -446,7 +446,7 @@
       "urls": [
         "http://112.27.235.94:8000/hls/42/index.m3u8"
       ],
-      "latency": 523
+      "latency": 420
     },
     {
       "name": "安徽综艺体育",
@@ -454,7 +454,7 @@
       "urls": [
         "http://112.27.235.94:8000/hls/25/index.m3u8"
       ],
-      "latency": 518
+      "latency": 654
     },
     {
       "name": "广东卫视",
@@ -462,16 +462,16 @@
       "urls": [
         "http://112.27.235.94:8000/hls/30/index.m3u8"
       ],
-      "latency": 525
+      "latency": 416
     },
     {
       "name": "CCTV-5",
-      "url": "http://112.27.235.94:8000/hls/5/index.m3u8",
+      "url": "http://112.27.235.94:8000/hls/6/index.m3u8",
       "urls": [
-        "http://112.27.235.94:8000/hls/5/index.m3u8",
-        "http://112.27.235.94:8000/hls/6/index.m3u8"
+        "http://112.27.235.94:8000/hls/6/index.m3u8",
+        "http://112.27.235.94:8000/hls/5/index.m3u8"
       ],
-      "latency": 471
+      "latency": 423
     },
     {
       "name": "云南卫视",
@@ -479,7 +479,7 @@
       "urls": [
         "http://112.27.235.94:8000/hls/40/index.m3u8"
       ],
-      "latency": 1013
+      "latency": 427
     },
     {
       "name": "山西卫视",
@@ -487,15 +487,15 @@
       "urls": [
         "http://112.27.235.94:8000/hls/45/index.m3u8"
       ],
-      "latency": 1005
+      "latency": 420
     },
     {
       "name": "辽宁卫视",
-      "url": "http://112.27.235.94:8000/hls/47/index.m3u8",
+      "url": "http://183.11.239.36:808/hls/47/index.m3u8",
       "urls": [
-        "http://112.27.235.94:8000/hls/47/index.m3u8"
+        "http://183.11.239.36:808/hls/47/index.m3u8"
       ],
-      "latency": 510
+      "latency": 405
     },
     {
       "name": "北京卫视",
@@ -503,7 +503,7 @@
       "urls": [
         "http://182.150.23.74:808/hls/17/index.m3u8"
       ],
-      "latency": 962
+      "latency": 823
     },
     {
       "name": "湖北卫视",
@@ -511,7 +511,7 @@
       "urls": [
         "http://112.27.235.94:8000/hls/41/index.m3u8"
       ],
-      "latency": 523
+      "latency": 428
     },
     {
       "name": "浙江公共新闻",
@@ -519,16 +519,16 @@
       "urls": [
         "https://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8"
       ],
-      "latency": 564
+      "latency": 471
     },
     {
       "name": "江苏卫视",
-      "url": "http://112.27.235.94:8000/hls/32/index.m3u8",
+      "url": "http://112.46.85.60:8009/hls/33/index.m3u8",
       "urls": [
-        "http://112.27.235.94:8000/hls/32/index.m3u8",
+        "http://112.46.85.60:8009/hls/33/index.m3u8",
         "http://8.138.7.223/tv/jsws4k.php"
       ],
-      "latency": 519
+      "latency": 438
     },
     {
       "name": "湖南卫视",
@@ -536,7 +536,7 @@
       "urls": [
         "http://112.27.235.94:8000/hls/31/index.m3u8"
       ],
-      "latency": 516
+      "latency": 431
     },
     {
       "name": "TVBS新闻台",
@@ -544,7 +544,7 @@
       "urls": [
         "http://61.221.215.25:8800/hls/9/index.m3u8"
       ],
-      "latency": 602
+      "latency": 467
     },
     {
       "name": "河南卫视",
@@ -552,7 +552,7 @@
       "urls": [
         "http://112.27.235.94:8000/hls/37/index.m3u8"
       ],
-      "latency": 528
+      "latency": 430
     },
     {
       "name": "黑龙江卫视",
@@ -560,7 +560,7 @@
       "urls": [
         "http://112.27.235.94:8000/hls/48/index.m3u8"
       ],
-      "latency": 522
+      "latency": 423
     },
     {
       "name": "浙江经济生活",
@@ -568,7 +568,7 @@
       "urls": [
         "http://ali-m-l.cztv.com/channels/lantian/channel03/1080p.m3u8"
       ],
-      "latency": 767
+      "latency": 595
     },
     {
       "name": "浙江经视",
@@ -576,7 +576,7 @@
       "urls": [
         "https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8"
       ],
-      "latency": 475
+      "latency": 381
     },
     {
       "name": "浙江钱江频道",
@@ -584,7 +584,7 @@
       "urls": [
         "http://ali-m-l.cztv.com/channels/lantian/channel02/1080p.m3u8"
       ],
-      "latency": 583
+      "latency": 494
     },
     {
       "name": "广西玉林大容山莲花山顶",
@@ -592,15 +592,15 @@
       "urls": [
         "https://gcalic.v.myalicdn.com/gc/drs01_1/index.m3u8"
       ],
-      "latency": 1643
+      "latency": 446
     },
     {
       "name": "浙江教科",
-      "url": "http://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8",
+      "url": "https://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8",
       "urls": [
-        "http://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8"
+        "https://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8"
       ],
-      "latency": 445
+      "latency": 366
     },
     {
       "name": "浙江民生休闲",
@@ -608,7 +608,7 @@
       "urls": [
         "https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8"
       ],
-      "latency": 899
+      "latency": 618
     },
     {
       "name": "福建漳州醉美沙滩翡翠湾",
@@ -616,7 +616,7 @@
       "urls": [
         "https://gcalic.v.myalicdn.com/gc/fcw03_1/index.m3u8"
       ],
-      "latency": 449
+      "latency": 445
     },
     {
       "name": "吉林市新闻综合 [Geo-blocked]",
@@ -624,7 +624,7 @@
       "urls": [
         "https://stream2.jlntv.cn/jilin1/sd/live.m3u8"
       ],
-      "latency": 1422
+      "latency": 1098
     },
     {
       "name": "浙江少儿",
@@ -632,7 +632,7 @@
       "urls": [
         "http://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8"
       ],
-      "latency": 669
+      "latency": 356
     },
     {
       "name": "陕西都市青春",
@@ -656,7 +656,7 @@
       "urls": [
         "https://gcalic.v.myalicdn.com/gc/emswfs_1/index.m3u8"
       ],
-      "latency": 455
+      "latency": 1121
     },
     {
       "name": "中央电视塔南",
@@ -664,7 +664,7 @@
       "urls": [
         "https://gcalic.v.myalicdn.com/gc/ztn_1/index.m3u8"
       ],
-      "latency": 568
+      "latency": 410
     },
     {
       "name": "浙江教育",
@@ -672,7 +672,7 @@
       "urls": [
         "http://ali-m-l.cztv.com/channels/lantian/channel04/720p.m3u8"
       ],
-      "latency": 614
+      "latency": 467
     },
     {
       "name": "福建武夷山玉女峰",
@@ -680,7 +680,7 @@
       "urls": [
         "https://gcalic.v.myalicdn.com/gc/wysynf_1/index.m3u8"
       ],
-      "latency": 476
+      "latency": 426
     },
     {
       "name": "浙江舟山东极岛",
@@ -688,7 +688,7 @@
       "urls": [
         "https://gcalic.v.myalicdn.com/gc/djd01_1/index.m3u8"
       ],
-      "latency": 448
+      "latency": 416
     },
     {
       "name": "浙江休闲台",
@@ -696,7 +696,7 @@
       "urls": [
         "http://ali-m-l.cztv.com/channels/lantian/channel006/720p.m3u8"
       ],
-      "latency": 657
+      "latency": 594
     },
     {
       "name": "安徽池州九华山风景区九华山",
@@ -704,7 +704,7 @@
       "urls": [
         "https://gcalic.v.myalicdn.com/gc/jhs05_1/index.m3u8"
       ],
-      "latency": 441
+      "latency": 406
     },
     {
       "name": "CGTN-Documentary",
@@ -721,7 +721,7 @@
       "urls": [
         "https://gcalic.v.myalicdn.com/gc/ylh04_1/index.m3u8"
       ],
-      "latency": 452
+      "latency": 456
     },
     {
       "name": "辽宁体育",
@@ -729,7 +729,7 @@
       "urls": [
         "http://dassby.qqff.top:99/live/辽宁体育/index.m3u8"
       ],
-      "latency": 807
+      "latency": 734
     },
     {
       "name": "湖南张家界宝峰湖",
@@ -737,7 +737,7 @@
       "urls": [
         "https://gcalic.v.myalicdn.com/gc/zjjbfh_1/index.m3u8"
       ],
-      "latency": 456
+      "latency": 451
     },
     {
       "name": "安徽黟县芦村远眺",
@@ -745,7 +745,7 @@
       "urls": [
         "https://gcalic.v.myalicdn.com/gc/yxlcyt_1/index.m3u8"
       ],
-      "latency": 477
+      "latency": 425
     },
     {
       "name": "云南大理崇圣寺三塔远景",
@@ -753,7 +753,7 @@
       "urls": [
         "https://gcalic.v.myalicdn.com/gc/dlst01_1/index.m3u8"
       ],
-      "latency": 518
+      "latency": 430
     },
     {
       "name": "云南大理崇圣寺三塔中景",
@@ -761,7 +761,7 @@
       "urls": [
         "https://gcalic.v.myalicdn.com/gc/dlst03_1/index.m3u8"
       ],
-      "latency": 445
+      "latency": 431
     },
     {
       "name": "云南白沙远眺玉龙雪山",
@@ -769,7 +769,7 @@
       "urls": [
         "https://gcalic.v.myalicdn.com/gc/hkylxs03_1/index.m3u8"
       ],
-      "latency": 891
+      "latency": 436
     },
     {
       "name": "四川峨眉山普贤菩萨铜像",
@@ -777,7 +777,7 @@
       "urls": [
         "https://gcalic.v.myalicdn.com/gc/emspxps_1/index.m3u8"
       ],
-      "latency": 447
+      "latency": 1167
     },
     {
       "name": "广东民生",
@@ -785,7 +785,7 @@
       "urls": [
         "http://183.11.239.36:808/hls/18/index.m3u8"
       ],
-      "latency": 740
+      "latency": 598
     },
     {
       "name": "贵州省兴义市万峰林",
@@ -793,7 +793,7 @@
       "urls": [
         "https://gcalic.v.myalicdn.com/gc/xywfl_1/index.m3u8"
       ],
-      "latency": 453
+      "latency": 418
     },
     {
       "name": "安徽导视",
@@ -801,7 +801,7 @@
       "urls": [
         "http://dspdhls.appcoo.com:8888/live/dspd/index.m3u8"
       ],
-      "latency": 811
+      "latency": 552
     },
     {
       "name": "人间卫视",
@@ -809,7 +809,7 @@
       "urls": [
         "http://61.216.67.119:1935/bltvhd/bltv1/chunklist_w1266569526.m3u"
       ],
-      "latency": 818
+      "latency": 640
     },
     {
       "name": "上海卫视",
@@ -817,7 +817,7 @@
       "urls": [
         "http://112.27.235.94:8000/hls/28/index.m3u8"
       ],
-      "latency": 520
+      "latency": 424
     },
     {
       "name": "福州广电视台都市生活频道",
@@ -833,7 +833,7 @@
       "urls": [
         "http://satellitepull.cnr.cn/live/wx32fjdnjjgb/playlist.m3u8"
       ],
-      "latency": 862
+      "latency": 599
     },
     {
       "name": "浙江数码时代",
@@ -841,7 +841,7 @@
       "urls": [
         "http://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8"
       ],
-      "latency": 446
+      "latency": 360
     },
     {
       "name": "东南卫视",
@@ -849,7 +849,7 @@
       "urls": [
         "http://112.27.235.94:8000/hls/38/index.m3u8"
       ],
-      "latency": 524
+      "latency": 422
     },
     {
       "name": "CCTV-5",
@@ -866,7 +866,7 @@
       "urls": [
         "http://dassby.qqff.top:99/live/辽宁都市/index.m3u8"
       ],
-      "latency": 838
+      "latency": 817
     },
     {
       "name": "上海第一财经",
@@ -874,7 +874,7 @@
       "urls": [
         "https://satellitepull.cnr.cn/live/wx32dycjgb/playlist.m3u8"
       ],
-      "latency": 1941
+      "latency": 216
     },
     {
       "name": "中央电视塔东",
@@ -882,7 +882,7 @@
       "urls": [
         "https://gcalic.v.myalicdn.com/gc/ztd_1/index.m3u8"
       ],
-      "latency": 1184
+      "latency": 447
     },
     {
       "name": "广西国际",
@@ -890,7 +890,7 @@
       "urls": [
         "https://hlscdn.liangtv.cn/live/0234c48e0bc24fe1b41b9999a253e581/1075ee38e04f490690f6a36a16e09c79.m3u8"
       ],
-      "latency": 560
+      "latency": 1042
     },
     {
       "name": "吉林卫视",
@@ -898,7 +898,7 @@
       "urls": [
         "http://cssbyd.imwork.net:8082/hls/41/index.m3u8"
       ],
-      "latency": 3742
+      "latency": 805
     },
     {
       "name": "福州广电视台新闻综合频道",
@@ -914,7 +914,7 @@
       "urls": [
         "https://satellitepull.cnr.cn/live/wxgshhzs/playlist.m3u8"
       ],
-      "latency": 524
+      "latency": 456
     },
     {
       "name": "甘肃都市",
@@ -922,7 +922,7 @@
       "urls": [
         "https://satellitepull.cnr.cn/live/wxgsdstb/playlist.m3u8"
       ],
-      "latency": 1009
+      "latency": 790
     },
     {
       "name": "三沙卫视",
@@ -930,7 +930,7 @@
       "urls": [
         "http://221.226.51.220:50081/newlive/live/hls/38/live.m3u8"
       ],
-      "latency": 805
+      "latency": 654
     },
     {
       "name": "大立电视台",
@@ -938,7 +938,7 @@
       "urls": [
         "http://www.dalitv.com.tw:4568/live/dali/index.m3u8"
       ],
-      "latency": 1047
+      "latency": 1108
     },
     {
       "name": "CGTN记录",
@@ -946,7 +946,7 @@
       "urls": [
         "https://english-livetx.cgtn.com/hls/yypdjlctzb_hd.m3u8"
       ],
-      "latency": 1146
+      "latency": 1062
     },
     {
       "name": "广西卫视",
@@ -954,7 +954,7 @@
       "urls": [
         "https://hlscdn.liangtv.cn/live/de0f97348eb84f62aa6b7d8cf0430770/dd505d87880c478f901f38560ca4d4e6.m3u8"
       ],
-      "latency": 1160
+      "latency": 776
     },
     {
       "name": "浙江国际",
@@ -962,7 +962,7 @@
       "urls": [
         "http://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8"
       ],
-      "latency": 448
+      "latency": 533
     },
     {
       "name": "浙江 Ⅰ 绍兴影视",
@@ -971,7 +971,7 @@
         "http://live.shaoxing.com.cn/video/s10001-sxtv3/index.m3u8",
         "http://live.shaoxing.com.cn/video/s10001-sxtv3/index.m3u8"
       ],
-      "latency": 528
+      "latency": 412
     },
     {
       "name": "浙江 Ⅰ 绍兴综合",
@@ -980,7 +980,7 @@
         "http://live.shaoxing.com.cn/video/s10001-sxtv1/index.m3u8",
         "http://live.shaoxing.com.cn/video/s10001-sxtv1/index.m3u8"
       ],
-      "latency": 533
+      "latency": 413
     },
     {
       "name": "大湾区卫视",
@@ -988,7 +988,7 @@
       "urls": [
         "http://222.128.55.152:9080/live/dwq.m3u8"
       ],
-      "latency": 1289
+      "latency": 1058
     },
     {
       "name": "广东大湾区",
@@ -996,7 +996,7 @@
       "urls": [
         "http://222.128.55.152:9080/live/dwq.m3u8"
       ],
-      "latency": 1313
+      "latency": 1061
     },
     {
       "name": "福州广播电视台都市生活频道",
@@ -1005,7 +1005,7 @@
         "http://live.zohi.tv/video/s10001-fztv-3/index.m3u8",
         "http://live.zohi.tv/video/s10001-fztv-3/index.m3u8"
       ],
-      "latency": 933
+      "latency": 856
     },
     {
       "name": "福州广播电视台新闻综合频道",
@@ -1022,7 +1022,7 @@
       "urls": [
         "http://ls.qingting.fm/live/1861.m3u8"
       ],
-      "latency": 974
+      "latency": 978
     },
     {
       "name": "CCTV+ 2 [Not 24/7]",
@@ -1047,7 +1047,7 @@
       "urls": [
         "http://112.27.235.94:8000/hls/43/index.m3u8"
       ],
-      "latency": 1000
+      "latency": 425
     },
     {
       "name": "浙江留学",
@@ -1055,7 +1055,7 @@
       "urls": [
         "http://ali-vl.cztv.com/channels/lantian/channel009/360p.m3u8"
       ],
-      "latency": 965
+      "latency": 1335
     },
     {
       "name": "湖南张家界天门山西线玻璃栈道",
@@ -1063,7 +1063,7 @@
       "urls": [
         "https://gcalic.v.myalicdn.com/gc/tms05_1/index.m3u8"
       ],
-      "latency": 444
+      "latency": 413
     },
     {
       "name": "云南丽江玉龙雪山草甸",
@@ -1071,7 +1071,7 @@
       "urls": [
         "https://gcalic.v.myalicdn.com/gc/hkylxs06_1/index.m3u8"
       ],
-      "latency": 1091
+      "latency": 408
     },
     {
       "name": "绍兴电视台公共",
@@ -1079,7 +1079,7 @@
       "urls": [
         "http://live.shaoxing.com.cn/video/s10001-sxtv2/index.m3u8?%E5%85%B3%E6%B3%A8%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7[%E6%99%B4%E5%9B%AD]"
       ],
-      "latency": 1119
+      "latency": 869
     },
     {
       "name": "山东卫视",
@@ -1087,7 +1087,7 @@
       "urls": [
         "http://112.27.235.94:8000/hls/34/index.m3u8"
       ],
-      "latency": 522
+      "latency": 426
     },
     {
       "name": "云南丽江蓝月谷",
@@ -1095,7 +1095,7 @@
       "urls": [
         "https://gcalic.v.myalicdn.com/gc/ylxs12_1/index.m3u8"
       ],
-      "latency": 525
+      "latency": 442
     },
     {
       "name": "安徽黟县西递牌坊",
@@ -1103,7 +1103,7 @@
       "urls": [
         "https://gcalic.v.myalicdn.com/gc/yxxdpf_1/index.m3u8"
       ],
-      "latency": 574
+      "latency": 421
     },
     {
       "name": "黑龙江新闻",
@@ -1111,7 +1111,7 @@
       "urls": [
         "https://ls.qingting.fm/live/4974/64k.m3u8"
       ],
-      "latency": 1139
+      "latency": 1729
     },
     {
       "name": "湖南张家界御笔峰",
@@ -1119,7 +1119,7 @@
       "urls": [
         "https://gcalic.v.myalicdn.com/gc/zjjybf_1/index.m3u8"
       ],
-      "latency": 947
+      "latency": 404
     },
     {
       "name": "江苏南京牛首山",
@@ -1127,7 +1127,7 @@
       "urls": [
         "https://gcalic.v.myalicdn.com/gc/nss01_1/index.m3u8"
       ],
-      "latency": 538
+      "latency": 401
     },
     {
       "name": "广西桂林漓江景区",
@@ -1135,7 +1135,7 @@
       "urls": [
         "https://gcalic.v.myalicdn.com/gc/gllj01_1/index.m3u8"
       ],
-      "latency": 1537
+      "latency": 405
     },
     {
       "name": "河南法治",
@@ -1143,7 +1143,7 @@
       "urls": [
         "http://1.94.31.214/php/hntv.php?id=hmfz"
       ],
-      "latency": 2463
+      "latency": 3944
     },
     {
       "name": "四川峨眉山云海日出",
@@ -1151,7 +1151,7 @@
       "urls": [
         "https://gcalic.v.myalicdn.com/gc/emsarm_1/index.m3u8"
       ],
-      "latency": 519
+      "latency": 1118
     },
     {
       "name": "云南丽江玉龙雪山",
@@ -1159,7 +1159,7 @@
       "urls": [
         "https://gcalic.v.myalicdn.com/gc/ylxs11_1/index.m3u8"
       ],
-      "latency": 1672
+      "latency": 438
     },
     {
       "name": "四川四姑娘山隆珠措",
@@ -1167,7 +1167,7 @@
       "urls": [
         "https://gcalic.v.myalicdn.com/gc/sgns02_1/index.m3u8"
       ],
-      "latency": 548
+      "latency": 421
     },
     {
       "name": "河北农民",
@@ -1175,7 +1175,7 @@
       "urls": [
         "https://jwcdnqx.hebyun.com.cn/live/clzhpd/1500k/tzwj_video.m3u8?zhebd"
       ],
-      "latency": 1298
+      "latency": 1243
     },
     {
       "name": "陕西洋县国宝朱鹮02",
@@ -1183,7 +1183,7 @@
       "urls": [
         "https://gcalic.v.myalicdn.com/gc/zh02_1/index.m3u8"
       ],
-      "latency": 559
+      "latency": 435
     },
     {
       "name": "四川峨眉山远眺贡嘎雪山",
@@ -1191,7 +1191,7 @@
       "urls": [
         "https://gcalic.v.myalicdn.com/gc/emsyh_1/index.m3u8"
       ],
-      "latency": 695
+      "latency": 1172
     },
     {
       "name": "长白山电视台",
@@ -1207,7 +1207,7 @@
       "urls": [
         "https://stream2.jlntv.cn/jilin1/sd/live.m3u8"
       ],
-      "latency": 1085
+      "latency": 2229
     },
     {
       "name": "四川卫视",
@@ -1215,15 +1215,15 @@
       "urls": [
         "http://182.150.23.74:808/hls/38/index.m3u8"
       ],
-      "latency": 964
+      "latency": 762
     },
     {
       "name": "北京新闻",
-      "url": "https://ls.qingting.fm/live/339/64k.m3u8",
+      "url": "https://satellitepull.cnr.cn/live/wxbjxwgb/playlist.m3u8",
       "urls": [
-        "https://ls.qingting.fm/live/339/64k.m3u8"
+        "https://satellitepull.cnr.cn/live/wxbjxwgb/playlist.m3u8"
       ],
-      "latency": 951
+      "latency": 107
     },
     {
       "name": "浙江卫视",
@@ -1231,7 +1231,7 @@
       "urls": [
         "http://112.27.235.94:8000/hls/29/index.m3u8"
       ],
-      "latency": 850
+      "latency": 607
     },
     {
       "name": "新疆卫视",
@@ -1239,7 +1239,7 @@
       "urls": [
         "http://183.11.239.36:808/hls/65/index.m3u8"
       ],
-      "latency": 488
+      "latency": 398
     },
     {
       "name": "CCTV-1",
@@ -1247,7 +1247,7 @@
       "urls": [
         "https://liveplay-srs.voc.com.cn/hls/tv/134_180adf.m3u8"
       ],
-      "latency": 1656
+      "latency": 1339
     },
     {
       "name": "福建新闻",
@@ -1255,7 +1255,7 @@
       "urls": [
         "http://satellitepull.cnr.cn/live/wx32fjxwgb/playlist.m3u8"
       ],
-      "latency": 1015
+      "latency": 595
     },
     {
       "name": "吉林乡村",
@@ -1263,7 +1263,7 @@
       "urls": [
         "https://satellitepull.cnr.cn/live/wxjlxcgb/playlist.m3u8"
       ],
-      "latency": 1788
+      "latency": 609
     },
     {
       "name": "云南丽江印象实景",
@@ -1271,7 +1271,7 @@
       "urls": [
         "https://gcalic.v.myalicdn.com/gc/hkylxs01_1/index.m3u8"
       ],
-      "latency": 550
+      "latency": 427
     },
     {
       "name": "河北经济",
@@ -1279,7 +1279,7 @@
       "urls": [
         "http://1.94.31.214/php/hebei.php?id=jjsh"
       ],
-      "latency": 1665
+      "latency": 1250
     },
     {
       "name": "安多卫视",
@@ -1295,7 +1295,7 @@
       "urls": [
         "http://1.94.31.214/php/hebei.php?id=hbds"
       ],
-      "latency": 1652
+      "latency": 1607
     },
     {
       "name": "西藏卫视",
@@ -1303,7 +1303,7 @@
       "urls": [
         "http://cssbyd.imwork.net:8082/hls/46/index.m3u8"
       ],
-      "latency": 522
+      "latency": 447
     },
     {
       "name": "云南丽江冰川",
@@ -1311,7 +1311,7 @@
       "urls": [
         "https://gcalic.v.myalicdn.com/gc/hkylxs05_1/index.m3u8"
       ],
-      "latency": 544
+      "latency": 408
     },
     {
       "name": "福州电视台少儿频道",
@@ -1329,7 +1329,7 @@
         "https://cd-live-stream.news.cctvplus.com/live/smil:CHANNEL1.smil/playlist.m3u8",
         "https://cd-live-stream.news.cctvplus.com/live/smil:CHANNEL1.smil/playlist.m3u8"
       ],
-      "latency": 587
+      "latency": 748
     },
     {
       "name": "新疆天山",
@@ -1337,7 +1337,7 @@
       "urls": [
         "http://gctxyc.liveplay.myqcloud.com/gc/xjtcdhsz_1/index.m3u8"
       ],
-      "latency": 1992
+      "latency": 1299
     },
     {
       "name": "云南都市",
@@ -1345,7 +1345,7 @@
       "urls": [
         "https://hwapi.yntv.net/62hdvf/rjwt14.m3u8"
       ],
-      "latency": 2399
+      "latency": 1075
     },
     {
       "name": "CCTV-16",
@@ -1353,7 +1353,7 @@
       "urls": [
         "https://piccpndks.v.kcdnvip.com/audio/cctv16_2/index.m3u8"
       ],
-      "latency": 1214
+      "latency": 1074
     },
     {
       "name": "河南电视剧",
@@ -1361,7 +1361,7 @@
       "urls": [
         "http://1.94.31.214/php/hntv.php?id=hndsj"
       ],
-      "latency": 2044
+      "latency": 2685
     },
     {
       "name": "河北影视",
@@ -1369,7 +1369,7 @@
       "urls": [
         "http://1.94.31.214/php/hebei.php?id=hbys"
       ],
-      "latency": 1741
+      "latency": 2094
     },
     {
       "name": "山东教育",
@@ -1377,7 +1377,7 @@
       "urls": [
         "https://test1.live.sdetv.com.cn/live/dianshizhibo/playlist.m3u8"
       ],
-      "latency": 2141
+      "latency": 1620
     },
     {
       "name": "河南公共",
@@ -1385,7 +1385,7 @@
       "urls": [
         "http://1.94.31.214/php/hntv.php?id=hngg"
       ],
-      "latency": 2462
+      "latency": 1933
     },
     {
       "name": "陕西公共",
@@ -1393,7 +1393,7 @@
       "urls": [
         "http://ls.qingting.fm/live/1222.m3u8"
       ],
-      "latency": 760
+      "latency": 998
     },
     {
       "name": "湖南张家界水绕四门",
@@ -1401,7 +1401,7 @@
       "urls": [
         "https://gcalic.v.myalicdn.com/gc/zjjsrsm_1/index.m3u8"
       ],
-      "latency": 1158
+      "latency": 390
     },
     {
       "name": "河北公共",
@@ -1409,7 +1409,7 @@
       "urls": [
         "http://1.94.31.214/php/hebei.php?id=hbgg"
       ],
-      "latency": 3967
+      "latency": 2442
     },
     {
       "name": "广东少儿",
@@ -1417,7 +1417,7 @@
       "urls": [
         "http://gmxw.7766.org:808/hls/175/index.m3u8"
       ],
-      "latency": 1767
+      "latency": 1391
     },
     {
       "name": "云南娱乐",
@@ -1425,7 +1425,7 @@
       "urls": [
         "https://hwapi.yntv.net/62hdvf/q9vs1b.m3u8"
       ],
-      "latency": 2410
+      "latency": 1464
     },
     {
       "name": "黑龙江少儿",
@@ -1433,7 +1433,7 @@
       "urls": [
         "https://ls.qingting.fm/live/4972/64k.m3u8"
       ],
-      "latency": 1085
+      "latency": 1062
     },
     {
       "name": "河南新闻",
@@ -1441,7 +1441,7 @@
       "urls": [
         "http://1.94.31.214/php/hntv.php?id=hnxw"
       ],
-      "latency": 1441
+      "latency": 5160
     },
     {
       "name": "河北少儿",
@@ -1449,7 +1449,7 @@
       "urls": [
         "http://1.94.31.214/php/hebei.php?id=sekj"
       ],
-      "latency": 2531
+      "latency": 2279
     },
     {
       "name": "山东生活",
@@ -1457,7 +1457,7 @@
       "urls": [
         "http://ls.qingting.fm/live/60260.m3u8"
       ],
-      "latency": 1047
+      "latency": 1006
     },
     {
       "name": "河南乡村",
@@ -1465,7 +1465,7 @@
       "urls": [
         "http://1.94.31.214/php/hntv.php?id=hnxc"
       ],
-      "latency": 2624
+      "latency": 2527
     },
     {
       "name": "浙江生活",
@@ -1473,7 +1473,7 @@
       "urls": [
         "http://ls.qingting.fm/live/1099.m3u8"
       ],
-      "latency": 758
+      "latency": 1120
     },
     {
       "name": "甘肃卫视",
@@ -1481,7 +1481,7 @@
       "urls": [
         "http://live.zohi.tv/video/s10001-fztv-3/index.m3u8"
       ],
-      "latency": 946
+      "latency": 2290
     },
     {
       "name": "普陀电视台",
@@ -1497,7 +1497,7 @@
       "urls": [
         "http://cdn9.163189.xyz/smt1.1.php?id=inews_twn"
       ],
-      "latency": 9433
+      "latency": 6056
     },
     {
       "name": "青田电视台",
@@ -1505,7 +1505,7 @@
       "urls": [
         "http://l.cztvcloud.com/channels/lantian/SXqingtian1/720p.m3u8"
       ],
-      "latency": 546
+      "latency": 1356
     },
     {
       "name": "浙江遂昌",
@@ -1513,7 +1513,7 @@
       "urls": [
         "http://l.cztvcloud.com/channels/lantian/SXsuichang1/720p.m3u8"
       ],
-      "latency": 892
+      "latency": 1911
     },
     {
       "name": "河北",
@@ -1522,7 +1522,7 @@
         "https://event.pull.hebtv.com:443/live/live101.m3u8",
         "https://event.pull.hebtv.com:443/live/live101.m3u8"
       ],
-      "latency": 1060
+      "latency": 510
     },
     {
       "name": "翡翠台",
@@ -1530,7 +1530,7 @@
       "urls": [
         "http://cdn9.163189.xyz/smt1.1.php?id=jade_twn"
       ],
-      "latency": 5257
+      "latency": 7812
     },
     {
       "name": "安徽经济广播",
@@ -1538,39 +1538,39 @@
       "urls": [
         "http://45.192.97.170:8880/play/6467.m3u8"
       ],
-      "latency": 646
+      "latency": 829
     },
     {
       "name": "辽宁经济广播",
-      "url": "http://45.192.97.170:8880/play/6350.m3u8",
+      "url": "http://45.192.97.170:8880/play/6541.m3u8",
       "urls": [
-        "http://45.192.97.170:8880/play/6350.m3u8"
+        "http://45.192.97.170:8880/play/6541.m3u8"
       ],
-      "latency": 641
+      "latency": 1130
     },
     {
       "name": "黑龙江朝鲜语广播",
-      "url": "http://45.192.97.170:8880/play/6355.m3u8",
+      "url": "http://45.192.97.170:8880/play/6549.m3u8",
       "urls": [
-        "http://45.192.97.170:8880/play/6355.m3u8"
+        "http://45.192.97.170:8880/play/6549.m3u8"
       ],
-      "latency": 640
+      "latency": 1135
     },
     {
       "name": "内蒙古蒙语新闻综合广播",
-      "url": "http://45.192.97.170:8880/play/6361.m3u8",
+      "url": "http://45.192.97.170:8880/play/6555.m3u8",
       "urls": [
-        "http://45.192.97.170:8880/play/6361.m3u8"
+        "http://45.192.97.170:8880/play/6555.m3u8"
       ],
-      "latency": 647
+      "latency": 953
     },
     {
       "name": "陕西青少广播·好听1055",
-      "url": "http://45.192.97.170:8880/play/6395.m3u8",
+      "url": "http://45.192.97.170:8880/play/6586.m3u8",
       "urls": [
-        "http://45.192.97.170:8880/play/6395.m3u8"
+        "http://45.192.97.170:8880/play/6586.m3u8"
       ],
-      "latency": 636
+      "latency": 1138
     },
     {
       "name": "陕西新闻广播",
@@ -1578,7 +1578,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6502.m3u8"
       ],
-      "latency": 635
+      "latency": 642
     },
     {
       "name": "湖北之声",
@@ -1586,7 +1586,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6472.m3u8"
       ],
-      "latency": 648
+      "latency": 637
     },
     {
       "name": "安徽戏曲广播·动听995",
@@ -1594,7 +1594,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6470.m3u8"
       ],
-      "latency": 633
+      "latency": 642
     },
     {
       "name": "贵州卫视",
@@ -1602,15 +1602,15 @@
       "urls": [
         "http://112.27.235.94:8000/hls/46/index.m3u8"
       ],
-      "latency": 505
+      "latency": 429
     },
     {
       "name": "贵州故事广播",
-      "url": "http://45.192.97.170:8880/play/6345.m3u8",
+      "url": "http://45.192.97.170:8880/play/6528.m3u8",
       "urls": [
-        "http://45.192.97.170:8880/play/6345.m3u8"
+        "http://45.192.97.170:8880/play/6528.m3u8"
       ],
-      "latency": 434
+      "latency": 455
     },
     {
       "name": "陕西秦腔",
@@ -1622,11 +1622,11 @@
     },
     {
       "name": "黑龙江音乐广播",
-      "url": "http://45.192.97.170:8880/play/6424.m3u8",
+      "url": "http://45.192.97.170:8880/play/6607.m3u8",
       "urls": [
-        "http://45.192.97.170:8880/play/6424.m3u8"
+        "http://45.192.97.170:8880/play/6607.m3u8"
       ],
-      "latency": 629
+      "latency": 955
     },
     {
       "name": "安徽之声",
@@ -1634,31 +1634,31 @@
       "urls": [
         "http://45.192.97.170:8880/play/6465.m3u8"
       ],
-      "latency": 637
+      "latency": 631
     },
     {
       "name": "浙江城市之声",
-      "url": "http://45.192.97.170:8880/play/6332.m3u8",
+      "url": "http://45.192.97.170:8880/play/6507.m3u8",
       "urls": [
-        "http://45.192.97.170:8880/play/6332.m3u8"
+        "http://45.192.97.170:8880/play/6507.m3u8"
       ],
-      "latency": 636
+      "latency": 455
     },
     {
       "name": "云南音乐广播",
-      "url": "http://45.192.97.170:8880/play/6407.m3u8",
+      "url": "http://45.192.97.170:8880/play/6596.m3u8",
       "urls": [
-        "http://45.192.97.170:8880/play/6407.m3u8"
+        "http://45.192.97.170:8880/play/6596.m3u8"
       ],
-      "latency": 855
+      "latency": 1128
     },
     {
       "name": "山东交通广播",
-      "url": "http://45.192.97.170:8880/play/6493.m3u8",
+      "url": "http://45.192.97.170:8880/play/6318.m3u8",
       "urls": [
-        "http://45.192.97.170:8880/play/6493.m3u8"
+        "http://45.192.97.170:8880/play/6318.m3u8"
       ],
-      "latency": 632
+      "latency": 967
     },
     {
       "name": "浙江之声",
@@ -1666,31 +1666,31 @@
       "urls": [
         "http://45.192.97.170:8880/play/6503.m3u8"
       ],
-      "latency": 846
+      "latency": 958
     },
     {
       "name": "辽宁交通广播",
-      "url": "http://45.192.97.170:8880/play/6351.m3u8",
+      "url": "http://45.192.97.170:8880/play/6542.m3u8",
       "urls": [
-        "http://45.192.97.170:8880/play/6351.m3u8"
+        "http://45.192.97.170:8880/play/6542.m3u8"
       ],
-      "latency": 636
+      "latency": 954
     },
     {
       "name": "海南音乐广播",
-      "url": "http://45.192.97.170:8880/play/6418.m3u8",
+      "url": "http://45.192.97.170:8880/play/6604.m3u8",
       "urls": [
-        "http://45.192.97.170:8880/play/6418.m3u8"
+        "http://45.192.97.170:8880/play/6604.m3u8"
       ],
-      "latency": 634
+      "latency": 1129
     },
     {
       "name": "山东经典音乐广播",
-      "url": "http://45.192.97.170:8880/play/6397.m3u8",
+      "url": "http://45.192.97.170:8880/play/6587.m3u8",
       "urls": [
-        "http://45.192.97.170:8880/play/6397.m3u8"
+        "http://45.192.97.170:8880/play/6587.m3u8"
       ],
-      "latency": 638
+      "latency": 1126
     },
     {
       "name": "浙江经济广播",
@@ -1698,7 +1698,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6504.m3u8"
       ],
-      "latency": 430
+      "latency": 811
     },
     {
       "name": "陕西农村广播",
@@ -1706,7 +1706,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6500.m3u8"
       ],
-      "latency": 637
+      "latency": 1139
     },
     {
       "name": "江苏文艺广播",
@@ -1714,7 +1714,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6461.m3u8"
       ],
-      "latency": 640
+      "latency": 644
     },
     {
       "name": "云南经济广播·私家车电台",
@@ -1722,15 +1722,15 @@
       "urls": [
         "http://45.192.97.170:8880/play/6375.m3u8"
       ],
-      "latency": 851
+      "latency": 1818
     },
     {
       "name": "贵州音乐广播",
-      "url": "http://45.192.97.170:8880/play/6419.m3u8",
+      "url": "http://45.192.97.170:8880/play/6605.m3u8",
       "urls": [
-        "http://45.192.97.170:8880/play/6419.m3u8"
+        "http://45.192.97.170:8880/play/6605.m3u8"
       ],
-      "latency": 848
+      "latency": 948
     },
     {
       "name": "安徽故事广播",
@@ -1738,23 +1738,23 @@
       "urls": [
         "http://45.192.97.170:8880/play/6471.m3u8"
       ],
-      "latency": 857
-    },
-    {
-      "name": "山东体育休闲广播",
-      "url": "http://45.192.97.170:8880/play/6319.m3u8",
-      "urls": [
-        "http://45.192.97.170:8880/play/6319.m3u8"
-      ],
       "latency": 636
     },
     {
-      "name": "河北音乐广播",
-      "url": "http://45.192.97.170:8880/play/6414.m3u8",
+      "name": "山东体育休闲广播",
+      "url": "http://45.192.97.170:8880/play/6494.m3u8",
       "urls": [
-        "http://45.192.97.170:8880/play/6414.m3u8"
+        "http://45.192.97.170:8880/play/6494.m3u8"
       ],
-      "latency": 859
+      "latency": 951
+    },
+    {
+      "name": "河北音乐广播",
+      "url": "http://45.192.97.170:8880/play/6603.m3u8",
+      "urls": [
+        "http://45.192.97.170:8880/play/6603.m3u8"
+      ],
+      "latency": 959
     },
     {
       "name": "江西音乐广播",
@@ -1762,47 +1762,47 @@
       "urls": [
         "http://45.192.97.170:8880/play/6423.m3u8"
       ],
-      "latency": 648
+      "latency": 962
     },
     {
       "name": "江苏经典流行音乐广播",
-      "url": "http://45.192.97.170:8880/play/6412.m3u8",
+      "url": "http://45.192.97.170:8880/play/6601.m3u8",
       "urls": [
-        "http://45.192.97.170:8880/play/6412.m3u8"
+        "http://45.192.97.170:8880/play/6601.m3u8"
       ],
-      "latency": 641
+      "latency": 1134
     },
     {
       "name": "云南民族广播",
-      "url": "http://45.192.97.170:8880/play/6378.m3u8",
+      "url": "http://45.192.97.170:8880/play/6578.m3u8",
       "urls": [
-        "http://45.192.97.170:8880/play/6378.m3u8"
+        "http://45.192.97.170:8880/play/6578.m3u8"
       ],
-      "latency": 643
+      "latency": 1801
     },
     {
       "name": "陕西经济广播·896汽车调频",
-      "url": "http://45.192.97.170:8880/play/6498.m3u8",
+      "url": "http://45.192.97.170:8880/play/6323.m3u8",
       "urls": [
-        "http://45.192.97.170:8880/play/6498.m3u8"
+        "http://45.192.97.170:8880/play/6323.m3u8"
       ],
-      "latency": 436
+      "latency": 2129
     },
     {
       "name": "江苏音乐广播",
-      "url": "http://45.192.97.170:8880/play/6411.m3u8",
+      "url": "http://45.192.97.170:8880/play/6600.m3u8",
       "urls": [
-        "http://45.192.97.170:8880/play/6411.m3u8"
+        "http://45.192.97.170:8880/play/6600.m3u8"
       ],
-      "latency": 648
+      "latency": 1128
     },
     {
       "name": "贵州旅游广播",
-      "url": "http://45.192.97.170:8880/play/6344.m3u8",
+      "url": "http://45.192.97.170:8880/play/6527.m3u8",
       "urls": [
-        "http://45.192.97.170:8880/play/6344.m3u8"
+        "http://45.192.97.170:8880/play/6527.m3u8"
       ],
-      "latency": 644
+      "latency": 460
     },
     {
       "name": "安徽旅游广播·高速之声",
@@ -1810,7 +1810,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6469.m3u8"
       ],
-      "latency": 644
+      "latency": 636
     },
     {
       "name": "黑龙江老年少儿广播·爱家调频",
@@ -1818,7 +1818,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6354.m3u8"
       ],
-      "latency": 646
+      "latency": 1463
     },
     {
       "name": "陕西交通广播",
@@ -1826,7 +1826,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6497.m3u8"
       ],
-      "latency": 435
+      "latency": 1148
     },
     {
       "name": "福建都市广播·私家车987",
@@ -1834,7 +1834,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6484.m3u8"
       ],
-      "latency": 641
+      "latency": 1328
     },
     {
       "name": "山东音乐广播",
@@ -1842,7 +1842,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6396.m3u8"
       ],
-      "latency": 1429
+      "latency": 1637
     },
     {
       "name": "山东乡村广播",
@@ -1850,7 +1850,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6496.m3u8"
       ],
-      "latency": 645
+      "latency": 1139
     },
     {
       "name": "内蒙古音乐之声",
@@ -1858,23 +1858,23 @@
       "urls": [
         "http://45.192.97.170:8880/play/6401.m3u8"
       ],
-      "latency": 641
+      "latency": 1456
     },
     {
       "name": "黑龙江都市女性广播",
-      "url": "http://45.192.97.170:8880/play/6545.m3u8",
+      "url": "http://45.192.97.170:8880/play/6352.m3u8",
       "urls": [
-        "http://45.192.97.170:8880/play/6545.m3u8"
+        "http://45.192.97.170:8880/play/6352.m3u8"
       ],
-      "latency": 647
+      "latency": 633
     },
     {
       "name": "广西教育广播",
-      "url": "http://45.192.97.170:8880/play/6370.m3u8",
+      "url": "http://45.192.97.170:8880/play/6570.m3u8",
       "urls": [
-        "http://45.192.97.170:8880/play/6370.m3u8"
+        "http://45.192.97.170:8880/play/6570.m3u8"
       ],
-      "latency": 643
+      "latency": 1130
     },
     {
       "name": "山东经济广播",
@@ -1882,15 +1882,15 @@
       "urls": [
         "http://45.192.97.170:8880/play/6495.m3u8"
       ],
-      "latency": 649
+      "latency": 1310
     },
     {
       "name": "贵州经济广播",
-      "url": "http://45.192.97.170:8880/play/6343.m3u8",
+      "url": "http://45.192.97.170:8880/play/6526.m3u8",
       "urls": [
-        "http://45.192.97.170:8880/play/6343.m3u8"
+        "http://45.192.97.170:8880/play/6526.m3u8"
       ],
-      "latency": 427
+      "latency": 636
     },
     {
       "name": "青海交通音乐广播",
@@ -1898,15 +1898,15 @@
       "urls": [
         "http://45.192.97.170:8880/play/6428.m3u8"
       ],
-      "latency": 648
+      "latency": 952
     },
     {
       "name": "青海新闻综合广播",
-      "url": "http://45.192.97.170:8880/play/6384.m3u8",
+      "url": "http://45.192.97.170:8880/play/6583.m3u8",
       "urls": [
-        "http://45.192.97.170:8880/play/6384.m3u8"
+        "http://45.192.97.170:8880/play/6583.m3u8"
       ],
-      "latency": 639
+      "latency": 1138
     },
     {
       "name": "云南新闻广播",
@@ -1914,23 +1914,23 @@
       "urls": [
         "http://45.192.97.170:8880/play/6374.m3u8"
       ],
-      "latency": 638
+      "latency": 1196
     },
     {
       "name": "四川私家车广播",
-      "url": "http://45.192.97.170:8880/play/6342.m3u8",
+      "url": "http://45.192.97.170:8880/play/6525.m3u8",
       "urls": [
-        "http://45.192.97.170:8880/play/6342.m3u8"
+        "http://45.192.97.170:8880/play/6525.m3u8"
       ],
-      "latency": 648
+      "latency": 826
     },
     {
       "name": "内蒙古新闻广播",
-      "url": "http://45.192.97.170:8880/play/6551.m3u8",
+      "url": "http://45.192.97.170:8880/play/6357.m3u8",
       "urls": [
-        "http://45.192.97.170:8880/play/6551.m3u8"
+        "http://45.192.97.170:8880/play/6357.m3u8"
       ],
-      "latency": 640
+      "latency": 804
     },
     {
       "name": "北京新闻广播",
@@ -1938,15 +1938,15 @@
       "urls": [
         "http://45.192.97.170:8880/play/6434.m3u8"
       ],
-      "latency": 642
+      "latency": 1149
     },
     {
       "name": "辽宁之声",
-      "url": "http://45.192.97.170:8880/play/6539.m3u8",
+      "url": "http://45.192.97.170:8880/play/6348.m3u8",
       "urls": [
-        "http://45.192.97.170:8880/play/6539.m3u8"
+        "http://45.192.97.170:8880/play/6348.m3u8"
       ],
-      "latency": 1644
+      "latency": 1131
     },
     {
       "name": "福建东南广播",
@@ -1954,15 +1954,15 @@
       "urls": [
         "http://45.192.97.170:8880/play/6487.m3u8"
       ],
-      "latency": 630
+      "latency": 1316
     },
     {
       "name": "内蒙古蒙语对外广播草原之声",
-      "url": "http://45.192.97.170:8880/play/6360.m3u8",
+      "url": "http://45.192.97.170:8880/play/6554.m3u8",
       "urls": [
-        "http://45.192.97.170:8880/play/6360.m3u8"
+        "http://45.192.97.170:8880/play/6554.m3u8"
       ],
-      "latency": 647
+      "latency": 957
     },
     {
       "name": "上海第一财经广播",
@@ -1970,23 +1970,23 @@
       "urls": [
         "http://45.192.97.170:8880/play/6302.m3u8"
       ],
-      "latency": 1349
+      "latency": 1806
     },
     {
       "name": "四川交通广播",
-      "url": "http://45.192.97.170:8880/play/6340.m3u8",
+      "url": "http://45.192.97.170:8880/play/6523.m3u8",
       "urls": [
-        "http://45.192.97.170:8880/play/6340.m3u8"
+        "http://45.192.97.170:8880/play/6523.m3u8"
       ],
-      "latency": 844
+      "latency": 460
     },
     {
       "name": "辽宁乡村广播",
-      "url": "http://45.192.97.170:8880/play/6349.m3u8",
+      "url": "http://45.192.97.170:8880/play/6540.m3u8",
       "urls": [
-        "http://45.192.97.170:8880/play/6349.m3u8"
+        "http://45.192.97.170:8880/play/6540.m3u8"
       ],
-      "latency": 853
+      "latency": 1141
     },
     {
       "name": "浙江音乐调频·动听968",
@@ -1994,15 +1994,15 @@
       "urls": [
         "http://45.192.97.170:8880/play/6413.m3u8"
       ],
-      "latency": 633
+      "latency": 1457
     },
     {
       "name": "宁夏音乐广播",
-      "url": "http://45.192.97.170:8880/play/6421.m3u8",
+      "url": "http://45.192.97.170:8880/play/6606.m3u8",
       "urls": [
-        "http://45.192.97.170:8880/play/6421.m3u8"
+        "http://45.192.97.170:8880/play/6606.m3u8"
       ],
-      "latency": 637
+      "latency": 1155
     },
     {
       "name": "福建经济广播",
@@ -2010,7 +2010,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6486.m3u8"
       ],
-      "latency": 1421
+      "latency": 627
     },
     {
       "name": "北京生活",
@@ -2018,7 +2018,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6450.m3u8"
       ],
-      "latency": 2285
+      "latency": 1721
     },
     {
       "name": "河南经济广播",
@@ -2026,7 +2026,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6531.m3u8"
       ],
-      "latency": 1643
+      "latency": 1456
     },
     {
       "name": "广东股市广播",
@@ -2034,7 +2034,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6511.m3u8"
       ],
-      "latency": 1867
+      "latency": 1814
     },
     {
       "name": "江苏新闻综合广播",
@@ -2042,7 +2042,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6459.m3u8"
       ],
-      "latency": 643
+      "latency": 810
     },
     {
       "name": "河北经济广播",
@@ -2050,15 +2050,15 @@
       "urls": [
         "http://45.192.97.170:8880/play/6481.m3u8"
       ],
-      "latency": 1429
+      "latency": 1633
     },
     {
       "name": "四川综合广播四川之声",
-      "url": "http://45.192.97.170:8880/play/6341.m3u8",
+      "url": "http://45.192.97.170:8880/play/6524.m3u8",
       "urls": [
-        "http://45.192.97.170:8880/play/6341.m3u8"
+        "http://45.192.97.170:8880/play/6524.m3u8"
       ],
-      "latency": 638
+      "latency": 462
     },
     {
       "name": "河北交通广播",
@@ -2066,7 +2066,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6480.m3u8"
       ],
-      "latency": 1349
+      "latency": 1137
     },
     {
       "name": "黑龙江新闻广播",
@@ -2074,7 +2074,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6543.m3u8"
       ],
-      "latency": 1435
+      "latency": 1819
     },
     {
       "name": "北京科教",
@@ -2082,15 +2082,15 @@
       "urls": [
         "http://45.192.97.170:8880/play/6447.m3u8"
       ],
-      "latency": 2276
+      "latency": 1720
     },
     {
       "name": "广西综合广播",
-      "url": "http://45.192.97.170:8880/play/6371.m3u8",
+      "url": "http://45.192.97.170:8880/play/6571.m3u8",
       "urls": [
-        "http://45.192.97.170:8880/play/6371.m3u8"
+        "http://45.192.97.170:8880/play/6571.m3u8"
       ],
-      "latency": 431
+      "latency": 1133
     },
     {
       "name": "广东南粤之声",
@@ -2098,15 +2098,15 @@
       "urls": [
         "http://45.192.97.170:8880/play/6514.m3u8"
       ],
-      "latency": 1856
+      "latency": 1641
     },
     {
       "name": "广西经济广播·女主播电台",
-      "url": "http://45.192.97.170:8880/play/6406.m3u8",
+      "url": "http://45.192.97.170:8880/play/6595.m3u8",
       "urls": [
-        "http://45.192.97.170:8880/play/6406.m3u8"
+        "http://45.192.97.170:8880/play/6595.m3u8"
       ],
-      "latency": 853
+      "latency": 1635
     },
     {
       "name": "北京财经",
@@ -2114,7 +2114,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6449.m3u8"
       ],
-      "latency": 1586
+      "latency": 1710
     },
     {
       "name": "黑龙江乡村广播",
@@ -2122,7 +2122,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6548.m3u8"
       ],
-      "latency": 1142
+      "latency": 1465
     },
     {
       "name": "吉林乡村广播",
@@ -2130,7 +2130,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6537.m3u8"
       ],
-      "latency": 1647
+      "latency": 636
     },
     {
       "name": "安徽交通广播",
@@ -2138,7 +2138,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6468.m3u8"
       ],
-      "latency": 634
+      "latency": 645
     },
     {
       "name": "广东新闻广播",
@@ -2146,7 +2146,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6510.m3u8"
       ],
-      "latency": 1647
+      "latency": 2467
     },
     {
       "name": "江苏新闻广播",
@@ -2154,7 +2154,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6460.m3u8"
       ],
-      "latency": 1639
+      "latency": 960
     },
     {
       "name": "甘肃都市调频",
@@ -2162,7 +2162,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6404.m3u8"
       ],
-      "latency": 1630
+      "latency": 635
     },
     {
       "name": "安徽生活广播·城市之声",
@@ -2170,15 +2170,15 @@
       "urls": [
         "http://45.192.97.170:8880/play/6466.m3u8"
       ],
-      "latency": 427
+      "latency": 631
     },
     {
       "name": "安徽音乐广播",
-      "url": "http://45.192.97.170:8880/play/6398.m3u8",
+      "url": "http://45.192.97.170:8880/play/6585.m3u8",
       "urls": [
-        "http://45.192.97.170:8880/play/6398.m3u8"
+        "http://45.192.97.170:8880/play/6585.m3u8"
       ],
-      "latency": 643
+      "latency": 1152
     },
     {
       "name": "西藏藏语广播",
@@ -2186,7 +2186,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6569.m3u8"
       ],
-      "latency": 1847
+      "latency": 1652
     },
     {
       "name": "上海长三角之声",
@@ -2194,7 +2194,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6301.m3u8"
       ],
-      "latency": 1626
+      "latency": 1801
     },
     {
       "name": "河南新闻广播",
@@ -2202,7 +2202,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6530.m3u8"
       ],
-      "latency": 1640
+      "latency": 1818
     },
     {
       "name": "湖南交通广播",
@@ -2210,7 +2210,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6455.m3u8"
       ],
-      "latency": 1639
+      "latency": 1642
     },
     {
       "name": "河北综合广播",
@@ -2218,7 +2218,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6479.m3u8"
       ],
-      "latency": 929
+      "latency": 1135
     },
     {
       "name": "江苏金陵之声",
@@ -2226,15 +2226,15 @@
       "urls": [
         "http://45.192.97.170:8880/play/6462.m3u8"
       ],
-      "latency": 1642
+      "latency": 1629
     },
     {
       "name": "广西音乐广播",
-      "url": "http://45.192.97.170:8880/play/6405.m3u8",
+      "url": "http://45.192.97.170:8880/play/6594.m3u8",
       "urls": [
-        "http://45.192.97.170:8880/play/6405.m3u8"
+        "http://45.192.97.170:8880/play/6594.m3u8"
       ],
-      "latency": 645
+      "latency": 961
     },
     {
       "name": "云南交通之声",
@@ -2242,7 +2242,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6376.m3u8"
       ],
-      "latency": 647
+      "latency": 1311
     },
     {
       "name": "新疆新闻广播",
@@ -2250,7 +2250,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6562.m3u8"
       ],
-      "latency": 1632
+      "latency": 1311
     },
     {
       "name": "福建新闻广播",
@@ -2258,7 +2258,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6483.m3u8"
       ],
-      "latency": 634
+      "latency": 636
     },
     {
       "name": "浙江交通之声",
@@ -2266,15 +2266,15 @@
       "urls": [
         "http://45.192.97.170:8880/play/6505.m3u8"
       ],
-      "latency": 429
+      "latency": 641
     },
     {
       "name": "内蒙古农村牧区广播绿野之声",
-      "url": "http://45.192.97.170:8880/play/6356.m3u8",
+      "url": "http://45.192.97.170:8880/play/6550.m3u8",
       "urls": [
-        "http://45.192.97.170:8880/play/6356.m3u8"
+        "http://45.192.97.170:8880/play/6550.m3u8"
       ],
-      "latency": 849
+      "latency": 960
     },
     {
       "name": "海南新闻广播",
@@ -2282,7 +2282,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6519.m3u8"
       ],
-      "latency": 1646
+      "latency": 959
     },
     {
       "name": "广东音乐之声",
@@ -2290,7 +2290,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6415.m3u8"
       ],
-      "latency": 1351
+      "latency": 954
     },
     {
       "name": "江苏交通广播",
@@ -2298,7 +2298,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6463.m3u8"
       ],
-      "latency": 1638
+      "latency": 957
     },
     {
       "name": "香港古典音乐",
@@ -2306,7 +2306,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6284.m3u8"
       ],
-      "latency": 1101
+      "latency": 1152
     },
     {
       "name": "香港第三台",
@@ -2314,7 +2314,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6273.m3u8"
       ],
-      "latency": 2194
+      "latency": 1842
     },
     {
       "name": "福建交通广播",
@@ -2322,7 +2322,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6485.m3u8"
       ],
-      "latency": 1421
+      "latency": 1450
     },
     {
       "name": "辽宁经典音乐广播",
@@ -2330,7 +2330,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6427.m3u8"
       ],
-      "latency": 1422
+      "latency": 1639
     },
     {
       "name": "河北生活广播",
@@ -2338,7 +2338,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6482.m3u8"
       ],
-      "latency": 1353
+      "latency": 1141
     },
     {
       "name": "广西交通广播",
@@ -2346,7 +2346,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6373.m3u8"
       ],
-      "latency": 643
+      "latency": 1132
     },
     {
       "name": "河南农村广播大象资讯台",
@@ -2354,7 +2354,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6439.m3u8"
       ],
-      "latency": 1631
+      "latency": 2133
     },
     {
       "name": "河北文艺广播",
@@ -2362,7 +2362,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6478.m3u8"
       ],
-      "latency": 1431
+      "latency": 1132
     },
     {
       "name": "澳门绿坉",
@@ -2370,7 +2370,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6279.m3u8"
       ],
-      "latency": 1884
+      "latency": 1674
     },
     {
       "name": "河南梨园",
@@ -2378,7 +2378,7 @@
       "urls": [
         "http://1.94.31.214/php/hntv.php?id=hnly"
       ],
-      "latency": 2984
+      "latency": 3001
     },
     {
       "name": "江苏健康广播",
@@ -2386,7 +2386,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6464.m3u8"
       ],
-      "latency": 1644
+      "latency": 964
     },
     {
       "name": "新疆交通广播",
@@ -2394,7 +2394,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6563.m3u8"
       ],
-      "latency": 1641
+      "latency": 1135
     },
     {
       "name": "贵州都市广播",
@@ -2402,7 +2402,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6420.m3u8"
       ],
-      "latency": 1647
+      "latency": 1306
     },
     {
       "name": "新疆绿色广播",
@@ -2410,7 +2410,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6565.m3u8"
       ],
-      "latency": 1638
+      "latency": 1133
     },
     {
       "name": "江苏故事广播",
@@ -2426,7 +2426,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6512.m3u8"
       ],
-      "latency": 1648
+      "latency": 1809
     },
     {
       "name": "西藏汉语广播",
@@ -2434,15 +2434,15 @@
       "urls": [
         "http://45.192.97.170:8880/play/6568.m3u8"
       ],
-      "latency": 1839
+      "latency": 961
     },
     {
       "name": "新疆私家车广播",
-      "url": "http://45.192.97.170:8880/play/6368.m3u8",
+      "url": "http://45.192.97.170:8880/play/6564.m3u8",
       "urls": [
-        "http://45.192.97.170:8880/play/6368.m3u8"
+        "http://45.192.97.170:8880/play/6564.m3u8"
       ],
-      "latency": 638
+      "latency": 1134
     },
     {
       "name": "广东城市之声",
@@ -2450,7 +2450,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6513.m3u8"
       ],
-      "latency": 1848
+      "latency": 1135
     },
     {
       "name": "西藏对外交通广播",
@@ -2458,7 +2458,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6567.m3u8"
       ],
-      "latency": 1428
+      "latency": 1135
     },
     {
       "name": "湖南综合广播",
@@ -2466,7 +2466,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6457.m3u8"
       ],
-      "latency": 1642
+      "latency": 1452
     },
     {
       "name": "湖南潇湘之声",
@@ -2474,7 +2474,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6452.m3u8"
       ],
-      "latency": 1138
+      "latency": 1646
     },
     {
       "name": "江西信息交通广播",
@@ -2482,7 +2482,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6490.m3u8"
       ],
-      "latency": 1426
+      "latency": 1636
     },
     {
       "name": "河南戏曲广播",
@@ -2490,7 +2490,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6532.m3u8"
       ],
-      "latency": 1855
+      "latency": 1313
     },
     {
       "name": "河南信息广播",
@@ -2498,7 +2498,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6534.m3u8"
       ],
-      "latency": 1637
+      "latency": 1829
     },
     {
       "name": "黑龙江交通广播",
@@ -2514,15 +2514,15 @@
       "urls": [
         "http://45.192.97.170:8880/play/6520.m3u8"
       ],
-      "latency": 1637
+      "latency": 1639
     },
     {
       "name": "青海经济广播",
-      "url": "http://45.192.97.170:8880/play/6385.m3u8",
+      "url": "http://45.192.97.170:8880/play/6584.m3u8",
       "urls": [
-        "http://45.192.97.170:8880/play/6385.m3u8"
+        "http://45.192.97.170:8880/play/6584.m3u8"
       ],
-      "latency": 645
+      "latency": 1133
     },
     {
       "name": "吉林新闻综合广播",
@@ -2530,7 +2530,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6535.m3u8"
       ],
-      "latency": 1850
+      "latency": 1324
     },
     {
       "name": "河南教育广播",
@@ -2538,7 +2538,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6533.m3u8"
       ],
-      "latency": 1633
+      "latency": 1629
     },
     {
       "name": "江西综合新闻广播",
@@ -2546,7 +2546,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6488.m3u8"
       ],
-      "latency": 1434
+      "latency": 1629
     },
     {
       "name": "CGTN Radio",
@@ -2554,7 +2554,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6429.m3u8"
       ],
-      "latency": 1143
+      "latency": 1822
     },
     {
       "name": "北京影视",
@@ -2562,7 +2562,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6448.m3u8"
       ],
-      "latency": 1464
+      "latency": 1270
     },
     {
       "name": "陕西音乐广播",
@@ -2570,7 +2570,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6394.m3u8"
       ],
-      "latency": 1638
+      "latency": 1639
     },
     {
       "name": "北京经典969",
@@ -2578,7 +2578,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6440.m3u8"
       ],
-      "latency": 851
+      "latency": 806
     },
     {
       "name": "甘肃青春调频",
@@ -2586,7 +2586,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6403.m3u8"
       ],
-      "latency": 1638
+      "latency": 1463
     },
     {
       "name": "湖南金鹰之声",
@@ -2594,7 +2594,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6456.m3u8"
       ],
-      "latency": 1631
+      "latency": 956
     },
     {
       "name": "江苏财经广播",
@@ -2602,7 +2602,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6305.m3u8"
       ],
-      "latency": 1853
+      "latency": 1510
     },
     {
       "name": "吉林交通广播",
@@ -2610,7 +2610,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6536.m3u8"
       ],
-      "latency": 1647
+      "latency": 1133
     },
     {
       "name": "湖南经济广播",
@@ -2618,7 +2618,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6453.m3u8"
       ],
-      "latency": 1431
+      "latency": 1133
     },
     {
       "name": "北京文艺",
@@ -2626,7 +2626,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6446.m3u8"
       ],
-      "latency": 1337
+      "latency": 1305
     },
     {
       "name": "西藏都市生活广播",
@@ -2634,7 +2634,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6566.m3u8"
       ],
-      "latency": 1845
+      "latency": 1318
     },
     {
       "name": "宁夏新闻广播",
@@ -2642,15 +2642,15 @@
       "urls": [
         "http://45.192.97.170:8880/play/6382.m3u8"
       ],
-      "latency": 1852
+      "latency": 1131
     },
     {
       "name": "广西北部湾之声",
-      "url": "http://45.192.97.170:8880/play/6572.m3u8",
+      "url": "http://45.192.97.170:8880/play/6372.m3u8",
       "urls": [
-        "http://45.192.97.170:8880/play/6572.m3u8"
+        "http://45.192.97.170:8880/play/6372.m3u8"
       ],
-      "latency": 1347
+      "latency": 963
     },
     {
       "name": "云南国际广播",
@@ -2658,31 +2658,31 @@
       "urls": [
         "http://45.192.97.170:8880/play/6379.m3u8"
       ],
-      "latency": 642
+      "latency": 961
     },
     {
       "name": "贵州综合广播",
-      "url": "http://45.192.97.170:8880/play/6346.m3u8",
+      "url": "http://45.192.97.170:8880/play/6529.m3u8",
       "urls": [
-        "http://45.192.97.170:8880/play/6346.m3u8"
+        "http://45.192.97.170:8880/play/6529.m3u8"
       ],
-      "latency": 1368
+      "latency": 1133
     },
     {
       "name": "湖北经典音乐广播",
-      "url": "http://45.192.97.170:8880/play/6402.m3u8",
+      "url": "http://45.192.97.170:8880/play/6593.m3u8",
       "urls": [
-        "http://45.192.97.170:8880/play/6402.m3u8"
+        "http://45.192.97.170:8880/play/6593.m3u8"
       ],
-      "latency": 432
+      "latency": 1306
     },
     {
       "name": "浙江民生资讯广播",
-      "url": "http://45.192.97.170:8880/play/6331.m3u8",
+      "url": "http://45.192.97.170:8880/play/6506.m3u8",
       "urls": [
-        "http://45.192.97.170:8880/play/6331.m3u8"
+        "http://45.192.97.170:8880/play/6506.m3u8"
       ],
-      "latency": 854
+      "latency": 636
     },
     {
       "name": "兵团卫视",
@@ -2690,23 +2690,23 @@
       "urls": [
         "http://218.13.170.98:9901/tsfile/live/0115_1.m3u8"
       ],
-      "latency": 5562
+      "latency": 5326
     },
     {
       "name": "浙江旅游之声",
-      "url": "http://45.192.97.170:8880/play/6333.m3u8",
+      "url": "http://45.192.97.170:8880/play/6508.m3u8",
       "urls": [
-        "http://45.192.97.170:8880/play/6333.m3u8"
+        "http://45.192.97.170:8880/play/6508.m3u8"
       ],
-      "latency": 638
+      "latency": 632
     },
     {
       "name": "黑龙江高校广播",
-      "url": "http://45.192.97.170:8880/play/6353.m3u8",
+      "url": "http://45.192.97.170:8880/play/6546.m3u8",
       "urls": [
-        "http://45.192.97.170:8880/play/6353.m3u8"
+        "http://45.192.97.170:8880/play/6546.m3u8"
       ],
-      "latency": 651
+      "latency": 1307
     },
     {
       "name": "甘肃经济广播",
@@ -2714,7 +2714,7 @@
       "urls": [
         "http://45.192.97.170:8880/play/6369.m3u8"
       ],
-      "latency": 1352
+      "latency": 1141
     },
     {
       "name": "北京卡酷少儿",
@@ -2722,7 +2722,7 @@
       "urls": [
         "http://218.13.170.98:9901/tsfile/live/1021_1.m3u8"
       ],
-      "latency": 7616
+      "latency": 4176
     },
     {
       "name": "无线新闻台",
@@ -2730,15 +2730,15 @@
       "urls": [
         "http://cdn9.163189.xyz/smt1.1.php?id=inews_twn"
       ],
-      "latency": 4954
+      "latency": 5531
     },
     {
       "name": "内蒙古卫视",
-      "url": "http://112.27.235.94:8000/hls/49/index.m3u8",
+      "url": "http://cssbyd.imwork.net:8082/hls/44/index.m3u8",
       "urls": [
-        "http://112.27.235.94:8000/hls/49/index.m3u8"
+        "http://cssbyd.imwork.net:8082/hls/44/index.m3u8"
       ],
-      "latency": 523
+      "latency": 690
     },
     {
       "name": "厦门卫视",
@@ -2754,7 +2754,23 @@
       "urls": [
         "http://dassby.qqff.top:99/live/辽宁生活/index.m3u8"
       ],
-      "latency": 820
+      "latency": 685
+    },
+    {
+      "name": "CGTN阿语",
+      "url": "http://espanol-liveali.cgtn.com/hls/LSveOGBaBw41Ea7ukkVAUdKQ220802LSTexu6xAuFH8VZNBLE1ZNEa220802cd.m3u8",
+      "urls": [
+        "http://espanol-liveali.cgtn.com/hls/LSveOGBaBw41Ea7ukkVAUdKQ220802LSTexu6xAuFH8VZNBLE1ZNEa220802cd.m3u8"
+      ],
+      "latency": 1112
+    },
+    {
+      "name": "农林卫视",
+      "url": "http://124.116.183.146:9901/tsfile/live/1004_1.m3u8",
+      "urls": [
+        "http://124.116.183.146:9901/tsfile/live/1004_1.m3u8"
+      ],
+      "latency": 869
     }
   ]
 }

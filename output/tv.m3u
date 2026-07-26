@@ -1,5 +1,5 @@
 #EXTM3U
-# Generated: 2026-07-25T19:07:39.156944
+# Generated: 2026-07-26T02:33:21.470041
 # Total channels: 153
 
 # ----- 📺央视频道 (20个频道) -----
@@ -68,7 +68,7 @@ http://bp-resource-dfl.bestv.cn/148/3/video.m3u8
 #EXTINF:-1 group-title="📡卫视频道",江苏卫视
 http://112.27.235.94:8000/hls/32/index.m3u8
 #EXTINF:-1 group-title="📡卫视频道",浙江卫视
-http://ali-m-l.cztv.com:80/channels/lantian/channel001/1080p.m3u8
+http://112.27.235.94:8000/hls/29/index.m3u8
 #EXTINF:-1 group-title="📡卫视频道",安徽卫视
 http://112.27.235.94:8000/hls/26/index.m3u8
 #EXTINF:-1 group-title="📡卫视频道",东南卫视
@@ -118,7 +118,7 @@ https://test1.live.sdetv.com.cn/live/dianshizhibo/playlist.m3u8
 #EXTINF:-1 group-title="📡卫视频道",农林卫视
 http://124.116.183.146:9901/tsfile/live/1004_1.m3u8
 #EXTINF:-1 group-title="📡卫视频道",大湾区卫视
-http://gmxw.7766.org:808/hls/132/index.m3u8
+http://222.128.55.152:9080/live/dwq.m3u8
 #EXTINF:-1 group-title="📡卫视频道",安多卫视
 https://liveout.xntv.tv/a65jur/96iln2.m3u8
 #EXTINF:-1 group-title="📡卫视频道",翡翠台
@@ -132,7 +132,7 @@ https://satellitepull.cnr.cn/live/wx32dycjgb/playlist.m3u8
 
 # ----- ☘️江苏频道 (1个频道) -----
 #EXTINF:-1 group-title="☘️江苏频道",浙江经济
-https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8
+http://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8
 
 # ----- ☘️浙江频道 (12个频道) -----
 #EXTINF:-1 group-title="☘️浙江频道",浙江新闻
@@ -140,7 +140,7 @@ https://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",浙江钱江
 https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",浙江经济生活
-http://ali-m-l.cztv.com/channels/lantian/channel03/1080p.m3u8#https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8#http://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8
+http://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",浙江民生
 https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",浙江少儿
@@ -148,7 +148,7 @@ http://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",浙江教科
 http://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",浙江经视
-http://ali-m-l.cztv.com/channels/lantian/channel003/720p.m3u8
+https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",浙江国际
 http://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",浙江数码时代
@@ -186,7 +186,7 @@ http://dassby.qqff.top:99/live/辽宁影视剧/index.m3u8
 #EXTINF:-1 group-title="☘️山东频道",山东生活
 http://ls.qingting.fm/live/60260.m3u8
 #EXTINF:-1 group-title="☘️山东频道",山东体育休闲广播
-http://45.192.97.170:8880/play/6408.m3u8
+http://45.192.97.170:8880/play/6583.m3u8
 
 # ----- ☘️重庆频道 (1个频道) -----
 #EXTINF:-1 group-title="☘️重庆频道",浙江教科影院
@@ -202,7 +202,7 @@ https://gcalic.v.myalicdn.com/gc/drs01_1/index.m3u8
 
 # ----- ☘️云南频道 (4个频道) -----
 #EXTINF:-1 group-title="☘️云南频道",浙江民生休闲
-http://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8
+https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8
 #EXTINF:-1 group-title="☘️云南频道",云南都市
 https://hwapi.yntv.net/62hdvf/rjwt14.m3u8
 #EXTINF:-1 group-title="☘️云南频道",云南娱乐
@@ -276,7 +276,7 @@ https://gcalic.v.myalicdn.com/gc/ylh04_1/index.m3u8
 #EXTINF:-1 group-title="☘️北京频道",辽宁体育
 http://dassby.qqff.top:99/live/辽宁体育/index.m3u8
 #EXTINF:-1 group-title="☘️北京频道",北京新闻
-http://45.192.97.170:8880/play/6534.m3u8
+https://satellitepull.cnr.cn/live/wxbjxwgb/playlist.m3u8
 #EXTINF:-1 group-title="☘️北京频道",北京生活
 http://45.192.97.170:8880/play/6539.m3u8
 #EXTINF:-1 group-title="☘️北京频道",北京科教
@@ -314,7 +314,7 @@ https://gcalic.v.myalicdn.com/gc/dlst01_1/index.m3u8
 #EXTINF:-1 group-title="☘️内蒙古频道",云南大理崇圣寺三塔中景
 https://gcalic.v.myalicdn.com/gc/dlst03_1/index.m3u8
 #EXTINF:-1 group-title="☘️内蒙古频道",内蒙古新闻广播
-http://45.192.97.170:8880/play/6640.m3u8
+http://45.192.97.170:8880/play/6446.m3u8
 
 # ----- ☘️辽宁频道 (3个频道) -----
 #EXTINF:-1 group-title="☘️辽宁频道",四川峨眉山普贤菩萨铜像
@@ -338,7 +338,7 @@ http://112.27.235.94:8000/hls/28/index.m3u8
 #EXTINF:-1 group-title="☘️黑龙江频道",黑龙江新闻
 https://ls.qingting.fm/live/4974/64k.m3u8
 #EXTINF:-1 group-title="☘️黑龙江频道",黑龙江都市女性广播
-http://45.192.97.170:8880/play/6441.m3u8
+http://45.192.97.170:8880/play/6436.m3u8
 #EXTINF:-1 group-title="☘️黑龙江频道",黑龙江少儿
 https://ls.qingting.fm/live/4972/64k.m3u8
 
@@ -374,7 +374,7 @@ http://38.64.72.148/hls/modn/list/4005/playlist.m3u8
 #EXTINF:-1 group-title="🌊港·澳·台",人间卫视
 http://61.216.67.119:1935/bltvhd/bltv1/chunklist_w1266569526.m3u
 
-# ========== 智能补充分类 (611个频道) ==========
+# ========== 智能补充分类 (606个频道) ==========
 #EXTINF:-1 group-title="💃 广场舞",爱不停息
 http://45.192.97.170:8880/play/5885.m3u8
 #EXTINF:-1 group-title="💃 广场舞",爱的很绝对输的很狼狈
@@ -1075,6 +1075,8 @@ http://45.192.97.170:8880/play/6357.m3u8
 http://45.192.97.170:8880/play/6358.m3u8
 #EXTINF:-1 group-title="📻 网络电台",香港第三台
 http://45.192.97.170:8880/play/6362.m3u8
+#EXTINF:-1 group-title="📻 网络电台",亚洲热歌
+http://45.192.97.170:8880/play/6364.m3u8
 #EXTINF:-1 group-title="📻 网络电台",澳门绿坉
 http://45.192.97.170:8880/play/6368.m3u8
 #EXTINF:-1 group-title="📻 网络电台",香港古典音乐
@@ -1315,18 +1317,6 @@ http://45.192.97.170:8880/play/6530.m3u8
 http://45.192.97.170:8880/play/6531.m3u8
 #EXTINF:-1 group-title="📻 网络电台",青岛音乐体育广播
 http://45.192.97.170:8880/play/6532.m3u8
-#EXTINF:-1 group-title="📻 网络电台",北京新闻
-http://45.192.97.170:8880/play/6534.m3u8
-#EXTINF:-1 group-title="📻 网络电台",北京文艺
-http://45.192.97.170:8880/play/6535.m3u8
-#EXTINF:-1 group-title="📻 网络电台",北京科教
-http://45.192.97.170:8880/play/6536.m3u8
-#EXTINF:-1 group-title="📻 网络电台",北京影视
-http://45.192.97.170:8880/play/6537.m3u8
-#EXTINF:-1 group-title="📻 网络电台",北京财经
-http://45.192.97.170:8880/play/6538.m3u8
-#EXTINF:-1 group-title="📻 网络电台",北京生活
-http://45.192.97.170:8880/play/6539.m3u8
 #EXTINF:-1 group-title="📻 网络电台",第一财经
 http://45.192.97.170:8880/play/6540.m3u8
 #EXTINF:-1 group-title="📻 网络电台",湖南潇湘之声

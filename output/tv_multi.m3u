@@ -1,23 +1,23 @@
 #EXTM3U
-# Generated: 2026-07-27T09:52:26.700752
+# Generated: 2026-07-27T14:31:40.031410
 
 # ----- 📺央视频道 (20个频道) -----
 #EXTINF:-1 group-title="📺央视频道",浙江钱江都市
 https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-1
-https://liveplay-srs.voc.com.cn/hls/tv/134_180adf.m3u8
+http://112.27.235.94:8000/hls/1/index.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-2
 http://74.91.26.218:82/live/cctv2hd.m3u8 # http://74.91.26.218:82/live/cctv2hd.m3u8 # http://112.27.235.94:8000/hls/2/index.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-3
 http://74.91.26.218:82/live/cctv3hd.m3u8 # http://74.91.26.218:82/live/cctv3hd.m3u8 # http://112.27.235.94:8000/hls/3/index.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-4
-https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1785168900-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-83599ca8c4e709171fc1f2b66c899f3b&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c # http://74.91.26.218:82/live/cctv4hd.m3u8 # http://112.27.235.94:8000/hls/4/index.m3u8
+http://74.91.26.218:82/live/cctv4hd.m3u8 # http://112.27.235.94:8000/hls/4/index.m3u8 # https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1784937600-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-88339994fea1d7837083d62e5a9f48b7&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c
 #EXTINF:-1 group-title="📺央视频道",CCTV-5
-http://112.27.235.94:8000/hls/6/index.m3u8 # http://153.0.171.163:85/tsfile/live/1015_1.m3u8?key=txiptv&playlive=1&authid=0
+http://112.27.235.94:8000/hls/6/index.m3u8 # http://112.27.235.94:8000/hls/6/index.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-6
 http://69.30.245.50/live/cctv6.m3u8 # http://69.30.245.50/live/cctv6.m3u8 # http://198.204.240.250:82/live/cctv6.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-7
-http://74.91.26.218:82/live/cctv7hd.m3u8 # http://74.91.26.218:82/live/cctv7hd.m3u8 # http://112.27.235.94:8000/hls/8/index.m3u8
+http://74.91.26.218:82/live/cctv7hd.m3u8 # http://112.27.235.94:8000/hls/8/index.m3u8 # http://74.91.26.218:82/live/cctv7hd.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-8
 http://74.91.26.218:82/live/cctv8hd.m3u8 # http://74.91.26.218:82/live/cctv8hd.m3u8 # http://192.151.150.154/live/cctv8k.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-9
@@ -37,7 +37,7 @@ https://xykt-fix.github.io/play/a02e/index.m3u8 # https://xykt-fix.github.io/pla
 #EXTINF:-1 group-title="📺央视频道",CCTV-16
 http://183.11.239.36:808/hls/169/index.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-17
-http://74.91.26.218:82/live/cctv17hd.m3u8 # http://74.91.26.218:82/live/cctv17hd.m3u8 # http://123.130.84.106:8154/tsfile/live/0019_1.m3u8
+http://74.91.26.218:82/live/cctv17hd.m3u8 # http://123.130.84.106:8154/tsfile/live/0019_1.m3u8 # http://222.169.85.8:9901/tsfile/live/0007_1.m3u8
 #EXTINF:-1 group-title="📺央视频道",CGTN
 https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8 # https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8 # https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8
 #EXTINF:-1 group-title="📺央视频道",CGTN Documentary
@@ -141,15 +141,15 @@ https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",浙江经济生活
 http://ali-m-l.cztv.com/channels/lantian/channel03/1080p.m3u8#https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8#http://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",浙江民生
-http://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8
+https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",浙江少儿
-https://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8
+http://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",浙江教科
 http://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",浙江经视
 https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",浙江国际
-https://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8
+http://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",浙江数码时代
 http://ali-m-l.cztv.com/channels/lantian/channel12/720p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",浙江公共新闻
@@ -201,7 +201,7 @@ https://gcalic.v.myalicdn.com/gc/drs01_1/index.m3u8
 
 # ----- ☘️云南频道 (4个频道) -----
 #EXTINF:-1 group-title="☘️云南频道",浙江民生休闲
-https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8
+http://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8
 #EXTINF:-1 group-title="☘️云南频道",云南都市
 https://hwapi.yntv.net/62hdvf/rjwt14.m3u8
 #EXTINF:-1 group-title="☘️云南频道",云南娱乐

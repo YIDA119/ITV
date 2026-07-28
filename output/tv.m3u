@@ -1,10 +1,10 @@
 #EXTM3U
-# Generated: 2026-07-27T19:27:36.100759
+# Generated: 2026-07-28T02:16:55.682787
 # Total channels: 155
 
 # ----- 📺央视频道 (20个频道) -----
 #EXTINF:-1 group-title="📺央视频道",浙江钱江都市
-http://ali-xwl.cztv.com/live/channel021080Plxw.m3u8
+http://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-1
 http://112.27.235.94:8000/hls/1/index.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-2
@@ -12,7 +12,7 @@ http://74.91.26.218:82/live/cctv2hd.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-3
 http://74.91.26.218:82/live/cctv3hd.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-4
-https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1785226500-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-f46336dd7cbf344f42079e31c673eea6&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c
+http://74.91.26.218:82/live/cctv4hd.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-5
 http://112.27.235.94:8000/hls/6/index.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-6
@@ -68,7 +68,7 @@ https://txmov2.a.kwimgs.com/bs3/video-hls/5219953535631090825_hlsb.m3u8
 #EXTINF:-1 group-title="📡卫视频道",江苏卫视
 http://112.27.235.94:8000/hls/32/index.m3u8
 #EXTINF:-1 group-title="📡卫视频道",浙江卫视
-http://ali-m-l.cztv.com:80/channels/lantian/channel001/1080p.m3u8
+http://112.27.235.94:8000/hls/29/index.m3u8
 #EXTINF:-1 group-title="📡卫视频道",安徽卫视
 http://112.27.235.94:8000/hls/26/index.m3u8
 #EXTINF:-1 group-title="📡卫视频道",东南卫视
@@ -152,7 +152,7 @@ https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",浙江国际
 http://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",浙江数码时代
-http://ali-m-l.cztv.com/channels/lantian/channel12/720p.m3u8
+http://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",浙江公共新闻
 https://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",浙江休闲台
@@ -296,7 +296,7 @@ https://event.pull.hebtv.com:443/live/live101.m3u8
 #EXTINF:-1 group-title="☘️河北频道",河北经济
 http://1.94.31.214/php/hebei.php?id=jjsh
 #EXTINF:-1 group-title="☘️河北频道",河北都市
-http://1.94.31.214/php/hebei.php?id=hbds
+https://radio.pull.hebtv.com/live/hebnczx.m3u8
 #EXTINF:-1 group-title="☘️河北频道",河北影视
 http://1.94.31.214/php/hebei.php?id=hbys
 #EXTINF:-1 group-title="☘️河北频道",河北少儿
@@ -378,7 +378,7 @@ http://38.64.72.148/hls/modn/list/4005/playlist.m3u8
 #EXTINF:-1 group-title="🌊港·澳·台",人间卫视
 http://61.216.67.119:1935/bltvhd/bltv1/chunklist_w1266569526.m3u
 
-# ========== 智能补充分类 (593个频道) ==========
+# ========== 智能补充分类 (589个频道) ==========
 #EXTINF:-1 group-title="💃 广场舞",爱不停息
 http://45.192.97.170:8880/play/5896.m3u8
 #EXTINF:-1 group-title="💃 广场舞",爱的很绝对输的很狼狈
@@ -1165,8 +1165,6 @@ http://45.192.97.170:8880/play/6440.m3u8
 http://45.192.97.170:8880/play/6441.m3u8
 #EXTINF:-1 group-title="📻 网络电台",四川私家车广播
 http://45.192.97.170:8880/play/6442.m3u8
-#EXTINF:-1 group-title="📻 网络电台",贵州经济广播
-http://45.192.97.170:8880/play/6443.m3u8
 #EXTINF:-1 group-title="📻 网络电台",贵州旅游广播
 http://45.192.97.170:8880/play/6444.m3u8
 #EXTINF:-1 group-title="📻 网络电台",贵州故事广播
@@ -1279,8 +1277,6 @@ http://45.192.97.170:8880/play/6517.m3u8
 http://45.192.97.170:8880/play/6518.m3u8
 #EXTINF:-1 group-title="📻 网络电台",贵州音乐广播
 http://45.192.97.170:8880/play/6519.m3u8
-#EXTINF:-1 group-title="📻 网络电台",贵州都市广播
-http://45.192.97.170:8880/play/6520.m3u8
 #EXTINF:-1 group-title="📻 网络电台",宁夏音乐广播
 http://45.192.97.170:8880/play/6521.m3u8
 #EXTINF:-1 group-title="📻 网络电台",重庆音乐广播
@@ -1301,8 +1297,6 @@ http://45.192.97.170:8880/play/6530.m3u8
 http://45.192.97.170:8880/play/6531.m3u8
 #EXTINF:-1 group-title="📻 网络电台",北京新闻广播
 http://45.192.97.170:8880/play/6534.m3u8
-#EXTINF:-1 group-title="📻 网络电台",河南农村广播大象资讯台
-http://45.192.97.170:8880/play/6539.m3u8
 #EXTINF:-1 group-title="📻 网络电台",北京经典969
 http://45.192.97.170:8880/play/6540.m3u8
 #EXTINF:-1 group-title="📻 网络电台",深圳飞扬971
@@ -1311,6 +1305,18 @@ http://45.192.97.170:8880/play/6541.m3u8
 http://45.192.97.170:8880/play/6542.m3u8
 #EXTINF:-1 group-title="📻 网络电台",青岛音乐体育广播
 http://45.192.97.170:8880/play/6543.m3u8
+#EXTINF:-1 group-title="📻 网络电台",北京新闻
+http://45.192.97.170:8880/play/6545.m3u8
+#EXTINF:-1 group-title="📻 网络电台",北京文艺
+http://45.192.97.170:8880/play/6546.m3u8
+#EXTINF:-1 group-title="📻 网络电台",北京科教
+http://45.192.97.170:8880/play/6547.m3u8
+#EXTINF:-1 group-title="📻 网络电台",北京影视
+http://45.192.97.170:8880/play/6548.m3u8
+#EXTINF:-1 group-title="📻 网络电台",北京财经
+http://45.192.97.170:8880/play/6549.m3u8
+#EXTINF:-1 group-title="📻 网络电台",北京生活
+http://45.192.97.170:8880/play/6550.m3u8
 #EXTINF:-1 group-title="📻 网络电台",第一财经
 http://45.192.97.170:8880/play/6551.m3u8
 #EXTINF:-1 group-title="📻 网络电台",湖南潇湘之声
@@ -1333,8 +1339,6 @@ http://45.192.97.170:8880/play/6560.m3u8
 http://45.192.97.170:8880/play/6561.m3u8
 #EXTINF:-1 group-title="📻 网络电台",江苏金陵之声
 http://45.192.97.170:8880/play/6562.m3u8
-#EXTINF:-1 group-title="📻 网络电台",江苏交通广播
-http://45.192.97.170:8880/play/6563.m3u8
 #EXTINF:-1 group-title="📻 网络电台",江苏健康广播
 http://45.192.97.170:8880/play/6564.m3u8
 #EXTINF:-1 group-title="📻 网络电台",安徽之声
@@ -1437,24 +1441,12 @@ http://45.192.97.170:8880/play/6623.m3u8
 http://45.192.97.170:8880/play/6624.m3u8
 #EXTINF:-1 group-title="📻 网络电台",四川私家车广播
 http://45.192.97.170:8880/play/6625.m3u8
-#EXTINF:-1 group-title="📻 网络电台",贵州经济广播
-http://45.192.97.170:8880/play/6626.m3u8
 #EXTINF:-1 group-title="📻 网络电台",贵州旅游广播
 http://45.192.97.170:8880/play/6627.m3u8
 #EXTINF:-1 group-title="📻 网络电台",贵州故事广播
 http://45.192.97.170:8880/play/6628.m3u8
 #EXTINF:-1 group-title="📻 网络电台",贵州综合广播
 http://45.192.97.170:8880/play/6629.m3u8
-#EXTINF:-1 group-title="📻 网络电台",河南新闻广播
-http://45.192.97.170:8880/play/6630.m3u8
-#EXTINF:-1 group-title="📻 网络电台",河南经济广播
-http://45.192.97.170:8880/play/6631.m3u8
-#EXTINF:-1 group-title="📻 网络电台",河南戏曲广播
-http://45.192.97.170:8880/play/6632.m3u8
-#EXTINF:-1 group-title="📻 网络电台",河南教育广播
-http://45.192.97.170:8880/play/6633.m3u8
-#EXTINF:-1 group-title="📻 网络电台",河南信息广播
-http://45.192.97.170:8880/play/6634.m3u8
 #EXTINF:-1 group-title="📻 网络电台",吉林新闻综合广播
 http://45.192.97.170:8880/play/6635.m3u8
 #EXTINF:-1 group-title="📻 网络电台",吉林交通广播

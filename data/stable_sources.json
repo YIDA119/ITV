@@ -26,26 +26,26 @@
   "海峡卫视": {
     "channel_name": "海峡卫视",
     "url": "http://38.64.72.148:80/hls/modn/list/4009/playlist.m3u8",
-    "latency": 82,
+    "latency": 98,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-28T13:59:48.268468",
-    "updated_at": "2026-07-29T14:05:24.285595"
+    "updated_at": "2026-07-29T19:11:46.527747"
   },
   "CCTV-10": {
     "channel_name": "CCTV-10",
     "url": "http://74.91.26.218:82/live/cctv10hd.m3u8",
-    "latency": 256,
+    "latency": 175,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:24.438632",
-    "updated_at": "2026-07-29T14:05:24.438635"
+    "updated_at": "2026-07-29T19:11:46.547188"
   },
   "CCTV-10 (720p)": {
     "channel_name": "CCTV-10 (720p)",
@@ -61,39 +61,39 @@
   },
   "CCTV-4": {
     "channel_name": "CCTV-4",
-    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1785359700-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-44320777e384217c387e5e8352f37386&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
-    "latency": 421,
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1785395700-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-862c65e1c311f9fc1b593d27e4f128b5&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "latency": 91,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:07:04.440989",
-    "updated_at": "2026-07-29T14:07:04.440997"
+    "promoted_at": "2026-07-29T19:13:25.384322",
+    "updated_at": "2026-07-29T19:13:25.384328"
   },
   "CCTV-8": {
     "channel_name": "CCTV-8",
     "url": "http://74.91.26.218:82/live/cctv8hd.m3u8",
-    "latency": 256,
+    "latency": 178,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:24.434972",
-    "updated_at": "2026-07-29T14:05:24.434975"
+    "updated_at": "2026-07-29T19:11:46.559192"
   },
   "CCTV-7": {
     "channel_name": "CCTV-7",
-    "url": "http://74.91.26.218:82/live/cctv7hd.m3u8",
-    "latency": 261,
+    "url": "http://112.27.235.94:8000/hls/8/index.m3u8",
+    "latency": 661,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T02:16:10.951746",
-    "updated_at": "2026-07-29T14:05:24.442326"
+    "promoted_at": "2026-07-29T19:11:47.363889",
+    "updated_at": "2026-07-29T19:11:47.363892"
   },
   "CCTV-3 (720p)": {
     "channel_name": "CCTV-3 (720p)",
@@ -182,14 +182,14 @@
   "CCTV-6": {
     "channel_name": "CCTV-6",
     "url": "http://69.30.245.50/live/cctv6.m3u8",
-    "latency": 551,
+    "latency": 209,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.013707",
-    "updated_at": "2026-07-29T14:05:25.013712"
+    "updated_at": "2026-07-29T19:11:46.582365"
   },
   "CCTV-13 (720p)": {
     "channel_name": "CCTV-13 (720p)",
@@ -242,26 +242,26 @@
   "TVBS-Asia": {
     "channel_name": "TVBS-Asia",
     "url": "http://38.64.72.148/hls/modn/list/4005/playlist.m3u8",
-    "latency": 124,
+    "latency": 99,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:08:48.525890",
-    "updated_at": "2026-07-29T14:05:24.292939"
+    "updated_at": "2026-07-29T19:11:46.531595"
   },
   "CCTV-3": {
     "channel_name": "CCTV-3",
     "url": "http://74.91.26.218:82/live/cctv3hd.m3u8",
-    "latency": 362,
+    "latency": 210,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-28T02:12:55.541156",
-    "updated_at": "2026-07-29T14:05:24.547311"
+    "updated_at": "2026-07-29T19:11:46.586177"
   },
   "CCTV-4 Asia (720p)": {
     "channel_name": "CCTV-4 Asia (720p)",
@@ -278,26 +278,26 @@
   "CCTV-Golf & Tennis (1080p)": {
     "channel_name": "CCTV-Golf & Tennis (1080p)",
     "url": "http://38.75.136.137:98/gslb/dsdqpub/gefwq.m3u8?auth=testpub",
-    "latency": 428,
+    "latency": 252,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:08:48.527283",
-    "updated_at": "2026-07-29T08:36:46.091273"
+    "updated_at": "2026-07-29T19:11:46.629009"
   },
   "CCTV-8K": {
     "channel_name": "CCTV-8K",
     "url": "http://192.151.150.154/live/cctv8k.m3u8",
-    "latency": 363,
+    "latency": 246,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:08:48.527771",
-    "updated_at": "2026-07-29T14:05:24.554993"
+    "updated_at": "2026-07-29T19:11:46.617315"
   },
   "CCTV-6 (1080p)": {
     "channel_name": "CCTV-6 (1080p)",
@@ -314,26 +314,26 @@
   "CCTV-9": {
     "channel_name": "CCTV-9",
     "url": "https://xykt-fix.github.io/Y77.m3u8",
-    "latency": 13,
+    "latency": 76,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T19:21:25.562367",
-    "updated_at": "2026-07-29T14:05:24.188774"
+    "updated_at": "2026-07-29T19:11:46.523855"
   },
   "CCTV-Storm Theater (1080p)": {
     "channel_name": "CCTV-Storm Theater (1080p)",
     "url": "http://38.75.136.137:98/gslb/dsdqpub/fyjc.m3u8?auth=testpub",
-    "latency": 191,
+    "latency": 223,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:08:48.529488",
-    "updated_at": "2026-07-29T14:05:24.416142"
+    "updated_at": "2026-07-29T19:11:46.609546"
   },
   "CCTV-8K (1080p)": {
     "channel_name": "CCTV-8K (1080p)",
@@ -350,26 +350,26 @@
   "CCTV-Health (1080p)": {
     "channel_name": "CCTV-Health (1080p)",
     "url": "http://38.75.136.137:98/gslb/dsdqpub/wsjk.m3u8?auth=testpub",
-    "latency": 180,
+    "latency": 215,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:08:48.531197",
-    "updated_at": "2026-07-29T14:05:24.315119"
+    "updated_at": "2026-07-29T19:11:46.597893"
   },
   "CCTV-The First Theater (1080p)": {
     "channel_name": "CCTV-The First Theater (1080p)",
     "url": "http://38.75.136.137:98/gslb/dsdqpub/dyjc.m3u8?auth=testpub",
-    "latency": 175,
+    "latency": 181,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:08:48.531738",
-    "updated_at": "2026-07-29T14:05:24.307747"
+    "updated_at": "2026-07-29T19:11:46.566896"
   },
   "CCTV-15 (720p)": {
     "channel_name": "CCTV-15 (720p)",
@@ -386,14 +386,14 @@
   "CCTV-Storm Football (1080p)": {
     "channel_name": "CCTV-Storm Football (1080p)",
     "url": "http://38.75.136.137:98/gslb/dsdqpub/fyzq.m3u8?auth=testpub",
-    "latency": 120,
+    "latency": 144,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:08:48.532924",
-    "updated_at": "2026-07-29T14:05:24.289257"
+    "updated_at": "2026-07-29T19:11:46.543251"
   },
   "CCTV6": {
     "channel_name": "CCTV6",
@@ -410,62 +410,62 @@
   "CCTV-Weapon & Technology (1080p)": {
     "channel_name": "CCTV-Weapon & Technology (1080p)",
     "url": "http://38.75.136.137:98/gslb/dsdqpub/gfjs.m3u8?auth=testpub",
-    "latency": 189,
+    "latency": 219,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:08:48.534161",
-    "updated_at": "2026-07-29T14:05:24.405221"
+    "updated_at": "2026-07-29T19:11:46.605672"
   },
   "CCTV-Nostalgia Theater (1080p)": {
     "channel_name": "CCTV-Nostalgia Theater (1080p)",
     "url": "http://38.75.136.137:98/gslb/dsdqpub/hjjc.m3u8?auth=testpub",
-    "latency": 191,
+    "latency": 179,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:08:48.534769",
-    "updated_at": "2026-07-29T14:05:24.412554"
+    "updated_at": "2026-07-29T19:11:46.563039"
   },
   "CCTV-World Geography (1080p)": {
     "channel_name": "CCTV-World Geography (1080p)",
     "url": "http://38.75.136.137:98/gslb/dsdqpub/sjdl.m3u8?auth=testpub",
-    "latency": 178,
+    "latency": 1433,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:08:48.535396",
-    "updated_at": "2026-07-29T14:05:24.311425"
+    "updated_at": "2026-07-29T19:11:47.594576"
   },
   "CCTV-11": {
     "channel_name": "CCTV-11",
-    "url": "https://xykt-fix.github.io/play/a02b/index.m3u8",
-    "latency": 149,
+    "url": "http://74.91.26.218:82/live/cctv11hd.m3u8",
+    "latency": 175,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-28T19:19:22.879947",
-    "updated_at": "2026-07-29T14:05:24.300259"
+    "promoted_at": "2026-07-29T19:11:46.551153",
+    "updated_at": "2026-07-29T19:11:46.551157"
   },
   "CCTV-Storm Music (1080p)": {
     "channel_name": "CCTV-Storm Music (1080p)",
     "url": "http://38.75.136.137:98/gslb/dsdqpub/fyyy.m3u8?auth=testpub",
-    "latency": 129,
+    "latency": 184,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:08:48.536838",
-    "updated_at": "2026-07-29T14:05:24.296623"
+    "updated_at": "2026-07-29T19:11:46.574633"
   },
   "CCTV-4 中文国际": {
     "channel_name": "CCTV-4 中文国际",
@@ -482,218 +482,218 @@
   "CCTV-Billiards (1080p)": {
     "channel_name": "CCTV-Billiards (1080p)",
     "url": "http://38.75.136.137:98/gslb/dsdqpub/ystq.m3u8?auth=testpub",
-    "latency": 190,
+    "latency": 253,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:08:48.538204",
-    "updated_at": "2026-07-29T14:05:24.408902"
+    "updated_at": "2026-07-29T19:11:46.632844"
   },
   "CCTV-Culture of Quality (1080p)": {
     "channel_name": "CCTV-Culture of Quality (1080p)",
     "url": "http://38.75.136.137:98/gslb/dsdqpub/ysjp.m3u8?auth=testpub",
-    "latency": 183,
+    "latency": 252,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:08:48.538856",
-    "updated_at": "2026-07-29T14:05:24.318873"
+    "updated_at": "2026-07-29T19:11:46.625122"
   },
   "CCTV-Women's Fashion (1080p)": {
     "channel_name": "CCTV-Women's Fashion (1080p)",
     "url": "http://38.75.136.137:98/gslb/dsdqpub/nxss.m3u8?auth=testpub",
-    "latency": 2040,
+    "latency": 182,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:08:48.539578",
-    "updated_at": "2026-07-29T14:05:25.638771"
+    "updated_at": "2026-07-29T19:11:46.570768"
   },
   "翡翠台": {
     "channel_name": "翡翠台",
-    "url": "http://r.jdshipin.com/GeWKr",
-    "latency": 46,
+    "url": "http://r.jdshipin.com/62WM7",
+    "latency": 314,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:05:24.431102",
-    "updated_at": "2026-07-29T14:07:03.783002"
+    "promoted_at": "2026-07-29T19:11:47.598689",
+    "updated_at": "2026-07-29T19:13:25.437243"
   },
   "CGTN French (1080p)": {
     "channel_name": "CGTN French (1080p)",
     "url": "http://145.239.5.177/214/index.m3u8",
-    "latency": 427,
+    "latency": 353,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:08:48.541048",
-    "updated_at": "2026-07-29T14:05:24.700714"
+    "updated_at": "2026-07-29T19:11:46.652519"
   },
   "CGTN Documentary (1080p)": {
     "channel_name": "CGTN Documentary (1080p)",
     "url": "https://amg00405-rakutentv-cgtndocumentary-rakuten-0ql8j.amagi.tv/master.m3u8",
-    "latency": 453,
+    "latency": 321,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:08:48.541781",
-    "updated_at": "2026-07-29T14:05:24.782744"
+    "updated_at": "2026-07-29T19:11:46.648454"
   },
   "CGTN (1080p)": {
     "channel_name": "CGTN (1080p)",
     "url": "https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8",
-    "latency": 427,
+    "latency": 320,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:08:48.542546",
-    "updated_at": "2026-07-29T14:05:24.696933"
+    "updated_at": "2026-07-29T19:11:46.644525"
   },
   "浙江钱江都市": {
     "channel_name": "浙江钱江都市",
     "url": "https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8",
-    "latency": 344,
+    "latency": 425,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-28T13:59:48.413459",
-    "updated_at": "2026-07-29T14:05:24.512428"
+    "updated_at": "2026-07-29T19:11:46.726740"
   },
   "浙江教科影视": {
     "channel_name": "浙江教科影视",
-    "url": "http://ali-m-l.cztv.com/channels/lantian/channel04/1080p.m3u8",
-    "latency": 551,
+    "url": "https://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8",
+    "latency": 355,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T02:16:11.384287",
-    "updated_at": "2026-07-29T14:05:25.032278"
+    "promoted_at": "2026-07-29T19:11:46.664521",
+    "updated_at": "2026-07-29T19:11:46.664526"
   },
   "浙江经济": {
     "channel_name": "浙江经济",
-    "url": "http://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8",
-    "latency": 357,
+    "url": "https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8",
+    "latency": 355,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T02:16:11.240211",
-    "updated_at": "2026-07-29T14:05:24.531354"
+    "promoted_at": "2026-07-29T19:11:46.660474",
+    "updated_at": "2026-07-29T19:11:46.660478"
   },
   "浙江新闻": {
     "channel_name": "浙江新闻",
     "url": "https://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8",
-    "latency": 793,
+    "latency": 712,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-28T08:30:33.414248",
-    "updated_at": "2026-07-29T14:05:25.184310"
+    "updated_at": "2026-07-29T19:11:47.400147"
   },
   "东方卫视": {
     "channel_name": "东方卫视",
     "url": "https://txmov2.a.kwimgs.com/bs3/video-hls/5219953535631090825_hlsb.m3u8",
-    "latency": 216,
+    "latency": 538,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-26T19:07:45.862369",
-    "updated_at": "2026-07-29T14:05:24.423513"
+    "updated_at": "2026-07-29T19:11:47.017900"
   },
   "浙江民生": {
     "channel_name": "浙江民生",
     "url": "http://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8",
-    "latency": 478,
+    "latency": 356,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T08:36:46.395060",
-    "updated_at": "2026-07-29T14:05:24.852088"
+    "updated_at": "2026-07-29T19:11:46.672166"
   },
   "陕西银龄": {
     "channel_name": "陕西银龄",
     "url": "http://112.46.105.20:8009/hls/20/index.m3u8",
-    "latency": 332,
+    "latency": 593,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.236789",
-    "updated_at": "2026-07-29T14:05:24.504926"
+    "updated_at": "2026-07-29T19:11:47.029839"
   },
   "浙江钱江": {
     "channel_name": "浙江钱江",
-    "url": "http://l.cztvcloud.com/channels/lantian/SXyuyao2/720p.m3u8",
-    "latency": 578,
+    "url": "https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8",
+    "latency": 371,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T08:36:46.752666",
-    "updated_at": "2026-07-29T14:05:25.040174"
+    "promoted_at": "2026-07-29T19:11:46.691525",
+    "updated_at": "2026-07-29T19:11:46.691529"
   },
   "辽宁经济": {
     "channel_name": "辽宁经济",
     "url": "http://dassby.qqff.top:99/live/辽宁经济/index.m3u8",
-    "latency": 923,
+    "latency": 447,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.238509",
-    "updated_at": "2026-07-29T14:05:25.218324"
+    "updated_at": "2026-07-29T19:11:46.832548"
   },
   "辽宁青少": {
     "channel_name": "辽宁青少",
     "url": "http://dassby.qqff.top:99/live/辽宁教育青少/index.m3u8",
-    "latency": 427,
+    "latency": 443,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.239386",
-    "updated_at": "2026-07-29T14:05:24.708466"
+    "updated_at": "2026-07-29T19:11:46.816841"
   },
   "辽宁影视": {
     "channel_name": "辽宁影视",
     "url": "http://dassby.qqff.top:99/live/辽宁影视剧/index.m3u8",
-    "latency": 436,
+    "latency": 447,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.242528",
-    "updated_at": "2026-07-29T14:05:24.734824"
+    "updated_at": "2026-07-29T19:11:46.828659"
   },
   "CCTV4K真4K": {
     "channel_name": "CCTV4K真4K",
@@ -710,50 +710,50 @@
   "浙江教科影院": {
     "channel_name": "浙江教科影院",
     "url": "http://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8",
-    "latency": 379,
+    "latency": 357,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.246895",
-    "updated_at": "2026-07-29T14:05:24.562625"
+    "updated_at": "2026-07-29T19:11:46.679943"
   },
   "江西卫视": {
     "channel_name": "江西卫视",
     "url": "http://112.27.235.94:8000/hls/44/index.m3u8",
-    "latency": 389,
+    "latency": 432,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-25T13:19:37.738631",
-    "updated_at": "2026-07-29T14:05:24.616511"
+    "updated_at": "2026-07-29T19:11:46.765785"
   },
   "深圳卫视": {
     "channel_name": "深圳卫视",
     "url": "http://112.27.235.94:8000/hls/33/index.m3u8",
-    "latency": 389,
+    "latency": 623,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-25T08:03:37.925332",
-    "updated_at": "2026-07-29T14:05:24.620318"
+    "updated_at": "2026-07-29T19:11:47.057441"
   },
   "河北卫视": {
     "channel_name": "河北卫视",
     "url": "http://112.27.235.94:8000/hls/39/index.m3u8",
-    "latency": 412,
+    "latency": 637,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-25T08:03:37.828074",
-    "updated_at": "2026-07-29T14:05:24.643256"
+    "updated_at": "2026-07-29T19:11:47.202506"
   },
   "CCTV4": {
     "channel_name": "CCTV4",
@@ -770,26 +770,26 @@
   "安徽卫视": {
     "channel_name": "安徽卫视",
     "url": "http://112.27.235.94:8000/hls/26/index.m3u8",
-    "latency": 388,
+    "latency": 440,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.254286",
-    "updated_at": "2026-07-29T14:05:24.593462"
+    "updated_at": "2026-07-29T19:11:46.805070"
   },
   "重庆卫视": {
     "channel_name": "重庆卫视",
     "url": "http://112.27.235.94:8000/hls/36/index.m3u8",
-    "latency": 387,
+    "latency": 425,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.255334",
-    "updated_at": "2026-07-29T14:05:24.585776"
+    "updated_at": "2026-07-29T19:11:46.722925"
   },
   "CCTV3": {
     "channel_name": "CCTV3",
@@ -806,38 +806,38 @@
   "天津卫视": {
     "channel_name": "天津卫视",
     "url": "http://112.27.235.94:8000/hls/42/index.m3u8",
-    "latency": 413,
+    "latency": 432,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.257304",
-    "updated_at": "2026-07-29T14:05:24.647090"
+    "updated_at": "2026-07-29T19:11:46.761884"
   },
   "安徽综艺体育": {
     "channel_name": "安徽综艺体育",
     "url": "http://112.27.235.94:8000/hls/25/index.m3u8",
-    "latency": 435,
+    "latency": 429,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.258319",
-    "updated_at": "2026-07-29T14:05:24.727276"
+    "updated_at": "2026-07-29T19:11:46.742154"
   },
   "广东卫视": {
     "channel_name": "广东卫视",
     "url": "http://112.27.235.94:8000/hls/30/index.m3u8",
-    "latency": 436,
+    "latency": 442,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.259340",
-    "updated_at": "2026-07-29T14:05:24.731072"
+    "updated_at": "2026-07-29T19:11:46.812868"
   },
   "CCTV5": {
     "channel_name": "CCTV5",
@@ -854,86 +854,86 @@
   "云南卫视": {
     "channel_name": "云南卫视",
     "url": "http://112.27.235.94:8000/hls/40/index.m3u8",
-    "latency": 418,
+    "latency": 433,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.261400",
-    "updated_at": "2026-07-29T14:05:24.681745"
+    "updated_at": "2026-07-29T19:11:46.773762"
   },
   "山西卫视": {
     "channel_name": "山西卫视",
     "url": "http://112.27.235.94:8000/hls/45/index.m3u8",
-    "latency": 385,
+    "latency": 429,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.262463",
-    "updated_at": "2026-07-29T14:05:24.577820"
+    "updated_at": "2026-07-29T19:11:46.746265"
   },
   "辽宁卫视": {
     "channel_name": "辽宁卫视",
     "url": "http://61.136.172.236:9901/tsfile/live/0121_1.m3u8",
-    "latency": 675,
+    "latency": 695,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:07:04.116241",
-    "updated_at": "2026-07-29T14:07:04.116244"
+    "promoted_at": "2026-07-29T19:13:25.835285",
+    "updated_at": "2026-07-29T19:13:25.835288"
   },
   "北京卫视": {
     "channel_name": "北京卫视",
     "url": "http://112.27.235.94:8000/hls/27/index.m3u8",
-    "latency": 417,
+    "latency": 436,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-25T08:03:37.832919",
-    "updated_at": "2026-07-29T14:05:24.677981"
+    "updated_at": "2026-07-29T19:11:46.789626"
   },
   "湖北卫视": {
     "channel_name": "湖北卫视",
     "url": "http://112.27.235.94:8000/hls/41/index.m3u8",
-    "latency": 446,
+    "latency": 416,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.265616",
-    "updated_at": "2026-07-29T14:05:24.761490"
+    "updated_at": "2026-07-29T19:11:46.703188"
   },
   "浙江公共新闻": {
     "channel_name": "浙江公共新闻",
     "url": "https://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8",
-    "latency": 327,
+    "latency": 432,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-27T09:47:32.832584",
-    "updated_at": "2026-07-29T14:05:24.485602"
+    "updated_at": "2026-07-29T19:11:46.757987"
   },
   "江苏卫视": {
     "channel_name": "江苏卫视",
     "url": "http://112.27.235.94:8000/hls/32/index.m3u8",
-    "latency": 415,
+    "latency": 434,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:24.665523",
-    "updated_at": "2026-07-29T14:05:24.665527"
+    "updated_at": "2026-07-29T19:11:46.785523"
   },
   "CCTV-4K 高清": {
     "channel_name": "CCTV-4K 高清",
@@ -950,38 +950,38 @@
   "湖南卫视": {
     "channel_name": "湖南卫视",
     "url": "http://112.27.235.94:8000/hls/31/index.m3u8",
-    "latency": 389,
+    "latency": 421,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T19:21:25.893344",
-    "updated_at": "2026-07-29T14:05:24.624094"
+    "updated_at": "2026-07-29T19:11:46.715070"
   },
   "TVBS新闻台": {
     "channel_name": "TVBS新闻台",
     "url": "http://61.221.215.25:8800/hls/9/index.m3u8",
-    "latency": 422,
+    "latency": 472,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.275320",
-    "updated_at": "2026-07-29T14:05:24.693167"
+    "updated_at": "2026-07-29T19:11:46.998249"
   },
   "河南卫视": {
     "channel_name": "河南卫视",
     "url": "http://112.27.235.94:8000/hls/37/index.m3u8",
-    "latency": 888,
+    "latency": 618,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-26T19:07:46.136014",
-    "updated_at": "2026-07-29T14:05:25.207087"
+    "updated_at": "2026-07-29T19:11:47.053516"
   },
   "黑龙江卫视": {
     "channel_name": "黑龙江卫视",
@@ -998,38 +998,38 @@
   "浙江经济生活": {
     "channel_name": "浙江经济生活",
     "url": "http://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8",
-    "latency": 380,
+    "latency": 356,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T08:36:46.449527",
-    "updated_at": "2026-07-29T14:05:24.574098"
+    "updated_at": "2026-07-29T19:11:46.676045"
   },
   "浙江经视": {
     "channel_name": "浙江经视",
     "url": "https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8",
-    "latency": 329,
+    "latency": 355,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-28T19:19:23.044180",
-    "updated_at": "2026-07-29T14:05:24.497383"
+    "updated_at": "2026-07-29T19:11:46.668405"
   },
   "浙江钱江频道": {
     "channel_name": "浙江钱江频道",
     "url": "http://ali-m-l.cztv.com/channels/lantian/channel02/1080p.m3u8",
-    "latency": 499,
+    "latency": 491,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.292386",
-    "updated_at": "2026-07-29T14:05:24.906726"
+    "updated_at": "2026-07-29T19:11:47.010062"
   },
   "广西玉林大容山莲花山顶": {
     "channel_name": "广西玉林大容山莲花山顶",
@@ -1046,26 +1046,26 @@
   "浙江教科": {
     "channel_name": "浙江教科",
     "url": "http://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8",
-    "latency": 673,
+    "latency": 606,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T08:36:46.208644",
-    "updated_at": "2026-07-29T14:05:25.143786"
+    "updated_at": "2026-07-29T19:11:47.049647"
   },
   "浙江民生休闲": {
     "channel_name": "浙江民生休闲",
-    "url": "http://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8",
-    "latency": 398,
+    "url": "https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8",
+    "latency": 416,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T08:36:46.257793",
-    "updated_at": "2026-07-29T14:05:24.627863"
+    "promoted_at": "2026-07-29T19:11:46.707082",
+    "updated_at": "2026-07-29T19:11:46.707086"
   },
   "福建漳州醉美沙滩翡翠湾": {
     "channel_name": "福建漳州醉美沙滩翡翠湾",
@@ -1082,50 +1082,50 @@
   "吉林市新闻综合 [Geo-blocked]": {
     "channel_name": "吉林市新闻综合 [Geo-blocked]",
     "url": "https://stream2.jlntv.cn/jilin1/sd/live.m3u8",
-    "latency": 3051,
+    "latency": 889,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.298608",
-    "updated_at": "2026-07-29T14:05:25.816720"
+    "updated_at": "2026-07-29T19:11:47.519016"
   },
   "浙江少儿": {
     "channel_name": "浙江少儿",
     "url": "http://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8",
-    "latency": 569,
+    "latency": 534,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-27T14:28:12.736413",
-    "updated_at": "2026-07-29T14:05:25.036025"
+    "updated_at": "2026-07-29T19:11:47.013948"
   },
   "陕西都市青春": {
     "channel_name": "陕西都市青春",
     "url": "http://112.46.105.20:8009/hls/19/index.m3u8",
-    "latency": 501,
+    "latency": 1570,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.301121",
-    "updated_at": "2026-07-29T14:05:24.926026"
+    "updated_at": "2026-07-29T19:11:47.610773"
   },
   "陕西新闻咨询": {
     "channel_name": "陕西新闻咨询",
     "url": "http://112.46.105.20:8009/hls/18/index.m3u8",
-    "latency": 500,
+    "latency": 553,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.302396",
-    "updated_at": "2026-07-29T14:05:24.914422"
+    "updated_at": "2026-07-29T19:11:47.021834"
   },
   "四川峨眉山远眺万佛顶": {
     "channel_name": "四川峨眉山远眺万佛顶",
@@ -1154,14 +1154,14 @@
   "浙江教育": {
     "channel_name": "浙江教育",
     "url": "http://ali-m-l.cztv.com/channels/lantian/channel04/720p.m3u8",
-    "latency": 532,
+    "latency": 577,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.306271",
-    "updated_at": "2026-07-29T14:05:24.986875"
+    "updated_at": "2026-07-29T19:11:47.025769"
   },
   "福建武夷山玉女峰": {
     "channel_name": "福建武夷山玉女峰",
@@ -1190,14 +1190,14 @@
   "浙江休闲台": {
     "channel_name": "浙江休闲台",
     "url": "http://ali-m-l.cztv.com/channels/lantian/channel006/720p.m3u8",
-    "latency": 544,
+    "latency": 454,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.310342",
-    "updated_at": "2026-07-29T14:05:25.006128"
+    "updated_at": "2026-07-29T19:11:46.840537"
   },
   "安徽池州九华山风景区九华山": {
     "channel_name": "安徽池州九华山风景区九华山",
@@ -1250,14 +1250,14 @@
   "辽宁体育": {
     "channel_name": "辽宁体育",
     "url": "http://dassby.qqff.top:99/live/辽宁体育/index.m3u8",
-    "latency": 421,
+    "latency": 667,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.318336",
-    "updated_at": "2026-07-29T14:05:24.689375"
+    "updated_at": "2026-07-29T19:11:47.375859"
   },
   "湖南张家界宝峰湖": {
     "channel_name": "湖南张家界宝峰湖",
@@ -1334,14 +1334,14 @@
   "广东民生": {
     "channel_name": "广东民生",
     "url": "http://183.11.239.36:808/hls/18/index.m3u8",
-    "latency": 592,
+    "latency": 600,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.328712",
-    "updated_at": "2026-07-29T14:05:25.051583"
+    "updated_at": "2026-07-29T19:11:47.037706"
   },
   "贵州省兴义市万峰林": {
     "channel_name": "贵州省兴义市万峰林",
@@ -1358,14 +1358,14 @@
   "安徽导视": {
     "channel_name": "安徽导视",
     "url": "http://dspdhls.appcoo.com:8888/live/dspd/index.m3u8",
-    "latency": 610,
+    "latency": 656,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.333293",
-    "updated_at": "2026-07-29T14:05:25.059030"
+    "updated_at": "2026-07-29T19:11:47.347997"
   },
   "CCTV11": {
     "channel_name": "CCTV11",
@@ -1382,14 +1382,14 @@
   "人间卫视": {
     "channel_name": "人间卫视",
     "url": "http://61.216.67.119:1935/bltvhd/bltv1/chunklist_w1266569526.m3u",
-    "latency": 3586,
+    "latency": 642,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.336521",
-    "updated_at": "2026-07-29T14:05:25.828411"
+    "updated_at": "2026-07-29T19:11:47.300078"
   },
   "CCTV10": {
     "channel_name": "CCTV10",
@@ -1406,14 +1406,14 @@
   "上海卫视": {
     "channel_name": "上海卫视",
     "url": "http://112.27.235.94:8000/hls/28/index.m3u8",
-    "latency": 389,
+    "latency": 440,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.341344",
-    "updated_at": "2026-07-29T14:05:24.597173"
+    "updated_at": "2026-07-29T19:11:46.797425"
   },
   "福州广电视台都市生活频道": {
     "channel_name": "福州广电视台都市生活频道",
@@ -1430,14 +1430,14 @@
   "福建经济": {
     "channel_name": "福建经济",
     "url": "http://satellitepull.cnr.cn/live/wx32fjdnjjgb/playlist.m3u8",
-    "latency": 1016,
+    "latency": 103,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.346114",
-    "updated_at": "2026-07-29T14:05:25.374594"
+    "updated_at": "2026-07-29T19:11:46.539408"
   },
   "CCTV7": {
     "channel_name": "CCTV7",
@@ -1454,14 +1454,14 @@
   "浙江数码时代": {
     "channel_name": "浙江数码时代",
     "url": "http://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8",
-    "latency": 330,
+    "latency": 357,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:24.501032",
-    "updated_at": "2026-07-29T14:05:24.501036"
+    "updated_at": "2026-07-29T19:11:46.687666"
   },
   "CCTV2": {
     "channel_name": "CCTV2",
@@ -1478,14 +1478,14 @@
   "东南卫视": {
     "channel_name": "东南卫视",
     "url": "http://112.27.235.94:8000/hls/38/index.m3u8",
-    "latency": 439,
+    "latency": 426,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.356041",
-    "updated_at": "2026-07-29T14:05:24.742479"
+    "updated_at": "2026-07-29T19:11:46.734426"
   },
   "CCTV13": {
     "channel_name": "CCTV13",
@@ -1538,38 +1538,38 @@
   "辽宁都市": {
     "channel_name": "辽宁都市",
     "url": "http://dassby.qqff.top:99/live/辽宁都市/index.m3u8",
-    "latency": 1197,
+    "latency": 666,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.364661",
-    "updated_at": "2026-07-29T14:05:25.424051"
+    "updated_at": "2026-07-29T19:11:47.371863"
   },
   "CGTN": {
     "channel_name": "CGTN",
     "url": "https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8",
-    "latency": 400,
+    "latency": 440,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-25T08:03:37.712552",
-    "updated_at": "2026-07-29T14:05:24.631647"
+    "updated_at": "2026-07-29T19:11:46.801243"
   },
   "上海第一财经": {
     "channel_name": "上海第一财经",
     "url": "https://satellitepull.cnr.cn/live/wx32dycjgb/playlist.m3u8",
-    "latency": 743,
+    "latency": 262,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.368193",
-    "updated_at": "2026-07-29T14:05:25.173039"
+    "updated_at": "2026-07-29T19:11:46.636675"
   },
   "中央电视塔东": {
     "channel_name": "中央电视塔东",
@@ -1586,26 +1586,26 @@
   "广西国际": {
     "channel_name": "广西国际",
     "url": "https://hlscdn.liangtv.cn/live/0234c48e0bc24fe1b41b9999a253e581/1075ee38e04f490690f6a36a16e09c79.m3u8",
-    "latency": 541,
+    "latency": 967,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.373309",
-    "updated_at": "2026-07-29T14:05:24.998501"
+    "updated_at": "2026-07-29T19:11:47.538876"
   },
   "吉林卫视": {
     "channel_name": "吉林卫视",
     "url": "http://cssbyd.imwork.net:8082/hls/41/index.m3u8",
-    "latency": 1563,
+    "latency": 683,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-25T19:03:58.178205",
-    "updated_at": "2026-07-29T14:05:25.585232"
+    "updated_at": "2026-07-29T19:11:47.384012"
   },
   "福州广电视台新闻综合频道": {
     "channel_name": "福州广电视台新闻综合频道",
@@ -1622,26 +1622,26 @@
   "甘肃经济": {
     "channel_name": "甘肃经济",
     "url": "https://satellitepull.cnr.cn/live/wxgshhzs/playlist.m3u8",
-    "latency": 526,
+    "latency": 218,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.378722",
-    "updated_at": "2026-07-29T14:05:24.983159"
+    "updated_at": "2026-07-29T19:11:46.601776"
   },
   "甘肃都市": {
     "channel_name": "甘肃都市",
     "url": "https://satellitepull.cnr.cn/live/wxgsdstb/playlist.m3u8",
-    "latency": 549,
+    "latency": 206,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.380521",
-    "updated_at": "2026-07-29T14:05:25.009882"
+    "updated_at": "2026-07-29T19:11:46.578498"
   },
   "CCTV14": {
     "channel_name": "CCTV14",
@@ -1658,170 +1658,170 @@
   "三沙卫视": {
     "channel_name": "三沙卫视",
     "url": "http://221.226.51.220:50081/newlive/live/hls/38/live.m3u8",
-    "latency": 634,
+    "latency": 665,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.384157",
-    "updated_at": "2026-07-29T14:05:25.085344"
+    "updated_at": "2026-07-29T19:11:47.368028"
   },
   "大立电视台": {
     "channel_name": "大立电视台",
     "url": "http://www.dalitv.com.tw:4568/live/dali/index.m3u8",
-    "latency": 618,
+    "latency": 790,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.386033",
-    "updated_at": "2026-07-29T14:05:25.066515"
+    "updated_at": "2026-07-29T19:11:47.416100"
   },
   "CGTN记录": {
     "channel_name": "CGTN记录",
     "url": "https://english-livetx.cgtn.com/hls/yypdjlctzb_hd.m3u8",
-    "latency": 804,
+    "latency": 1091,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.388010",
-    "updated_at": "2026-07-29T14:05:25.188031"
+    "updated_at": "2026-07-29T19:11:47.558768"
   },
   "广西卫视": {
     "channel_name": "广西卫视",
     "url": "https://hlscdn.liangtv.cn/live/de0f97348eb84f62aa6b7d8cf0430770/dd505d87880c478f901f38560ca4d4e6.m3u8",
-    "latency": 1434,
+    "latency": 715,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.389892",
-    "updated_at": "2026-07-29T14:05:25.489047"
+    "updated_at": "2026-07-29T19:11:47.404062"
   },
   "浙江国际": {
     "channel_name": "浙江国际",
     "url": "http://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8",
-    "latency": 406,
+    "latency": 355,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T08:36:46.617764",
-    "updated_at": "2026-07-29T14:05:24.635460"
+    "updated_at": "2026-07-29T19:11:46.656495"
   },
   "浙江 Ⅰ 绍兴影视 (720p)": {
     "channel_name": "浙江 Ⅰ 绍兴影视 (720p)",
     "url": "http://live.shaoxing.com.cn/video/s10001-sxtv3/index.m3u8",
-    "latency": 1525,
+    "latency": 919,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.393580",
-    "updated_at": "2026-07-29T14:05:25.569785"
+    "updated_at": "2026-07-29T19:11:47.527033"
   },
   "浙江 Ⅰ 绍兴综合 (576p)": {
     "channel_name": "浙江 Ⅰ 绍兴综合 (576p)",
     "url": "http://live.shaoxing.com.cn/video/s10001-sxtv1/index.m3u8",
-    "latency": 634,
+    "latency": 659,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.395510",
-    "updated_at": "2026-07-29T14:05:25.091203"
+    "updated_at": "2026-07-29T19:11:47.355897"
   },
   "大湾区卫视": {
     "channel_name": "大湾区卫视",
     "url": "http://222.128.55.152:9080/live/dwq.m3u8",
-    "latency": 1046,
+    "latency": 1101,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-26T02:30:20.061489",
-    "updated_at": "2026-07-29T14:05:25.389703"
+    "updated_at": "2026-07-29T19:11:47.566719"
   },
   "广东大湾区": {
     "channel_name": "广东大湾区",
     "url": "http://222.128.55.152:9080/live/dwq.m3u8",
-    "latency": 1007,
+    "latency": 1064,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.399424",
-    "updated_at": "2026-07-29T14:05:25.363110"
+    "updated_at": "2026-07-29T19:11:47.550903"
   },
   "福州广播电视台都市生活频道 (FZTV-3) (1080p)": {
     "channel_name": "福州广播电视台都市生活频道 (FZTV-3) (1080p)",
     "url": "http://live.zohi.tv/video/s10001-fztv-3/index.m3u8",
-    "latency": 1825,
+    "latency": 772,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.401364",
-    "updated_at": "2026-07-29T14:05:25.611916"
+    "updated_at": "2026-07-29T19:11:47.412076"
   },
   "浙江 Ⅰ 绍兴综合": {
     "channel_name": "浙江 Ⅰ 绍兴综合",
     "url": "http://live.shaoxing.com.cn/video/s10001-sxtv1/index.m3u8",
-    "latency": 429,
+    "latency": 434,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.403365",
-    "updated_at": "2026-07-29T14:05:24.719810"
+    "updated_at": "2026-07-29T19:11:46.781770"
   },
   "福州广播电视台新闻综合频道 (FZTV-1) (1080p)": {
     "channel_name": "福州广播电视台新闻综合频道 (FZTV-1) (1080p)",
     "url": "http://live.zohi.tv/video/s10001-fztv-1/index.m3u8",
-    "latency": 1272,
+    "latency": 460,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.405324",
-    "updated_at": "2026-07-29T14:05:25.431599"
+    "updated_at": "2026-07-29T19:11:46.894886"
   },
   "海南新闻": {
     "channel_name": "海南新闻",
     "url": "http://ls.qingting.fm/live/1861.m3u8",
-    "latency": 1112,
+    "latency": 940,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.407339",
-    "updated_at": "2026-07-29T14:05:25.401197"
+    "updated_at": "2026-07-29T19:11:47.534895"
   },
   "CCTV+ 2 (600p) [Not 24/7]": {
     "channel_name": "CCTV+ 2 (600p) [Not 24/7]",
     "url": "https://cd-live-stream.news.cctvplus.com/live/smil:CHANNEL2.smil/playlist.m3u8",
-    "latency": 900,
+    "latency": 805,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.409342",
-    "updated_at": "2026-07-29T14:05:25.214553"
+    "updated_at": "2026-07-29T19:11:47.420068"
   },
   "CGTN俄语": {
     "channel_name": "CGTN俄语",
@@ -1838,14 +1838,14 @@
   "陕西卫视": {
     "channel_name": "陕西卫视",
     "url": "http://112.27.235.94:8000/hls/43/index.m3u8",
-    "latency": 416,
+    "latency": 427,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.413344",
-    "updated_at": "2026-07-29T14:05:24.674278"
+    "updated_at": "2026-07-29T19:11:46.738308"
   },
   "CCTV4K": {
     "channel_name": "CCTV4K",
@@ -1862,14 +1862,14 @@
   "浙江留学": {
     "channel_name": "浙江留学",
     "url": "http://ali-vl.cztv.com/channels/lantian/channel009/360p.m3u8",
-    "latency": 767,
+    "latency": 914,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.417465",
-    "updated_at": "2026-07-29T14:05:25.176788"
+    "updated_at": "2026-07-29T19:11:47.523060"
   },
   "湖南张家界天门山西线玻璃栈道": {
     "channel_name": "湖南张家界天门山西线玻璃栈道",
@@ -1898,26 +1898,26 @@
   "绍兴电视台公共": {
     "channel_name": "绍兴电视台公共",
     "url": "http://live.shaoxing.com.cn/video/s10001-sxtv2/index.m3u8?%E5%85%B3%E6%B3%A8%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7[%E6%99%B4%E5%9B%AD]",
-    "latency": 427,
+    "latency": 433,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.423694",
-    "updated_at": "2026-07-29T14:05:24.704681"
+    "updated_at": "2026-07-29T19:11:46.769753"
   },
   "山东卫视": {
     "channel_name": "山东卫视",
     "url": "http://112.27.235.94:8000/hls/34/index.m3u8",
-    "latency": 445,
+    "latency": 436,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.425740",
-    "updated_at": "2026-07-29T14:05:24.757651"
+    "updated_at": "2026-07-29T19:11:46.793485"
   },
   "云南丽江蓝月谷": {
     "channel_name": "云南丽江蓝月谷",
@@ -1946,14 +1946,14 @@
   "黑龙江新闻": {
     "channel_name": "黑龙江新闻",
     "url": "https://ls.qingting.fm/live/4974/64k.m3u8",
-    "latency": 2528,
+    "latency": 1015,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.432114",
-    "updated_at": "2026-07-29T14:05:25.805359"
+    "updated_at": "2026-07-29T19:11:47.542871"
   },
   "湖南张家界御笔峰": {
     "channel_name": "湖南张家界御笔峰",
@@ -1994,14 +1994,14 @@
   "河南法治": {
     "channel_name": "河南法治",
     "url": "http://1.94.31.214/php/hntv.php?id=hmfz",
-    "latency": 1304,
+    "latency": 2675,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.440587",
-    "updated_at": "2026-07-29T14:05:25.442969"
+    "updated_at": "2026-07-29T19:11:47.721934"
   },
   "四川峨眉山云海日出": {
     "channel_name": "四川峨眉山云海日出",
@@ -2042,14 +2042,14 @@
   "河北农民": {
     "channel_name": "河北农民",
     "url": "https://jwcdnqx.hebyun.com.cn/live/clzhpd/1500k/tzwj_video.m3u8?zhebd",
-    "latency": 1615,
+    "latency": 1355,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.592780",
-    "updated_at": "2026-07-29T14:05:25.592784"
+    "updated_at": "2026-07-29T19:11:47.578864"
   },
   "陕西洋县国宝朱鹮02": {
     "channel_name": "陕西洋县国宝朱鹮02",
@@ -2078,50 +2078,50 @@
   "长白山电视台": {
     "channel_name": "长白山电视台",
     "url": "http://stream8.jlntv.cn/cbstv/sd/live.m3u8?zjild",
-    "latency": 2086,
+    "latency": 2451,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.455989",
-    "updated_at": "2026-07-29T14:05:25.650122"
+    "updated_at": "2026-07-29T19:11:47.710068"
   },
   "吉林市新闻综合": {
     "channel_name": "吉林市新闻综合",
     "url": "https://stream2.jlntv.cn/jilin1/sd/live.m3u8",
-    "latency": 949,
+    "latency": 1747,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.458248",
-    "updated_at": "2026-07-29T14:05:25.222100"
+    "updated_at": "2026-07-29T19:11:47.642514"
   },
   "四川卫视": {
     "channel_name": "四川卫视",
-    "url": "http://112.27.235.94:8000/hls/35/index.m3u8",
-    "latency": 441,
+    "url": "http://222.134.245.16:9901/tsfile/live/0123_1.m3u8",
+    "latency": 753,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-25T08:03:37.851418",
-    "updated_at": "2026-07-29T14:05:24.750129"
+    "promoted_at": "2026-07-29T19:13:25.839064",
+    "updated_at": "2026-07-29T19:13:25.839069"
   },
   "北京新闻": {
     "channel_name": "北京新闻",
-    "url": "http://45.192.97.170:8880/play/6498.m3u8",
-    "latency": 470,
+    "url": "http://45.192.97.170:8880/play/6586.m3u8",
+    "latency": 1966,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T08:38:11.207386",
-    "updated_at": "2026-07-29T14:05:24.813754"
+    "promoted_at": "2026-07-29T19:13:27.060830",
+    "updated_at": "2026-07-29T19:13:27.060834"
   },
   "浙江卫视": {
     "channel_name": "浙江卫视",
@@ -2137,51 +2137,51 @@
   },
   "新疆卫视": {
     "channel_name": "新疆卫视",
-    "url": "http://121.19.134.253:808/tsfile/live/0110_1.m3u8?key=txiptv&playlive=1&authid=0",
-    "latency": 628,
+    "url": "http://183.11.239.36:808/hls/65/index.m3u8",
+    "latency": 399,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T08:36:46.534834",
-    "updated_at": "2026-07-29T14:07:04.055024"
+    "promoted_at": "2026-07-29T19:11:46.695577",
+    "updated_at": "2026-07-29T19:11:46.695580"
   },
   "CCTV-1": {
     "channel_name": "CCTV-1",
     "url": "http://112.27.235.94:8000/hls/1/index.m3u8",
-    "latency": 663,
+    "latency": 638,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T08:36:46.484658",
-    "updated_at": "2026-07-29T14:05:25.132327"
+    "updated_at": "2026-07-29T19:11:47.252962"
   },
   "福建新闻": {
     "channel_name": "福建新闻",
     "url": "http://satellitepull.cnr.cn/live/wx32fjxwgb/playlist.m3u8",
-    "latency": 582,
+    "latency": 100,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.476049",
-    "updated_at": "2026-07-29T14:05:25.043968"
+    "updated_at": "2026-07-29T19:11:46.535451"
   },
   "吉林乡村": {
     "channel_name": "吉林乡村",
     "url": "https://satellitepull.cnr.cn/live/wxjlxcgb/playlist.m3u8",
-    "latency": 154,
+    "latency": 601,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.478461",
-    "updated_at": "2026-07-29T14:05:24.304008"
+    "updated_at": "2026-07-29T19:11:47.041675"
   },
   "东方卫视4K": {
     "channel_name": "东方卫视4K",
@@ -2210,50 +2210,50 @@
   "河北经济": {
     "channel_name": "河北经济",
     "url": "http://1.94.31.214/php/hebei.php?id=jjsh",
-    "latency": 2287,
+    "latency": 1644,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.485502",
-    "updated_at": "2026-07-29T14:05:25.797429"
+    "updated_at": "2026-07-29T19:11:47.638561"
   },
   "安多卫视": {
     "channel_name": "安多卫视",
     "url": "https://liveout.xntv.tv/a65jur/96iln2.m3u8",
-    "latency": 1302,
+    "latency": 1624,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.487958",
-    "updated_at": "2026-07-29T14:05:25.439256"
+    "updated_at": "2026-07-29T19:11:47.626773"
   },
   "河北都市": {
     "channel_name": "河北都市",
     "url": "https://radio.pull.hebtv.com/live/hebnczx.m3u8",
-    "latency": 2193,
+    "latency": 1405,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T08:36:47.116605",
-    "updated_at": "2026-07-29T14:05:25.790004"
+    "updated_at": "2026-07-29T19:11:47.586714"
   },
   "西藏卫视": {
     "channel_name": "西藏卫视",
-    "url": "http://121.19.134.22:808/tsfile/live/0111_1.m3u8?key=txiptv&playlive=1&authid=0",
-    "latency": 1665,
+    "url": "http://cssbyd.imwork.net:8082/hls/46/index.m3u8",
+    "latency": 1789,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:07:04.305402",
-    "updated_at": "2026-07-29T14:07:04.305405"
+    "promoted_at": "2026-07-29T19:11:47.646496",
+    "updated_at": "2026-07-29T19:11:47.646500"
   },
   "云南丽江冰川": {
     "channel_name": "云南丽江冰川",
@@ -2282,26 +2282,26 @@
   "CCTV+ 1 (600p) [Not 24/7]": {
     "channel_name": "CCTV+ 1 (600p) [Not 24/7]",
     "url": "https://cd-live-stream.news.cctvplus.com/live/smil:CHANNEL1.smil/playlist.m3u8",
-    "latency": 791,
+    "latency": 2022,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.500176",
-    "updated_at": "2026-07-29T14:05:25.180553"
+    "updated_at": "2026-07-29T19:11:47.670293"
   },
   "新疆天山": {
     "channel_name": "新疆天山",
     "url": "http://gctxyc.liveplay.myqcloud.com/gc/xjtcdhsz_1/index.m3u8",
-    "latency": 2267,
+    "latency": 1425,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.502584",
-    "updated_at": "2026-07-29T14:05:25.793731"
+    "updated_at": "2026-07-29T19:11:47.590691"
   },
   "云南都市": {
     "channel_name": "云南都市",
@@ -2318,50 +2318,50 @@
   "CCTV-16": {
     "channel_name": "CCTV-16",
     "url": "http://gmxw.7766.org:808/hls/169/index.m3u8",
-    "latency": 2591,
+    "latency": 598,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-27T19:23:56.692088",
-    "updated_at": "2026-07-29T08:36:47.156123"
+    "updated_at": "2026-07-29T19:11:47.033787"
   },
   "河南电视剧": {
     "channel_name": "河南电视剧",
     "url": "http://1.94.31.214/php/hntv.php?id=hndsj",
-    "latency": 1629,
+    "latency": 2184,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.509924",
-    "updated_at": "2026-07-29T14:05:25.596654"
+    "updated_at": "2026-07-29T19:11:47.686034"
   },
   "河北影视": {
     "channel_name": "河北影视",
     "url": "http://1.94.31.214/php/hebei.php?id=hbys",
-    "latency": 2056,
+    "latency": 1616,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.512379",
-    "updated_at": "2026-07-29T14:05:25.642516"
+    "updated_at": "2026-07-29T19:11:47.618724"
   },
   "山东教育": {
     "channel_name": "山东教育",
     "url": "https://test1.live.sdetv.com.cn/live/dianshizhibo/playlist.m3u8",
-    "latency": 1564,
+    "latency": 2113,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.514864",
-    "updated_at": "2026-07-29T14:05:25.588980"
+    "updated_at": "2026-07-29T19:11:47.674063"
   },
   "CCTV8": {
     "channel_name": "CCTV8",
@@ -2378,26 +2378,26 @@
   "河南公共": {
     "channel_name": "河南公共",
     "url": "http://1.94.31.214/php/hntv.php?id=hngg",
-    "latency": 991,
+    "latency": 1909,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.519827",
-    "updated_at": "2026-07-29T14:05:25.294550"
+    "updated_at": "2026-07-29T19:11:47.658398"
   },
   "陕西公共": {
     "channel_name": "陕西公共",
     "url": "http://ls.qingting.fm/live/1222.m3u8",
-    "latency": 1035,
+    "latency": 937,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.522284",
-    "updated_at": "2026-07-29T14:05:25.385977"
+    "updated_at": "2026-07-29T19:11:47.530939"
   },
   "湖南张家界水绕四门": {
     "channel_name": "湖南张家界水绕四门",
@@ -2414,26 +2414,26 @@
   "河北公共": {
     "channel_name": "河北公共",
     "url": "http://1.94.31.214/php/hebei.php?id=hbgg",
-    "latency": 3135,
+    "latency": 2305,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.527303",
-    "updated_at": "2026-07-29T14:05:25.820531"
+    "updated_at": "2026-07-29T19:11:47.694094"
   },
   "广东少儿": {
     "channel_name": "广东少儿",
     "url": "http://gmxw.7766.org:808/hls/175/index.m3u8",
-    "latency": 2734,
+    "latency": 1600,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.529937",
-    "updated_at": "2026-07-29T08:36:47.176010"
+    "updated_at": "2026-07-29T19:11:47.614809"
   },
   "云南娱乐": {
     "channel_name": "云南娱乐",
@@ -2450,62 +2450,62 @@
   "江苏卫视4K": {
     "channel_name": "江苏卫视4K",
     "url": "http://8.138.7.223/tv/jsws4k.php",
-    "latency": 6535,
+    "latency": 2453,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.534976",
-    "updated_at": "2026-07-29T14:05:25.832144"
+    "updated_at": "2026-07-29T19:11:47.714064"
   },
   "黑龙江少儿": {
     "channel_name": "黑龙江少儿",
     "url": "https://ls.qingting.fm/live/4972/64k.m3u8",
-    "latency": 990,
+    "latency": 889,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.537647",
-    "updated_at": "2026-07-29T14:05:25.290821"
+    "updated_at": "2026-07-29T19:11:47.515011"
   },
   "河南新闻": {
     "channel_name": "河南新闻",
     "url": "http://1.94.31.214/php/hntv.php?id=hnxw",
-    "latency": 898,
+    "latency": 2438,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.540296",
-    "updated_at": "2026-07-29T14:05:25.210782"
+    "updated_at": "2026-07-29T19:11:47.706175"
   },
   "河北少儿": {
     "channel_name": "河北少儿",
     "url": "http://1.94.31.214/php/hebei.php?id=sekj",
-    "latency": 2761,
+    "latency": 2163,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.545756",
-    "updated_at": "2026-07-29T14:05:25.812926"
+    "updated_at": "2026-07-29T19:11:47.678025"
   },
   "浙江 Ⅰ 绍兴影视": {
     "channel_name": "浙江 Ⅰ 绍兴影视",
     "url": "http://live.shaoxing.com.cn/video/s10001-sxtv3/index.m3u8",
-    "latency": 429,
+    "latency": 432,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.548463",
-    "updated_at": "2026-07-29T14:05:24.716020"
+    "updated_at": "2026-07-29T19:11:46.754323"
   },
   "山东生活": {
     "channel_name": "山东生活",
@@ -2522,62 +2522,62 @@
   "河南乡村": {
     "channel_name": "河南乡村",
     "url": "http://1.94.31.214/php/hntv.php?id=hnxc",
-    "latency": 2071,
+    "latency": 2509,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.553699",
-    "updated_at": "2026-07-29T14:05:25.646294"
+    "updated_at": "2026-07-29T19:11:47.717995"
   },
   "浙江生活": {
     "channel_name": "浙江生活",
     "url": "http://ls.qingting.fm/live/1099.m3u8",
-    "latency": 1023,
+    "latency": 828,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.556308",
-    "updated_at": "2026-07-29T14:05:25.378305"
+    "updated_at": "2026-07-29T19:11:47.495112"
   },
   "福州电视台少儿频道 (FZTV-少儿) (1080p)": {
     "channel_name": "福州电视台少儿频道 (FZTV-少儿) (1080p)",
     "url": "http://live.zohi.tv/video/s10001-fztv-4/index.m3u8",
-    "latency": 2680,
+    "latency": 460,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.559027",
-    "updated_at": "2026-07-29T14:05:25.809106"
+    "updated_at": "2026-07-29T19:11:46.898720"
   },
   "甘肃卫视": {
     "channel_name": "甘肃卫视",
     "url": "http://live.zohi.tv/video/s10001-fztv-3/index.m3u8",
-    "latency": 960,
+    "latency": 2172,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-28T13:59:49.690194",
-    "updated_at": "2026-07-29T14:05:25.225862"
+    "updated_at": "2026-07-29T19:11:47.681997"
   },
   "普陀电视台": {
     "channel_name": "普陀电视台",
     "url": "https://l.cztvcloud.com/channels/lantian/SXputuo1/720p.m3u8",
-    "latency": 3037,
+    "latency": 2803,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.564413",
-    "updated_at": "2026-07-29T08:36:47.190903"
+    "updated_at": "2026-07-29T19:11:47.729931"
   },
   "TVB无线新闻": {
     "channel_name": "TVB无线新闻",
@@ -2594,38 +2594,38 @@
   "青田电视台": {
     "channel_name": "青田电视台",
     "url": "http://l.cztvcloud.com/channels/lantian/SXqingtian1/720p.m3u8",
-    "latency": 1254,
+    "latency": 446,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.569879",
-    "updated_at": "2026-07-29T14:05:25.427787"
+    "updated_at": "2026-07-29T19:11:46.824693"
   },
   "浙江遂昌": {
     "channel_name": "浙江遂昌",
     "url": "http://l.cztvcloud.com/channels/lantian/SXsuichang1/720p.m3u8",
-    "latency": 795,
+    "latency": 424,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.575171",
-    "updated_at": "2026-07-29T08:36:46.607721"
+    "updated_at": "2026-07-29T19:11:46.718960"
   },
   "河北4K": {
     "channel_name": "河北4K",
     "url": "https://event.pull.hebtv.com:443/live/live101.m3u8",
-    "latency": 428,
+    "latency": 466,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:40:55.577939",
-    "updated_at": "2026-07-29T14:05:24.712231"
+    "updated_at": "2026-07-29T19:11:46.978414"
   },
   "TVB翡翠台": {
     "channel_name": "TVB翡翠台",
@@ -2642,14 +2642,14 @@
   "CCTV-15": {
     "channel_name": "CCTV-15",
     "url": "https://xykt-fix.github.io/play/a02e/index.m3u8",
-    "latency": 8,
+    "latency": 38,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T02:16:10.859341",
-    "updated_at": "2026-07-29T14:05:24.184949"
+    "updated_at": "2026-07-29T19:11:46.519859"
   },
   "CCTV-Women's Fashion": {
     "channel_name": "CCTV-Women's Fashion",
@@ -2762,74 +2762,74 @@
   "CCTV-2": {
     "channel_name": "CCTV-2",
     "url": "http://218.13.170.98:9901/tsfile/live/0002_1.m3u8",
-    "latency": 9781,
+    "latency": 5629,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:07:04.320765",
-    "updated_at": "2026-07-29T14:07:04.320768"
+    "promoted_at": "2026-07-29T19:13:27.068827",
+    "updated_at": "2026-07-29T19:13:27.068830"
   },
   "安徽经济广播": {
     "channel_name": "安徽经济广播",
-    "url": "http://45.192.97.170:8880/play/6449.m3u8",
-    "latency": 646,
+    "url": "http://45.192.97.170:8880/play/6608.m3u8",
+    "latency": 768,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:07:04.085482",
-    "updated_at": "2026-07-29T14:07:04.085485"
+    "promoted_at": "2026-07-29T19:13:31.675064",
+    "updated_at": "2026-07-29T19:13:31.675068"
   },
   "辽宁经济广播": {
     "channel_name": "辽宁经济广播",
     "url": "http://45.192.97.170:8880/play/6682.m3u8",
-    "latency": 349,
+    "latency": 642,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:07:03.825142",
-    "updated_at": "2026-07-29T14:07:03.825146"
+    "updated_at": "2026-07-29T19:13:25.755598"
   },
   "黑龙江朝鲜语广播": {
     "channel_name": "黑龙江朝鲜语广播",
-    "url": "http://45.192.97.170:8880/play/6690.m3u8",
-    "latency": 638,
+    "url": "http://45.192.97.170:8880/play/6496.m3u8",
+    "latency": 665,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:07:04.081513",
-    "updated_at": "2026-07-29T14:07:04.081516"
+    "promoted_at": "2026-07-29T19:11:46.902681",
+    "updated_at": "2026-07-29T19:13:30.367800"
   },
   "内蒙古蒙语新闻综合广播": {
     "channel_name": "内蒙古蒙语新闻综合广播",
-    "url": "http://45.192.97.170:8880/play/6696.m3u8",
-    "latency": 503,
+    "url": "http://45.192.97.170:8880/play/6502.m3u8",
+    "latency": 459,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:07:03.979912",
-    "updated_at": "2026-07-29T14:07:03.979916"
+    "promoted_at": "2026-07-29T19:11:47.245091",
+    "updated_at": "2026-07-29T19:13:25.452471"
   },
   "陕西青少广播·好听1055": {
     "channel_name": "陕西青少广播·好听1055",
-    "url": "http://45.192.97.170:8880/play/6727.m3u8",
-    "latency": 511,
+    "url": "http://45.192.97.170:8880/play/6536.m3u8",
+    "latency": 809,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:07:03.998429",
-    "updated_at": "2026-07-29T14:07:03.998432"
+    "promoted_at": "2026-07-29T19:11:47.155864",
+    "updated_at": "2026-07-29T19:13:25.846448"
   },
   "CCTV-Golf & Tennis": {
     "channel_name": "CCTV-Golf & Tennis",
@@ -2846,74 +2846,74 @@
   "陕西新闻广播": {
     "channel_name": "陕西新闻广播",
     "url": "http://45.192.97.170:8880/play/6468.m3u8",
-    "latency": 353,
+    "latency": 456,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:05:25.117313",
-    "updated_at": "2026-07-29T14:07:03.840146"
+    "promoted_at": "2026-07-29T19:13:25.444709",
+    "updated_at": "2026-07-29T19:13:25.444713"
   },
   "湖北之声": {
     "channel_name": "湖北之声",
-    "url": "http://45.192.97.170:8880/play/6454.m3u8",
-    "latency": 501,
+    "url": "http://45.192.97.170:8880/play/6613.m3u8",
+    "latency": 781,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:07:03.961200",
-    "updated_at": "2026-07-29T14:07:03.961203"
+    "promoted_at": "2026-07-29T19:13:31.778067",
+    "updated_at": "2026-07-29T19:13:31.778072"
   },
   "安徽戏曲广播·动听995": {
     "channel_name": "安徽戏曲广播·动听995",
-    "url": "http://45.192.97.170:8880/play/6452.m3u8",
-    "latency": 512,
+    "url": "http://45.192.97.170:8880/play/6611.m3u8",
+    "latency": 776,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:07:04.002179",
-    "updated_at": "2026-07-29T14:07:04.002181"
+    "promoted_at": "2026-07-29T19:13:31.752366",
+    "updated_at": "2026-07-29T19:13:31.752380"
   },
   "CCTV-12": {
     "channel_name": "CCTV-12",
     "url": "http://74.91.26.218:82/live/cctv12hd.m3u8",
-    "latency": 315,
+    "latency": 212,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-28T13:59:48.283110",
-    "updated_at": "2026-07-29T14:05:24.457374"
+    "updated_at": "2026-07-29T19:11:46.593992"
   },
   "CCTV-14": {
     "channel_name": "CCTV-14",
     "url": "http://74.91.26.218:82/live/cctv14hd.m3u8",
-    "latency": 310,
+    "latency": 211,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T08:36:45.920775",
-    "updated_at": "2026-07-29T14:05:24.449661"
+    "updated_at": "2026-07-29T19:11:46.590037"
   },
   "贵州卫视": {
     "channel_name": "贵州卫视",
     "url": "http://112.27.235.94:8000/hls/46/index.m3u8",
-    "latency": 442,
+    "latency": 420,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:42:44.135379",
-    "updated_at": "2026-07-29T14:05:24.753899"
+    "updated_at": "2026-07-29T19:11:46.711263"
   },
   "CGTN French": {
     "channel_name": "CGTN French",
@@ -2929,783 +2929,783 @@
   },
   "CCTV-17": {
     "channel_name": "CCTV-17",
-    "url": "http://222.169.85.8:9901/tsfile/live/0007_1.m3u8",
-    "latency": 6440,
+    "url": "http://74.91.26.218:82/live/cctv17hd.m3u8",
+    "latency": 246,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:07:04.316873",
-    "updated_at": "2026-07-29T14:07:04.316877"
+    "promoted_at": "2026-07-29T19:11:46.621130",
+    "updated_at": "2026-07-29T19:11:46.621134"
   },
   "CCTV-13": {
     "channel_name": "CCTV-13",
     "url": "http://74.91.26.218:82/live/cctv13hd.m3u8",
-    "latency": 310,
+    "latency": 178,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-28T08:30:32.999585",
-    "updated_at": "2026-07-29T14:05:24.445949"
+    "updated_at": "2026-07-29T19:11:46.555289"
   },
   "CGTN Documentary": {
     "channel_name": "CGTN Documentary",
     "url": "https://amg00405-rakutentv-cgtndocumentary-rakuten-0ql8j.amagi.tv/master.m3u8",
-    "latency": 418,
+    "latency": 286,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:42:44.227112",
-    "updated_at": "2026-07-29T14:05:24.685558"
+    "updated_at": "2026-07-29T19:11:46.640584"
   },
   "贵州故事广播": {
     "channel_name": "贵州故事广播",
-    "url": "http://45.192.97.170:8880/play/6669.m3u8",
-    "latency": 477,
+    "url": "http://45.192.97.170:8880/play/6486.m3u8",
+    "latency": 635,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:07:03.900249",
-    "updated_at": "2026-07-29T14:07:03.900253"
+    "promoted_at": "2026-07-29T19:13:25.599680",
+    "updated_at": "2026-07-29T19:13:25.599683"
   },
   "陕西秦腔": {
     "channel_name": "陕西秦腔",
     "url": "http://112.46.105.20:8009/hls/22/index.m3u8",
-    "latency": 493,
+    "latency": 1625,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T11:42:44.275679",
-    "updated_at": "2026-07-29T14:05:24.867708"
+    "updated_at": "2026-07-29T19:11:47.630655"
   },
   "黑龙江音乐广播": {
     "channel_name": "黑龙江音乐广播",
-    "url": "http://45.192.97.170:8880/play/6748.m3u8",
-    "latency": 497,
+    "url": "http://45.192.97.170:8880/play/6565.m3u8",
+    "latency": 569,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:07:03.949869",
-    "updated_at": "2026-07-29T14:07:03.949873"
+    "promoted_at": "2026-07-29T19:11:47.443954",
+    "updated_at": "2026-07-29T19:13:30.844234"
   },
   "安徽之声": {
     "channel_name": "安徽之声",
-    "url": "http://45.192.97.170:8880/play/6447.m3u8",
-    "latency": 347,
+    "url": "http://45.192.97.170:8880/play/6606.m3u8",
+    "latency": 704,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:07:03.821310",
-    "updated_at": "2026-07-29T14:07:03.821313"
+    "promoted_at": "2026-07-29T19:13:31.649223",
+    "updated_at": "2026-07-29T19:13:31.649227"
   },
   "浙江城市之声": {
     "channel_name": "浙江城市之声",
     "url": "http://45.192.97.170:8880/play/6473.m3u8",
-    "latency": 354,
+    "latency": 493,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:05:24.508582",
-    "updated_at": "2026-07-29T14:07:03.847747"
+    "promoted_at": "2026-07-29T19:13:25.690542",
+    "updated_at": "2026-07-29T19:13:29.081356"
   },
   "云南音乐广播": {
     "channel_name": "云南音乐广播",
     "url": "http://45.192.97.170:8880/play/6548.m3u8",
-    "latency": 480,
+    "latency": 592,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:05:25.062650",
-    "updated_at": "2026-07-29T14:07:03.911957"
+    "promoted_at": "2026-07-29T19:13:25.812934",
+    "updated_at": "2026-07-29T19:13:30.741748"
   },
   "山东交通广播": {
     "channel_name": "山东交通广播",
     "url": "http://45.192.97.170:8880/play/6459.m3u8",
-    "latency": 500,
+    "latency": 1186,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:07:03.957303",
-    "updated_at": "2026-07-29T14:07:03.957307"
+    "promoted_at": "2026-07-29T19:13:28.740990",
+    "updated_at": "2026-07-29T19:13:28.740998"
   },
   "浙江之声": {
     "channel_name": "浙江之声",
-    "url": "http://45.192.97.170:8880/play/6469.m3u8",
-    "latency": 506,
+    "url": "http://45.192.97.170:8880/play/6644.m3u8",
+    "latency": 644,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:05:24.551056",
-    "updated_at": "2026-07-29T14:07:03.987328"
+    "promoted_at": "2026-07-29T19:13:25.801762",
+    "updated_at": "2026-07-29T19:13:25.801766"
   },
   "辽宁交通广播": {
     "channel_name": "辽宁交通广播",
     "url": "http://45.192.97.170:8880/play/6683.m3u8",
-    "latency": 653,
+    "latency": 639,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:07:04.104751",
-    "updated_at": "2026-07-29T14:07:04.104755"
+    "promoted_at": "2026-07-29T19:13:25.717382",
+    "updated_at": "2026-07-29T19:13:25.717386"
   },
   "海南音乐广播": {
     "channel_name": "海南音乐广播",
     "url": "http://45.192.97.170:8880/play/6559.m3u8",
-    "latency": 659,
+    "latency": 643,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:05:24.990710",
-    "updated_at": "2026-07-29T14:07:04.112361"
+    "promoted_at": "2026-07-29T19:13:25.793727",
+    "updated_at": "2026-07-29T19:13:25.793735"
   },
   "山东经典音乐广播": {
     "channel_name": "山东经典音乐广播",
-    "url": "http://45.192.97.170:8880/play/6728.m3u8",
-    "latency": 528,
+    "url": "http://45.192.97.170:8880/play/6538.m3u8",
+    "latency": 459,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:07:04.021011",
-    "updated_at": "2026-07-29T14:07:04.021014"
+    "promoted_at": "2026-07-29T19:11:47.065414",
+    "updated_at": "2026-07-29T19:13:25.456235"
   },
   "浙江经济广播": {
     "channel_name": "浙江经济广播",
     "url": "http://45.192.97.170:8880/play/6470.m3u8",
-    "latency": 633,
+    "latency": 778,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:05:24.971641",
-    "updated_at": "2026-07-29T14:07:04.073975"
+    "promoted_at": "2026-07-29T19:13:28.860785",
+    "updated_at": "2026-07-29T19:13:28.860792"
   },
   "陕西农村广播": {
     "channel_name": "陕西农村广播",
-    "url": "http://45.192.97.170:8880/play/6466.m3u8",
-    "latency": 490,
+    "url": "http://45.192.97.170:8880/play/6641.m3u8",
+    "latency": 632,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:05:24.963819",
-    "updated_at": "2026-07-29T14:07:03.927184"
+    "promoted_at": "2026-07-29T19:11:46.922717",
+    "updated_at": "2026-07-29T19:13:25.584443"
   },
   "江苏文艺广播": {
     "channel_name": "江苏文艺广播",
-    "url": "http://45.192.97.170:8880/play/6445.m3u8",
-    "latency": 399,
+    "url": "http://45.192.97.170:8880/play/6602.m3u8",
+    "latency": 774,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:07:03.870318",
-    "updated_at": "2026-07-29T14:07:03.870321"
+    "promoted_at": "2026-07-29T19:13:31.521021",
+    "updated_at": "2026-07-29T19:13:31.521025"
   },
   "云南经济广播·私家车电台": {
     "channel_name": "云南经济广播·私家车电台",
     "url": "http://45.192.97.170:8880/play/6516.m3u8",
-    "latency": 631,
+    "latency": 639,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:05:25.154017",
-    "updated_at": "2026-07-29T14:07:04.066333"
+    "promoted_at": "2026-07-29T19:13:25.726798",
+    "updated_at": "2026-07-29T19:13:25.726803"
   },
   "贵州音乐广播": {
     "channel_name": "贵州音乐广播",
     "url": "http://45.192.97.170:8880/play/6560.m3u8",
-    "latency": 470,
+    "latency": 463,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:05:24.809927",
-    "updated_at": "2026-07-29T14:07:03.888947"
+    "promoted_at": "2026-07-29T19:13:25.553820",
+    "updated_at": "2026-07-29T19:13:25.553829"
   },
   "安徽故事广播": {
     "channel_name": "安徽故事广播",
-    "url": "http://45.192.97.170:8880/play/6453.m3u8",
-    "latency": 503,
+    "url": "http://45.192.97.170:8880/play/6612.m3u8",
+    "latency": 650,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:05:25.366868",
-    "updated_at": "2026-07-29T14:07:03.976179"
+    "promoted_at": "2026-07-29T19:11:46.875043",
+    "updated_at": "2026-07-29T19:13:25.824216"
   },
   "山东体育休闲广播": {
     "channel_name": "山东体育休闲广播",
-    "url": "http://45.192.97.170:8880/play/6635.m3u8",
-    "latency": 499,
+    "url": "http://45.192.97.170:8880/play/6460.m3u8",
+    "latency": 1285,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:05:24.543361",
-    "updated_at": "2026-07-29T14:07:03.953632"
+    "promoted_at": "2026-07-29T19:13:28.912468",
+    "updated_at": "2026-07-29T19:13:28.912474"
   },
   "河北音乐广播": {
     "channel_name": "河北音乐广播",
-    "url": "http://45.192.97.170:8880/play/6744.m3u8",
-    "latency": 478,
+    "url": "http://45.192.97.170:8880/play/6555.m3u8",
+    "latency": 652,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:07:03.907939",
-    "updated_at": "2026-07-29T14:07:03.907943"
+    "promoted_at": "2026-07-29T19:13:25.986588",
+    "updated_at": "2026-07-29T19:13:30.767284"
   },
   "江西音乐广播": {
     "channel_name": "江西音乐广播",
     "url": "http://45.192.97.170:8880/play/6564.m3u8",
-    "latency": 678,
+    "latency": 457,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:05:24.519821",
-    "updated_at": "2026-07-29T14:07:04.123835"
+    "promoted_at": "2026-07-29T19:13:25.448669",
+    "updated_at": "2026-07-29T19:13:25.448673"
   },
   "江苏经典流行音乐广播": {
     "channel_name": "江苏经典流行音乐广播",
-    "url": "http://45.192.97.170:8880/play/6742.m3u8",
-    "latency": 485,
+    "url": "http://45.192.97.170:8880/play/6553.m3u8",
+    "latency": 469,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:07:03.915614",
-    "updated_at": "2026-07-29T14:07:03.915617"
+    "promoted_at": "2026-07-29T19:11:47.159873",
+    "updated_at": "2026-07-29T19:13:25.569075"
   },
   "云南民族广播": {
     "channel_name": "云南民族广播",
     "url": "http://45.192.97.170:8880/play/6519.m3u8",
-    "latency": 464,
+    "latency": 556,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:05:24.817509",
-    "updated_at": "2026-07-29T14:07:03.874097"
+    "promoted_at": "2026-07-29T19:13:25.805516",
+    "updated_at": "2026-07-29T19:13:30.531278"
   },
   "陕西经济广播·896汽车调频": {
     "channel_name": "陕西经济广播·896汽车调频",
-    "url": "http://45.192.97.170:8880/play/6464.m3u8",
-    "latency": 466,
+    "url": "http://45.192.97.170:8880/play/6639.m3u8",
+    "latency": 816,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:05:25.124822",
-    "updated_at": "2026-07-29T14:07:03.881452"
+    "promoted_at": "2026-07-29T19:11:46.958613",
+    "updated_at": "2026-07-29T19:13:26.001591"
   },
   "江苏音乐广播": {
     "channel_name": "江苏音乐广播",
     "url": "http://45.192.97.170:8880/play/6552.m3u8",
-    "latency": 323,
+    "latency": 526,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:05:24.461064",
-    "updated_at": "2026-07-29T14:07:03.794475"
+    "promoted_at": "2026-07-29T19:13:25.978969",
+    "updated_at": "2026-07-29T19:13:30.716065"
   },
   "贵州旅游广播": {
     "channel_name": "贵州旅游广播",
     "url": "http://45.192.97.170:8880/play/6485.m3u8",
-    "latency": 377,
+    "latency": 583,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.165414",
-    "updated_at": "2026-07-29T14:07:03.855250"
+    "updated_at": "2026-07-29T19:13:29.630283"
   },
   "安徽旅游广播·高速之声": {
     "channel_name": "安徽旅游广播·高速之声",
     "url": "http://45.192.97.170:8880/play/6610.m3u8",
-    "latency": 478,
+    "latency": 1277,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.657795",
-    "updated_at": "2026-07-29T14:07:03.904188"
+    "updated_at": "2026-07-29T19:13:31.829522"
   },
   "黑龙江老年少儿广播·爱家调频": {
     "channel_name": "黑龙江老年少儿广播·爱家调频",
-    "url": "http://45.192.97.170:8880/play/6688.m3u8",
-    "latency": 354,
+    "url": "http://45.192.97.170:8880/play/6495.m3u8",
+    "latency": 651,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:07:03.843903",
-    "updated_at": "2026-07-29T14:07:03.843906"
+    "promoted_at": "2026-07-29T19:11:47.206295",
+    "updated_at": "2026-07-29T19:13:25.827853"
   },
   "陕西交通广播": {
     "channel_name": "陕西交通广播",
     "url": "http://45.192.97.170:8880/play/6463.m3u8",
-    "latency": 333,
+    "latency": 436,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:24.863854",
-    "updated_at": "2026-07-29T14:07:03.810062"
+    "updated_at": "2026-07-29T19:13:28.647854"
   },
   "福建都市广播·私家车987": {
     "channel_name": "福建都市广播·私家车987",
     "url": "http://45.192.97.170:8880/play/6456.m3u8",
-    "latency": 357,
+    "latency": 1104,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:07:03.851460",
-    "updated_at": "2026-07-29T14:07:03.851464"
+    "promoted_at": "2026-07-29T19:13:28.621933",
+    "updated_at": "2026-07-29T19:13:28.621940"
   },
   "山东音乐广播": {
     "channel_name": "山东音乐广播",
     "url": "http://45.192.97.170:8880/play/6537.m3u8",
-    "latency": 532,
+    "latency": 953,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.653910",
-    "updated_at": "2026-07-29T14:07:04.028422"
+    "updated_at": "2026-07-29T19:13:26.126719"
   },
   "山东乡村广播": {
     "channel_name": "山东乡村广播",
     "url": "http://45.192.97.170:8880/play/6462.m3u8",
-    "latency": 676,
+    "latency": 637,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:05:25.128561",
-    "updated_at": "2026-07-29T14:07:04.120169"
+    "promoted_at": "2026-07-29T19:13:25.694204",
+    "updated_at": "2026-07-29T19:13:25.694207"
   },
   "内蒙古音乐之声": {
     "channel_name": "内蒙古音乐之声",
-    "url": "http://45.192.97.170:8880/play/6733.m3u8",
-    "latency": 627,
+    "url": "http://45.192.97.170:8880/play/6542.m3u8",
+    "latency": 462,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:07:04.051220",
-    "updated_at": "2026-07-29T14:07:04.051222"
+    "promoted_at": "2026-07-29T19:13:25.471870",
+    "updated_at": "2026-07-29T19:13:25.471874"
   },
   "黑龙江都市女性广播": {
     "channel_name": "黑龙江都市女性广播",
-    "url": "http://45.192.97.170:8880/play/6686.m3u8",
-    "latency": 522,
+    "url": "http://45.192.97.170:8880/play/6493.m3u8",
+    "latency": 863,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:07:04.009364",
-    "updated_at": "2026-07-29T14:07:04.009367"
+    "promoted_at": "2026-07-29T19:13:30.171096",
+    "updated_at": "2026-07-29T19:13:30.171101"
   },
   "广西教育广播": {
     "channel_name": "广西教育广播",
-    "url": "http://45.192.97.170:8880/play/6711.m3u8",
-    "latency": 534,
+    "url": "http://45.192.97.170:8880/play/6511.m3u8",
+    "latency": 645,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:07:04.032278",
-    "updated_at": "2026-07-29T14:07:04.032282"
+    "promoted_at": "2026-07-29T19:11:47.249018",
+    "updated_at": "2026-07-29T19:13:25.809230"
   },
   "山东经济广播": {
     "channel_name": "山东经济广播",
     "url": "http://45.192.97.170:8880/play/6461.m3u8",
-    "latency": 502,
+    "latency": 617,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:24.952358",
-    "updated_at": "2026-07-29T14:07:03.968605"
+    "updated_at": "2026-07-29T19:13:28.502505"
   },
   "贵州经济广播": {
     "channel_name": "贵州经济广播",
-    "url": "http://45.192.97.170:8880/play/6667.m3u8",
-    "latency": 466,
+    "url": "http://45.192.97.170:8880/play/6484.m3u8",
+    "latency": 518,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:07:03.877688",
-    "updated_at": "2026-07-29T14:07:03.877692"
+    "promoted_at": "2026-07-29T19:11:46.867551",
+    "updated_at": "2026-07-29T19:13:29.382224"
   },
   "青海交通音乐广播": {
     "channel_name": "青海交通音乐广播",
-    "url": "http://45.192.97.170:8880/play/6750.m3u8",
-    "latency": 495,
+    "url": "http://45.192.97.170:8880/play/6569.m3u8",
+    "latency": 602,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:07:03.942200",
-    "updated_at": "2026-07-29T14:07:03.942214"
+    "promoted_at": "2026-07-29T19:13:25.994197",
+    "updated_at": "2026-07-29T19:13:30.895340"
   },
   "青海新闻综合广播": {
     "channel_name": "青海新闻综合广播",
     "url": "http://45.192.97.170:8880/play/6525.m3u8",
-    "latency": 467,
+    "latency": 602,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.136137",
-    "updated_at": "2026-07-29T14:07:03.885148"
+    "updated_at": "2026-07-29T19:13:30.557276"
   },
   "云南新闻广播": {
     "channel_name": "云南新闻广播",
-    "url": "http://45.192.97.170:8880/play/6715.m3u8",
-    "latency": 508,
+    "url": "http://45.192.97.170:8880/play/6515.m3u8",
+    "latency": 632,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:07:03.994763",
-    "updated_at": "2026-07-29T14:07:03.994778"
+    "promoted_at": "2026-07-29T19:11:46.982343",
+    "updated_at": "2026-07-29T19:13:25.588205"
   },
   "四川私家车广播": {
     "channel_name": "四川私家车广播",
     "url": "http://45.192.97.170:8880/play/6483.m3u8",
-    "latency": 654,
+    "latency": 649,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:05:25.121125",
-    "updated_at": "2026-07-29T14:07:04.108683"
+    "promoted_at": "2026-07-29T19:13:29.511760",
+    "updated_at": "2026-07-29T19:13:29.511764"
   },
   "内蒙古新闻广播": {
     "channel_name": "内蒙古新闻广播",
-    "url": "http://45.192.97.170:8880/play/6692.m3u8",
-    "latency": 506,
+    "url": "http://45.192.97.170:8880/play/6498.m3u8",
+    "latency": 597,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:07:03.991012",
-    "updated_at": "2026-07-29T14:07:03.991015"
+    "promoted_at": "2026-07-29T19:11:47.241166",
+    "updated_at": "2026-07-29T19:13:30.419626"
   },
   "北京新闻广播": {
     "channel_name": "北京新闻广播",
     "url": "http://45.192.97.170:8880/play/6575.m3u8",
-    "latency": 1164,
+    "latency": 785,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:24.493235",
-    "updated_at": "2026-07-29T14:07:04.229690"
+    "updated_at": "2026-07-29T19:13:30.921041"
   },
   "辽宁之声": {
     "channel_name": "辽宁之声",
-    "url": "http://45.192.97.170:8880/play/6680.m3u8",
-    "latency": 487,
+    "url": "http://45.192.97.170:8880/play/6489.m3u8",
+    "latency": 466,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:07:03.923253",
-    "updated_at": "2026-07-29T14:07:03.923257"
+    "promoted_at": "2026-07-29T19:13:25.565224",
+    "updated_at": "2026-07-29T19:13:25.565227"
   },
   "福建东南广播": {
     "channel_name": "福建东南广播",
-    "url": "http://45.192.97.170:8880/play/6457.m3u8",
-    "latency": 528,
+    "url": "http://45.192.97.170:8880/play/6628.m3u8",
+    "latency": 634,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:07:04.017086",
-    "updated_at": "2026-07-29T14:07:04.017089"
+    "promoted_at": "2026-07-29T19:11:47.104308",
+    "updated_at": "2026-07-29T19:13:25.595847"
   },
   "内蒙古蒙语对外广播草原之声": {
     "channel_name": "内蒙古蒙语对外广播草原之声",
     "url": "http://45.192.97.170:8880/play/6695.m3u8",
-    "latency": 326,
+    "latency": 1061,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:05:25.604288",
-    "updated_at": "2026-07-29T14:07:03.802192"
+    "promoted_at": "2026-07-29T19:13:29.728131",
+    "updated_at": "2026-07-29T19:13:29.728140"
   },
   "上海第一财经广播": {
     "channel_name": "上海第一财经广播",
     "url": "http://45.192.97.170:8880/play/6443.m3u8",
-    "latency": 472,
+    "latency": 636,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:24.855859",
-    "updated_at": "2026-07-29T14:07:03.896474"
+    "updated_at": "2026-07-29T19:13:27.657483"
   },
   "四川交通广播": {
     "channel_name": "四川交通广播",
     "url": "http://45.192.97.170:8880/play/6481.m3u8",
-    "latency": 501,
+    "latency": 563,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:05:24.794369",
-    "updated_at": "2026-07-29T14:07:03.964985"
+    "promoted_at": "2026-07-29T19:13:25.820477",
+    "updated_at": "2026-07-29T19:13:29.282545"
   },
   "辽宁乡村广播": {
     "channel_name": "辽宁乡村广播",
-    "url": "http://45.192.97.170:8880/play/6681.m3u8",
-    "latency": 496,
+    "url": "http://45.192.97.170:8880/play/6490.m3u8",
+    "latency": 667,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:07:03.945976",
-    "updated_at": "2026-07-29T14:07:03.945978"
+    "promoted_at": "2026-07-29T19:13:26.107872",
+    "updated_at": "2026-07-29T19:13:30.005023"
   },
   "浙江音乐调频·动听968": {
     "channel_name": "浙江音乐调频·动听968",
-    "url": "http://45.192.97.170:8880/play/6743.m3u8",
-    "latency": 625,
+    "url": "http://45.192.97.170:8880/play/6554.m3u8",
+    "latency": 638,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:07:04.047471",
-    "updated_at": "2026-07-29T14:07:04.047474"
+    "promoted_at": "2026-07-29T19:13:25.709575",
+    "updated_at": "2026-07-29T19:13:25.709580"
   },
   "宁夏音乐广播": {
     "channel_name": "宁夏音乐广播",
     "url": "http://45.192.97.170:8880/play/6562.m3u8",
-    "latency": 353,
+    "latency": 480,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:24.806008",
-    "updated_at": "2026-07-29T14:07:03.836368"
+    "updated_at": "2026-07-29T19:13:30.818625"
   },
   "福建经济广播": {
     "channel_name": "福建经济广播",
     "url": "http://45.192.97.170:8880/play/6627.m3u8",
-    "latency": 966,
+    "latency": 963,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.098607",
-    "updated_at": "2026-07-29T14:07:04.150751"
+    "updated_at": "2026-07-29T19:13:26.223631"
   },
   "北京生活": {
     "channel_name": "北京生活",
-    "url": "http://45.192.97.170:8880/play/6503.m3u8",
-    "latency": 996,
+    "url": "http://45.192.97.170:8880/play/6591.m3u8",
+    "latency": 817,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T02:16:11.986976",
-    "updated_at": "2026-07-29T14:05:25.355328"
+    "promoted_at": "2026-07-29T19:11:47.654365",
+    "updated_at": "2026-07-29T19:13:26.088736"
   },
   "河南经济广播": {
     "channel_name": "河南经济广播",
     "url": "http://45.192.97.170:8880/play/6672.m3u8",
-    "latency": 1493,
+    "latency": 1161,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.203302",
-    "updated_at": "2026-07-29T14:07:04.278703"
+    "updated_at": "2026-07-29T19:13:27.923081"
   },
   "广东股市广播": {
     "channel_name": "广东股市广播",
     "url": "http://45.192.97.170:8880/play/6652.m3u8",
-    "latency": 1478,
+    "latency": 1263,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.496778",
-    "updated_at": "2026-07-29T14:07:04.263920"
+    "updated_at": "2026-07-29T19:13:27.434336"
   },
   "江苏新闻综合广播": {
     "channel_name": "江苏新闻综合广播",
     "url": "http://45.192.97.170:8880/play/6600.m3u8",
-    "latency": 492,
+    "latency": 650,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:05:24.477320",
-    "updated_at": "2026-07-29T14:07:03.934691"
+    "promoted_at": "2026-07-29T19:13:31.470600",
+    "updated_at": "2026-07-29T19:13:31.470609"
   },
   "河北经济广播": {
     "channel_name": "河北经济广播",
     "url": "http://45.192.97.170:8880/play/6622.m3u8",
-    "latency": 1133,
+    "latency": 1820,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.542994",
-    "updated_at": "2026-07-29T14:07:04.222218"
+    "updated_at": "2026-07-29T19:13:27.045124"
   },
   "四川综合广播四川之声": {
     "channel_name": "四川综合广播四川之声",
     "url": "http://45.192.97.170:8880/play/6482.m3u8",
-    "latency": 504,
+    "latency": 541,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:24.566351",
-    "updated_at": "2026-07-29T14:07:03.983797"
+    "updated_at": "2026-07-29T19:13:29.356132"
   },
   "河北交通广播": {
     "channel_name": "河北交通广播",
     "url": "http://45.192.97.170:8880/play/6621.m3u8",
-    "latency": 629,
+    "latency": 962,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.477590",
-    "updated_at": "2026-07-29T14:07:04.058897"
+    "updated_at": "2026-07-29T19:13:26.219879"
   },
   "黑龙江新闻广播": {
     "channel_name": "黑龙江新闻广播",
     "url": "http://45.192.97.170:8880/play/6684.m3u8",
-    "latency": 1624,
+    "latency": 1264,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.473800",
-    "updated_at": "2026-07-29T14:07:04.301581"
+    "updated_at": "2026-07-29T19:13:28.673663"
   },
   "北京科教": {
     "channel_name": "北京科教",
-    "url": "http://45.192.97.170:8880/play/6500.m3u8",
-    "latency": 1338,
+    "url": "http://45.192.97.170:8880/play/6588.m3u8",
+    "latency": 1912,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T02:17:41.355490",
-    "updated_at": "2026-07-29T08:38:11.377757"
+    "promoted_at": "2026-07-29T19:11:47.666204",
+    "updated_at": "2026-07-29T19:13:27.056881"
   },
   "广西综合广播": {
     "channel_name": "广西综合广播",
     "url": "http://45.192.97.170:8880/play/6512.m3u8",
-    "latency": 487,
+    "latency": 528,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:24.527488",
-    "updated_at": "2026-07-29T14:07:03.919575"
+    "updated_at": "2026-07-29T19:13:30.498137"
   },
   "广东南粤之声": {
     "channel_name": "广东南粤之声",
     "url": "http://45.192.97.170:8880/play/6655.m3u8",
-    "latency": 1323,
+    "latency": 1193,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.573448",
-    "updated_at": "2026-07-29T14:07:04.233285"
+    "updated_at": "2026-07-29T19:13:27.516365"
   },
   "CCTV-Nostalgia Theater": {
     "channel_name": "CCTV-Nostalgia Theater",
@@ -3721,399 +3721,399 @@
   },
   "广西经济广播·女主播电台": {
     "channel_name": "广西经济广播·女主播电台",
-    "url": "http://45.192.97.170:8880/play/6736.m3u8",
-    "latency": 327,
+    "url": "http://45.192.97.170:8880/play/6547.m3u8",
+    "latency": 622,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:07:03.806115",
-    "updated_at": "2026-07-29T14:07:03.806119"
+    "promoted_at": "2026-07-29T19:11:47.131831",
+    "updated_at": "2026-07-29T19:13:30.690282"
   },
   "北京财经": {
     "channel_name": "北京财经",
-    "url": "http://45.192.97.170:8880/play/6502.m3u8",
-    "latency": 651,
+    "url": "http://45.192.97.170:8880/play/6590.m3u8",
+    "latency": 1240,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T02:16:12.022670",
-    "updated_at": "2026-07-29T14:05:25.105973"
+    "promoted_at": "2026-07-29T19:13:26.461353",
+    "updated_at": "2026-07-29T19:13:26.461356"
   },
   "黑龙江乡村广播": {
     "channel_name": "黑龙江乡村广播",
     "url": "http://45.192.97.170:8880/play/6689.m3u8",
-    "latency": 1523,
+    "latency": 1190,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.275506",
-    "updated_at": "2026-07-29T14:07:04.293993"
+    "updated_at": "2026-07-29T19:13:28.973494"
   },
   "吉林乡村广播": {
     "channel_name": "吉林乡村广播",
     "url": "http://45.192.97.170:8880/play/6678.m3u8",
-    "latency": 537,
+    "latency": 783,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:24.959932",
-    "updated_at": "2026-07-29T14:07:04.036251"
+    "updated_at": "2026-07-29T19:13:28.093219"
   },
   "安徽交通广播": {
     "channel_name": "安徽交通广播",
     "url": "http://45.192.97.170:8880/play/6609.m3u8",
-    "latency": 495,
+    "latency": 815,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:07:03.938318",
-    "updated_at": "2026-07-29T14:07:03.938322"
+    "promoted_at": "2026-07-29T19:13:31.700747",
+    "updated_at": "2026-07-29T19:13:31.700750"
   },
   "广东新闻广播": {
     "channel_name": "广东新闻广播",
     "url": "http://45.192.97.170:8880/play/6651.m3u8",
-    "latency": 1032,
+    "latency": 1307,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.464413",
-    "updated_at": "2026-07-29T14:07:04.203714"
+    "updated_at": "2026-07-29T19:13:26.465580"
   },
   "江苏新闻广播": {
     "channel_name": "江苏新闻广播",
     "url": "http://45.192.97.170:8880/play/6601.m3u8",
-    "latency": 1024,
+    "latency": 1294,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.615613",
-    "updated_at": "2026-07-29T14:07:04.200098"
+    "updated_at": "2026-07-29T19:13:31.572326"
   },
   "甘肃都市调频": {
     "channel_name": "甘肃都市调频",
     "url": "http://45.192.97.170:8880/play/6545.m3u8",
-    "latency": 1128,
+    "latency": 845,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:24.832809",
-    "updated_at": "2026-07-29T14:07:04.214800"
+    "updated_at": "2026-07-29T19:13:30.661112"
   },
   "安徽生活广播·城市之声": {
     "channel_name": "安徽生活广播·城市之声",
     "url": "http://45.192.97.170:8880/play/6607.m3u8",
-    "latency": 471,
+    "latency": 1109,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.634943",
-    "updated_at": "2026-07-29T14:07:03.892747"
+    "updated_at": "2026-07-29T19:13:31.803829"
   },
   "安徽音乐广播": {
     "channel_name": "安徽音乐广播",
-    "url": "http://45.192.97.170:8880/play/6726.m3u8",
-    "latency": 385,
-    "video_codec": "",
-    "is_fixed": false,
-    "auto_optimize": true,
-    "fail_count": 0,
-    "status": "active",
-    "promoted_at": "2026-07-29T14:07:03.866554",
-    "updated_at": "2026-07-29T14:07:03.866559"
-  },
-  "西藏藏语广播": {
-    "channel_name": "西藏藏语广播",
-    "url": "http://45.192.97.170:8880/play/6710.m3u8",
-    "latency": 982,
-    "video_codec": "",
-    "is_fixed": false,
-    "auto_optimize": true,
-    "fail_count": 0,
-    "status": "active",
-    "promoted_at": "2026-07-29T14:05:25.382113",
-    "updated_at": "2026-07-29T14:07:04.181422"
-  },
-  "上海长三角之声": {
-    "channel_name": "上海长三角之声",
-    "url": "http://45.192.97.170:8880/play/6442.m3u8",
-    "latency": 1483,
-    "video_codec": "",
-    "is_fixed": false,
-    "auto_optimize": true,
-    "fail_count": 0,
-    "status": "active",
-    "promoted_at": "2026-07-29T14:05:25.581242",
-    "updated_at": "2026-07-29T14:07:04.267734"
-  },
-  "河南新闻广播": {
-    "channel_name": "河南新闻广播",
-    "url": "http://45.192.97.170:8880/play/6671.m3u8",
-    "latency": 1476,
-    "video_codec": "",
-    "is_fixed": false,
-    "auto_optimize": true,
-    "fail_count": 0,
-    "status": "active",
-    "promoted_at": "2026-07-29T14:05:25.824399",
-    "updated_at": "2026-07-29T14:07:04.260152"
-  },
-  "湖南交通广播": {
-    "channel_name": "湖南交通广播",
-    "url": "http://45.192.97.170:8880/play/6596.m3u8",
-    "latency": 1490,
-    "video_codec": "",
-    "is_fixed": false,
-    "auto_optimize": true,
-    "fail_count": 0,
-    "status": "active",
-    "promoted_at": "2026-07-29T14:05:25.408911",
-    "updated_at": "2026-07-29T14:07:04.271330"
-  },
-  "河北综合广播": {
-    "channel_name": "河北综合广播",
-    "url": "http://45.192.97.170:8880/play/6620.m3u8",
-    "latency": 529,
-    "video_codec": "",
-    "is_fixed": false,
-    "auto_optimize": true,
-    "fail_count": 0,
-    "status": "active",
-    "promoted_at": "2026-07-29T14:05:25.191761",
-    "updated_at": "2026-07-29T14:07:04.024740"
-  },
-  "江苏金陵之声": {
-    "channel_name": "江苏金陵之声",
-    "url": "http://45.192.97.170:8880/play/6603.m3u8",
-    "latency": 971,
-    "video_codec": "",
-    "is_fixed": false,
-    "auto_optimize": true,
-    "fail_count": 0,
-    "status": "active",
-    "promoted_at": "2026-07-29T14:05:25.270993",
-    "updated_at": "2026-07-29T14:07:04.166111"
-  },
-  "广西音乐广播": {
-    "channel_name": "广西音乐广播",
-    "url": "http://45.192.97.170:8880/play/6546.m3u8",
+    "url": "http://45.192.97.170:8880/play/6539.m3u8",
     "latency": 631,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:05:24.481566",
-    "updated_at": "2026-07-29T14:07:04.062739"
+    "promoted_at": "2026-07-29T19:13:25.580362",
+    "updated_at": "2026-07-29T19:13:25.580366"
   },
-  "云南交通之声": {
-    "channel_name": "云南交通之声",
-    "url": "http://45.192.97.170:8880/play/6717.m3u8",
-    "latency": 503,
+  "西藏藏语广播": {
+    "channel_name": "西藏藏语广播",
+    "url": "http://45.192.97.170:8880/play/6710.m3u8",
+    "latency": 989,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:07:03.972318",
-    "updated_at": "2026-07-29T14:07:03.972322"
+    "promoted_at": "2026-07-29T14:05:25.382113",
+    "updated_at": "2026-07-29T19:13:30.341959"
+  },
+  "上海长三角之声": {
+    "channel_name": "上海长三角之声",
+    "url": "http://45.192.97.170:8880/play/6442.m3u8",
+    "latency": 1147,
+    "video_codec": "",
+    "is_fixed": false,
+    "auto_optimize": true,
+    "fail_count": 0,
+    "status": "active",
+    "promoted_at": "2026-07-29T14:05:25.581242",
+    "updated_at": "2026-07-29T19:13:26.392543"
+  },
+  "河南新闻广播": {
+    "channel_name": "河南新闻广播",
+    "url": "http://45.192.97.170:8880/play/6671.m3u8",
+    "latency": 1640,
+    "video_codec": "",
+    "is_fixed": false,
+    "auto_optimize": true,
+    "fail_count": 0,
+    "status": "active",
+    "promoted_at": "2026-07-29T14:05:25.824399",
+    "updated_at": "2026-07-29T19:13:26.922528"
+  },
+  "湖南交通广播": {
+    "channel_name": "湖南交通广播",
+    "url": "http://45.192.97.170:8880/play/6596.m3u8",
+    "latency": 1105,
+    "video_codec": "",
+    "is_fixed": false,
+    "auto_optimize": true,
+    "fail_count": 0,
+    "status": "active",
+    "promoted_at": "2026-07-29T14:05:25.408911",
+    "updated_at": "2026-07-29T19:13:31.213473"
+  },
+  "河北综合广播": {
+    "channel_name": "河北综合广播",
+    "url": "http://45.192.97.170:8880/play/6620.m3u8",
+    "latency": 903,
+    "video_codec": "",
+    "is_fixed": false,
+    "auto_optimize": true,
+    "fail_count": 0,
+    "status": "active",
+    "promoted_at": "2026-07-29T14:05:25.191761",
+    "updated_at": "2026-07-29T19:13:31.881158"
+  },
+  "江苏金陵之声": {
+    "channel_name": "江苏金陵之声",
+    "url": "http://45.192.97.170:8880/play/6603.m3u8",
+    "latency": 1008,
+    "video_codec": "",
+    "is_fixed": false,
+    "auto_optimize": true,
+    "fail_count": 0,
+    "status": "active",
+    "promoted_at": "2026-07-29T14:05:25.270993",
+    "updated_at": "2026-07-29T19:13:31.623612"
+  },
+  "广西音乐广播": {
+    "channel_name": "广西音乐广播",
+    "url": "http://45.192.97.170:8880/play/6546.m3u8",
+    "latency": 559,
+    "video_codec": "",
+    "is_fixed": false,
+    "auto_optimize": true,
+    "fail_count": 0,
+    "status": "active",
+    "promoted_at": "2026-07-29T19:13:25.686622",
+    "updated_at": "2026-07-29T19:13:30.635365"
+  },
+  "云南交通之声": {
+    "channel_name": "云南交通之声",
+    "url": "http://45.192.97.170:8880/play/6517.m3u8",
+    "latency": 462,
+    "video_codec": "",
+    "is_fixed": false,
+    "auto_optimize": true,
+    "fail_count": 0,
+    "status": "active",
+    "promoted_at": "2026-07-29T19:13:25.467809",
+    "updated_at": "2026-07-29T19:13:25.467812"
   },
   "新疆新闻广播": {
     "channel_name": "新疆新闻广播",
     "url": "http://45.192.97.170:8880/play/6703.m3u8",
-    "latency": 1000,
+    "latency": 1019,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.283169",
-    "updated_at": "2026-07-29T14:07:04.196484"
+    "updated_at": "2026-07-29T19:13:29.485734"
   },
   "福建新闻广播": {
     "channel_name": "福建新闻广播",
     "url": "http://45.192.97.170:8880/play/6624.m3u8",
-    "latency": 526,
+    "latency": 1134,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.109656",
-    "updated_at": "2026-07-29T14:07:04.013453"
+    "updated_at": "2026-07-29T19:13:26.331063"
   },
   "浙江交通之声": {
     "channel_name": "浙江交通之声",
     "url": "http://45.192.97.170:8880/play/6471.m3u8",
-    "latency": 352,
+    "latency": 437,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:24.825238",
-    "updated_at": "2026-07-29T14:07:03.832697"
+    "updated_at": "2026-07-29T19:13:28.886682"
   },
   "内蒙古农村牧区广播绿野之声": {
     "channel_name": "内蒙古农村牧区广播绿野之声",
-    "url": "http://45.192.97.170:8880/play/6691.m3u8",
-    "latency": 623,
+    "url": "http://45.192.97.170:8880/play/6497.m3u8",
+    "latency": 813,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:07:04.043706",
-    "updated_at": "2026-07-29T14:07:04.043708"
+    "promoted_at": "2026-07-29T19:13:25.990433",
+    "updated_at": "2026-07-29T19:13:25.990437"
   },
   "海南新闻广播": {
     "channel_name": "海南新闻广播",
     "url": "http://45.192.97.170:8880/play/6660.m3u8",
-    "latency": 1673,
+    "latency": 1364,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.554432",
-    "updated_at": "2026-07-29T14:07:04.309359"
+    "updated_at": "2026-07-29T19:13:27.542317"
   },
   "广东音乐之声": {
     "channel_name": "广东音乐之声",
     "url": "http://45.192.97.170:8880/play/6556.m3u8",
-    "latency": 649,
+    "latency": 907,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.370784",
-    "updated_at": "2026-07-29T14:07:04.093135"
+    "updated_at": "2026-07-29T19:13:30.869845"
   },
   "江苏交通广播": {
     "channel_name": "江苏交通广播",
     "url": "http://45.192.97.170:8880/play/6604.m3u8",
-    "latency": 1495,
+    "latency": 861,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:24.979301",
-    "updated_at": "2026-07-29T14:07:04.286428"
+    "updated_at": "2026-07-29T19:13:31.598016"
   },
   "香港古典音乐": {
     "channel_name": "香港古典音乐",
     "url": "http://45.192.97.170:8880/play/6425.m3u8",
-    "latency": 339,
+    "latency": 752,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.161615",
-    "updated_at": "2026-07-29T14:07:03.817456"
+    "updated_at": "2026-07-29T19:13:27.631775"
   },
   "香港第三台": {
     "channel_name": "香港第三台",
     "url": "http://45.192.97.170:8880/play/6414.m3u8",
-    "latency": 633,
+    "latency": 1142,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.435369",
-    "updated_at": "2026-07-29T14:07:04.070137"
+    "updated_at": "2026-07-29T19:13:27.683195"
   },
   "福建交通广播": {
     "channel_name": "福建交通广播",
     "url": "http://45.192.97.170:8880/play/6626.m3u8",
-    "latency": 975,
+    "latency": 1638,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.608101",
-    "updated_at": "2026-07-29T14:07:04.173786"
+    "updated_at": "2026-07-29T19:13:26.910928"
   },
   "辽宁经典音乐广播": {
     "channel_name": "辽宁经典音乐广播",
     "url": "http://45.192.97.170:8880/play/6568.m3u8",
-    "latency": 652,
+    "latency": 871,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.195677",
-    "updated_at": "2026-07-29T14:07:04.096980"
+    "updated_at": "2026-07-29T19:13:30.946783"
   },
   "河北生活广播": {
     "channel_name": "河北生活广播",
     "url": "http://45.192.97.170:8880/play/6623.m3u8",
-    "latency": 857,
+    "latency": 1816,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.287005",
-    "updated_at": "2026-07-29T14:07:04.143068"
+    "updated_at": "2026-07-29T19:13:27.037524"
   },
   "广西交通广播": {
     "channel_name": "广西交通广播",
-    "url": "http://45.192.97.170:8880/play/6714.m3u8",
-    "latency": 492,
+    "url": "http://45.192.97.170:8880/play/6514.m3u8",
+    "latency": 638,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:07:03.930887",
-    "updated_at": "2026-07-29T14:07:03.930891"
+    "promoted_at": "2026-07-29T19:13:25.705792",
+    "updated_at": "2026-07-29T19:13:25.705794"
   },
   "河南农村广播大象资讯台": {
     "channel_name": "河南农村广播大象资讯台",
     "url": "http://45.192.97.170:8880/play/6580.m3u8",
-    "latency": 1329,
+    "latency": 1127,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.468277",
-    "updated_at": "2026-07-29T14:07:04.241198"
+    "updated_at": "2026-07-29T19:13:31.135817"
   },
   "河北文艺广播": {
     "channel_name": "河北文艺广播",
     "url": "http://45.192.97.170:8880/play/6619.m3u8",
-    "latency": 635,
+    "latency": 895,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.420242",
-    "updated_at": "2026-07-29T14:07:04.077779"
+    "updated_at": "2026-07-29T19:13:31.855317"
   },
   "澳门绿坉": {
     "channel_name": "澳门绿坉",
@@ -4142,386 +4142,386 @@
   "江苏健康广播": {
     "channel_name": "江苏健康广播",
     "url": "http://45.192.97.170:8880/play/6605.m3u8",
-    "latency": 1464,
+    "latency": 1218,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.456527",
-    "updated_at": "2026-07-29T14:07:04.252768"
+    "updated_at": "2026-07-29T19:13:31.726652"
   },
   "新疆交通广播": {
     "channel_name": "新疆交通广播",
     "url": "http://45.192.97.170:8880/play/6704.m3u8",
-    "latency": 1032,
+    "latency": 1250,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.535262",
-    "updated_at": "2026-07-29T14:07:04.207314"
+    "updated_at": "2026-07-29T19:13:30.030673"
   },
   "贵州都市广播": {
     "channel_name": "贵州都市广播",
     "url": "http://45.192.97.170:8880/play/6561.m3u8",
-    "latency": 326,
+    "latency": 1029,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.546866",
-    "updated_at": "2026-07-29T14:07:03.798341"
+    "updated_at": "2026-07-29T19:13:30.972347"
   },
   "新疆绿色广播": {
     "channel_name": "新疆绿色广播",
     "url": "http://45.192.97.170:8880/play/6706.m3u8",
-    "latency": 1541,
+    "latency": 1115,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.279339",
-    "updated_at": "2026-07-29T14:07:04.297801"
+    "updated_at": "2026-07-29T19:13:29.955180"
   },
   "江苏故事广播": {
     "channel_name": "江苏故事广播",
     "url": "http://45.192.97.170:8880/play/6599.m3u8",
-    "latency": 970,
+    "latency": 1256,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.619510",
-    "updated_at": "2026-07-29T14:07:04.162261"
+    "updated_at": "2026-07-29T19:13:31.546752"
   },
   "广东文体广播": {
     "channel_name": "广东文体广播",
     "url": "http://45.192.97.170:8880/play/6653.m3u8",
-    "latency": 819,
+    "latency": 1119,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.412695",
-    "updated_at": "2026-07-29T14:07:04.135397"
+    "updated_at": "2026-07-29T19:13:27.408530"
   },
   "西藏汉语广播": {
     "channel_name": "西藏汉语广播",
     "url": "http://45.192.97.170:8880/play/6709.m3u8",
-    "latency": 1492,
+    "latency": 1101,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.404999",
-    "updated_at": "2026-07-29T14:07:04.275098"
+    "updated_at": "2026-07-29T19:13:30.196703"
   },
   "新疆私家车广播": {
     "channel_name": "新疆私家车广播",
     "url": "http://45.192.97.170:8880/play/6509.m3u8",
-    "latency": 513,
+    "latency": 585,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:05:24.570281",
-    "updated_at": "2026-07-29T14:07:04.005799"
+    "promoted_at": "2026-07-29T19:13:25.701827",
+    "updated_at": "2026-07-29T19:13:30.445735"
   },
   "广东城市之声": {
     "channel_name": "广东城市之声",
     "url": "http://45.192.97.170:8880/play/6654.m3u8",
-    "latency": 877,
+    "latency": 1198,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.600401",
-    "updated_at": "2026-07-29T14:07:04.146978"
+    "updated_at": "2026-07-29T19:13:27.459791"
   },
   "西藏对外交通广播": {
     "channel_name": "西藏对外交通广播",
     "url": "http://45.192.97.170:8880/play/6708.m3u8",
-    "latency": 1131,
+    "latency": 1146,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.577327",
-    "updated_at": "2026-07-29T14:07:04.218396"
+    "updated_at": "2026-07-29T19:13:30.393819"
   },
   "湖南综合广播": {
     "channel_name": "湖南综合广播",
     "url": "http://45.192.97.170:8880/play/6598.m3u8",
-    "latency": 975,
+    "latency": 767,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:24.875264",
-    "updated_at": "2026-07-29T14:07:04.177646"
+    "updated_at": "2026-07-29T19:13:31.161707"
   },
   "湖南潇湘之声": {
     "channel_name": "湖南潇湘之声",
     "url": "http://45.192.97.170:8880/play/6593.m3u8",
-    "latency": 990,
+    "latency": 1069,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.558260",
-    "updated_at": "2026-07-29T14:07:04.189164"
+    "updated_at": "2026-07-29T19:13:31.187639"
   },
   "江西信息交通广播": {
     "channel_name": "江西信息交通广播",
     "url": "http://45.192.97.170:8880/play/6631.m3u8",
-    "latency": 1506,
+    "latency": 961,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.539116",
-    "updated_at": "2026-07-29T14:07:04.290134"
+    "updated_at": "2026-07-29T19:13:26.212427"
   },
   "河南戏曲广播": {
     "channel_name": "河南戏曲广播",
     "url": "http://45.192.97.170:8880/play/6673.m3u8",
-    "latency": 995,
+    "latency": 1136,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.627181",
-    "updated_at": "2026-07-29T14:07:04.192854"
+    "updated_at": "2026-07-29T19:13:26.366208"
   },
   "河南信息广播": {
     "channel_name": "河南信息广播",
     "url": "http://45.192.97.170:8880/play/6675.m3u8",
-    "latency": 1372,
+    "latency": 1203,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.416450",
-    "updated_at": "2026-07-29T14:07:04.248802"
+    "updated_at": "2026-07-29T19:13:28.042244"
   },
   "黑龙江交通广播": {
     "channel_name": "黑龙江交通广播",
-    "url": "http://45.192.97.170:8880/play/6685.m3u8",
-    "latency": 969,
+    "url": "http://45.192.97.170:8880/play/6435.m3u8",
+    "latency": 953,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:05:25.500623",
-    "updated_at": "2026-07-29T14:07:04.158361"
+    "promoted_at": "2026-07-29T19:13:26.122725",
+    "updated_at": "2026-07-29T19:13:26.122728"
   },
   "海南交通广播": {
     "channel_name": "海南交通广播",
     "url": "http://45.192.97.170:8880/play/6661.m3u8",
-    "latency": 989,
+    "latency": 1376,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.631016",
-    "updated_at": "2026-07-29T14:07:04.185407"
+    "updated_at": "2026-07-29T19:13:27.751837"
   },
   "青海经济广播": {
     "channel_name": "青海经济广播",
-    "url": "http://45.192.97.170:8880/play/6725.m3u8",
-    "latency": 379,
+    "url": "http://45.192.97.170:8880/play/6526.m3u8",
+    "latency": 646,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:07:03.862674",
-    "updated_at": "2026-07-29T14:07:03.862678"
+    "promoted_at": "2026-07-29T19:13:25.816770",
+    "updated_at": "2026-07-29T19:13:25.816774"
   },
   "吉林新闻综合广播": {
     "channel_name": "吉林新闻综合广播",
     "url": "http://45.192.97.170:8880/play/6676.m3u8",
-    "latency": 1326,
+    "latency": 1027,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.359175",
-    "updated_at": "2026-07-29T14:07:04.237397"
+    "updated_at": "2026-07-29T19:13:28.067650"
   },
   "河南教育广播": {
     "channel_name": "河南教育广播",
     "url": "http://45.192.97.170:8880/play/6674.m3u8",
-    "latency": 2329,
+    "latency": 1458,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.565946",
-    "updated_at": "2026-07-29T14:07:04.313027"
+    "updated_at": "2026-07-29T19:13:26.560605"
   },
   "江西综合新闻广播": {
     "channel_name": "江西综合新闻广播",
     "url": "http://45.192.97.170:8880/play/6629.m3u8",
-    "latency": 378,
+    "latency": 1644,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.139997",
-    "updated_at": "2026-07-29T14:07:03.858946"
+    "updated_at": "2026-07-29T19:13:26.938047"
   },
   "CGTN Radio": {
     "channel_name": "CGTN Radio",
     "url": "http://45.192.97.170:8880/play/6570.m3u8",
-    "latency": 648,
+    "latency": 1151,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.531491",
-    "updated_at": "2026-07-29T14:07:04.089331"
+    "updated_at": "2026-07-29T19:13:31.109773"
   },
   "北京影视": {
     "channel_name": "北京影视",
-    "url": "http://45.192.97.170:8880/play/6501.m3u8",
-    "latency": 1103,
+    "url": "http://45.192.97.170:8880/play/6589.m3u8",
+    "latency": 2819,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T02:16:11.997243",
-    "updated_at": "2026-07-29T08:38:11.409063"
+    "promoted_at": "2026-07-29T19:11:47.622700",
+    "updated_at": "2026-07-29T19:13:27.064952"
   },
   "陕西音乐广播": {
     "channel_name": "陕西音乐广播",
     "url": "http://45.192.97.170:8880/play/6535.m3u8",
-    "latency": 652,
+    "latency": 1051,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.492886",
-    "updated_at": "2026-07-29T14:07:04.100875"
+    "updated_at": "2026-07-29T19:13:30.609520"
   },
   "北京经典969": {
     "channel_name": "北京经典969",
-    "url": "http://45.192.97.170:8880/play/6488.m3u8",
-    "latency": 1495,
+    "url": "http://45.192.97.170:8880/play/6581.m3u8",
+    "latency": 809,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:07:04.282431",
-    "updated_at": "2026-07-29T14:07:04.282434"
+    "promoted_at": "2026-07-29T19:11:46.994209",
+    "updated_at": "2026-07-29T19:13:25.982856"
   },
   "甘肃青春调频": {
     "channel_name": "甘肃青春调频",
     "url": "http://45.192.97.170:8880/play/6544.m3u8",
-    "latency": 851,
+    "latency": 1168,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.485140",
-    "updated_at": "2026-07-29T14:07:04.139239"
+    "updated_at": "2026-07-29T19:13:30.793074"
   },
   "湖南金鹰之声": {
     "channel_name": "湖南金鹰之声",
     "url": "http://45.192.97.170:8880/play/6597.m3u8",
-    "latency": 973,
+    "latency": 1066,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.562099",
-    "updated_at": "2026-07-29T14:07:04.169967"
+    "updated_at": "2026-07-29T19:13:31.495392"
   },
   "江苏财经广播": {
     "channel_name": "江苏财经广播",
     "url": "http://45.192.97.170:8880/play/6446.m3u8",
-    "latency": 1469,
+    "latency": 1760,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.623341",
-    "updated_at": "2026-07-29T14:07:04.256417"
+    "updated_at": "2026-07-29T19:13:28.016717"
   },
   "吉林交通广播": {
     "channel_name": "吉林交通广播",
     "url": "http://45.192.97.170:8880/play/6677.m3u8",
-    "latency": 967,
+    "latency": 927,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.229625",
-    "updated_at": "2026-07-29T14:07:04.154540"
+    "updated_at": "2026-07-29T19:13:28.144149"
   },
   "湖南经济广播": {
     "channel_name": "湖南经济广播",
     "url": "http://45.192.97.170:8880/play/6594.m3u8",
-    "latency": 1160,
+    "latency": 1285,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.550716",
-    "updated_at": "2026-07-29T14:07:04.225885"
+    "updated_at": "2026-07-29T19:13:31.319900"
   },
   "北京文艺": {
     "channel_name": "北京文艺",
-    "url": "http://45.192.97.170:8880/play/6337.m3u8",
-    "latency": 1110,
+    "url": "http://45.192.97.170:8880/play/6587.m3u8",
+    "latency": 1176,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T02:17:41.331160",
-    "updated_at": "2026-07-29T02:17:41.331164"
+    "promoted_at": "2026-07-29T19:11:47.725836",
+    "updated_at": "2026-07-29T19:13:26.457480"
   },
   "西藏都市生活广播": {
     "channel_name": "西藏都市生活广播",
     "url": "http://45.192.97.170:8880/play/6707.m3u8",
-    "latency": 1358,
+    "latency": 1068,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.460602",
-    "updated_at": "2026-07-29T14:07:04.245027"
+    "updated_at": "2026-07-29T19:13:30.316144"
   },
   "CCTV-Storm Football": {
     "channel_name": "CCTV-Storm Football",
@@ -4537,87 +4537,87 @@
   },
   "宁夏新闻广播": {
     "channel_name": "宁夏新闻广播",
-    "url": "http://45.192.97.170:8880/play/6435.m3u8",
-    "latency": 773,
+    "url": "http://45.192.97.170:8880/play/6523.m3u8",
+    "latency": 961,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-28T13:59:49.443406",
-    "updated_at": "2026-07-29T08:36:46.582992"
+    "promoted_at": "2026-07-29T19:11:47.183415",
+    "updated_at": "2026-07-29T19:13:26.216153"
   },
   "广西北部湾之声": {
     "channel_name": "广西北部湾之声",
-    "url": "http://45.192.97.170:8880/play/6425.m3u8",
-    "latency": 724,
+    "url": "http://45.192.97.170:8880/play/6513.m3u8",
+    "latency": 638,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T08:36:46.504603",
-    "updated_at": "2026-07-29T08:36:46.504607"
+    "promoted_at": "2026-07-29T19:13:25.713511",
+    "updated_at": "2026-07-29T19:13:25.713514"
   },
   "云南国际广播": {
     "channel_name": "云南国际广播",
-    "url": "http://45.192.97.170:8880/play/6432.m3u8",
-    "latency": 422,
+    "url": "http://45.192.97.170:8880/play/6720.m3u8",
+    "latency": 817,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-28T14:01:36.178266",
-    "updated_at": "2026-07-29T02:16:11.102812"
+    "promoted_at": "2026-07-29T19:13:26.084848",
+    "updated_at": "2026-07-29T19:13:26.084852"
   },
   "贵州综合广播": {
     "channel_name": "贵州综合广播",
-    "url": "http://45.192.97.170:8880/play/6582.m3u8",
-    "latency": 769,
+    "url": "http://45.192.97.170:8880/play/6487.m3u8",
+    "latency": 640,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T08:36:46.549733",
-    "updated_at": "2026-07-29T08:36:46.549737"
+    "promoted_at": "2026-07-29T19:13:25.751765",
+    "updated_at": "2026-07-29T19:13:25.751769"
   },
   "湖北经典音乐广播": {
     "channel_name": "湖北经典音乐广播",
-    "url": "http://45.192.97.170:8880/play/6646.m3u8",
-    "latency": 584,
+    "url": "http://45.192.97.170:8880/play/6734.m3u8",
+    "latency": 463,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T08:36:46.356022",
-    "updated_at": "2026-07-29T08:36:46.356027"
+    "promoted_at": "2026-07-29T19:11:47.471601",
+    "updated_at": "2026-07-29T19:13:25.557801"
   },
   "浙江民生资讯广播": {
     "channel_name": "浙江民生资讯广播",
     "url": "http://45.192.97.170:8880/play/6472.m3u8",
-    "latency": 335,
+    "latency": 618,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:24.922191",
-    "updated_at": "2026-07-29T14:07:03.813735"
+    "updated_at": "2026-07-29T19:13:29.256539"
   },
   "CCTV-5+": {
     "channel_name": "CCTV-5+",
     "url": "http://112.27.235.94:8000/hls/6/index.m3u8",
-    "latency": 587,
+    "latency": 426,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T02:16:11.229985",
-    "updated_at": "2026-07-29T14:05:25.047750"
+    "updated_at": "2026-07-29T19:11:46.730564"
   },
   "CGTN-Documentary": {
     "channel_name": "CGTN-Documentary",
@@ -4633,15 +4633,15 @@
   },
   "CCTV-5": {
     "channel_name": "CCTV-5",
-    "url": "http://112.27.235.94:8000/hls/5/index.m3u8",
-    "latency": 435,
+    "url": "http://112.27.235.94:8000/hls/6/index.m3u8",
+    "latency": 433,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-27T19:23:56.233017",
-    "updated_at": "2026-07-29T14:05:24.723520"
+    "promoted_at": "2026-07-29T19:11:46.777685",
+    "updated_at": "2026-07-29T19:11:46.777688"
   },
   "CCTV+ 2 [Not 24/7]": {
     "channel_name": "CCTV+ 2 [Not 24/7]",
@@ -4658,14 +4658,14 @@
   "河北": {
     "channel_name": "河北",
     "url": "https://event.pull.hebtv.com:443/live/live101.m3u8",
-    "latency": 1361,
+    "latency": 1492,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T12:31:04.507022",
-    "updated_at": "2026-07-29T14:05:25.481343"
+    "updated_at": "2026-07-29T19:11:47.606711"
   },
   "CCTV+ 1 [Not 24/7]": {
     "channel_name": "CCTV+ 1 [Not 24/7]",
@@ -4706,122 +4706,122 @@
   "兵团卫视": {
     "channel_name": "兵团卫视",
     "url": "http://218.13.170.98:9901/tsfile/live/0115_1.m3u8",
-    "latency": 725,
+    "latency": 4422,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-26T19:09:25.696760",
-    "updated_at": "2026-07-29T08:36:46.514755"
+    "updated_at": "2026-07-29T19:11:47.733819"
   },
   "CCTV-4K": {
     "channel_name": "CCTV-4K",
     "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1785384900-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-a7654ba8cf447ee465ffc9fa43e4815e&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
-    "latency": 142,
+    "latency": 313,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T14:05:25.199495",
-    "updated_at": "2026-07-29T14:07:03.790665"
+    "promoted_at": "2026-07-29T19:13:25.433191",
+    "updated_at": "2026-07-29T19:13:25.433198"
   },
   "浙江旅游之声": {
     "channel_name": "浙江旅游之声",
-    "url": "http://45.192.97.170:8880/play/6561.m3u8",
-    "latency": 1753,
+    "url": "http://45.192.97.170:8880/play/6474.m3u8",
+    "latency": 819,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T08:36:46.943401",
-    "updated_at": "2026-07-29T08:36:46.943409"
+    "promoted_at": "2026-07-29T19:13:26.096515",
+    "updated_at": "2026-07-29T19:13:26.096519"
   },
   "黑龙江高校广播": {
     "channel_name": "黑龙江高校广播",
-    "url": "http://45.192.97.170:8880/play/6437.m3u8",
-    "latency": 794,
+    "url": "http://45.192.97.170:8880/play/6494.m3u8",
+    "latency": 643,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T08:38:11.202001",
-    "updated_at": "2026-07-29T14:07:04.131546"
+    "promoted_at": "2026-07-29T19:13:25.797983",
+    "updated_at": "2026-07-29T19:13:25.797986"
   },
   "甘肃经济广播": {
     "channel_name": "甘肃经济广播",
     "url": "http://45.192.97.170:8880/play/6510.m3u8",
-    "latency": 350,
+    "latency": 610,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:24.829016",
-    "updated_at": "2026-07-29T14:07:03.828953"
+    "updated_at": "2026-07-29T19:13:30.472142"
   },
   "北京卡酷少儿": {
     "channel_name": "北京卡酷少儿",
     "url": "http://218.13.170.98:9901/tsfile/live/1021_1.m3u8",
-    "latency": 2026,
+    "latency": 5164,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T12:54:39.930798",
-    "updated_at": "2026-07-29T08:36:47.062065"
+    "updated_at": "2026-07-29T19:11:47.737767"
   },
   "无线新闻台": {
     "channel_name": "无线新闻台",
     "url": "http://r.jdshipin.com/CkuBd",
-    "latency": 71,
+    "latency": 284,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T08:36:45.881896",
-    "updated_at": "2026-07-29T14:07:03.786852"
+    "updated_at": "2026-07-29T19:13:27.382707"
   },
   "内蒙古卫视": {
     "channel_name": "内蒙古卫视",
     "url": "http://112.27.235.94:8000/hls/49/index.m3u8",
-    "latency": 415,
+    "latency": 441,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-25T13:19:37.778802",
-    "updated_at": "2026-07-29T14:05:24.661832"
+    "updated_at": "2026-07-29T19:11:46.808938"
   },
   "厦门卫视": {
     "channel_name": "厦门卫视",
     "url": "http://183.11.239.36:808/hls/17/index.m3u8",
-    "latency": 594,
+    "latency": 400,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T13:19:01.754438",
-    "updated_at": "2026-07-29T14:05:25.055330"
+    "updated_at": "2026-07-29T19:11:46.699420"
   },
   "辽宁生活": {
     "channel_name": "辽宁生活",
     "url": "http://dassby.qqff.top:99/live/辽宁生活/index.m3u8",
-    "latency": 647,
+    "latency": 669,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-24T19:21:26.026974",
-    "updated_at": "2026-07-29T14:05:25.102311"
+    "updated_at": "2026-07-29T19:11:47.380049"
   },
   "CGTN阿语": {
     "channel_name": "CGTN阿语",
@@ -4862,14 +4862,14 @@
   "河南都市": {
     "channel_name": "河南都市",
     "url": "http://1.94.31.214/php/hntv.php?id=hnds",
-    "latency": 1928,
+    "latency": 1400,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-25T19:03:58.542984",
-    "updated_at": "2026-07-29T08:36:47.047124"
+    "updated_at": "2026-07-29T19:11:47.582730"
   },
   "CGTN英语": {
     "channel_name": "CGTN英语",
@@ -4886,14 +4886,14 @@
   "辽宁北方": {
     "channel_name": "辽宁北方",
     "url": "http://dassby.qqff.top:99/live/辽宁北方/index.m3u8",
-    "latency": 713,
+    "latency": 750,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-26T08:23:53.964772",
-    "updated_at": "2026-07-29T14:05:25.169197"
+    "updated_at": "2026-07-29T19:11:47.408167"
   },
   "站在草原望北京": {
     "channel_name": "站在草原望北京",
@@ -4922,74 +4922,74 @@
   "黑龙江新闻法治": {
     "channel_name": "黑龙江新闻法治",
     "url": "https://ls.qingting.fm/live/4974/64k.m3u8",
-    "latency": 1076,
+    "latency": 1929,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-27T09:47:33.449555",
-    "updated_at": "2026-07-29T08:36:46.687576"
+    "updated_at": "2026-07-29T19:11:47.662242"
   },
   "凤凰香港": {
     "channel_name": "凤凰香港",
-    "url": "http://r.jdshipin.com/yDoTN",
-    "latency": 40,
+    "url": "http://r.jdshipin.com/NfC0f",
+    "latency": 255,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T08:36:45.862381",
-    "updated_at": "2026-07-29T14:07:03.763754"
+    "promoted_at": "2026-07-29T19:13:29.604757",
+    "updated_at": "2026-07-29T19:13:29.604764"
   },
   "TVB Plus": {
     "channel_name": "TVB Plus",
     "url": "http://r.jdshipin.com/Nr5jq",
-    "latency": 39,
+    "latency": 498,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
-    "promoted_at": "2026-07-29T08:36:45.867348",
-    "updated_at": "2026-07-29T14:07:03.759813"
+    "promoted_at": "2026-07-29T19:13:27.300482",
+    "updated_at": "2026-07-29T19:13:27.300486"
   },
   "TVB News": {
     "channel_name": "TVB News",
     "url": "http://r.jdshipin.com/CkuBd",
-    "latency": 41,
+    "latency": 145,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T08:36:45.886848",
-    "updated_at": "2026-07-29T14:07:03.775307"
+    "updated_at": "2026-07-29T19:13:27.274517"
   },
   "凤凰资讯": {
     "channel_name": "凤凰资讯",
     "url": "http://r.jdshipin.com/0Rp07",
-    "latency": 43,
+    "latency": 357,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T08:36:46.003116",
-    "updated_at": "2026-07-29T14:07:03.779116"
+    "updated_at": "2026-07-29T19:13:27.222628"
   },
   "凤凰中文": {
     "channel_name": "凤凰中文",
     "url": "http://r.jdshipin.com/cCCzW",
-    "latency": 41,
+    "latency": 288,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T08:36:46.164124",
-    "updated_at": "2026-07-29T14:07:03.771488"
+    "updated_at": "2026-07-29T19:13:25.392143"
   },
   "CGTN法语": {
     "channel_name": "CGTN法语",
@@ -5006,37 +5006,61 @@
   "无线新闻": {
     "channel_name": "无线新闻",
     "url": "http://r.jdshipin.com/CkuBd",
-    "latency": 41,
+    "latency": 413,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T08:38:11.141316",
-    "updated_at": "2026-07-29T14:07:03.767612"
+    "updated_at": "2026-07-29T19:13:25.440922"
   },
   "明珠台": {
     "channel_name": "明珠台",
     "url": "http://r.jdshipin.com/jUx8K",
-    "latency": 36,
+    "latency": 422,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:24.192589",
-    "updated_at": "2026-07-29T14:07:03.755913"
+    "updated_at": "2026-07-29T19:13:30.583387"
   },
   "通海电视台": {
     "channel_name": "通海电视台",
     "url": "https://zb-live.ynurl.com/tonghai/3bfe3a9e-48e6-4c1e-8770-1df66447cc6c.m3u8",
-    "latency": 1037,
+    "latency": 788,
     "video_codec": "",
     "is_fixed": false,
     "auto_optimize": true,
     "fail_count": 0,
     "status": "active",
     "promoted_at": "2026-07-29T14:05:25.801372",
-    "updated_at": "2026-07-29T14:07:04.211042"
+    "updated_at": "2026-07-29T19:13:25.842805"
+  },
+  "华丽翡翠台": {
+    "channel_name": "华丽翡翠台",
+    "url": "http://r.jdshipin.com/thuYX",
+    "latency": 661,
+    "video_codec": "",
+    "is_fixed": false,
+    "auto_optimize": true,
+    "fail_count": 0,
+    "status": "active",
+    "promoted_at": "2026-07-29T19:11:47.256700",
+    "updated_at": "2026-07-29T19:13:25.831537"
+  },
+  "TVB星河": {
+    "channel_name": "TVB星河",
+    "url": "http://r.jdshipin.com/Voac4",
+    "latency": 295,
+    "video_codec": "",
+    "is_fixed": false,
+    "auto_optimize": true,
+    "fail_count": 0,
+    "status": "active",
+    "promoted_at": "2026-07-29T19:11:47.702069",
+    "updated_at": "2026-07-29T19:13:25.399973"
   }
 }

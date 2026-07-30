@@ -10110,3 +10110,507 @@
 2026-07-30 13:57:49,881 - src.orchestrator - INFO - orchestrator.py:489 -   输出频道: 359
 2026-07-30 13:57:49,881 - src.orchestrator - INFO - orchestrator.py:490 - ==================================================
 2026-07-30 13:57:49,881 - __main__ - INFO - run.py:56 - 🎉 运行完成!
+2026-07-30 19:20:55,175 - __main__ - INFO - run.py:43 - 🚀 IPTV 智能整理平台启动
+2026-07-30 19:20:55,175 - __main__ - INFO - run.py:44 - 📡 配置: 超时=8s, 并发=20
+2026-07-30 19:20:55,175 - __main__ - INFO - run.py:45 - 📋 模式: 完整模式 (传统采集 + 自治增强)
+2026-07-30 19:20:55,178 - src.managers.source_manager - INFO - source_manager.py:47 - 📦 加载源池: 857 个源
+2026-07-30 19:20:55,187 - src.managers.candidate_manager - INFO - candidate_manager.py:30 - 📦 加载候选池: 2785 个候选源
+2026-07-30 19:20:55,188 - src.managers.stable_manager - INFO - stable_manager.py:31 - 📦 加载稳定源: 424 个
+2026-07-30 19:20:55,192 - src.filters.alias - INFO - alias.py:63 - ✅ 加载别名规则：精确 885，正则 22
+2026-07-30 19:20:55,192 - src.orchestrator - INFO - orchestrator.py:77 - 🚀 IPTV 智能整理平台启动
+2026-07-30 19:20:55,192 - src.orchestrator - INFO - orchestrator.py:78 - 📊 配置: 并发=20, 超时=8s
+2026-07-30 19:20:55,192 - src.orchestrator - INFO - orchestrator.py:79 - 📋 模式: full
+2026-07-30 19:20:55,192 - src.orchestrator - INFO - orchestrator.py:105 - ==================================================
+2026-07-30 19:20:55,192 - src.orchestrator - INFO - orchestrator.py:106 - 传统模式: 全量采集 + 测速
+2026-07-30 19:20:55,193 - src.orchestrator - INFO - orchestrator.py:107 - ==================================================
+2026-07-30 19:20:55,193 - src.orchestrator - INFO - orchestrator.py:115 - 📋 使用订阅源: 11 个
+2026-07-30 19:20:55,193 - src.orchestrator - INFO - orchestrator.py:118 - 🔄 拉取所有源...
+2026-07-30 19:20:55,196 - src.infrastructure.database - INFO - database.py:48 - ✅ 数据库连接池已初始化: data/iptv_cache.db
+2026-07-30 19:20:55,196 - src.services.fetcher - INFO - fetcher.py:36 - 🔄 拉取: https://raw.githubusercontent.com/iptv-org/iptv/gh-pages/countries/cn.m3u
+2026-07-30 19:20:55,196 - src.services.fetcher - INFO - fetcher.py:36 - 🔄 拉取: https://raw.githubusercontent.com/iptv-org/iptv/master/streams/cn.m3u
+2026-07-30 19:20:55,197 - src.services.fetcher - INFO - fetcher.py:36 - 🔄 拉取: https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.txt
+2026-07-30 19:20:55,197 - src.services.fetcher - INFO - fetcher.py:36 - 🔄 拉取: https://raw.githubusercontent.com/zzgpy1/Collect-IPTV/main/best_sorted.m3u
+2026-07-30 19:20:55,197 - src.services.fetcher - INFO - fetcher.py:36 - 🔄 拉取: https://raw.githubusercontent.com/zzgpy1/ITV/main/output/tv.m3u
+2026-07-30 19:20:55,198 - src.services.fetcher - INFO - fetcher.py:36 - 🔄 拉取: https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/cn.m3u
+2026-07-30 19:20:55,198 - src.services.fetcher - INFO - fetcher.py:36 - 🔄 拉取: https://raw.githubusercontent.com/zzgpy1/ipv6-iptv/master/tv/iptv4.txt
+2026-07-30 19:20:55,206 - src.services.fetcher - INFO - fetcher.py:36 - 🔄 拉取: https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/live.txt
+2026-07-30 19:20:55,206 - src.services.fetcher - INFO - fetcher.py:36 - 🔄 拉取: https://raw.githubusercontent.com/kakaxi-1/IPTV/main/iptv.txt
+2026-07-30 19:20:55,206 - src.services.fetcher - INFO - fetcher.py:36 - 🔄 拉取: https://raw.githubusercontent.com/zzgpy1/iptv-api/master/output/result.txt
+2026-07-30 19:20:55,207 - src.services.fetcher - INFO - fetcher.py:36 - 🔄 拉取: https://tv.19860519.xyz/abc123
+2026-07-30 19:20:57,797 - src.services.fetcher - WARNING - fetcher.py:64 - ⚠️ 拉取失败 https://tv.19860519.xyz/abc123: HTTP 403
+2026-07-30 19:20:57,815 - src.orchestrator - INFO - orchestrator.py:128 - 📊 解析到 2609 个频道
+2026-07-30 19:20:57,816 - src.filters.alias - INFO - alias.py:63 - ✅ 加载别名规则：精确 885，正则 22
+2026-07-30 19:20:57,837 - src.orchestrator - INFO - orchestrator.py:140 - 📊 过滤后国内频道: 1184 个 (过滤掉 1425 个)
+2026-07-30 19:20:57,839 - src.orchestrator - INFO - orchestrator.py:150 - 📊 去重后频道: 740 个
+2026-07-30 19:20:57,839 - src.orchestrator - INFO - orchestrator.py:154 - 🔍 开始测速 740 个频道...
+2026-07-30 19:22:22,385 - src.services.speed_tester - INFO - speed_tester.py:175 - 📊 测速完成，有效频道: 433/740
+2026-07-30 19:22:22,385 - src.orchestrator - INFO - orchestrator.py:157 - ✅ 测速完成: 433 个有效频道
+2026-07-30 19:22:36,397 - src.orchestrator - INFO - orchestrator.py:178 - 📌 提升 317 个频道的稳定源...
+2026-07-30 19:22:36,464 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ CCTV-13 已提升为稳定源 (延迟: 162ms)
+2026-07-30 19:22:36,504 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ CCTV-4 已提升为稳定源 (延迟: 194ms)
+2026-07-30 19:22:36,559 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ CCTV-4K 已提升为稳定源 (延迟: 248ms)
+2026-07-30 19:22:36,598 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 翡翠台 已提升为稳定源 (延迟: 294ms)
+2026-07-30 19:22:36,626 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 澳视澳门 已提升为稳定源 (延迟: 315ms)
+2026-07-30 19:22:36,655 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 福建东南广播 已提升为稳定源 (延迟: 410ms)
+2026-07-30 19:22:36,671 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 安徽旅游广播·高速之声 已提升为稳定源 (延迟: 412ms)
+2026-07-30 19:22:36,688 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 江苏新闻综合广播 已提升为稳定源 (延迟: 415ms)
+2026-07-30 19:22:36,705 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 云南新闻广播 已提升为稳定源 (延迟: 417ms)
+2026-07-30 19:22:36,732 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 浙江教科影视 已提升为稳定源 (延迟: 440ms)
+2026-07-30 19:22:36,737 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 浙江民生休闲 已提升为稳定源 (延迟: 440ms)
+2026-07-30 19:22:36,742 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 浙江钱江 已提升为稳定源 (延迟: 441ms)
+2026-07-30 19:22:36,862 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 贵州卫视 已提升为稳定源 (延迟: 507ms)
+2026-07-30 19:22:36,868 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 浙江经济生活 已提升为稳定源 (延迟: 507ms)
+2026-07-30 19:22:36,882 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ CCTV-2 已提升为稳定源 (延迟: 510ms)
+2026-07-30 19:22:36,888 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 吉林卫视 已提升为稳定源 (延迟: 510ms)
+2026-07-30 19:22:36,973 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 浙江经济 已提升为稳定源 (延迟: 584ms)
+2026-07-30 19:22:36,998 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 浙江城市之声 已提升为稳定源 (延迟: 613ms)
+2026-07-30 19:22:37,003 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 贵州经济广播 已提升为稳定源 (延迟: 614ms)
+2026-07-30 19:22:37,008 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 云南民族广播 已提升为稳定源 (延迟: 615ms)
+2026-07-30 19:22:37,013 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 湖北之声 已提升为稳定源 (延迟: 616ms)
+2026-07-30 19:22:37,023 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 陕西农村广播 已提升为稳定源 (延迟: 616ms)
+2026-07-30 19:22:37,028 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 贵州综合广播 已提升为稳定源 (延迟: 616ms)
+2026-07-30 19:22:37,043 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 安徽故事广播 已提升为稳定源 (延迟: 617ms)
+2026-07-30 19:22:37,048 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 山东乡村广播 已提升为稳定源 (延迟: 617ms)
+2026-07-30 19:22:37,053 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 黑龙江音乐广播 已提升为稳定源 (延迟: 617ms)
+2026-07-30 19:22:37,078 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 青海交通音乐广播 已提升为稳定源 (延迟: 619ms)
+2026-07-30 19:22:37,088 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 安徽之声 已提升为稳定源 (延迟: 620ms)
+2026-07-30 19:22:37,093 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 黑龙江都市女性广播 已提升为稳定源 (延迟: 620ms)
+2026-07-30 19:22:37,108 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 内蒙古新闻广播 已提升为稳定源 (延迟: 621ms)
+2026-07-30 19:22:37,118 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 安徽生活广播·城市之声 已提升为稳定源 (延迟: 622ms)
+2026-07-30 19:22:37,137 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 陕西交通广播 已提升为稳定源 (延迟: 623ms)
+2026-07-30 19:22:37,142 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 安徽交通广播 已提升为稳定源 (延迟: 624ms)
+2026-07-30 19:22:37,147 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 云南国际广播 已提升为稳定源 (延迟: 624ms)
+2026-07-30 19:22:37,172 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 山东体育休闲广播 已提升为稳定源 (延迟: 625ms)
+2026-07-30 19:22:37,182 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 浙江交通之声 已提升为稳定源 (延迟: 626ms)
+2026-07-30 19:22:37,196 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 海南音乐广播 已提升为稳定源 (延迟: 627ms)
+2026-07-30 19:22:37,216 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 四川综合广播四川之声 已提升为稳定源 (延迟: 630ms)
+2026-07-30 19:22:37,221 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 青海新闻综合广播 已提升为稳定源 (延迟: 630ms)
+2026-07-30 19:22:37,226 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 云南音乐广播 已提升为稳定源 (延迟: 630ms)
+2026-07-30 19:22:37,261 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 内蒙古农村牧区广播绿野之声 已提升为稳定源 (延迟: 659ms)
+2026-07-30 19:22:37,266 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 浙江民生 已提升为稳定源 (延迟: 662ms)
+2026-07-30 19:22:37,317 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ CCTV-3 已提升为稳定源 (延迟: 768ms)
+2026-07-30 19:22:37,322 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ CCTV-7 已提升为稳定源 (延迟: 773ms)
+2026-07-30 19:22:37,327 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 河北农民 已提升为稳定源 (延迟: 778ms)
+2026-07-30 19:22:37,393 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 四川私家车广播 已提升为稳定源 (延迟: 827ms)
+2026-07-30 19:22:37,398 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 河北音乐广播 已提升为稳定源 (延迟: 828ms)
+2026-07-30 19:22:37,418 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 山东交通广播 已提升为稳定源 (延迟: 836ms)
+2026-07-30 19:22:37,423 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 浙江民生资讯广播 已提升为稳定源 (延迟: 839ms)
+2026-07-30 19:22:37,527 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 东方卫视4K 已提升为稳定源 (延迟: 1094ms)
+2026-07-30 19:22:37,665 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 香港第三台 已提升为稳定源 (延迟: 1577ms)
+2026-07-30 19:22:37,808 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 广西教育广播 已提升为稳定源 (延迟: 1654ms)
+2026-07-30 19:22:37,828 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 广西综合广播 已提升为稳定源 (延迟: 1680ms)
+2026-07-30 19:22:37,847 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 宁夏音乐广播 已提升为稳定源 (延迟: 1817ms)
+2026-07-30 19:22:37,957 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 黑龙江老年少儿广播·爱家调频 已提升为稳定源 (延迟: 2324ms)
+2026-07-30 19:22:38,012 - src.orchestrator - INFO - orchestrator.py:187 - ✅ 传统模式完成
+2026-07-30 19:22:38,013 - src.orchestrator - INFO - orchestrator.py:191 - ==================================================
+2026-07-30 19:22:38,013 - src.orchestrator - INFO - orchestrator.py:192 - 自治模式: 候选池观察 + 提升
+2026-07-30 19:22:38,013 - src.orchestrator - INFO - orchestrator.py:193 - ==================================================
+2026-07-30 19:22:38,013 - src.orchestrator - INFO - orchestrator.py:225 - ==================================================
+2026-07-30 19:22:38,013 - src.orchestrator - INFO - orchestrator.py:226 - 候选池测速
+2026-07-30 19:22:38,013 - src.orchestrator - INFO - orchestrator.py:227 - ==================================================
+2026-07-30 19:22:38,014 - src.orchestrator - INFO - orchestrator.py:228 - 📊 候选池中有 686 个源需要测速
+2026-07-30 19:22:38,014 - src.orchestrator - INFO - orchestrator.py:242 - 🔍 开始测速 686 个候选源...
+2026-07-30 19:24:10,684 - src.services.speed_tester - INFO - speed_tester.py:175 - 📊 测速完成，有效频道: 227/686
+2026-07-30 19:24:10,684 - src.orchestrator - INFO - orchestrator.py:245 - ✅ 测速完成: 227/686 个有效
+2026-07-30 19:24:17,719 - src.orchestrator - INFO - orchestrator.py:265 - 📌 提升 152 个频道的稳定源...
+2026-07-30 19:24:17,725 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ CCTV-4 已提升为稳定源 (延迟: 7ms)
+2026-07-30 19:24:17,730 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ CCTV-4K 已提升为稳定源 (延迟: 8ms)
+2026-07-30 19:24:17,744 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 明珠台 已提升为稳定源 (延迟: 79ms)
+2026-07-30 19:24:17,769 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 贵州音乐广播 已提升为稳定源 (延迟: 416ms)
+2026-07-30 19:24:17,774 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 山东交通广播 已提升为稳定源 (延迟: 416ms)
+2026-07-30 19:24:17,784 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 辽宁之声 已提升为稳定源 (延迟: 419ms)
+2026-07-30 19:24:17,794 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 青海经济广播 已提升为稳定源 (延迟: 419ms)
+2026-07-30 19:24:17,804 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 内蒙古音乐之声 已提升为稳定源 (延迟: 422ms)
+2026-07-30 19:24:17,829 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 福建东南广播 已提升为稳定源 (延迟: 611ms)
+2026-07-30 19:24:17,834 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 贵州旅游广播 已提升为稳定源 (延迟: 614ms)
+2026-07-30 19:24:17,838 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 广西北部湾之声 已提升为稳定源 (延迟: 615ms)
+2026-07-30 19:24:17,848 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 山东体育休闲广播 已提升为稳定源 (延迟: 618ms)
+2026-07-30 19:24:17,858 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 海南音乐广播 已提升为稳定源 (延迟: 622ms)
+2026-07-30 19:24:17,873 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 新疆私家车广播 已提升为稳定源 (延迟: 624ms)
+2026-07-30 19:24:17,893 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 江苏经典流行音乐广播 已提升为稳定源 (延迟: 626ms)
+2026-07-30 19:24:17,898 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 四川综合广播四川之声 已提升为稳定源 (延迟: 626ms)
+2026-07-30 19:24:17,903 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 浙江音乐调频·动听968 已提升为稳定源 (延迟: 627ms)
+2026-07-30 19:24:17,908 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 陕西青少广播·好听1055 已提升为稳定源 (延迟: 628ms)
+2026-07-30 19:24:17,923 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 安徽生活广播·城市之声 已提升为稳定源 (延迟: 629ms)
+2026-07-30 19:24:17,928 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 陕西农村广播 已提升为稳定源 (延迟: 629ms)
+2026-07-30 19:24:17,943 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 贵州故事广播 已提升为稳定源 (延迟: 630ms)
+2026-07-30 19:24:17,953 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 辽宁乡村广播 已提升为稳定源 (延迟: 631ms)
+2026-07-30 19:24:17,958 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 浙江旅游之声 已提升为稳定源 (延迟: 631ms)
+2026-07-30 19:24:17,982 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 安徽之声 已提升为稳定源 (延迟: 818ms)
+2026-07-30 19:24:17,997 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 山东经济广播 已提升为稳定源 (延迟: 823ms)
+2026-07-30 19:24:18,007 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 安徽故事广播 已提升为稳定源 (延迟: 824ms)
+2026-07-30 19:24:18,012 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 黑龙江高校广播 已提升为稳定源 (延迟: 825ms)
+2026-07-30 19:24:18,027 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 内蒙古蒙语新闻综合广播 已提升为稳定源 (延迟: 831ms)
+2026-07-30 19:24:18,042 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 云南交通之声 已提升为稳定源 (延迟: 833ms)
+2026-07-30 19:24:18,061 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 湖北之声 已提升为稳定源 (延迟: 834ms)
+2026-07-30 19:24:18,066 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 黑龙江音乐广播 已提升为稳定源 (延迟: 836ms)
+2026-07-30 19:24:18,086 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 湖北经典音乐广播 已提升为稳定源 (延迟: 838ms)
+2026-07-30 19:24:18,096 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 青海新闻综合广播 已提升为稳定源 (延迟: 840ms)
+2026-07-30 19:24:18,120 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 吉林卫视 已提升为稳定源 (延迟: 927ms)
+2026-07-30 19:24:18,140 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 浙江之声 已提升为稳定源 (延迟: 1116ms)
+2026-07-30 19:24:18,155 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 浙江民生资讯广播 已提升为稳定源 (延迟: 1125ms)
+2026-07-30 19:24:18,174 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 安徽旅游广播·高速之声 已提升为稳定源 (延迟: 1130ms)
+2026-07-30 19:24:18,184 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 安徽交通广播 已提升为稳定源 (延迟: 1137ms)
+2026-07-30 19:24:18,253 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 云南新闻广播 已提升为稳定源 (延迟: 1413ms)
+2026-07-30 19:24:18,278 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 江苏文艺广播 已提升为稳定源 (延迟: 1419ms)
+2026-07-30 19:24:18,312 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 北京新闻 已提升为稳定源 (延迟: 1439ms)
+2026-07-30 19:24:18,317 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 陕西经济广播·896汽车调频 已提升为稳定源 (延迟: 1613ms)
+2026-07-30 19:24:18,460 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 河北农民 已提升为稳定源 (延迟: 2520ms)
+2026-07-30 19:24:18,470 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ CCTV-2 已提升为稳定源 (延迟: 9056ms)
+2026-07-30 19:24:18,470 - src.orchestrator - INFO - orchestrator.py:318 - ==================================================
+2026-07-30 19:24:18,470 - src.orchestrator - INFO - orchestrator.py:319 - 观察候选源
+2026-07-30 19:24:18,470 - src.orchestrator - INFO - orchestrator.py:320 - ==================================================
+2026-07-30 19:24:18,471 - src.orchestrator - INFO - orchestrator.py:327 - 📊 候选池状态: 686 个正在观察
+2026-07-30 19:24:18,552 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: CCTV-4 (成功率 100.00%, 延迟 440ms)
+2026-07-30 19:24:18,552 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 吉林卫视 (成功率 100.00%, 延迟 927ms)
+2026-07-30 19:24:18,553 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 广东音乐之声 (成功率 100.00%, 延迟 1246ms)
+2026-07-30 19:24:18,553 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 海南音乐广播 (成功率 100.00%, 延迟 1601ms)
+2026-07-30 19:24:18,553 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 浙江音乐调频·动听968 (成功率 100.00%, 延迟 1548ms)
+2026-07-30 19:24:18,554 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 宁夏音乐广播 (成功率 75.00%, 延迟 1404ms)
+2026-07-30 19:24:18,554 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 黑龙江音乐广播 (成功率 100.00%, 延迟 1426ms)
+2026-07-30 19:24:18,555 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 江西音乐广播 (成功率 100.00%, 延迟 947ms)
+2026-07-30 19:24:18,555 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 青海交通音乐广播 (成功率 75.00%, 延迟 793ms)
+2026-07-30 19:24:18,555 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 贵州音乐广播 (成功率 100.00%, 延迟 1310ms)
+2026-07-30 19:24:18,556 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 贵州都市广播 (成功率 100.00%, 延迟 1511ms)
+2026-07-30 19:24:18,556 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 江苏经典流行音乐广播 (成功率 100.00%, 延迟 1479ms)
+2026-07-30 19:24:18,556 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 辽宁经典音乐广播 (成功率 75.00%, 延迟 1551ms)
+2026-07-30 19:24:18,557 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: CGTN Radio (成功率 100.00%, 延迟 1269ms)
+2026-07-30 19:24:18,557 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 北京新闻广播 (成功率 100.00%, 延迟 1322ms)
+2026-07-30 19:24:18,557 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 河北音乐广播 (成功率 100.00%, 延迟 1723ms)
+2026-07-30 19:24:18,558 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 河南农村广播大象资讯台 (成功率 100.00%, 延迟 1688ms)
+2026-07-30 19:24:18,558 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 北京科教 (成功率 100.00%, 延迟 1592ms)
+2026-07-30 19:24:18,558 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 北京经典969 (成功率 100.00%, 延迟 1123ms)
+2026-07-30 19:24:18,559 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 北京文艺 (成功率 100.00%, 延迟 1500ms)
+2026-07-30 19:24:18,559 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 北京影视 (成功率 100.00%, 延迟 1320ms)
+2026-07-30 19:24:18,560 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 北京财经 (成功率 75.00%, 延迟 1538ms)
+2026-07-30 19:24:18,560 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 北京生活 (成功率 100.00%, 延迟 1611ms)
+2026-07-30 19:24:18,560 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 湖南潇湘之声 (成功率 100.00%, 延迟 1670ms)
+2026-07-30 19:24:18,561 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 湖南经济广播 (成功率 100.00%, 延迟 1942ms)
+2026-07-30 19:24:18,561 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 湖南金鹰之声 (成功率 100.00%, 延迟 1623ms)
+2026-07-30 19:24:18,561 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 湖南交通广播 (成功率 100.00%, 延迟 2021ms)
+2026-07-30 19:24:18,562 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 江苏故事广播 (成功率 100.00%, 延迟 1653ms)
+2026-07-30 19:24:18,562 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 湖南综合广播 (成功率 100.00%, 延迟 1619ms)
+2026-07-30 19:24:18,562 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 江苏新闻广播 (成功率 100.00%, 延迟 1625ms)
+2026-07-30 19:24:18,563 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 新疆卫视 (成功率 75.00%, 延迟 1836ms)
+2026-07-30 19:24:18,563 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 江苏文艺广播 (成功率 100.00%, 延迟 1571ms)
+2026-07-30 19:24:18,563 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 江苏新闻综合广播 (成功率 100.00%, 延迟 1568ms)
+2026-07-30 19:24:18,564 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 江苏金陵之声 (成功率 100.00%, 延迟 1622ms)
+2026-07-30 19:24:18,564 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 江苏交通广播 (成功率 100.00%, 延迟 1575ms)
+2026-07-30 19:24:18,564 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 江苏健康广播 (成功率 100.00%, 延迟 1621ms)
+2026-07-30 19:24:18,565 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 安徽之声 (成功率 100.00%, 延迟 1177ms)
+2026-07-30 19:24:18,565 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 安徽经济广播 (成功率 100.00%, 延迟 1607ms)
+2026-07-30 19:24:18,565 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 安徽生活广播·城市之声 (成功率 100.00%, 延迟 1253ms)
+2026-07-30 19:24:18,566 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 安徽交通广播 (成功率 100.00%, 延迟 1307ms)
+2026-07-30 19:24:18,566 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 安徽旅游广播·高速之声 (成功率 100.00%, 延迟 1425ms)
+2026-07-30 19:24:18,567 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 青海卫视 (成功率 75.00%, 延迟 665ms)
+2026-07-30 19:24:18,567 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 湖北之声 (成功率 100.00%, 延迟 1148ms)
+2026-07-30 19:24:18,567 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 安徽故事广播 (成功率 100.00%, 延迟 1118ms)
+2026-07-30 19:24:18,568 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 安徽戏曲广播·动听995 (成功率 100.00%, 延迟 1624ms)
+2026-07-30 19:24:18,568 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 河北综合广播 (成功率 100.00%, 延迟 1496ms)
+2026-07-30 19:24:18,568 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 河北文艺广播 (成功率 100.00%, 延迟 1749ms)
+2026-07-30 19:24:18,569 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 河北生活广播 (成功率 100.00%, 延迟 1327ms)
+2026-07-30 19:24:18,569 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 河北经济广播 (成功率 100.00%, 延迟 1729ms)
+2026-07-30 19:24:18,569 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 河北交通广播 (成功率 75.00%, 延迟 1958ms)
+2026-07-30 19:24:18,570 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 福建新闻广播 (成功率 100.00%, 延迟 1275ms)
+2026-07-30 19:24:18,570 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 福建都市广播·私家车987 (成功率 100.00%, 延迟 1576ms)
+2026-07-30 19:24:18,570 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 福建经济广播 (成功率 100.00%, 延迟 950ms)
+2026-07-30 19:24:18,571 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 福建交通广播 (成功率 100.00%, 延迟 1321ms)
+2026-07-30 19:24:18,571 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 福建东南广播 (成功率 100.00%, 延迟 1229ms)
+2026-07-30 19:24:18,571 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 江西综合新闻广播 (成功率 100.00%, 延迟 1623ms)
+2026-07-30 19:24:18,572 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 山东交通广播 (成功率 100.00%, 延迟 1268ms)
+2026-07-30 19:24:18,572 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 江西信息交通广播 (成功率 100.00%, 延迟 1647ms)
+2026-07-30 19:24:18,572 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 山东乡村广播 (成功率 75.00%, 延迟 1224ms)
+2026-07-30 19:24:18,573 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 山东经济广播 (成功率 75.00%, 延迟 1352ms)
+2026-07-30 19:24:18,573 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 山东体育休闲广播 (成功率 100.00%, 延迟 1439ms)
+2026-07-30 19:24:18,573 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 陕西交通广播 (成功率 100.00%, 延迟 1397ms)
+2026-07-30 19:24:18,574 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 浙江经济广播 (成功率 100.00%, 延迟 1215ms)
+2026-07-30 19:24:18,574 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 陕西农村广播 (成功率 100.00%, 延迟 1298ms)
+2026-07-30 19:24:18,575 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 陕西新闻广播 (成功率 100.00%, 延迟 1627ms)
+2026-07-30 19:24:18,575 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 浙江之声 (成功率 100.00%, 延迟 1600ms)
+2026-07-30 19:24:18,575 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 浙江旅游之声 (成功率 100.00%, 延迟 1373ms)
+2026-07-30 19:24:18,576 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 浙江交通之声 (成功率 100.00%, 延迟 1496ms)
+2026-07-30 19:24:18,576 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 浙江城市之声 (成功率 100.00%, 延迟 1674ms)
+2026-07-30 19:24:18,576 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 浙江民生资讯广播 (成功率 100.00%, 延迟 1375ms)
+2026-07-30 19:24:18,577 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 上海第一财经广播 (成功率 100.00%, 延迟 825ms)
+2026-07-30 19:24:18,577 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 广东新闻广播 (成功率 100.00%, 延迟 1627ms)
+2026-07-30 19:24:18,577 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 香港古典音乐 (成功率 100.00%, 延迟 1048ms)
+2026-07-30 19:24:18,578 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 江苏新闻综合广播 (成功率 100.00%, 延迟 824ms)
+2026-07-30 19:24:18,578 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 香港第三台 (成功率 100.00%, 延迟 1454ms)
+2026-07-30 19:24:18,578 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 江苏文艺广播 (成功率 100.00%, 延迟 1074ms)
+2026-07-30 19:24:18,579 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 陕西经济广播·896汽车调频 (成功率 100.00%, 延迟 2524ms)
+2026-07-30 19:24:18,579 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 广东股市广播 (成功率 75.00%, 延迟 1691ms)
+2026-07-30 19:24:18,579 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 上海长三角之声 (成功率 100.00%, 延迟 1496ms)
+2026-07-30 19:24:18,580 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 广东文体广播 (成功率 100.00%, 延迟 1772ms)
+2026-07-30 19:24:18,580 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 安徽之声 (成功率 100.00%, 延迟 1048ms)
+2026-07-30 19:24:18,580 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 广东城市之声 (成功率 100.00%, 延迟 1728ms)
+2026-07-30 19:24:18,581 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 安徽生活广播·城市之声 (成功率 100.00%, 延迟 1100ms)
+2026-07-30 19:24:18,581 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 广东南粤之声 (成功率 100.00%, 延迟 1624ms)
+2026-07-30 19:24:18,581 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 安徽经济广播 (成功率 100.00%, 延迟 1070ms)
+2026-07-30 19:24:18,582 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 四川交通广播 (成功率 100.00%, 延迟 1324ms)
+2026-07-30 19:24:18,582 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 海南交通广播 (成功率 100.00%, 延迟 1610ms)
+2026-07-30 19:24:18,583 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 海南新闻广播 (成功率 100.00%, 延迟 1569ms)
+2026-07-30 19:24:18,583 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 江苏财经广播 (成功率 100.00%, 延迟 1313ms)
+2026-07-30 19:24:18,583 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 安徽旅游广播·高速之声 (成功率 100.00%, 延迟 1074ms)
+2026-07-30 19:24:18,584 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 安徽交通广播 (成功率 100.00%, 延迟 1120ms)
+2026-07-30 19:24:18,584 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 安徽戏曲广播·动听995 (成功率 100.00%, 延迟 670ms)
+2026-07-30 19:24:18,584 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 四川综合广播四川之声 (成功率 100.00%, 延迟 1177ms)
+2026-07-30 19:24:18,585 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 安徽故事广播 (成功率 100.00%, 延迟 1121ms)
+2026-07-30 19:24:18,585 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 四川私家车广播 (成功率 100.00%, 延迟 1420ms)
+2026-07-30 19:24:18,586 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 贵州经济广播 (成功率 100.00%, 延迟 1498ms)
+2026-07-30 19:24:18,586 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 贵州综合广播 (成功率 100.00%, 延迟 876ms)
+2026-07-30 19:24:18,586 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 福建都市广播·私家车987 (成功率 100.00%, 延迟 872ms)
+2026-07-30 19:24:18,587 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 湖北之声 (成功率 100.00%, 延迟 944ms)
+2026-07-30 19:24:18,587 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 贵州旅游广播 (成功率 100.00%, 延迟 1423ms)
+2026-07-30 19:24:18,588 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 福建东南广播 (成功率 100.00%, 延迟 1567ms)
+2026-07-30 19:24:18,588 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 山东体育休闲广播 (成功率 100.00%, 延迟 1127ms)
+2026-07-30 19:24:18,588 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 山东交通广播 (成功率 100.00%, 延迟 1229ms)
+2026-07-30 19:24:18,588 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 山东经济广播 (成功率 100.00%, 延迟 1179ms)
+2026-07-30 19:24:18,589 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 贵州故事广播 (成功率 100.00%, 延迟 1555ms)
+2026-07-30 19:24:18,589 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 山东乡村广播 (成功率 100.00%, 延迟 1070ms)
+2026-07-30 19:24:18,589 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 陕西农村广播 (成功率 100.00%, 延迟 1000ms)
+2026-07-30 19:24:18,590 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 河南新闻广播 (成功率 100.00%, 延迟 1728ms)
+2026-07-30 19:24:18,590 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 吉林新闻综合广播 (成功率 100.00%, 延迟 1449ms)
+2026-07-30 19:24:18,590 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 陕西交通广播 (成功率 100.00%, 延迟 1228ms)
+2026-07-30 19:24:18,591 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 河南信息广播 (成功率 100.00%, 延迟 1697ms)
+2026-07-30 19:24:18,591 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 吉林乡村广播 (成功率 100.00%, 延迟 903ms)
+2026-07-30 19:24:18,591 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 陕西经济广播·896汽车调频 (成功率 100.00%, 延迟 1036ms)
+2026-07-30 19:24:18,591 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 河南经济广播 (成功率 75.00%, 延迟 1431ms)
+2026-07-30 19:24:18,592 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 河南教育广播 (成功率 100.00%, 延迟 1625ms)
+2026-07-30 19:24:18,592 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 陕西新闻广播 (成功率 100.00%, 延迟 921ms)
+2026-07-30 19:24:18,592 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 辽宁之声 (成功率 100.00%, 延迟 1018ms)
+2026-07-30 19:24:18,593 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 浙江经济广播 (成功率 100.00%, 延迟 825ms)
+2026-07-30 19:24:18,593 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 浙江之声 (成功率 100.00%, 延迟 1281ms)
+2026-07-30 19:24:18,593 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 辽宁交通广播 (成功率 100.00%, 延迟 1373ms)
+2026-07-30 19:24:18,593 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 浙江交通之声 (成功率 100.00%, 延迟 1076ms)
+2026-07-30 19:24:18,594 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 浙江民生资讯广播 (成功率 100.00%, 延迟 1179ms)
+2026-07-30 19:24:18,594 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 河南戏曲广播 (成功率 100.00%, 延迟 1826ms)
+2026-07-30 19:24:18,594 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 浙江城市之声 (成功率 100.00%, 延迟 1117ms)
+2026-07-30 19:24:18,595 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 吉林交通广播 (成功率 100.00%, 延迟 1678ms)
+2026-07-30 19:24:18,595 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 辽宁经济广播 (成功率 75.00%, 延迟 1551ms)
+2026-07-30 19:24:18,595 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 浙江旅游之声 (成功率 100.00%, 延迟 1225ms)
+2026-07-30 19:24:18,595 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 四川私家车广播 (成功率 100.00%, 延迟 872ms)
+2026-07-30 19:24:18,596 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 辽宁乡村广播 (成功率 100.00%, 延迟 1425ms)
+2026-07-30 19:24:18,596 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 四川交通广播 (成功率 100.00%, 延迟 576ms)
+2026-07-30 19:24:18,596 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 四川综合广播四川之声 (成功率 100.00%, 延迟 1177ms)
+2026-07-30 19:24:18,596 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 黑龙江新闻广播 (成功率 100.00%, 延迟 1599ms)
+2026-07-30 19:24:18,597 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 黑龙江高校广播 (成功率 100.00%, 延迟 1226ms)
+2026-07-30 19:24:18,597 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 黑龙江交通广播 (成功率 100.00%, 延迟 1546ms)
+2026-07-30 19:24:18,597 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 黑龙江朝鲜语广播 (成功率 100.00%, 延迟 1447ms)
+2026-07-30 19:24:18,598 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 贵州旅游广播 (成功率 100.00%, 延迟 749ms)
+2026-07-30 19:24:18,598 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 黑龙江都市女性广播 (成功率 100.00%, 延迟 1170ms)
+2026-07-30 19:24:18,598 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 贵州故事广播 (成功率 100.00%, 延迟 750ms)
+2026-07-30 19:24:18,599 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 贵州综合广播 (成功率 100.00%, 延迟 1119ms)
+2026-07-30 19:24:18,599 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 贵州经济广播 (成功率 100.00%, 延迟 984ms)
+2026-07-30 19:24:18,600 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 辽宁之声 (成功率 100.00%, 延迟 770ms)
+2026-07-30 19:24:18,600 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 黑龙江乡村广播 (成功率 100.00%, 延迟 1573ms)
+2026-07-30 19:24:18,600 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 黑龙江老年少儿广播·爱家调频 (成功率 100.00%, 延迟 1749ms)
+2026-07-30 19:24:18,601 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 辽宁经济广播 (成功率 100.00%, 延迟 678ms)
+2026-07-30 19:24:18,601 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 内蒙古蒙语对外广播草原之声 (成功率 100.00%, 延迟 1053ms)
+2026-07-30 19:24:18,601 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 辽宁乡村广播 (成功率 100.00%, 延迟 799ms)
+2026-07-30 19:24:18,602 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 内蒙古新闻广播 (成功率 100.00%, 延迟 1310ms)
+2026-07-30 19:24:18,602 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 黑龙江都市女性广播 (成功率 100.00%, 延迟 1123ms)
+2026-07-30 19:24:18,602 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 辽宁交通广播 (成功率 100.00%, 延迟 773ms)
+2026-07-30 19:24:18,603 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 黑龙江高校广播 (成功率 100.00%, 延迟 746ms)
+2026-07-30 19:24:18,603 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 新疆私家车广播 (成功率 100.00%, 延迟 1291ms)
+2026-07-30 19:24:18,603 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 黑龙江朝鲜语广播 (成功率 100.00%, 延迟 528ms)
+2026-07-30 19:24:18,604 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 内蒙古蒙语新闻综合广播 (成功率 100.00%, 延迟 1423ms)
+2026-07-30 19:24:18,604 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 黑龙江老年少儿广播·爱家调频 (成功率 75.00%, 延迟 1165ms)
+2026-07-30 19:24:18,604 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 新疆新闻广播 (成功率 100.00%, 延迟 1625ms)
+2026-07-30 19:24:18,605 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 内蒙古农村牧区广播绿野之声 (成功率 100.00%, 延迟 934ms)
+2026-07-30 19:24:18,605 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 内蒙古农村牧区广播绿野之声 (成功率 100.00%, 延迟 1549ms)
+2026-07-30 19:24:18,605 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 新疆交通广播 (成功率 100.00%, 延迟 1694ms)
+2026-07-30 19:24:18,606 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 内蒙古新闻广播 (成功率 100.00%, 延迟 1121ms)
+2026-07-30 19:24:18,606 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 新疆绿色广播 (成功率 100.00%, 延迟 1317ms)
+2026-07-30 19:24:18,607 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 西藏都市生活广播 (成功率 100.00%, 延迟 1498ms)
+2026-07-30 19:24:18,607 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 内蒙古蒙语对外广播草原之声 (成功率 100.00%, 延迟 1318ms)
+2026-07-30 19:24:18,607 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 内蒙古蒙语新闻综合广播 (成功率 100.00%, 延迟 1248ms)
+2026-07-30 19:24:18,608 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 西藏汉语广播 (成功率 100.00%, 延迟 1436ms)
+2026-07-30 19:24:18,608 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 西藏藏语广播 (成功率 100.00%, 延迟 1449ms)
+2026-07-30 19:24:18,608 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 新疆私家车广播 (成功率 100.00%, 延迟 1140ms)
+2026-07-30 19:24:18,609 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 西藏对外交通广播 (成功率 100.00%, 延迟 1947ms)
+2026-07-30 19:24:18,609 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 广西综合广播 (成功率 100.00%, 延迟 1136ms)
+2026-07-30 19:24:18,609 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 广西教育广播 (成功率 100.00%, 延迟 1438ms)
+2026-07-30 19:24:18,610 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 甘肃经济广播 (成功率 100.00%, 延迟 1438ms)
+2026-07-30 19:24:18,610 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 广西综合广播 (成功率 100.00%, 延迟 1552ms)
+2026-07-30 19:24:18,610 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 广西北部湾之声 (成功率 100.00%, 延迟 1423ms)
+2026-07-30 19:24:18,611 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 云南新闻广播 (成功率 100.00%, 延迟 1472ms)
+2026-07-30 19:24:18,611 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 广西教育广播 (成功率 100.00%, 延迟 1239ms)
+2026-07-30 19:24:18,611 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 广西交通广播 (成功率 100.00%, 延迟 1577ms)
+2026-07-30 19:24:18,612 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 广西北部湾之声 (成功率 100.00%, 延迟 952ms)
+2026-07-30 19:24:18,612 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 广西交通广播 (成功率 100.00%, 延迟 756ms)
+2026-07-30 19:24:18,612 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 云南经济广播·私家车电台 (成功率 100.00%, 延迟 1707ms)
+2026-07-30 19:24:18,613 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 云南新闻广播 (成功率 100.00%, 延迟 1070ms)
+2026-07-30 19:24:18,613 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 云南交通之声 (成功率 100.00%, 延迟 1557ms)
+2026-07-30 19:24:18,613 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 云南经济广播·私家车电台 (成功率 100.00%, 延迟 575ms)
+2026-07-30 19:24:18,614 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 青海新闻综合广播 (成功率 100.00%, 延迟 1246ms)
+2026-07-30 19:24:18,614 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 江西音乐广播 (成功率 100.00%, 延迟 1369ms)
+2026-07-30 19:24:18,614 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 云南交通之声 (成功率 100.00%, 延迟 750ms)
+2026-07-30 19:24:18,615 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 云南国际广播 (成功率 100.00%, 延迟 1278ms)
+2026-07-30 19:24:18,615 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 云南民族广播 (成功率 100.00%, 延迟 1700ms)
+2026-07-30 19:24:18,615 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 云南国际广播 (成功率 100.00%, 延迟 928ms)
+2026-07-30 19:24:18,615 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 青海经济广播 (成功率 100.00%, 延迟 1691ms)
+2026-07-30 19:24:18,616 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 青海新闻综合广播 (成功率 100.00%, 延迟 1004ms)
+2026-07-30 19:24:18,616 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 云南民族广播 (成功率 100.00%, 延迟 1000ms)
+2026-07-30 19:24:18,616 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 安徽音乐广播 (成功率 100.00%, 延迟 1562ms)
+2026-07-30 19:24:18,617 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 青海经济广播 (成功率 100.00%, 延迟 1121ms)
+2026-07-30 19:24:18,617 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 湖北经典音乐广播 (成功率 100.00%, 延迟 1353ms)
+2026-07-30 19:24:18,617 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 陕西青少广播·好听1055 (成功率 100.00%, 延迟 1357ms)
+2026-07-30 19:24:18,618 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 陕西青少广播·好听1055 (成功率 100.00%, 延迟 697ms)
+2026-07-30 19:24:18,618 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 山东经典音乐广播 (成功率 100.00%, 延迟 1671ms)
+2026-07-30 19:24:18,618 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 山东音乐广播 (成功率 100.00%, 延迟 1124ms)
+2026-07-30 19:24:18,619 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 安徽音乐广播 (成功率 100.00%, 延迟 523ms)
+2026-07-30 19:24:18,619 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 宁夏新闻广播 (成功率 100.00%, 延迟 1424ms)
+2026-07-30 19:24:18,619 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 江苏经典流行音乐广播 (成功率 100.00%, 延迟 1105ms)
+2026-07-30 19:24:18,620 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 浙江音乐调频·动听968 (成功率 100.00%, 延迟 1246ms)
+2026-07-30 19:24:18,620 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 内蒙古音乐之声 (成功率 100.00%, 延迟 1378ms)
+2026-07-30 19:24:18,620 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 广西音乐广播 (成功率 100.00%, 延迟 1624ms)
+2026-07-30 19:24:18,620 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 河北音乐广播 (成功率 100.00%, 延迟 1144ms)
+2026-07-30 19:24:18,621 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 山东经典音乐广播 (成功率 100.00%, 延迟 624ms)
+2026-07-30 19:24:18,621 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 湖北经典音乐广播 (成功率 100.00%, 延迟 698ms)
+2026-07-30 19:24:18,621 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 内蒙古音乐之声 (成功率 100.00%, 延迟 882ms)
+2026-07-30 19:24:18,622 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 海南音乐广播 (成功率 100.00%, 延迟 1125ms)
+2026-07-30 19:24:18,622 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 广西经济广播·女主播电台 (成功率 100.00%, 延迟 1674ms)
+2026-07-30 19:24:18,622 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 甘肃都市调频 (成功率 100.00%, 延迟 1069ms)
+2026-07-30 19:24:18,623 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 宁夏音乐广播 (成功率 100.00%, 延迟 1178ms)
+2026-07-30 19:24:18,623 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 陕西音乐广播 (成功率 100.00%, 延迟 1430ms)
+2026-07-30 19:24:18,623 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 贵州音乐广播 (成功率 100.00%, 延迟 997ms)
+2026-07-30 19:24:18,624 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 黑龙江音乐广播 (成功率 100.00%, 延迟 1051ms)
+2026-07-30 19:24:18,624 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 江苏音乐广播 (成功率 75.00%, 延迟 1565ms)
+2026-07-30 19:24:18,624 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 云南音乐广播 (成功率 100.00%, 延迟 770ms)
+2026-07-30 19:24:18,625 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 广西音乐广播 (成功率 100.00%, 延迟 622ms)
+2026-07-30 19:24:18,625 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 青海交通音乐广播 (成功率 75.00%, 延迟 1225ms)
+2026-07-30 19:24:18,625 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 广西经济广播·女主播电台 (成功率 100.00%, 延迟 627ms)
+2026-07-30 19:24:18,625 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 云南音乐广播 (成功率 100.00%, 延迟 1573ms)
+2026-07-30 19:24:18,626 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 江苏音乐广播 (成功率 100.00%, 延迟 805ms)
+2026-07-30 19:24:18,626 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 甘肃青春调频 (成功率 100.00%, 延迟 1448ms)
+2026-07-30 19:24:18,626 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: CCTV-4 (成功率 66.67%, 延迟 235ms)
+2026-07-30 19:24:18,627 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: CCTV-4K (成功率 100.00%, 延迟 426ms)
+2026-07-30 19:24:18,628 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 澳视澳门 (成功率 66.67%, 延迟 180ms)
+2026-07-30 19:24:18,628 - src.orchestrator - INFO - orchestrator.py:358 - ✅ 候选源稳定: 北京新闻 (成功率 66.67%, 延迟 1441ms)
+2026-07-30 19:24:18,659 - src.orchestrator - INFO - orchestrator.py:361 - ✅ 观察完成: 226 个源达到稳定标准
+2026-07-30 19:24:18,659 - src.orchestrator - INFO - orchestrator.py:366 - ==================================================
+2026-07-30 19:24:18,659 - src.orchestrator - INFO - orchestrator.py:367 - 提升稳定源
+2026-07-30 19:24:18,659 - src.orchestrator - INFO - orchestrator.py:368 - ==================================================
+2026-07-30 19:24:18,695 - src.orchestrator - INFO - orchestrator.py:390 - 📌 已提升: 吉林卫视
+2026-07-30 19:24:18,731 - src.orchestrator - INFO - orchestrator.py:390 - 📌 已提升: 辽宁经典音乐广播
+2026-07-30 19:24:18,767 - src.orchestrator - INFO - orchestrator.py:390 - 📌 已提升: 北京新闻广播
+2026-07-30 19:24:18,803 - src.orchestrator - INFO - orchestrator.py:390 - 📌 已提升: 北京影视
+2026-07-30 19:24:18,838 - src.orchestrator - INFO - orchestrator.py:390 - 📌 已提升: 北京财经
+2026-07-30 19:24:18,874 - src.orchestrator - INFO - orchestrator.py:390 - 📌 已提升: 江苏金陵之声
+2026-07-30 19:24:18,879 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 安徽经济广播 已提升为稳定源 (延迟: 1607ms)
+2026-07-30 19:24:18,910 - src.orchestrator - INFO - orchestrator.py:390 - 📌 已提升: 安徽经济广播
+2026-07-30 19:24:18,946 - src.orchestrator - INFO - orchestrator.py:390 - 📌 已提升: 河北生活广播
+2026-07-30 19:24:18,983 - src.orchestrator - INFO - orchestrator.py:390 - 📌 已提升: 河北经济广播
+2026-07-30 19:24:19,018 - src.orchestrator - INFO - orchestrator.py:390 - 📌 已提升: 福建新闻广播
+2026-07-30 19:24:19,054 - src.orchestrator - INFO - orchestrator.py:390 - 📌 已提升: 广东新闻广播
+2026-07-30 19:24:19,059 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 江苏文艺广播 已提升为稳定源 (延迟: 1074ms)
+2026-07-30 19:24:19,090 - src.orchestrator - INFO - orchestrator.py:390 - 📌 已提升: 江苏文艺广播
+2026-07-30 19:24:19,125 - src.orchestrator - INFO - orchestrator.py:390 - 📌 已提升: 广东城市之声
+2026-07-30 19:24:19,130 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 安徽经济广播 已提升为稳定源 (延迟: 1070ms)
+2026-07-30 19:24:19,161 - src.orchestrator - INFO - orchestrator.py:390 - 📌 已提升: 安徽经济广播
+2026-07-30 19:24:19,166 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 安徽旅游广播·高速之声 已提升为稳定源 (延迟: 1074ms)
+2026-07-30 19:24:19,196 - src.orchestrator - INFO - orchestrator.py:390 - 📌 已提升: 安徽旅游广播·高速之声
+2026-07-30 19:24:19,201 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 安徽交通广播 已提升为稳定源 (延迟: 1120ms)
+2026-07-30 19:24:19,232 - src.orchestrator - INFO - orchestrator.py:390 - 📌 已提升: 安徽交通广播
+2026-07-30 19:24:19,268 - src.orchestrator - INFO - orchestrator.py:390 - 📌 已提升: 安徽戏曲广播·动听995
+2026-07-30 19:24:19,273 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 贵州综合广播 已提升为稳定源 (延迟: 876ms)
+2026-07-30 19:24:19,303 - src.orchestrator - INFO - orchestrator.py:390 - 📌 已提升: 贵州综合广播
+2026-07-30 19:24:19,308 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 陕西经济广播·896汽车调频 已提升为稳定源 (延迟: 1036ms)
+2026-07-30 19:24:19,338 - src.orchestrator - INFO - orchestrator.py:390 - 📌 已提升: 陕西经济广播·896汽车调频
+2026-07-30 19:24:19,374 - src.orchestrator - INFO - orchestrator.py:390 - 📌 已提升: 河南教育广播
+2026-07-30 19:24:19,410 - src.orchestrator - INFO - orchestrator.py:390 - 📌 已提升: 浙江经济广播
+2026-07-30 19:24:19,415 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 辽宁交通广播 已提升为稳定源 (延迟: 1373ms)
+2026-07-30 19:24:19,445 - src.orchestrator - INFO - orchestrator.py:390 - 📌 已提升: 辽宁交通广播
+2026-07-30 19:24:19,481 - src.orchestrator - INFO - orchestrator.py:390 - 📌 已提升: 浙江交通之声
+2026-07-30 19:24:19,517 - src.orchestrator - INFO - orchestrator.py:390 - 📌 已提升: 浙江城市之声
+2026-07-30 19:24:19,553 - src.orchestrator - INFO - orchestrator.py:390 - 📌 已提升: 黑龙江交通广播
+2026-07-30 19:24:19,589 - src.orchestrator - INFO - orchestrator.py:390 - 📌 已提升: 黑龙江乡村广播
+2026-07-30 19:24:19,625 - src.orchestrator - INFO - orchestrator.py:390 - 📌 已提升: 辽宁经济广播
+2026-07-30 19:24:19,660 - src.orchestrator - INFO - orchestrator.py:390 - 📌 已提升: 内蒙古新闻广播
+2026-07-30 19:24:19,665 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 辽宁交通广播 已提升为稳定源 (延迟: 773ms)
+2026-07-30 19:24:19,696 - src.orchestrator - INFO - orchestrator.py:390 - 📌 已提升: 辽宁交通广播
+2026-07-30 19:24:19,701 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 黑龙江高校广播 已提升为稳定源 (延迟: 746ms)
+2026-07-30 19:24:19,732 - src.orchestrator - INFO - orchestrator.py:390 - 📌 已提升: 黑龙江高校广播
+2026-07-30 19:24:19,767 - src.orchestrator - INFO - orchestrator.py:390 - 📌 已提升: 黑龙江朝鲜语广播
+2026-07-30 19:24:19,772 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 黑龙江老年少儿广播·爱家调频 已提升为稳定源 (延迟: 1165ms)
+2026-07-30 19:24:19,803 - src.orchestrator - INFO - orchestrator.py:390 - 📌 已提升: 黑龙江老年少儿广播·爱家调频
+2026-07-30 19:24:19,841 - src.orchestrator - INFO - orchestrator.py:390 - 📌 已提升: 新疆交通广播
+2026-07-30 19:24:19,846 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 内蒙古新闻广播 已提升为稳定源 (延迟: 1121ms)
+2026-07-30 19:24:19,876 - src.orchestrator - INFO - orchestrator.py:390 - 📌 已提升: 内蒙古新闻广播
+2026-07-30 19:24:19,912 - src.orchestrator - INFO - orchestrator.py:390 - 📌 已提升: 西藏藏语广播
+2026-07-30 19:24:19,947 - src.orchestrator - INFO - orchestrator.py:390 - 📌 已提升: 甘肃经济广播
+2026-07-30 19:24:19,952 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 云南新闻广播 已提升为稳定源 (延迟: 1070ms)
+2026-07-30 19:24:19,989 - src.orchestrator - INFO - orchestrator.py:390 - 📌 已提升: 云南新闻广播
+2026-07-30 19:24:20,024 - src.orchestrator - INFO - orchestrator.py:390 - 📌 已提升: 云南经济广播·私家车电台
+2026-07-30 19:24:20,030 - src.managers.stable_manager - INFO - stable_manager.py:92 - ✅ 云南交通之声 已提升为稳定源 (延迟: 750ms)
+2026-07-30 19:24:20,060 - src.orchestrator - INFO - orchestrator.py:390 - 📌 已提升: 云南交通之声
+2026-07-30 19:24:20,096 - src.orchestrator - INFO - orchestrator.py:390 - 📌 已提升: 安徽音乐广播
+2026-07-30 19:24:20,096 - src.orchestrator - INFO - orchestrator.py:392 - ✅ 提升完成: 40 个源被提升
+2026-07-30 19:24:20,096 - src.orchestrator - INFO - orchestrator.py:397 - ==================================================
+2026-07-30 19:24:20,096 - src.orchestrator - INFO - orchestrator.py:398 - 质量检查
+2026-07-30 19:24:20,096 - src.orchestrator - INFO - orchestrator.py:399 - ==================================================
+2026-07-30 19:24:20,096 - src.managers.quality_manager - INFO - quality_manager.py:28 - 🔍 检查 425 个稳定源质量...
+2026-07-30 19:24:22,391 - src.orchestrator - INFO - orchestrator.py:424 - ✅ 质量检查完成: 替换了 0 个失效源
+2026-07-30 19:24:22,392 - src.orchestrator - INFO - orchestrator.py:216 - ✅ 自治模式完成
+2026-07-30 19:24:22,392 - src.orchestrator - INFO - orchestrator.py:429 - ==================================================
+2026-07-30 19:24:22,392 - src.orchestrator - INFO - orchestrator.py:430 - 生成输出
+2026-07-30 19:24:22,392 - src.orchestrator - INFO - orchestrator.py:431 - ==================================================
+2026-07-30 19:24:22,396 - src.services.merger - INFO - merger.py:104 - 📊 合并完成: 360 个频道
+2026-07-30 19:24:22,399 - src.services.demo_service - INFO - demo_service.py:72 - 📋 加载 demo 顺序: 3574 个条目
+2026-07-30 19:25:58,551 - src.services.generator - INFO - generator.py:156 - 📊 Demo 匹配结果: 162 个频道
+2026-07-30 19:25:58,551 - src.services.generator - INFO - generator.py:160 -    📺央视频道: 20 个频道
+2026-07-30 19:25:58,551 - src.services.generator - INFO - generator.py:160 -    📡卫视频道: 43 个频道
+2026-07-30 19:25:58,551 - src.services.generator - INFO - generator.py:160 -    ☘️上海频道: 2 个频道
+2026-07-30 19:25:58,552 - src.services.generator - INFO - generator.py:160 -    ☘️江苏频道: 1 个频道
+2026-07-30 19:25:58,552 - src.services.generator - INFO - generator.py:160 -    ☘️浙江频道: 12 个频道
+2026-07-30 19:25:58,552 - src.services.generator - INFO - generator.py:160 -    ☘️安徽频道: 3 个频道
+2026-07-30 19:25:58,552 - src.services.generator - INFO - generator.py:160 -    ☘️福建频道: 3 个频道
+2026-07-30 19:25:58,552 - src.services.generator - INFO - generator.py:160 -    ☘️江西频道: 1 个频道
+2026-07-30 19:25:58,552 - src.services.generator - INFO - generator.py:160 -    ☘️山东频道: 3 个频道
+2026-07-30 19:25:58,552 - src.services.generator - INFO - generator.py:160 -    ☘️重庆频道: 1 个频道
+2026-07-30 19:25:58,552 - src.services.generator - INFO - generator.py:160 -    ☘️四川频道: 1 个频道
+2026-07-30 19:25:58,552 - src.services.generator - INFO - generator.py:160 -    ☘️贵州频道: 1 个频道
+2026-07-30 19:25:58,552 - src.services.generator - INFO - generator.py:160 -    ☘️云南频道: 4 个频道
+2026-07-30 19:25:58,552 - src.services.generator - INFO - generator.py:160 -    ☘️陕西频道: 6 个频道
+2026-07-30 19:25:58,552 - src.services.generator - INFO - generator.py:160 -    ☘️甘肃频道: 3 个频道
+2026-07-30 19:25:58,552 - src.services.generator - INFO - generator.py:160 -    ☘️青海频道: 3 个频道
+2026-07-30 19:25:58,552 - src.services.generator - INFO - generator.py:160 -    ☘️宁夏频道: 1 个频道
+2026-07-30 19:25:58,552 - src.services.generator - INFO - generator.py:160 -    ☘️新疆频道: 2 个频道
+2026-07-30 19:25:58,553 - src.services.generator - INFO - generator.py:160 -    ☘️广东频道: 7 个频道
+2026-07-30 19:25:58,553 - src.services.generator - INFO - generator.py:160 -    ☘️广西频道: 2 个频道
+2026-07-30 19:25:58,553 - src.services.generator - INFO - generator.py:160 -    ☘️海南频道: 1 个频道
+2026-07-30 19:25:58,553 - src.services.generator - INFO - generator.py:160 -    ☘️北京频道: 5 个频道
+2026-07-30 19:25:58,553 - src.services.generator - INFO - generator.py:160 -    ☘️天津频道: 1 个频道
+2026-07-30 19:25:58,553 - src.services.generator - INFO - generator.py:160 -    ☘️河北频道: 8 个频道
+2026-07-30 19:25:58,553 - src.services.generator - INFO - generator.py:160 -    ☘️山西频道: 1 个频道
+2026-07-30 19:25:58,553 - src.services.generator - INFO - generator.py:160 -    ☘️内蒙古频道: 2 个频道
+2026-07-30 19:25:58,553 - src.services.generator - INFO - generator.py:160 -    ☘️辽宁频道: 4 个频道
+2026-07-30 19:25:58,553 - src.services.generator - INFO - generator.py:160 -    ☘️吉林频道: 3 个频道
+2026-07-30 19:25:58,553 - src.services.generator - INFO - generator.py:160 -    ☘️黑龙江频道: 5 个频道
+2026-07-30 19:25:58,553 - src.services.generator - INFO - generator.py:160 -    ☘️河南频道: 6 个频道
+2026-07-30 19:25:58,553 - src.services.generator - INFO - generator.py:160 -    ☘️湖北频道: 1 个频道
+2026-07-30 19:25:58,553 - src.services.generator - INFO - generator.py:160 -    ☘️湖南频道: 1 个频道
+2026-07-30 19:25:58,554 - src.services.generator - INFO - generator.py:160 -    🌊港·澳·台: 5 个频道
+2026-07-30 19:25:58,554 - src.services.generator - INFO - generator.py:183 - ✅ M3U 文件已生成: output/tv.m3u (162 个频道)
+2026-07-30 19:25:58,554 - src.services.generator - INFO - generator.py:200 - ✅ TXT 文件已生成: output/tv.txt
+2026-07-30 19:25:58,555 - src.services.generator - INFO - generator.py:219 - ✅ 多源 M3U 文件已生成: output/tv_multi.m3u
+2026-07-30 19:25:58,559 - src.services.generator - INFO - generator.py:246 - ✅ JSON 文件已生成: output/channels.json
+2026-07-30 19:25:58,559 - src.services.generator - INFO - generator.py:49 - ✅ 所有输出文件已生成
+2026-07-30 19:25:58,559 - src.services.special_categories - INFO - special_categories.py:173 - 🧠 开始智能补充采集...
+2026-07-30 19:25:59,642 - src.services.special_categories - WARNING - special_categories.py:146 - ⚠️ 特殊分类源返回 HTTP 403
+2026-07-30 19:25:59,643 - src.services.special_categories - WARNING - special_categories.py:177 - ⚠️ 未获取到特殊分类内容
+2026-07-30 19:25:59,643 - src.orchestrator - INFO - orchestrator.py:464 - ✅ 输出生成完成: 360 个频道
+2026-07-30 19:25:59,644 - src.infrastructure.database - INFO - database.py:206 - 📦 数据库连接已关闭
+2026-07-30 19:25:59,644 - src.orchestrator - INFO - orchestrator.py:474 - 🧹 资源已清理
+2026-07-30 19:25:59,645 - src.orchestrator - INFO - orchestrator.py:480 - ==================================================
+2026-07-30 19:25:59,645 - src.orchestrator - INFO - orchestrator.py:481 - 📊 运行统计
+2026-07-30 19:25:59,645 - src.orchestrator - INFO - orchestrator.py:482 - ==================================================
+2026-07-30 19:25:59,645 - src.orchestrator - INFO - orchestrator.py:483 -   耗时: 304.45s
+2026-07-30 19:25:59,645 - src.orchestrator - INFO - orchestrator.py:484 -   传统模式有效频道: 433
+2026-07-30 19:25:59,645 - src.orchestrator - INFO - orchestrator.py:485 -   发现新源: 0
+2026-07-30 19:25:59,645 - src.orchestrator - INFO - orchestrator.py:486 -   观察候选: 226
+2026-07-30 19:25:59,645 - src.orchestrator - INFO - orchestrator.py:487 -   提升稳定: 40
+2026-07-30 19:25:59,645 - src.orchestrator - INFO - orchestrator.py:488 -   替换失效: 0
+2026-07-30 19:25:59,645 - src.orchestrator - INFO - orchestrator.py:489 -   输出频道: 360
+2026-07-30 19:25:59,645 - src.orchestrator - INFO - orchestrator.py:490 - ==================================================
+2026-07-30 19:25:59,645 - __main__ - INFO - run.py:56 - 🎉 运行完成!

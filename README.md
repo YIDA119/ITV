@@ -38,9 +38,8 @@ python -m src.run
 
 ## 所有配置通过 config/config.yaml 管理，GitHub Actions 中可通过环境变量覆盖。
 ### 核心配置项
-| 功能       | 描述                 | 状态      |
+| 变量        | 默认值               | 说明      |
 |------------|----------------------|-----------|
-   变量               | 默认值              | 说明
  autonomous_mode | true | 是否启用自治模式
  max_workers | 20 | 并发测速线程数
  ffmpeg_enable	| true	| 是否启用 ffmpeg 深度验证
@@ -55,9 +54,8 @@ python -m src.run
 更多配置项请查看 config/config.yaml。
 
 ## 📂 输出文件说明
-| 功能       | 描述                 | 状态      |
-|------------|----------------------|-----------|
- 文件          |        说明
+| 文件        | 说明               | 
+|------------|----------------------|
 output/tv.m3u	  |  标准 M3U 播放列表（按 demo.txt 顺序）
 output/tv.txt	TXT 格式（频道名,URL）
 output/tv_multi.m3u	  |   多源 M3U（备选地址用 # 分隔）

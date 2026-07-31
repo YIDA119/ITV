@@ -15,10 +15,10 @@
 
 # 🚀 快速开始
 ## 方式一：使用 GitHub Actions（推荐）
-1.Fork 本仓库到你的 GitHub 账号。
-2.启用 Actions：进入仓库 → Actions 标签 → 点击“I understand my workflows, go ahead and enable them”。
-3.手动触发首次运行（可选）：进入 Actions → IPTV 源智能更新与整理 → Run workflow。
-4.获取播放列表：
+- 1.Fork 本仓库到你的 GitHub 账号。
+- 2.启用 Actions：进入仓库 → Actions 标签 → 点击“I understand my workflows, go ahead and enable them”。
+- 3.手动触发首次运行（可选）：进入 Actions → IPTV 源智能更新与整理 → Run workflow。
+- 4.获取播放列表：
    - 标准 M3U：https://你的用户名.github.io/ITV/output/tv.m3u
    - 标准 TXT：https://你的用户名.github.io/ITV/output/tv.txt
    - JSON API：https://你的用户名.github.io/ITV/output/channels.json

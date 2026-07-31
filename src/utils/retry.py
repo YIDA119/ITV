@@ -1,3 +1,4 @@
+# src/utils/retry.py
 import asyncio
 from functools import wraps
 from typing import Callable, TypeVar, Any
@@ -7,6 +8,9 @@ T = TypeVar('T')
 
 def async_retry(max_attempts: int = 3, backoff: float = 2.0, max_wait: float = 60.0,
                 exceptions: tuple = (Exception,), logger: logging.Logger = None):
+    """
+    异步重试装饰器
+    """
     def decorator(func: Callable[..., Any]) -> Callable[..., Any]:
         @wraps(func)
         async def wrapper(*args, **kwargs):

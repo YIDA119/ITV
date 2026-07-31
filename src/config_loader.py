@@ -107,7 +107,7 @@ class Config:
                 'https://raw.githubusercontent.com/kakaxi-1/IPTV/main/iptv.txt',
             ],
             'direct_sources': [
-                'https://tv.19860519.xyz/abc123',
+                'https://tv.19860519.xyz/xymm',
             ],
             'open_realtime_write': True,
         }

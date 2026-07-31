@@ -57,7 +57,7 @@ python -m src.run
 | 文件        | 说明               | 
 |------------|----------------------|
 output/tv.m3u	  |  标准 M3U 播放列表（按 demo.txt 顺序）
-output/tv.txt	TXT 格式（频道名,URL）
+output/tv.txt	 |    TXT 格式（频道名,URL）
 output/tv_multi.m3u	  |   多源 M3U（备选地址用 # 分隔）
 output/channels.json	 |   JSON API（包含频道名、URL、延迟、编码）
 output/tv_lite.m3u	 |   精简版（仅保留各分类前 50 个频道）

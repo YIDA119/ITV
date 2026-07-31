@@ -15,10 +15,10 @@
 
 # 🚀 快速开始
 ## 方式一：使用 GitHub Actions（推荐）
-- 1.Fork 本仓库到你的 GitHub 账号。
-- 2.启用 Actions：进入仓库 → Actions 标签 → 点击“I understand my workflows, go ahead and enable them”。
-- 3.手动触发首次运行（可选）：进入 Actions → IPTV 源智能更新与整理 → Run workflow。
-- 4.获取播放列表：
+- Fork 本仓库到你的 GitHub 账号。
+- 启用 Actions：进入仓库 → Actions 标签 → 点击“I understand my workflows, go ahead and enable them”。
+- 手动触发首次运行（可选）：进入 Actions → IPTV 源智能更新与整理 → Run workflow。
+- 获取播放列表：
    - 标准 M3U：https://你的用户名.github.io/ITV/output/tv.m3u
    - 标准 TXT：https://你的用户名.github.io/ITV/output/tv.txt
    - JSON API：https://你的用户名.github.io/ITV/output/channels.json
@@ -65,11 +65,11 @@ data/iptv_cache.db	 |   SQLite 数据库（缓��、候选池、稳定源）
 
 
 ## 🧠 自治模式工作原理
-1.采集 → 拉取所有订阅源，解析并去重。
-2.测速验证 → HTTP 探测 + ffmpeg 深度验证，过滤无效源。
-3.候选池观察 → 新源进入候选池，经多次验证（次数≥3、成功率≥50%、延迟≤3000ms）后标记为稳定。
-4.提升 → 稳定候选源替换同名劣质源，记录到稳定池。
-5.质量监控 → 稳定源持续检测，连续失败触发告警，自动从候选池寻找替代。
+- 采集 → 拉取所有订阅源，解析并去重。
+- 测速验证 → HTTP 探测 + ffmpeg 深度验证，过滤无效源。
+- 候选池观察 → 新源进入候选池，经多次验证（次数≥3、成功率≥50%、延迟≤3000ms）后标记为稳定。
+- 提升 → 稳定候选源替换同名劣质源，记录到稳定池。
+- 质量监控 → 稳定源持续检测，连续失败触发告警，自动从候选池寻找替代。
 
 ## 🔒 固定源配置
 在 src/fixed_sources.py 中预设优质源，系统将优先使用这些源，并支持自动优化（选择延迟最低的备源）或锁定禁止替换。

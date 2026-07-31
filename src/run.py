@@ -15,9 +15,10 @@ from src.demo_filter import filter_and_order_by_demo, parse_demo_order_with_cate
 from src.database import get_db_cache
 from src.stable.manager import StableManager
 from src.generator import generate_outputs_from_demo
-from src.special_categories import collect_and_append_special_categories
+# from src.special_categories import collect_and_append_special_categories  # 已移除
 from src.orchestrator import run_autonomous_mode
 from src.fixed_sources import CCTV_FIXED_SOURCES
+from src.http_client import HttpClient   # 新增，用于关闭会话
 
 async def main():
     logger.info("🚀 IPTV 智能整理平台启动")
@@ -31,13 +32,16 @@ async def main():
         else:
             url = urls
         if url:
-            await stable_mgr.set_fixed_source(name, url, auto_optimize=True)  # 默认允许自动优化
+            await stable_mgr.set_fixed_source(name, url, auto_optimize=True)
     logger.info("📌 固定源已同步到数据库")
 
     # 获取订阅源
     sub_mgr = SubscribeManager()
     subscribe_urls = sub_mgr.get_all_subscribe_urls()
-    sources = subscribe_urls if subscribe_urls else config.raw_sources
+    if subscribe_urls:
+        sources = subscribe_urls
+    else:
+        sources = config.iptv_sources
     logger.info(f"📋 使用 {len(sources)} 个源")
 
     # 拉取
@@ -77,11 +81,11 @@ async def main():
     # 生成输出
     generate_outputs_from_demo(ordered_channels, demo_order)
 
-    # 特殊分类采集
-    try:
-        await collect_and_append_special_categories(Path(config.output_dir), db)
-    except Exception as e:
-        logger.warning(f"⚠️ 智能补充采集失败: {e}")
+    # ---- 移除智能补充分类采集（源已无相关内容） ----
+    # try:
+    #     await collect_and_append_special_categories(Path(config.output_dir), db)
+    # except Exception as e:
+    #     logger.warning(f"⚠️ 智能补充采集失败: {e}")
 
     # 自治模式
     if config.autonomous_mode:
@@ -89,6 +93,8 @@ async def main():
 
     logger.info("🎉 全部完成！")
     await db.close()
+    await HttpClient.close()   # 关闭全局HTTP会话，消除警告
+
     return 0
 
 if __name__ == "__main__":

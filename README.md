@@ -38,28 +38,32 @@ python -m src.run
 
 ## 所有配置通过 config/config.yaml 管理，GitHub Actions 中可通过环境变量覆盖。
 ### 核心配置项
-
--    变量               | 默认值              | 说明
-- autonomous_mode | true | 是否启用自治模式
-- max_workers | 20 | 并发测速线程数
-- ffmpeg_enable	| true	| 是否启用 ffmpeg 深度验证
-- ffmpeg_mode	deep	| deep |   / quick / off
-- candidate_min_success	|  3	|  候选源最少成功次数
-- candidate_min_success_rate	|  0.5	|  候选源最低成功率（50%）
-- candidate_max_latency	|  3000	|  候选源最大平均延迟（毫秒）
-- slow_speed_threshold	|  3000	|  慢速阈值（超过此值不进入稳定版）
-- enable_demo_filter	|  true|  	是否按 demo.txt 筛选频道
-- max_sources_per_channel	|  3	| 每个频道保留的最大源数量
-   更多配置项请查看 config/config.yaml。
+| 功能       | 描述                 | 状态      |
+|------------|----------------------|-----------|
+   变量               | 默认值              | 说明
+ autonomous_mode | true | 是否启用自治模式
+ max_workers | 20 | 并发测速线程数
+ ffmpeg_enable	| true	| 是否启用 ffmpeg 深度验证
+ ffmpeg_mode	deep	| deep |   / quick / off
+ candidate_min_success	|  3	|  候选源最少成功次数
+ candidate_min_success_rate	|  0.5	|  候选源最低成功率（50%）
+ candidate_max_latency	|  3000	|  候选源最大平均延迟（毫秒）
+ slow_speed_threshold	|  3000	|  慢速阈值（超过此值不进入稳定版）
+ enable_demo_filter	|  true|  	是否按 demo.txt 筛选频道
+ max_sources_per_channel	|  3	| 每个频道保留的最大源数量
+  
+更多配置项请查看 config/config.yaml。
 
 ## 📂 输出文件说明
+| 功能       | 描述                 | 状态      |
+|------------|----------------------|-----------|
  文件          |        说明
 output/tv.m3u	  |  标准 M3U 播放列表（按 demo.txt 顺序）
 output/tv.txt	TXT 格式（频道名,URL）
 output/tv_multi.m3u	  |   多源 M3U（备选地址用 # 分隔）
 output/channels.json	 |   JSON API（包含频道名、URL、延迟、编码）
 output/tv_lite.m3u	 |   精简版（仅保留各分类前 50 个频道）
-data/iptv_cache.db	 |   SQLite 数据库（缓存、候选池、稳定源）
+data/iptv_cache.db	 |   SQLite 数据库（缓��、候选池、稳定源）
 
 
 ## 🧠 自治模式工作原理

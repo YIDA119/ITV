@@ -1,3 +1,4 @@
+# src/stable/manager.py
 from src.database import get_db_cache
 from src.logger import logger
 
@@ -8,6 +9,11 @@ class StableManager:
     async def _ensure_db(self):
         if self.db is None:
             self.db = await get_db_cache()
+        return self.db
+
+    async def get_db(self):
+        """公共方法，供外部获取数据库实例"""
+        return await self._ensure_db()
 
     async def get_stable_sources(self) -> dict:
         await self._ensure_db()

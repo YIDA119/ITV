@@ -1,0 +1,104 @@
+name: IPTV 源智能更新与整理
+
+on:
+  schedule:
+    # 每 6 小时运行一次（UTC 时间 0,6,12,18）
+    - cron: '0 */6 * * *'
+  # 支持手动触发
+  workflow_dispatch:
+    inputs:
+      skip_discover:
+        description: '跳过新源发现阶段（仅观察候选池）'
+        required: false
+        default: false
+        type: boolean
+      force_refresh:
+        description: '强制刷新所有源（忽略缓存）'
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write   # 允许提交代码
+
+jobs:
+  update-iptv:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      # 1. 检出代码
+      - name: 检出仓库
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # 2. 设置 Python 环境
+      - name: 设置 Python 3.10
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          architecture: 'x64'
+
+      # 3. 缓存 Python 依赖（加速安装）
+      - name: 缓存 pip 依赖
+        uses: actions/cache@v4
+        id: pip-cache
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      # 4. 安装 Python 依赖
+      - name: 安装依赖
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # 5. 安装 ffmpeg（用于深度验证）
+      - name: 安装 ffmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
+      # 6. 运行 IPTV 采集与整理
+      - name: 运行 IPTV 采集
+        run: python -m src.run
+        env:
+          AUTONOMOUS_MODE: true
+          OPEN_RTMP: false
+          ENABLE_DEMO_FILTER: true
+          ENABLE_ALIAS: true
+          ENABLE_BLACKLIST: true
+          DATABASE_ENABLE: true
+          FFMPEG_ENABLE: true
+          FFMPEG_MODE: deep
+          MAX_WORKERS: 20
+          TIMEOUT: 8
+          # 可选：从 GitHub Secrets 读取自定义配置
+          # GITHUB_RAW_PROXIES: ${{ secrets.GITHUB_RAW_PROXIES }}
+
+      # 7. 提交并推送更改
+      - name: 提交并推送更新
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ output/ config/ *.m3u *.txt 2>/dev/null || true
+          git add -A
+          if ! git diff --staged --quiet; then
+            git commit -m "Auto update IPTV list $(date '+%Y-%m-%d %H:%M:%S')"
+            # 拉取最新远程更改，避免推送冲突
+            git pull origin main --rebase || true
+            git push origin main
+          else
+            echo "没有检测到更改，跳过提交"
+          fi
+
+      # 8. （可选）生成统计信息并保存
+      - name: 生成统计报告
+        if: always()
+        run: |
+          echo "📊 IPTV 更新完成于 $(date)" >> $GITHUB_STEP_SUMMARY
+          echo "请查看 output/ 目录下的播放列表文件。" >> $GITHUB_STEP_SUMMARY

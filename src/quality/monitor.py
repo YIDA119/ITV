@@ -27,8 +27,10 @@ class QualityMonitor:
         return self._history[channel_name]
 
     async def check_channel(self, channel_name: str, url: str, session: aiohttp.ClientSession) -> tuple:
+        # 获取 db 实例
+        db = await self.stable_manager.get_db()
         channel = {"name": channel_name, "url": url}
-        _, latency, ok, _ = await probe_channel_advanced(session, channel, await self.stable_manager._ensure_db())
+        _, latency, ok, _ = await probe_channel_advanced(session, channel, db)
         self._get_history(channel_name).append((datetime.now(), ok, latency))
         return ok, latency
 
@@ -72,7 +74,7 @@ class QualityMonitor:
         async with HttpClient.session_context() as session:
             async def check_one(name, src):
                 async with semaphore:
-                    ok, latency = await self.check_channel(name, src.url, session)
+                    ok, latency = await self.check_channel(name, src['url'], session)
                     if ok:
                         await self.stable_manager.record_success(name)
                     else:

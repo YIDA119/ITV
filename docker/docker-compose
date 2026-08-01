@@ -1,0 +1,14 @@
+version: '3'
+services:
+  iptv-collector:
+    image: zzgpy/itv:latest
+    container_name: iptv-collector
+    restart: "no"
+    volumes:
+      - ./data:/app/data
+      - ./output:/app/output
+      - ./config:/app/config   # 可选
+    environment:
+      - AUTONOMOUS_MODE=true
+      - FFMPEG_ENABLE=true
+      - MAX_WORKERS=20

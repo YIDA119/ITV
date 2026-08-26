@@ -8,7 +8,7 @@ from src.candidate.observer import CandidateObserver
 from src.stable.manager import StableManager
 from src.quality.monitor import QualityMonitor
 from src.config_loader import config
-from src.speed_tester import test_channels_concurrent   # 导入函数
+from src.speed_tester import test_channels_concurrent
 
 class IPTVOrchestrator:
     MAX_NEW_SOURCES_PER_RUN = 5000
@@ -59,28 +59,26 @@ class IPTVOrchestrator:
             return {}
 
     async def _speed_test_phase(self):
-        """测速所有观察中的候选源（阶段1.5）"""
-        stats = await self.candidate_observer.get_statistics()
-        if stats['observing'] == 0:
+        """测速所有观察中的候选源（阶段1.5）- 直接从数据库查询"""
+        await self._ensure_db()
+        # 从数据库查询 observing 状态的候选源
+        rows = await self.db.fetch_all(
+            "SELECT channel_key, name, url FROM candidate_pool WHERE status = 'observing'"
+        )
+        if not rows:
             logger.info("📭 没有候选源需要测速")
             return
 
         logger.info("="*50 + "\n阶段1.5: 测速候选源\n" + "="*50)
-        logger.info(f"📊 候选池中有 {stats['observing']} 个源需要测速")
-
-        # 直接从 _observations 获取观察中的源
-        observing_sources = [obs for obs in self.candidate_observer._observations.values() if obs.status == 'observing']
-        if not observing_sources:
-            logger.info("📭 没有可用的观察源")
-            return
+        logger.info(f"📊 候选池中有 {len(rows)} 个源需要测速")
 
         channels_dict = {}
-        for obs in observing_sources:
-            key = obs.source_key
+        for row in rows:
+            key = row['channel_key']
             channels_dict[key] = {
-                "name": obs.channel_name,
-                "url": obs.url,
-                "source_key": obs.source_key,
+                "name": row['name'],
+                "url": row['url'],
+                "source_key": key,
             }
 
         logger.info(f"🔍 开始测速 {len(channels_dict)} 个候选源...")
@@ -156,7 +154,7 @@ class IPTVOrchestrator:
         else:
             await self.discover_phase()
 
-        # === 关键：测速已有候选源 ===
+        # === 关键：测速已有候选源（直接从数据库查询） ===
         await self._speed_test_phase()
 
         stable_candidates = await self.observe_phase()

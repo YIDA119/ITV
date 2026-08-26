@@ -59,9 +59,10 @@ class IPTVOrchestrator:
             return {}
 
     async def _speed_test_phase(self):
-        """测速所有观察中的候选源（阶段1.5）- 直接从数据库查询"""
+        """测速所有观察中的候选源（阶段1.5）- 直接使用 _conn 执行查询"""
         await self._ensure_db()
-        cursor = await self.db.execute(
+        # 使用内部 _conn 执行查询
+        cursor = await self.db._conn.execute(
             "SELECT channel_key, name, url FROM candidate_pool WHERE status = 'observing'"
         )
         rows = await cursor.fetchall()

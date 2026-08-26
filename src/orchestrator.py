@@ -13,6 +13,7 @@ from src.speed_tester import test_channels_concurrent
 class IPTVOrchestrator:
     MAX_NEW_SOURCES_PER_RUN = 5000
     MAX_OBSERVE_PER_RUN = 3000
+    MIN_CANDIDATE_THRESHOLD = 500  # 候选池最少源数
 
     def __init__(self, data_dir: Path = None):
         self.data_dir = data_dir or Path("data")
@@ -61,7 +62,6 @@ class IPTVOrchestrator:
     async def _speed_test_phase(self):
         """测速所有观察中的候选源（阶段1.5）- 直接使用 _conn 执行查询"""
         await self._ensure_db()
-        # 使用内部 _conn 执行查询
         cursor = await self.db._conn.execute(
             "SELECT channel_key, name, url FROM candidate_pool WHERE status = 'observing'"
         )
@@ -151,18 +151,26 @@ class IPTVOrchestrator:
 
     async def run_once(self, skip_discover: bool = False) -> dict:
         logger.info("🚀 IPTV 自治系统启动")
-        if skip_discover:
+        
+        # === 自动补全候选池：如果候选池中观察源太少，强制全量发现 ===
+        stats = await self.candidate_observer.get_statistics()
+        if stats['observing'] < self.MIN_CANDIDATE_THRESHOLD and not skip_discover:
+            logger.warning(f"⚠️ 候选池中观察源仅 {stats['observing']} 个，少于阈值 {self.MIN_CANDIDATE_THRESHOLD}，将执行全量发现")
+            await self.discover_phase()
+        elif skip_discover:
             logger.info("⏭️ 跳过发现阶段")
         else:
             await self.discover_phase()
 
+        # 测速所有候选源
         await self._speed_test_phase()
+
         stable_candidates = await self.observe_phase()
         await self.promote_phase(stable_candidates)
 
         logger.info("📊 自治模式统计:")
-        stats = await self.candidate_observer.get_statistics()
-        logger.info(f"  候选池总数: {stats['total']}, 观察中: {stats['observing']}, 稳定: {stats['stable']}")
+        final_stats = await self.candidate_observer.get_statistics()
+        logger.info(f"  候选池总数: {final_stats['total']}, 观察中: {final_stats['observing']}, 稳定: {final_stats['stable']}")
         logger.info(f"  本次新提升: {self.stats.get('total_promoted', 0)}")
         return self.stats
 

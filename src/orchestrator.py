@@ -2,13 +2,13 @@ import asyncio
 from datetime import datetime
 from pathlib import Path
 from src.logger import logger
-from src.database import get_db_cache, channel_key
+from src.database import get_db_cache
 from src.source_pool.discoverer import SourceDiscoverer
 from src.candidate.observer import CandidateObserver
 from src.stable.manager import StableManager
 from src.quality.monitor import QualityMonitor
 from src.config_loader import config
-from src.speed_tester import SpeedTester   # 新增导入
+from src.services.speed_tester import SpeedTester   # 修正导入路径
 
 class IPTVOrchestrator:
     MAX_NEW_SOURCES_PER_RUN = 5000
@@ -22,7 +22,7 @@ class IPTVOrchestrator:
         self.candidate_observer = CandidateObserver()
         self.stable_manager = StableManager()
         self.quality_monitor = QualityMonitor(self.stable_manager)
-        self.speed_tester = SpeedTester()          # 新增测速器
+        self.speed_tester = SpeedTester()          # 测速器
         self.stats = {"last_discover": None, "last_observe": None, "total_promoted": 0}
 
     async def _ensure_db(self):
@@ -69,7 +69,7 @@ class IPTVOrchestrator:
         logger.info("="*50 + "\n阶段1.5: 测速候选源\n" + "="*50)
         logger.info(f"📊 候选池中有 {stats['observing']} 个源需要测速")
 
-        # 获取所有观察中的源（直接访问内部字典，兼容旧版本）
+        # 获取所有观察中的源
         observing_sources = [obs for obs in self.candidate_observer._observations.values() if obs.status == 'observing']
         if not observing_sources:
             logger.info("📭 没有可用的观察源")
@@ -156,7 +156,7 @@ class IPTVOrchestrator:
         else:
             await self.discover_phase()
 
-        # === 关键新增：无论是否发现新源，都先测速已有候选源 ===
+        # === 关键：测速已有候选源 ===
         await self._speed_test_phase()
 
         stable_candidates = await self.observe_phase()

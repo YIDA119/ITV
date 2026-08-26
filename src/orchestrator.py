@@ -68,14 +68,12 @@ class IPTVOrchestrator:
         logger.info("="*50 + "\n阶段1.5: 测速候选源\n" + "="*50)
         logger.info(f"📊 候选池中有 {stats['observing']} 个源需要测速")
 
-        # 获取所有观察中的源
-        candidates = self.candidate_observer.get_candidates()
-        observing_sources = [obs for obs in candidates if obs.status == 'observing']
+        # 直接从 _observations 获取观察中的源
+        observing_sources = [obs for obs in self.candidate_observer._observations.values() if obs.status == 'observing']
         if not observing_sources:
             logger.info("📭 没有可用的观察源")
             return
 
-        # 构建 channels_dict (name -> channel dict)
         channels_dict = {}
         for obs in observing_sources:
             key = obs.source_key
@@ -91,7 +89,6 @@ class IPTVOrchestrator:
 
         # 直接提升低延迟源（每个频道取最佳）
         if valid_channels:
-            # 按延迟排序
             valid_channels.sort(key=lambda x: x.get('latency', 9999))
             best_by_channel = {}
             for ch in valid_channels:

@@ -61,10 +61,12 @@ class IPTVOrchestrator:
     async def _speed_test_phase(self):
         """测速所有观察中的候选源（阶段1.5）- 直接从数据库查询"""
         await self._ensure_db()
-        # 从数据库查询 observing 状态的候选源
-        rows = await self.db.fetch_all(
+        cursor = await self.db.execute(
             "SELECT channel_key, name, url FROM candidate_pool WHERE status = 'observing'"
         )
+        rows = await cursor.fetchall()
+        await cursor.close()
+
         if not rows:
             logger.info("📭 没有候选源需要测速")
             return
@@ -74,10 +76,10 @@ class IPTVOrchestrator:
 
         channels_dict = {}
         for row in rows:
-            key = row['channel_key']
+            key = row[0]
             channels_dict[key] = {
-                "name": row['name'],
-                "url": row['url'],
+                "name": row[1],
+                "url": row[2],
                 "source_key": key,
             }
 
@@ -85,7 +87,6 @@ class IPTVOrchestrator:
         valid_channels = await test_channels_concurrent(channels_dict)
         logger.info(f"✅ 测速完成: {len(valid_channels)}/{len(channels_dict)} 个有效")
 
-        # 直接提升低延迟源（每个频道取最佳）
         if valid_channels:
             valid_channels.sort(key=lambda x: x.get('latency', 9999))
             best_by_channel = {}
@@ -154,9 +155,7 @@ class IPTVOrchestrator:
         else:
             await self.discover_phase()
 
-        # === 关键：测速已有候选源（直接从数据库查询） ===
         await self._speed_test_phase()
-
         stable_candidates = await self.observe_phase()
         await self.promote_phase(stable_candidates)
 

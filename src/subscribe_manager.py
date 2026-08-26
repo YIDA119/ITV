@@ -1,6 +1,8 @@
+# src/subscribe_manager.py
 import re
 from pathlib import Path
-from typing import List, Dict, Tuple
+from typing import List
+
 from src.config_loader import config
 from src.logger import logger
 
@@ -8,14 +10,15 @@ class SubscribeManager:
     def __init__(self, subscribe_file: Path = None):
         self.subscribe_file = subscribe_file or config.subscribe_file
         self._url_pattern = re.compile(r'(https?://[^\s]+)')
-        self._kv_pattern = re.compile(r'(?P<key>\w+)=(?P<value>[^\s]+)')
 
-    def parse_subscribe_entries(self) -> Tuple[List[Dict], List[Dict]]:
+    def parse(self) -> List[str]:
+        """解析订阅文件，返回 URL 列表（忽略白名单）"""
         if not self.subscribe_file.exists():
-            logger.warning(f"⚠️ 订阅文件不存在: {self.subscribe_file}")
-            return [], []
+            logger.debug(f"订阅文件不存在: {self.subscribe_file}")
+            return []
+
+        urls = []
         inside_whitelist = False
-        normal, whitelist = [], []
         with open(self.subscribe_file, 'r', encoding='utf-8') as f:
             for line in f:
                 line = line.strip()
@@ -24,37 +27,38 @@ class SubscribeManager:
                 if line.startswith('[') and line.endswith(']'):
                     inside_whitelist = line.upper() == '[WHITELIST]'
                     continue
-                match = self._url_pattern.search(line)
-                if not match:
-                    continue
-                url = match.group(0)
-                remainder = line[match.end():].strip()
-                headers = {}
-                for kv in self._kv_pattern.finditer(remainder):
-                    key = kv.group('key')
-                    value = kv.group('value')
-                    if key.lower() in ('ua', 'user-agent'):
-                        headers['User-Agent'] = value
-                    else:
-                        headers[key] = value
-                entry = {'url': url}
-                if headers:
-                    entry['headers'] = headers
                 if inside_whitelist:
-                    whitelist.append(entry)
-                else:
-                    normal.append(entry)
-        logger.info(f"📋 订阅源解析：普通 {len(normal)} 个，白名单 {len(whitelist)} 个")
-        return normal, whitelist
+                    continue  # 白名单内的 URL 不加入普通列表，但可单独获取
+                match = self._url_pattern.search(line)
+                if match:
+                    urls.append(match.group(0))
+        return urls
 
-    def get_all_subscribe_urls(self) -> List[str]:
-        normal, whitelist = self.parse_subscribe_entries()
-        return [e['url'] for e in normal + whitelist]
+    def get_whitelist(self) -> List[str]:
+        if not self.subscribe_file.exists():
+            return []
+        urls = []
+        inside_whitelist = False
+        with open(self.subscribe_file, 'r', encoding='utf-8') as f:
+            for line in f:
+                line = line.strip()
+                if not line or line.startswith('#'):
+                    continue
+                if line.startswith('[') and line.endswith(']'):
+                    inside_whitelist = line.upper() == '[WHITELIST]'
+                    continue
+                if inside_whitelist:
+                    match = self._url_pattern.search(line)
+                    if match:
+                        urls.append(match.group(0))
+        return urls
 
-    def get_whitelist_urls(self) -> List[str]:
-        _, whitelist = self.parse_subscribe_entries()
-        return [e['url'] for e in whitelist]
 
-    def get_normal_urls(self) -> List[str]:
-        normal, _ = self.parse_subscribe_entries()
-        return [e['url'] for e in normal]
+def get_subscribe_urls() -> List[str]:
+    """获取所有订阅源 URL（不含白名单）"""
+    manager = SubscribeManager()
+    return manager.parse()
+
+def get_whitelist_urls() -> List[str]:
+    manager = SubscribeManager()
+    return manager.get_whitelist()

@@ -2,12 +2,13 @@ import asyncio
 from datetime import datetime
 from pathlib import Path
 from src.logger import logger
-from src.database import get_db_cache
+from src.database import get_db_cache, channel_key
 from src.source_pool.discoverer import SourceDiscoverer
 from src.candidate.observer import CandidateObserver
 from src.stable.manager import StableManager
 from src.quality.monitor import QualityMonitor
 from src.config_loader import config
+from src.speed_tester import SpeedTester   # 新增导入
 
 class IPTVOrchestrator:
     MAX_NEW_SOURCES_PER_RUN = 5000
@@ -21,6 +22,7 @@ class IPTVOrchestrator:
         self.candidate_observer = CandidateObserver()
         self.stable_manager = StableManager()
         self.quality_monitor = QualityMonitor(self.stable_manager)
+        self.speed_tester = SpeedTester()          # 新增测速器
         self.stats = {"last_discover": None, "last_observe": None, "total_promoted": 0}
 
     async def _ensure_db(self):
@@ -56,6 +58,53 @@ class IPTVOrchestrator:
         except Exception as e:
             logger.error(f"❌ 发现新源阶段失败: {e}")
             return {}
+
+    async def _speed_test_phase(self):
+        """测速所有观察中的候选源（阶段1.5）"""
+        stats = await self.candidate_observer.get_statistics()
+        if stats['observing'] == 0:
+            logger.info("📭 没有候选源需要测速")
+            return
+
+        logger.info("="*50 + "\n阶段1.5: 测速候选源\n" + "="*50)
+        logger.info(f"📊 候选池中有 {stats['observing']} 个源需要测速")
+
+        # 获取所有观察中的源（直接访问内部字典，兼容旧版本）
+        observing_sources = [obs for obs in self.candidate_observer._observations.values() if obs.status == 'observing']
+        if not observing_sources:
+            logger.info("📭 没有可用的观察源")
+            return
+
+        channels = []
+        for obs in observing_sources:
+            channels.append({
+                "name": obs.channel_name,
+                "url": obs.url,
+                "source_key": obs.source_key,
+            })
+
+        logger.info(f"🔍 开始测速 {len(channels)} 个候选源...")
+        valid_channels = await self.speed_tester.test_all(channels)
+        logger.info(f"✅ 测速完成: {len(valid_channels)}/{len(channels)} 个有效")
+
+        # 直接提升低延迟源（每个频道取最佳）
+        if valid_channels:
+            valid_channels.sort(key=lambda x: x.get('latency', 9999))
+            best_by_channel = {}
+            for ch in valid_channels:
+                name = ch['name']
+                if name not in best_by_channel or ch.get('latency', 9999) < best_by_channel[name].get('latency', 9999):
+                    best_by_channel[name] = ch
+
+            top = list(best_by_channel.values())
+            logger.info(f"📌 提升 {len(top)} 个频道的稳定源...")
+            for ch in top[:200]:
+                await self.stable_manager.promote_candidate(
+                    ch['name'],
+                    ch['url'],
+                    ch.get('latency', 0),
+                    ch.get('video_codec', '')
+                )
 
     async def observe_phase(self) -> list:
         logger.info("="*50 + "\n阶段2: 从缓存观察候选源\n" + "="*50)
@@ -106,15 +155,22 @@ class IPTVOrchestrator:
             logger.info("⏭️ 跳过发现阶段")
         else:
             await self.discover_phase()
+
+        # === 关键新增：无论是否发现新源，都先测速已有候选源 ===
+        await self._speed_test_phase()
+
         stable_candidates = await self.observe_phase()
         await self.promote_phase(stable_candidates)
+
         logger.info("📊 自治模式统计:")
         stats = await self.candidate_observer.get_statistics()
         logger.info(f"  候选池总数: {stats['total']}, 观察中: {stats['observing']}, 稳定: {stats['stable']}")
         logger.info(f"  本次新提升: {self.stats.get('total_promoted', 0)}")
         return self.stats
 
+
 _orchestrator = None
+
 async def run_autonomous_mode(skip_discover: bool = False):
     global _orchestrator
     if _orchestrator is None:

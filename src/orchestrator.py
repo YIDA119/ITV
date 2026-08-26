@@ -2,13 +2,13 @@ import asyncio
 from datetime import datetime
 from pathlib import Path
 from src.logger import logger
-from src.database import get_db_cache
+from src.database import get_db_cache, channel_key
 from src.source_pool.discoverer import SourceDiscoverer
 from src.candidate.observer import CandidateObserver
 from src.stable.manager import StableManager
 from src.quality.monitor import QualityMonitor
 from src.config_loader import config
-from src.services.speed_tester import SpeedTester   # 修正导入路径
+from src.speed_tester import test_channels_concurrent   # 导入函数
 
 class IPTVOrchestrator:
     MAX_NEW_SOURCES_PER_RUN = 5000
@@ -22,7 +22,6 @@ class IPTVOrchestrator:
         self.candidate_observer = CandidateObserver()
         self.stable_manager = StableManager()
         self.quality_monitor = QualityMonitor(self.stable_manager)
-        self.speed_tester = SpeedTester()          # 测速器
         self.stats = {"last_discover": None, "last_observe": None, "total_promoted": 0}
 
     async def _ensure_db(self):
@@ -70,25 +69,29 @@ class IPTVOrchestrator:
         logger.info(f"📊 候选池中有 {stats['observing']} 个源需要测速")
 
         # 获取所有观察中的源
-        observing_sources = [obs for obs in self.candidate_observer._observations.values() if obs.status == 'observing']
+        candidates = self.candidate_observer.get_candidates()
+        observing_sources = [obs for obs in candidates if obs.status == 'observing']
         if not observing_sources:
             logger.info("📭 没有可用的观察源")
             return
 
-        channels = []
+        # 构建 channels_dict (name -> channel dict)
+        channels_dict = {}
         for obs in observing_sources:
-            channels.append({
+            key = obs.source_key
+            channels_dict[key] = {
                 "name": obs.channel_name,
                 "url": obs.url,
                 "source_key": obs.source_key,
-            })
+            }
 
-        logger.info(f"🔍 开始测速 {len(channels)} 个候选源...")
-        valid_channels = await self.speed_tester.test_all(channels)
-        logger.info(f"✅ 测速完成: {len(valid_channels)}/{len(channels)} 个有效")
+        logger.info(f"🔍 开始测速 {len(channels_dict)} 个候选源...")
+        valid_channels = await test_channels_concurrent(channels_dict)
+        logger.info(f"✅ 测速完成: {len(valid_channels)}/{len(channels_dict)} 个有效")
 
         # 直接提升低延迟源（每个频道取最佳）
         if valid_channels:
+            # 按延迟排序
             valid_channels.sort(key=lambda x: x.get('latency', 9999))
             best_by_channel = {}
             for ch in valid_channels:

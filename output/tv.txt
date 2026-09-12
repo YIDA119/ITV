@@ -15,7 +15,6 @@ CCTV-13,http://45.192.97.170:8880/play/14.m3u8
 CCTV-14,http://45.192.97.170:8880/play/15.m3u8
 CCTV-15,http://45.192.97.170:8880/play/16.m3u8
 CCTV-17,http://45.192.97.170:8880/play/17.m3u8
-CCTV-4K,https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1789217100-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-4b66a80e2b21176aee0f60f8b722138d&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c
 CHC家庭影院,http://61.162.52.6:8088/newlive/live/hls/60/live.m3u8
 CHC动作电影,http://120.198.86.186:9901/tsfile/live/1047_1.m3u8?key=txiptv&playlive=1&authid=0
 CGTN（英语新闻）,https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8
@@ -28,6 +27,7 @@ CGTN-Documentary（英语纪录）,https://amg00405-rakutentv-cgtndocumentary-ra
 山东卫视,https://satellitepull.cnr.cn/live/wxgsdstb/playlist.m3u8
 河南卫视,http://111.59.139.82:11888/tsfile/live/0139_1.m3u8?key=txiptv&playlive=1&authid=0
 湖北卫视,http://113.57.140.161:10081/newlive/live/hls/36/live.m3u8
+三沙卫视,http://nn.7x9d.cn/地方台8563/海南.php?id=jjpd
 海南卫视,http://112.234.22.76:9901/tsfile/live/1037_1.m3u8?key=txiptv&playlive=1&authid=0
 重庆卫视,http://221.7.175.154:8445/tsfile/live/0142_1.m3u8?key=txiptv&playlive=1&authid=0
 贵州卫视,http://118.122.144.115:8888/newlive/live/hls/39/live.m3u8
@@ -43,7 +43,7 @@ TVB翡翠台,http://r.jdshipin.com/GeWKr
 南京教科,http://nklive.nbs.cn/hls/75b3c462-b831-4de7-a34b-5d3221db2069/index.m3u8
 靖江新闻综合,http://stream8.jlntv.cn/dhtv/playlist.m3u8
 ☘️浙江频道,#genre#
-浙江钱江,http://ali-m-l.cztv.com/channels/lantian/channel02/1080p.m3u8
+浙江钱江,https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8?
 浙江经济生活,http://ali-m-l.cztv.com/channels/lantian/channel03/1080p.m3u8#https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8#http://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8
 浙江民生,http://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8
 浙江少儿,https://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8
@@ -86,6 +86,8 @@ TVB翡翠台,http://r.jdshipin.com/GeWKr
 西安都市,http://112.46.105.20:8009/hls/29/index.m3u8
 ☘️甘肃频道,#genre#
 甘肃都市,https://satellitepull.cnr.cn/live/wxgsdstb/playlist.m3u8
+☘️青海频道,#genre#
+海南公共,http://nn.7x9d.cn/地方台8563/海南.php?id=jjpd
 ☘️新疆频道,#genre#
 伊犁维吾尔,http://110.153.180.106:55555/out_2/index.m3u8
 奎屯汉语频道,https://satellitepull.cnr.cn/live/wxgsdstb/playlist.m3u8
@@ -99,6 +101,8 @@ TVB翡翠台,http://r.jdshipin.com/GeWKr
 ☘️海南频道,#genre#
 海南新闻,http://ls.qingting.fm/live/1861.m3u8
 海南自贸,http://nn.7x9d.cn/地方台8563/海南.php?id=jjpd
+海南文旅,http://nn.7x9d.cn/地方台8563/海南.php?id=wlpd
+海南少儿,http://nn.7x9d.cn/地方台8563/海南.php?id=sepd
 ☘️北京频道,#genre#
 北京新闻,https://satellitepull.cnr.cn/live/wxbjxwgb/playlist.m3u8
 ☘️河北频道,#genre#

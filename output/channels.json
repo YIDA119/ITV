@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 68,
-  "generated": "2026-09-23T21:21:24.318394",
+  "total": 67,
+  "generated": "2026-09-24T04:08:03.246844",
   "channels": [
     {
       "name": "CCTV-1",
@@ -139,7 +139,7 @@
       "urls": [
         "http://61.162.52.6:8088/newlive/live/hls/60/live.m3u8"
       ],
-      "latency": 592,
+      "latency": 706,
       "codec": "http_ok",
       "category": "📺央视频道"
     },
@@ -148,7 +148,7 @@
       "urls": [
         "http://120.198.86.186:9901/tsfile/live/1047_1.m3u8?key=txiptv&playlive=1&authid=0"
       ],
-      "latency": 643,
+      "latency": 733,
       "codec": "",
       "category": "📺央视频道"
     },
@@ -162,11 +162,20 @@
       "category": "📡卫视频道"
     },
     {
+      "name": "山东卫视",
+      "urls": [
+        "http://stream8.jlntv.cn/dhtv/playlist.m3u8"
+      ],
+      "latency": 824,
+      "codec": "",
+      "category": "📡卫视频道"
+    },
+    {
       "name": "海南卫视",
       "urls": [
         "http://112.234.22.76:9901/tsfile/live/1037_1.m3u8?key=txiptv&playlive=1&authid=0"
       ],
-      "latency": 589,
+      "latency": 727,
       "codec": "http_ok",
       "category": "📡卫视频道"
     },
@@ -175,7 +184,7 @@
       "urls": [
         "http://118.122.144.115:8888/newlive/live/hls/39/live.m3u8"
       ],
-      "latency": 762,
+      "latency": 764,
       "codec": "http_ok",
       "category": "📡卫视频道"
     },
@@ -193,7 +202,7 @@
       "urls": [
         "http://8.138.7.223/tv/hxws.m3u8"
       ],
-      "latency": 679,
+      "latency": 655,
       "codec": "http_ok",
       "category": "📡卫视频道"
     },
@@ -202,7 +211,7 @@
       "urls": [
         "https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8?"
       ],
-      "latency": 797,
+      "latency": 875,
       "codec": "http_ok",
       "category": "☘️浙江频道"
     },
@@ -230,7 +239,7 @@
       "urls": [
         "http://ali-m-l.cztv.com/channels/lantian/channel009/1080p.m3u8"
       ],
-      "latency": 707,
+      "latency": 1519,
       "codec": "http_ok",
       "category": "☘️浙江频道"
     },
@@ -257,7 +266,7 @@
       "urls": [
         "http://dspdhls.appcoo.com:8888/live/dspd/index.m3u8"
       ],
-      "latency": 797,
+      "latency": 673,
       "codec": "http_ok",
       "category": "☘️安徽频道"
     },
@@ -266,7 +275,7 @@
       "urls": [
         "http://www.guzhenm.com:7001/hls/hd-live.m3u8"
       ],
-      "latency": 705,
+      "latency": 754,
       "codec": "",
       "category": "☘️安徽频道"
     },
@@ -312,17 +321,7 @@
       "urls": [
         "http://qcfile.qcrmt.com/nmip-media/channellive/channel100933/playlist.m3u8"
       ],
-      "latency": 748,
-      "codec": "http_ok",
-      "category": "☘️四川频道"
-    },
-    {
-      "name": "井研综合",
-      "urls": [
-        "https://satellitepull.cnr.cn/live/wxgsdstb/playlist.m3u8",
-        "http://tvfile.jyrmt.cn/nmip-media/channellive/channel104452/playlist.m3u8"
-      ],
-      "latency": 1539,
+      "latency": 1230,
       "codec": "http_ok",
       "category": "☘️四川频道"
     },
@@ -331,7 +330,7 @@
       "urls": [
         "http://175.155.106.72:89/live1/live1.m3u8?zsicd"
       ],
-      "latency": 639,
+      "latency": 734,
       "codec": "http_ok",
       "category": "☘️四川频道"
     },
@@ -340,7 +339,7 @@
       "urls": [
         "http://112.46.105.20:8009/hls/28/index.m3u8"
       ],
-      "latency": 689,
+      "latency": 1089,
       "codec": "http_ok",
       "category": "☘️陕西频道"
     },
@@ -349,19 +348,9 @@
       "urls": [
         "https://satellitepull.cnr.cn/live/wxgsdstb/playlist.m3u8"
       ],
-      "latency": 654,
+      "latency": 511,
       "codec": "",
       "category": "☘️甘肃频道"
-    },
-    {
-      "name": "广州综合",
-      "urls": [
-        "http://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=c8dbe86d6f86eb1a21999ab479fd5667&txTime=18d3c4690e8",
-        "https://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=439b0fd2cf766b363c93a59cbcbe1370&txTime=18d00acf488"
-      ],
-      "latency": 1129,
-      "codec": "",
-      "category": "☘️广东频道"
     },
     {
       "name": "广州竞赛",
@@ -378,7 +367,7 @@
         "https://ls.qingting.fm/live/1650/64k.m3u8",
         "https://jwcdnqx.hebyun.com.cn/live/clzhpd/1500k/tzwj_video.m3u8?zhebd"
       ],
-      "latency": 1068,
+      "latency": 1079,
       "codec": "",
       "category": "☘️河北频道"
     },
@@ -414,7 +403,7 @@
       "urls": [
         "http://stream.hrbtv.net/xwzh/sd/live.m3u8?zheild"
       ],
-      "latency": 912,
+      "latency": 1146,
       "codec": "http_ok",
       "category": "☘️黑龙江频道"
     },
@@ -423,7 +412,7 @@
       "urls": [
         "http://stream.hrbtv.net/zxpd/sd/live.m3u8"
       ],
-      "latency": 416,
+      "latency": 512,
       "codec": "http_ok",
       "category": "☘️黑龙江频道"
     },
@@ -432,7 +421,7 @@
       "urls": [
         "http://stream.hrbtv.net/zxpd/sd/live.m3u8?zheild"
       ],
-      "latency": 426,
+      "latency": 501,
       "codec": "http_ok",
       "category": "☘️黑龙江频道"
     },
@@ -441,7 +430,7 @@
       "urls": [
         "http://stream.hrbtv.net/shpd/sd/live.m3u8?zheild"
       ],
-      "latency": 881,
+      "latency": 1165,
       "codec": "http_ok",
       "category": "☘️黑龙江频道"
     },
@@ -450,7 +439,7 @@
       "urls": [
         "http://stream.hrbtv.net/yspd/sd/live.m3u8?zheild"
       ],
-      "latency": 911,
+      "latency": 1150,
       "codec": "http_ok",
       "category": "☘️黑龙江频道"
     },
@@ -459,7 +448,7 @@
       "urls": [
         "http://stream.hrbtv.net/ylpd/sd/live.m3u8?zheild"
       ],
-      "latency": 435,
+      "latency": 518,
       "codec": "http_ok",
       "category": "☘️黑龙江频道"
     },
@@ -469,7 +458,7 @@
         "https://satellitepull.cnr.cn/live/wxgsdstb/playlist.m3u8",
         "http://59.175.226.142:280/gb28181/xwzh.m3u8?zhubd"
       ],
-      "latency": 1539,
+      "latency": 1774,
       "codec": "http_ok",
       "category": "☘️湖北频道"
     },
@@ -487,7 +476,7 @@
       "urls": [
         "http://61.221.215.25:8800/hls/41/index.m3u8"
       ],
-      "latency": 535,
+      "latency": 521,
       "codec": "http_ok",
       "category": "🌊港·澳·台"
     },
@@ -496,7 +485,7 @@
       "urls": [
         "http://61.221.215.25:8800/hls/9/index.m3u8"
       ],
-      "latency": 537,
+      "latency": 526,
       "codec": "http_ok",
       "category": "🌊港·澳·台"
     },
@@ -505,7 +494,7 @@
       "urls": [
         "http://61.221.215.25:8800/hls/39/index.m3u8"
       ],
-      "latency": 547,
+      "latency": 518,
       "codec": "http_ok",
       "category": "🌊港·澳·台"
     },
@@ -514,7 +503,7 @@
       "urls": [
         "http://61.221.215.25:8800/hls/48/index.m3u8"
       ],
-      "latency": 545,
+      "latency": 508,
       "codec": "http_ok",
       "category": "🌊港·澳·台"
     },
@@ -525,7 +514,7 @@
         "https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8",
         "https://hlspackager.akamaized.net/live/DB/CGTN_ENGLISH/HLS/CGTN_ENGLISH.m3u8"
       ],
-      "latency": 6,
+      "latency": 25,
       "codec": "http_ok",
       "category": "📺央视频道"
     },
@@ -533,10 +522,10 @@
       "name": "CGTN Documentary",
       "urls": [
         "https://amg00405-rakutentv-cgtndocumentary-rakuten-0ql8j.amagi.tv/master.m3u8",
-        "https://hlspackager.akamaized.net/live/DB/CGTN_DOCUMENTARY/HLS/CGTN_DOCUMENTARY.m3u8",
-        "https://amg00405-rakutentv-cgtndocumentary-rakuten-0ql8j.amagi.tv/master.m3u8"
+        "https://amg00405-rakutentv-cgtndocumentary-rakuten-0ql8j.amagi.tv/master.m3u8",
+        "https://hlspackager.akamaized.net/live/DB/CGTN_DOCUMENTARY/HLS/CGTN_DOCUMENTARY.m3u8"
       ],
-      "latency": 6,
+      "latency": 25,
       "codec": "http_ok",
       "category": "📺央视频道"
     },
@@ -555,7 +544,7 @@
       "urls": [
         "http://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8"
       ],
-      "latency": 401,
+      "latency": 420,
       "codec": "http_ok",
       "category": "☘️浙江频道"
     },
@@ -582,7 +571,7 @@
       "urls": [
         "http://r.jdshipin.com/sXuuD"
       ],
-      "latency": 397,
+      "latency": 135,
       "codec": "http_ok",
       "category": "🌊港·澳·台"
     },
@@ -591,7 +580,7 @@
       "urls": [
         "http://stream.hrbtv.net/zxpd/sd/live.m3u8?zheild"
       ],
-      "latency": 929,
+      "latency": 1165,
       "codec": "http_ok",
       "category": "☘️黑龙江频道"
     },
@@ -601,17 +590,8 @@
         "http://live.shaoxing.com.cn/video/s10001-sxtv1/index.m3u8",
         "http://live.shaoxing.com.cn/video/s10001-sxtv1/index.m3u8"
       ],
-      "latency": 686,
+      "latency": 711,
       "codec": "http_ok",
-      "category": "☘️浙江频道"
-    },
-    {
-      "name": "绍兴电视台公共",
-      "urls": [
-        "http://live.shaoxing.com.cn/video/s10001-sxtv2/index.m3u8?%E5%85%B3%E6%B3%A8%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7[%E6%99%B4%E5%9B%AD]"
-      ],
-      "latency": 471,
-      "codec": "",
       "category": "☘️浙江频道"
     },
     {
@@ -625,14 +605,13 @@
       "category": "☘️福建频道"
     },
     {
-      "name": "凤凰香港",
+      "name": "绍兴电视台公共",
       "urls": [
-        "http://r.jdshipin.com/yDoTN",
-        "http://r.jdshipin.com/yDoTN"
+        "http://live.shaoxing.com.cn/video/s10001-sxtv2/index.m3u8?%E5%85%B3%E6%B3%A8%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7[%E6%99%B4%E5%9B%AD]"
       ],
-      "latency": 649,
-      "codec": "http_ok",
-      "category": "🌊港·澳·台"
+      "latency": 471,
+      "codec": "",
+      "category": "☘️浙江频道"
     },
     {
       "name": "武汉一台新闻综合",
@@ -642,6 +621,16 @@
       "latency": 1246,
       "codec": "",
       "category": "☘️湖北频道"
+    },
+    {
+      "name": "凤凰香港",
+      "urls": [
+        "http://r.jdshipin.com/yDoTN",
+        "http://r.jdshipin.com/yDoTN"
+      ],
+      "latency": 373,
+      "codec": "http_ok",
+      "category": "🌊港·澳·台"
     }
   ]
 }

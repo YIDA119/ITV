@@ -24,7 +24,7 @@ http://45.192.97.170:8880/play/17.m3u8
 #EXTINF:-1 group-title="📺央视频道",CHC家庭影院
 http://61.162.52.6:8088/newlive/live/hls/60/live.m3u8
 #EXTINF:-1 group-title="📺央视频道",CGTN（英语新闻）
-https://hlspackager.akamaized.net/live/DB/CGTN_ENGLISH/HLS/CGTN_ENGLISH.m3u8
+https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8
 #EXTINF:-1 group-title="📺央视频道",CGTN-Documentary（英语纪录）
 https://amg00405-rakutentv-cgtndocumentary-rakuten-0ql8j.amagi.tv/master.m3u8
 #EXTINF:-1 group-title="📡卫视频道",海南卫视
@@ -37,10 +37,6 @@ http://218.84.12.186:8001/hls/main/playlist.m3u8?zxinjd;http://218.84.12.186:800
 http://8.138.7.223/tv/hxws.m3u8
 #EXTINF:-1 group-title="📡卫视频道",澳视澳门
 http://r.jdshipin.com/n2YZI
-#EXTINF:-1 group-title="☘️浙江频道",浙江民生
-http://ali-m-l.cztv.com/channels/lantian/channel06/720p.m3u8
-#EXTINF:-1 group-title="☘️浙江频道",浙江少儿
-https://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",浙江经视
 http://ali-m-l.cztv.com/channels/lantian/channel003/720p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",浙江公共新闻
@@ -101,6 +97,8 @@ http://stream.hrbtv.net/shpd/sd/live.m3u8?zheild
 http://stream.hrbtv.net/yspd/sd/live.m3u8?zheild
 #EXTINF:-1 group-title="☘️黑龙江频道",哈尔滨娱乐
 http://stream.hrbtv.net/ylpd/sd/live.m3u8?zheild
+#EXTINF:-1 group-title="☘️黑龙江频道",甘南县综合
+https://amdlive-ch01-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/chunklist_b3256000_sleng.m3u8
 #EXTINF:-1 group-title="☘️黑龙江频道",哈尔滨都市咨询
 http://stream.hrbtv.net/zxpd/sd/live.m3u8?zheild
 #EXTINF:-1 group-title="☘️湖北频道",武汉一台新闻综合
